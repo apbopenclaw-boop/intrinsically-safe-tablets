@@ -151,6 +151,9 @@
         <a href="/what-is-an-intrinsically-safe-tablet.html" class="btn btn-sec">What is an IS tablet?</a>
       </div>
     </div>
+    <div class="hidden lg:block mt-12">
+      <img src="/img/hero-tablets.png" alt="ATEX and IECEx certified tablets for hazardous areas" width="600" height="400" class="rounded-2xl" />
+    </div>
   </div>
 </section>
 
@@ -319,7 +322,8 @@ const solutions = [
     ip: "IP68",
     price: "~€3,200",
     highlight: "Samsung Galaxy Tab-based, familiar UX",
-    link: "https://ecom-ex.com"
+    link: "https://ecom-ex.com",
+    img: "/img/ecom-tab-ex-03-dz2.png"
   },
   {
     name: "ecom Tab-Ex Pro DZ2",
@@ -333,7 +337,8 @@ const solutions = [
     ip: "IP68",
     price: "~€3,800",
     highlight: "Premium display, S-Pen support",
-    link: "https://ecom-ex.com"
+    link: "https://ecom-ex.com",
+    img: "/img/ecom-tab-ex-pro-dz2.png"
   },
   {
     name: "i.safe MOBILE IS930.1",
@@ -347,7 +352,8 @@ const solutions = [
     ip: "IP68",
     price: "~€2,400",
     highlight: "Compact 8″ form factor",
-    link: "https://isafe-mobile.com"
+    link: "https://isafe-mobile.com",
+    img: "/img/isafe-mobile-is9301.png"
   },
   {
     name: "Aegex 10 IS",
@@ -361,7 +367,8 @@ const solutions = [
     ip: "IP65",
     price: "~€4,500",
     highlight: "Windows OS — SAP, SCADA compatible",
-    link: "https://aegex.com"
+    link: "https://aegex.com",
+    img: "/img/aegex-10-is.png"
   },
   {
     name: "Getac F110-Ex",
@@ -375,7 +382,8 @@ const solutions = [
     ip: "IP66",
     price: "~€3,800",
     highlight: "Large screen, full Windows power",
-    link: "https://getac.com"
+    link: "https://getac.com",
+    img: "/img/getac-f110-ex.png"
   },
   {
     name: "Zebra XPAD L10 IS",
@@ -389,7 +397,8 @@ const solutions = [
     ip: "IP65",
     price: "~€3,500",
     highlight: "Enterprise MDM ecosystem",
-    link: "https://zebra.com"
+    link: "https://zebra.com",
+    img: "/img/zebra-xpad-l10-is.png"
   }
 ];
 
@@ -405,6 +414,7 @@ solutions.forEach(s => {
 
   grid.innerHTML += `
     <div class="card">
+      <div class="mb-4"><img src="${s.img}" alt="${s.name} — ATEX certified tablet" width="280" height="200" class="rounded-lg w-full" loading="lazy" /></div>
       <div class="flex items-start justify-between mb-3">
         <div>
           <h3 class="serif h-card leading-tight">${s.name}</h3>
