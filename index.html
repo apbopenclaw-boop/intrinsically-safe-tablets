@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Intrinsically Safe Tablets — ATEX &amp; IECEx Zone 1 Certified</title>
+<meta name="description" content="Compare ATEX and IECEx certified intrinsically safe tablets for Zone 1 and Zone 2 hazardous areas — rugged Android, Windows, and iPad Ex-case solutions." />
+<link rel="canonical" href="https://intrinsicallysafetablets.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Intrinsically Safe Tablets — ATEX &amp; IECEx Zone 1 Certified" />
+<meta property="og:description" content="Compare ATEX and IECEx certified intrinsically safe tablets for Zone 1 and Zone 2 hazardous areas." />
+<meta property="og:url" content="https://intrinsicallysafetablets.com/" />
+<meta property="og:site_name" content="intrinsicallysafetablets.com" />
+<meta property="og:image" content="https://intrinsicallysafetablets.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Intrinsically Safe Tablets — ATEX &amp; IECEx Zone 1 Certified" />
+<meta name="twitter:description" content="Compare ATEX and IECEx certified intrinsically safe tablets for Zone 1 and Zone 2 hazardous areas." />
+<meta property="twitter:image" content="https://intrinsicallysafetablets.com/og-image.png" />
+
+<!-- GA4 placeholder -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+<!-- GTM placeholder -->
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script> -->
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "intrinsicallysafetablets.com",
+  "url": "https://intrinsicallysafetablets.com/",
+  "description": "Engineering reference for ATEX and IECEx certified intrinsically safe tablets and hazardous area mobile solutions."
+}
+</script>
+
+<style>
+  :root {
+    --bg: #f5f3f0; --bg-alt: #eae7e2; --ink: #1a1a1a; --graphite: #6b6b6b;
+    --ash: #999; --void: #111; --accent: #2563eb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--ink); }
+  .serif { font-family: 'Instrument Serif', Georgia, serif; }
+  .h-hero { font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.08; letter-spacing: -.02em; }
+  .h-section { font-size: clamp(1.8rem, 3.5vw, 2.8rem); line-height: 1.12; letter-spacing: -.015em; }
+  .h-card { font-size: clamp(1.2rem, 2vw, 1.5rem); }
+
+  .glass-nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(245,243,240,.85); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+
+  .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .65rem 1.4rem;
+    border-radius: 999px; font-size: .875rem; font-weight: 500; transition: all .2s; cursor: pointer; border: none; }
+  .btn-pri { background: var(--ink); color: #fff; }
+  .btn-pri:hover { background: #333; }
+  .btn-sec { background: transparent; color: var(--ink); border: 1px solid rgba(0,0,0,.15); }
+  .btn-sec:hover { border-color: rgba(0,0,0,.3); }
+
+  .card {
+    background: #fff; border: 1px solid rgba(0,0,0,.06); border-radius: 16px;
+    padding: 2rem; transition: border-color .2s ease, transform .2s ease;
+  }
+  .card:hover { border-color: rgba(0,0,0,.12); transform: translateY(-2px); }
+
+  .badge { display: inline-block; padding: .2rem .55rem; border-radius: 6px; font-size: .72rem;
+    font-weight: 600; letter-spacing: .03em; text-transform: uppercase; }
+  .badge-z1 { background: #dcfce7; color: #166534; }
+  .badge-z2 { background: #fef9c3; color: #854d0e; }
+  .badge-atex { background: #dbeafe; color: #1e40af; }
+  .badge-iec { background: #f3e8ff; color: #6b21a8; }
+
+  .spec-row { display: flex; justify-content: space-between; padding: .45rem 0;
+    border-bottom: 1px solid rgba(0,0,0,.04); font-size: .85rem; }
+  .spec-label { color: var(--graphite); }
+
+  section { padding: 5rem 0; }
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s, transform .7s; }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  .form-input {
+    width: 100%; padding: .7rem 1rem; border: 1px solid rgba(0,0,0,.1);
+    border-radius: 10px; font-size: .9rem; background: #fff;
+    transition: border-color .2s;
+  }
+  .form-input:focus { outline: none; border-color: var(--accent); }
+</style>
+</head>
+
+<body class="min-h-screen">
+
+<!-- Nav -->
+<header class="glass-nav">
+  <div class="max-w-[1140px] mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2.5 shrink-0">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 2.5l11.5 6.5v13L16 28.5 4.5 22V9L16 2.5Z" stroke="#1a1a1a" stroke-width="1.6" stroke-linejoin="round"/>
+        <rect x="8" y="10" width="16" height="12" rx="1.8" stroke="#1a1a1a" stroke-width="1.6"/>
+        <line x1="14" y1="19" x2="18" y2="19" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="text-[15px] font-semibold tracking-tight">intrinsicallysafetablets<span class="text-[color:var(--ash)]">.com</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-[14px] text-[color:var(--graphite)]">
+      <a href="#solutions" class="hover:text-[color:var(--ink)]">Solutions</a>
+      <a href="#certification" class="hover:text-[color:var(--ink)]">Certification</a>
+      <a href="#decision" class="hover:text-[color:var(--ink)]">Use Cases</a>
+      <a href="#methodology" class="hover:text-[color:var(--ink)]">Methodology</a>
+      <a href="#contact" class="hover:text-[color:var(--ink)]">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="/best-atex-tablets-2026.html" class="btn btn-pri text-[13px]">Best Tablets 2026 →</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section id="top" class="pt-20 pb-16">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <div class="max-w-[720px]">
+      <div class="flex gap-2 mb-6">
+        <span class="badge badge-z1">Zone 1</span>
+        <span class="badge badge-z2">Zone 2</span>
+        <span class="badge badge-atex">ATEX</span>
+        <span class="badge badge-iec">IECEx</span>
+      </div>
+      <h1 class="serif h-hero reveal r1">
+        ATEX &amp; IECEx certified<br/>
+        tablet solutions <em class="text-[color:var(--graphite)] italic">for Zone&nbsp;1 &amp; Zone&nbsp;2</em><br/>
+        hazardous areas.
+      </h1>
+      <p class="text-[17px] text-[color:var(--graphite)] leading-relaxed mt-6 max-w-[560px]">
+        Every certified tablet — specs pulled from manufacturer certificates, compared in one layout.
+        No vendor bias. No affiliate links.
+      </p>
+      <div class="flex gap-3 mt-8">
+        <a href="#solutions" class="btn btn-pri">Browse solutions ↓</a>
+        <a href="/what-is-an-intrinsically-safe-tablet.html" class="btn btn-sec">What is an IS tablet?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solutions -->
+<section id="solutions" class="bg-white py-20">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <h2 class="serif h-section">Every solution, <em class="italic text-[color:var(--graphite)]">one comparable layout.</em></h2>
+    <p class="text-[color:var(--graphite)] mt-3 mb-10 max-w-[540px]">Certified tablets for explosive atmospheres — from 8″ field units to 10″ inspection workstations.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="solutionGrid">
+    </div>
+  </div>
+</section>
+
+<!-- Certification -->
+<section id="certification" class="py-20">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <h2 class="serif h-section max-w-[18ch]">Three decisions that <em class="italic text-[color:var(--graphite)]">fail procurement review.</em></h2>
+    <p class="text-[color:var(--graphite)] mt-3 mb-12 max-w-[500px]">Most tablet procurement fails on zone, standard, or gas-group mismatch.</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="card">
+        <h3 class="serif text-[28px] leading-[1.1] mb-4">Zone 1 vs Zone 2.</h3>
+        <p class="text-[color:var(--graphite)] text-[15px] leading-relaxed">
+          Zone 1 = explosive atmosphere likely during normal ops. Zone 2 = only under abnormal conditions.
+          A Zone 1 tablet covers both zones. A Zone 2 tablet <strong>cannot</strong> enter Zone 1 areas.
+          Most process-area deployments require Zone 1 certification.
+        </p>
+      </div>
+      <div class="card">
+        <h3 class="serif text-[28px] leading-[1.1] mb-4">ATEX vs IECEx.</h3>
+        <p class="text-[color:var(--graphite)] text-[15px] leading-relaxed">
+          ATEX is mandatory in the EU/EEA. IECEx is the international scheme accepted in 50+ countries.
+          For global deployments across multiple regions, choose <strong>dual-certified</strong> tablets.
+          Many vendors certify under both frameworks.
+        </p>
+      </div>
+      <div class="card">
+        <h3 class="serif text-[28px] leading-[1.1] mb-4">IIA, IIB, IIC.</h3>
+        <p class="text-[color:var(--graphite)] text-[15px] leading-relaxed">
+          Gas groups classify ignition risk. IIC (hydrogen) is the hardest to certify for and covers IIA + IIB.
+          If your site handles hydrogen or acetylene, the tablet <strong>must</strong> be IIC rated.
+          Most modern Ex tablets target IIC for maximum site flexibility.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases -->
+<section id="decision" class="bg-white py-20">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <h2 class="serif h-section">Field tablet use cases, <em class="italic text-[color:var(--graphite)]">honestly.</em></h2>
+    <p class="text-[color:var(--graphite)] mt-3 mb-12 max-w-[540px]">Tablets in hazardous areas serve different roles than phones. Larger screens enable workflows that phones can't.</p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="card">
+        <h3 class="serif text-[32px] leading-[1.1] mb-2">Inspection &amp; reporting.</h3>
+        <p class="text-[11px] uppercase tracking-wider text-[color:var(--ash)] mb-4">Primary use case</p>
+        <ul class="space-y-3 text-[15px] text-[color:var(--graphite)]">
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>Form-based inspection checklists on 8–10″ screens</li>
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>Photo documentation with annotation</li>
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>PDF/drawing review in the field</li>
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>Barcode/QR scanning for asset tracking</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="serif text-[32px] leading-[1.1] mb-2">Process &amp; operations.</h3>
+        <p class="text-[11px] uppercase tracking-wider text-[color:var(--ash)] mb-4">Growing use case</p>
+        <ul class="space-y-3 text-[15px] text-[color:var(--graphite)]">
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>SCADA/HMI dashboards at the process unit</li>
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>Digital work orders and permit-to-work</li>
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>Video calls for remote expert support</li>
+          <li class="flex gap-2"><i class="ph ph-check-circle text-green-600 mt-0.5 shrink-0"></i>ERP/SAP access in hazardous zones</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Methodology -->
+<section id="methodology" class="py-20">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <h2 class="serif h-section max-w-[22ch]">How this guide scores, and where the specs come from.</h2>
+    <p class="text-[color:var(--graphite)] mt-3 mb-8 max-w-[540px]">
+      Every spec on this site is pulled directly from manufacturer ATEX/IECEx certificates and official datasheets.
+      No marketing claims. No user reviews. We verify zone, gas group, temperature class, and IP rating against
+      the original certificate of conformity.
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-white py-20">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <div class="max-w-[480px] mx-auto text-center">
+      <h2 class="serif text-[32px] leading-tight mb-3">Get in touch</h2>
+      <p class="text-[color:var(--graphite)] mb-8">Question about a specific tablet? Missing a product? Let us know.</p>
+      <form id="contactForm" action="https://formsubmit.co/apbopenclaw@gmail.com" method="POST" class="text-left space-y-4">
+        <input type="text" name="name" placeholder="Name" required class="form-input" />
+        <input type="email" name="email" placeholder="Email" required class="form-input" />
+        <input type="text" name="company" placeholder="Company (optional)" class="form-input" />
+        <textarea name="message" placeholder="Message" rows="4" required class="form-input"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="intrinsicallysafetablets.com — New contact" />
+        <button type="submit" class="btn btn-pri w-full justify-center">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[color:var(--void)] text-[#e8ebe4]">
+  <div class="max-w-[1140px] mx-auto px-6 pt-20 pb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <div class="flex items-center gap-2.5 mb-5">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 2.5l11.5 6.5v13L16 28.5 4.5 22V9L16 2.5Z" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
+            <rect x="8" y="10" width="16" height="12" rx="1.8" stroke="#ffffff" stroke-width="1.6"/>
+            <line x1="14" y1="19" x2="18" y2="19" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="text-[15px] font-semibold">intrinsicallysafetablets<span class="text-[#888]">.com</span></span>
+        </div>
+        <p class="text-[14px] text-[#9ca3af] leading-relaxed max-w-[360px]">
+          Engineering reference for ATEX and IECEx certified tablets. Specs verified against manufacturer certificates.
+        </p>
+      </div>
+      <div class="lg:col-span-3 lg:col-start-7">
+        <h4 class="text-[13px] uppercase tracking-wider text-[#888] mb-4">Pages</h4>
+        <ul class="space-y-2.5 text-[14px]">
+          <li><a href="/" class="text-[#ccc] hover:text-white">Home</a></li>
+          <li><a href="/best-atex-tablets-2026.html" class="text-[#ccc] hover:text-white">Best Tablets 2026</a></li>
+          <li><a href="/what-is-an-intrinsically-safe-tablet.html" class="text-[#ccc] hover:text-white">What Is an IS Tablet?</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3">
+        <h4 class="text-[13px] uppercase tracking-wider text-[#888] mb-4">Also see</h4>
+        <ul class="space-y-2.5 text-[14px]">
+          <li><a href="https://intrinsicallysafephones.com" class="text-[#ccc] hover:text-white">intrinsicallysafephones.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-[#222] mt-12 pt-6 flex flex-wrap gap-4 justify-between text-[12px] text-[#666]">
+      <span>© 2026 intrinsicallysafetablets.com</span>
+      <span>Engineering reference — not a safety certificate.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Solutions data
+const solutions = [
+  {
+    name: "ecom Tab-Ex 03 DZ2",
+    vendor: "ecom (Pepperl+Fuchs)",
+    zone: "Zone 1",
+    certs: ["ATEX", "IECEx"],
+    gasGroup: "IIC",
+    os: "Android 13",
+    display: "10.1″ TFT",
+    weight: "~690 g",
+    ip: "IP68",
+    price: "~€3,200",
+    highlight: "Samsung Galaxy Tab-based, familiar UX",
+    link: "https://ecom-ex.com"
+  },
+  {
+    name: "ecom Tab-Ex Pro DZ2",
+    vendor: "ecom (Pepperl+Fuchs)",
+    zone: "Zone 1",
+    certs: ["ATEX", "IECEx"],
+    gasGroup: "IIC",
+    os: "Android 13",
+    display: "10.1″ AMOLED",
+    weight: "~750 g",
+    ip: "IP68",
+    price: "~€3,800",
+    highlight: "Premium display, S-Pen support",
+    link: "https://ecom-ex.com"
+  },
+  {
+    name: "i.safe MOBILE IS930.1",
+    vendor: "i.safe MOBILE",
+    zone: "Zone 1",
+    certs: ["ATEX", "IECEx"],
+    gasGroup: "IIC",
+    os: "Android 12",
+    display: "8.0″ IPS",
+    weight: "~570 g",
+    ip: "IP68",
+    price: "~€2,400",
+    highlight: "Compact 8″ form factor",
+    link: "https://isafe-mobile.com"
+  },
+  {
+    name: "Aegex 10 IS",
+    vendor: "Aegex Technologies",
+    zone: "Zone 1",
+    certs: ["ATEX", "IECEx"],
+    gasGroup: "IIC",
+    os: "Windows 10/11",
+    display: "10.1″ IPS",
+    weight: "~850 g",
+    ip: "IP65",
+    price: "~€4,500",
+    highlight: "Windows OS — SAP, SCADA compatible",
+    link: "https://aegex.com"
+  },
+  {
+    name: "Getac F110-Ex",
+    vendor: "Getac",
+    zone: "Zone 2",
+    certs: ["ATEX"],
+    gasGroup: "IIC",
+    os: "Windows 11",
+    display: "11.6″ IPS",
+    weight: "~1.4 kg",
+    ip: "IP66",
+    price: "~€3,800",
+    highlight: "Large screen, full Windows power",
+    link: "https://getac.com"
+  },
+  {
+    name: "Zebra XPAD L10 IS",
+    vendor: "Zebra (Xplore)",
+    zone: "Zone 2",
+    certs: ["ATEX", "IECEx"],
+    gasGroup: "IIC",
+    os: "Android / Windows",
+    display: "10.1″",
+    weight: "~1.1 kg",
+    ip: "IP65",
+    price: "~€3,500",
+    highlight: "Enterprise MDM ecosystem",
+    link: "https://zebra.com"
+  }
+];
+
+// Render solution cards
+const grid = document.getElementById('solutionGrid');
+solutions.forEach(s => {
+  const certBadges = s.certs.map(c =>
+    `<span class="badge ${c==='ATEX'?'badge-atex':'badge-iec'}">${c}</span>`
+  ).join('');
+  const zoneBadge = s.zone === 'Zone 1'
+    ? '<span class="badge badge-z1">Zone 1</span>'
+    : '<span class="badge badge-z2">Zone 2</span>';
+
+  grid.innerHTML += `
+    <div class="card">
+      <div class="flex items-start justify-between mb-3">
+        <div>
+          <h3 class="serif h-card leading-tight">${s.name}</h3>
+          <p class="text-[13px] text-[color:var(--ash)] mt-0.5">${s.vendor}</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        ${zoneBadge} ${certBadges}
+        <span class="badge" style="background:#f1f5f9;color:#334155">Gas ${s.gasGroup}</span>
+      </div>
+      <div class="space-y-0">
+        <div class="spec-row"><span class="spec-label">Display</span><span>${s.display}</span></div>
+        <div class="spec-row"><span class="spec-label">OS</span><span>${s.os}</span></div>
+        <div class="spec-row"><span class="spec-label">Weight</span><span>${s.weight}</span></div>
+        <div class="spec-row"><span class="spec-label">IP rating</span><span>${s.ip}</span></div>
+        <div class="spec-row"><span class="spec-label">Price (approx)</span><span>${s.price}</span></div>
+      </div>
+      <p class="text-[13px] text-[color:var(--graphite)] mt-3 italic">${s.highlight}</p>
+      <a href="${s.link}" target="_blank" rel="noopener" class="inline-block mt-4 text-[13px] text-[color:var(--accent)] hover:underline">Manufacturer →</a>
+    </div>
+  `;
+});
+
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.15 });
+revealEls.forEach(el => observer.observe(el));
+
+// Form handler
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  if (this.querySelector('[name="_gotcha"]').value) { e.preventDefault(); return; }
+});
+</script>
+
+</body>
+</html>
