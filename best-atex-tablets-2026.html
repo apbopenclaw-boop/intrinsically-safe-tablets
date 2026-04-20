@@ -31,7 +31,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
   <script>
@@ -77,42 +77,127 @@
       background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
-  </style>
-</head>
-<body class="bg-zinc-950 text-zinc-100">
+  
+  :root{
+    --bg:#f5f3f0;--bg-alt:#eae7e2;--ink:#1a1a1a;--graphite:#6b6b6b;
+    --ash:#999;--void:#111;--accent:#2563eb;
+  }
+  html,body{background:var(--bg);color:var(--ink);}
+  body{font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+  .glass-nav{position:sticky;top:0;z-index:50;background:rgba(245,243,240,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06);}
 
-  <header class="border-b border-zinc-800 sticky top-0 bg-zinc-950/90 backdrop-blur z-30">
-    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/" class="font-semibold text-sm">explosionprooftablets<span class="text-zinc-500">.com</span></a>
-      <nav class="hidden md:flex items-center gap-5 text-sm text-zinc-400">
-        <a href="/" class="hover:text-zinc-100">Home</a>
-        <a href="#" class="text-zinc-100 font-medium">Best Tablets</a>
-        <a href="/what-is-an-intrinsically-safe-tablet.html" class="hover:text-zinc-100">What Is IS?</a>
-      </nav>
-      <select class="text-xs border border-zinc-700 rounded px-2 py-1 bg-zinc-800 text-zinc-300" onchange="if(this.value)window.location=this.value" aria-label="Language">
+  /* Dropdown */
+  .dd-panel{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(4px);min-width:280px;padding:8px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;box-shadow:0 20px 50px -15px rgba(0,0,0,.12);opacity:0;visibility:hidden;transition:opacity .15s,visibility .15s,transform .15s;z-index:50;}
+  #guidesDD.dd-open .dd-panel{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);}
+  #guidesDD.dd-open .dd-chev{transform:rotate(180deg);}
+  .dd-item{display:block;padding:10px 14px;border-radius:10px;transition:background .12s;text-decoration:none !important;}
+  .dd-item:hover{background:var(--bg-alt,#eae7e2);}
+  .dd-item-title{display:block;font-size:14px;font-weight:500;color:var(--ink,#1a1a1a);}
+  .dd-item-desc{display:block;font-size:12px;margin-top:2px;color:var(--ash,#999);}
+  /* Mobile drawer */
+  .mobile-drawer{background:#fff;border-left:1px solid rgba(0,0,0,.06);}
+  .mobile-nav-link{display:block;padding:10px 12px;border-radius:10px;font-size:15px;color:var(--ink,#1a1a1a);text-decoration:none;transition:background .12s;}
+  .mobile-nav-link:hover{background:var(--bg-alt,#eae7e2);}
+  .lang-select{border:1px solid rgba(0,0,0,.1);background:#fff;color:var(--ink,#1a1a1a);}
+</style>
+</head>
+<body class="bg-[color:var(--bg)] text-[color:var(--ink)]">
+
+  <header class="glass-nav">
+  <div class="max-w-[1140px] mx-auto px-6 h-16 flex items-center gap-6">
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 2.5l11.5 6.5v13L16 28.5 4.5 22V9L16 2.5Z" stroke="#1a1a1a" stroke-width="1.6" stroke-linejoin="round"/>
+        <rect x="8" y="10" width="16" height="12" rx="1.8" stroke="#1a1a1a" stroke-width="1.6"/>
+        <line x1="14" y1="19" x2="18" y2="19" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="text-[15px] font-semibold tracking-tight">explosionprooftablets<span style="color:var(--ash)">.com</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-[14px]" style="color:var(--graphite)">
+      <a href="/#solutions" class="hover:text-[color:var(--ink)] transition-colors">Solutions</a>
+      <div class="relative" id="guidesDD">
+        <button onclick="document.getElementById('guidesDD').classList.toggle('dd-open')" class="flex items-center gap-1 hover:text-[color:var(--ink)] transition-colors cursor-pointer bg-transparent border-0 font-inherit text-inherit p-0">
+          Guides
+          <svg width="12" height="12" viewBox="0 0 12 12" class="dd-chev transition-transform duration-200"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dd-panel">
+          <a href="/best-atex-tablets-2026.html" class="dd-item">
+            <span class="dd-item-title">Best ATEX Tablets 2026</span>
+            <span class="dd-item-desc">Top Zone 1 certified tablets compared</span>
+          </a>
+          <a href="/zone-1-vs-zone-2-tablets.html" class="dd-item">
+            <span class="dd-item-title">Zone 1 vs Zone 2 Tablets</span>
+            <span class="dd-item-desc">Which ATEX certification do you need?</span>
+          </a>
+          <a href="/what-is-an-intrinsically-safe-tablet.html" class="dd-item">
+            <span class="dd-item-title">What Is an IS Tablet?</span>
+            <span class="dd-item-desc">ATEX &amp; IECEx certification explained</span>
+          </a>
+        </div>
+      </div>
+      <a href="/#certification" class="hover:text-[color:var(--ink)] transition-colors">Certification</a>
+      <a href="/#contact" class="hover:text-[color:var(--ink)] transition-colors">Contact</a>
+    </nav>
+    <div class="ml-auto flex items-center gap-3">
+      <select class="lang-select text-xs rounded px-2 py-1" onchange="if(this.value)window.location=this.value" aria-label="Language">
         <option value="/best-atex-tablets-2026.html" selected>🇬🇧 EN</option>
         <option value="/de/best-atex-tablets-2026.html">🇩🇪 DE</option>
         <option value="/nl/best-atex-tablets-2026.html">🇳🇱 NL</option>
       </select>
+      <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
+
+<div id="mobileMenu" class="hidden fixed inset-0 z-[60]">
+  <div class="absolute inset-0 bg-black/30 backdrop-blur-sm" onclick="document.getElementById('mobileMenu').classList.add('hidden')"></div>
+  <div class="mobile-drawer absolute right-0 top-0 bottom-0 w-[280px] shadow-2xl overflow-y-auto">
+    <div class="p-6 pt-5">
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-semibold text-sm">Menu</span>
+        <button onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="p-1.5 rounded-lg" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-1">
+        <a href="/" class="mobile-nav-link">Home</a>
+        <a href="/#solutions" class="mobile-nav-link">Solutions</a>
+        <a href="/#certification" class="mobile-nav-link">Certification</a>
+        <a href="/#contact" class="mobile-nav-link">Contact</a>
+        <div class="my-3 h-px" style="background:rgba(0,0,0,.08)"></div>
+        <span class="text-[10px] uppercase tracking-[0.12em] mb-2 px-3 font-medium" style="color:var(--ash)">Guides</span>
+        <a href="/best-atex-tablets-2026.html" class="mobile-nav-link !pl-5">Best ATEX Tablets 2026</a>
+        <a href="/zone-1-vs-zone-2-tablets.html" class="mobile-nav-link !pl-5">Zone 1 vs Zone 2</a>
+        <a href="/what-is-an-intrinsically-safe-tablet.html" class="mobile-nav-link !pl-5">What Is an IS Tablet?</a>
+        <div class="my-3 h-px" style="background:rgba(0,0,0,.08)"></div>
+        <select class="lang-select text-xs rounded px-3 py-2 w-full" onchange="if(this.value)window.location=this.value" aria-label="Language">
+          <option value="/best-atex-tablets-2026.html" selected>🇬🇧 EN</option>
+        <option value="/de/best-atex-tablets-2026.html">🇩🇪 DE</option>
+        <option value="/nl/best-atex-tablets-2026.html">🇳🇱 NL</option>
+        </select>
+      </nav>
+    </div>
+  </div>
+</div>
 
   <main class="max-w-3xl mx-auto px-6 py-12">
     <div class="mb-10">
-      <div class="mono text-xs text-zinc-500 uppercase tracking-wider mb-3">Comparison · Updated April 2026</div>
+      <div class="mono text-xs text-[color:var(--ash)] uppercase tracking-wider mb-3">Comparison · Updated April 2026</div>
       <div class="flex flex-wrap items-center gap-6 mb-8">
         <div class="flex-1 min-w-[200px]">
           <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4">
             5 Best ATEX Zone 1 Tablets in 2026 — <span class="gradient-text">Compared</span>
           </h1>
-          <div class="flex items-center gap-4 text-sm text-zinc-500 mb-6">
+          <div class="flex items-center gap-4 text-sm text-[color:var(--ash)] mb-6">
             <span class="flex items-center gap-1.5"><i class="ph ph-clock"></i> 10 min read</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-zinc-900/60 rounded-2xl border border-zinc-800 p-6 mb-10">
-        <div class="text-xs uppercase tracking-wider text-zinc-500 mb-3 font-medium">Quick picks</div>
+      <div class="bg-[color:var(--bg-alt)] rounded-2xl border border-[color:rgba(0,0,0,.06)] p-6 mb-10">
+        <div class="text-xs uppercase tracking-wider text-[color:var(--ash)] mb-3 font-medium">Quick picks</div>
         <ul class="space-y-2 text-[15px]">
           <li class="flex items-start gap-2"><i class="ph ph-check-circle-fill text-green-400 mt-0.5 shrink-0"></i> <strong>Best overall:</strong> ecom Tab-Ex 03 DZ2 — Samsung-based, Zone 1, dual certified</li>
           <li class="flex items-start gap-2"><i class="ph ph-check-circle-fill text-green-400 mt-0.5 shrink-0"></i> <strong>Best display:</strong> ecom Tab-Ex Pro DZ2 — AMOLED, S-Pen support</li>
@@ -124,10 +209,10 @@
     </div>
 
     <div class="space-y-6">
-      <h2 class="text-xl font-bold border-b border-zinc-800 pb-2">The 5 best Zone 1 tablets in 2026</h2>
+      <h2 class="text-xl font-bold border-b border-[color:rgba(0,0,0,.06)] pb-2">The 5 best Zone 1 tablets in 2026</h2>
 
       <!-- #1 -->
-      <div class="rounded-2xl border-2 border-green-500/30 bg-zinc-900/40 p-6 relative">
+      <div class="rounded-2xl border-2 border-green-500/30 bg-[color:var(--bg-alt)]/40 p-6 relative">
         <div class="absolute -top-3 left-6 bg-green-500 text-black text-xs font-bold px-3 py-1 rounded-full">EDITOR'S PICK</div>
         <div class="flex items-center gap-3 mb-3 mt-2">
           <span class="w-8 h-8 rounded-xl bg-green-500/20 flex items-center justify-center text-green-400 font-bold text-sm shrink-0">1</span>
@@ -141,17 +226,17 @@
             </div>
           </div>
           <div class="ml-auto text-right">
-            <div class="text-xs text-zinc-500">From</div>
-            <div class="font-semibold text-zinc-200">~€3,200</div>
+            <div class="text-xs text-[color:var(--ash)]">From</div>
+            <div class="font-semibold text-[color:var(--ink)]">~€3,200</div>
           </div>
         </div>
-        <p class="text-zinc-400 text-sm leading-relaxed">The industry standard for Zone 1 tablets. Built on Samsung Galaxy Tab hardware, so users get a familiar Android experience. 10.1″ display, IP68, dual ATEX + IECEx certification with IIC gas group. The go-to choice for oil &amp; gas and chemical inspections. Largest installed base of any Ex tablet.</p>
+        <p class="text-[color:var(--graphite)] text-sm leading-relaxed">The industry standard for Zone 1 tablets. Built on Samsung Galaxy Tab hardware, so users get a familiar Android experience. 10.1″ display, IP68, dual ATEX + IECEx certification with IIC gas group. The go-to choice for oil &amp; gas and chemical inspections. Largest installed base of any Ex tablet.</p>
       </div>
 
       <!-- #2 -->
-      <div class="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
+      <div class="rounded-2xl border border-[color:rgba(0,0,0,.06)] bg-[color:var(--bg-alt)]/40 p-6">
         <div class="flex items-center gap-3 mb-3">
-          <span class="w-8 h-8 rounded-xl bg-zinc-700 flex items-center justify-center text-white font-bold text-sm shrink-0">2</span>
+          <span class="w-8 h-8 rounded-xl bg-[color:var(--ink)] flex items-center justify-center text-white font-bold text-sm shrink-0">2</span>
           <div>
             <h3 class="text-xl font-bold m-0 p-0">ecom Tab-Ex Pro DZ2</h3>
             <img src="/img/ecom-tab-ex-pro-dz2.png" alt="ecom Tab-Ex Pro DZ2 — Zone 1 ATEX tablet" width="280" height="200" class="rounded-lg mt-3 float-right ml-4 hidden md:block" loading="lazy" />
@@ -162,17 +247,17 @@
             </div>
           </div>
           <div class="ml-auto text-right">
-            <div class="text-xs text-zinc-500">From</div>
-            <div class="font-semibold text-zinc-200">~€3,800</div>
+            <div class="text-xs text-[color:var(--ash)]">From</div>
+            <div class="font-semibold text-[color:var(--ink)]">~€3,800</div>
           </div>
         </div>
-        <p class="text-zinc-400 text-sm leading-relaxed">The premium variant of the Tab-Ex line. AMOLED display for better outdoor visibility, S-Pen stylus support for annotation and form-filling, and enhanced processing power. Same Zone 1 / IIC certification as the Tab-Ex 03 but with a higher price point for the display and stylus upgrades.</p>
+        <p class="text-[color:var(--graphite)] text-sm leading-relaxed">The premium variant of the Tab-Ex line. AMOLED display for better outdoor visibility, S-Pen stylus support for annotation and form-filling, and enhanced processing power. Same Zone 1 / IIC certification as the Tab-Ex 03 but with a higher price point for the display and stylus upgrades.</p>
       </div>
 
       <!-- #3 -->
-      <div class="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
+      <div class="rounded-2xl border border-[color:rgba(0,0,0,.06)] bg-[color:var(--bg-alt)]/40 p-6">
         <div class="flex items-center gap-3 mb-3">
-          <span class="w-8 h-8 rounded-xl bg-zinc-700 flex items-center justify-center text-white font-bold text-sm shrink-0">3</span>
+          <span class="w-8 h-8 rounded-xl bg-[color:var(--ink)] flex items-center justify-center text-white font-bold text-sm shrink-0">3</span>
           <div>
             <h3 class="text-xl font-bold m-0 p-0">i.safe MOBILE IS930.1</h3>
             <img src="/img/isafe-mobile-is9301.png" alt="i.safe MOBILE IS930.1 — Zone 1 ATEX tablet" width="280" height="200" class="rounded-lg mt-3 float-right ml-4 hidden md:block" loading="lazy" />
@@ -183,17 +268,17 @@
             </div>
           </div>
           <div class="ml-auto text-right">
-            <div class="text-xs text-zinc-500">From</div>
-            <div class="font-semibold text-zinc-200">~€2,400</div>
+            <div class="text-xs text-[color:var(--ash)]">From</div>
+            <div class="font-semibold text-[color:var(--ink)]">~€2,400</div>
           </div>
         </div>
-        <p class="text-zinc-400 text-sm leading-relaxed">The most compact Zone 1 tablet available. 8″ IPS display makes it easy to carry one-handed in the field while still providing enough screen real estate for inspection forms and drawing review. At ~570 g, it's the lightest option. Good for maintenance technicians who need portability over screen size.</p>
+        <p class="text-[color:var(--graphite)] text-sm leading-relaxed">The most compact Zone 1 tablet available. 8″ IPS display makes it easy to carry one-handed in the field while still providing enough screen real estate for inspection forms and drawing review. At ~570 g, it's the lightest option. Good for maintenance technicians who need portability over screen size.</p>
       </div>
 
       <!-- #4 -->
-      <div class="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
+      <div class="rounded-2xl border border-[color:rgba(0,0,0,.06)] bg-[color:var(--bg-alt)]/40 p-6">
         <div class="flex items-center gap-3 mb-3">
-          <span class="w-8 h-8 rounded-xl bg-zinc-700 flex items-center justify-center text-white font-bold text-sm shrink-0">4</span>
+          <span class="w-8 h-8 rounded-xl bg-[color:var(--ink)] flex items-center justify-center text-white font-bold text-sm shrink-0">4</span>
           <div>
             <h3 class="text-xl font-bold m-0 p-0">Aegex 10 IS</h3>
             <img src="/img/aegex-10-is.png" alt="Aegex 10 IS — Zone 1 Windows ATEX tablet" width="280" height="200" class="rounded-lg mt-3 float-right ml-4 hidden md:block" loading="lazy" />
@@ -204,17 +289,17 @@
             </div>
           </div>
           <div class="ml-auto text-right">
-            <div class="text-xs text-zinc-500">From</div>
-            <div class="font-semibold text-zinc-200">~€4,500</div>
+            <div class="text-xs text-[color:var(--ash)]">From</div>
+            <div class="font-semibold text-[color:var(--ink)]">~€4,500</div>
           </div>
         </div>
-        <p class="text-zinc-400 text-sm leading-relaxed">The only Zone 1 Windows tablet on the market. Runs full Windows 10/11, making it compatible with SAP, SCADA clients, legacy inspection software, and enterprise applications that don't have Android versions. Heavier than Android alternatives but unbeatable for Windows-dependent workflows.</p>
+        <p class="text-[color:var(--graphite)] text-sm leading-relaxed">The only Zone 1 Windows tablet on the market. Runs full Windows 10/11, making it compatible with SAP, SCADA clients, legacy inspection software, and enterprise applications that don't have Android versions. Heavier than Android alternatives but unbeatable for Windows-dependent workflows.</p>
       </div>
 
       <!-- #5 -->
-      <div class="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
+      <div class="rounded-2xl border border-[color:rgba(0,0,0,.06)] bg-[color:var(--bg-alt)]/40 p-6">
         <div class="flex items-center gap-3 mb-3">
-          <span class="w-8 h-8 rounded-xl bg-zinc-700 flex items-center justify-center text-white font-bold text-sm shrink-0">5</span>
+          <span class="w-8 h-8 rounded-xl bg-[color:var(--ink)] flex items-center justify-center text-white font-bold text-sm shrink-0">5</span>
           <div>
             <h3 class="text-lg font-bold m-0 p-0">Getac F110-Ex</h3>
             <img src="/img/getac-f110-ex.png" alt="Getac F110-Ex — Zone 2 ATEX tablet" width="280" height="200" class="rounded-lg mt-3 float-right ml-4 hidden md:block" loading="lazy" />
@@ -224,27 +309,33 @@
             </div>
           </div>
           <div class="ml-auto text-right">
-            <div class="text-xs text-zinc-500">From</div>
-            <div class="font-semibold text-zinc-200">~€3,800</div>
+            <div class="text-xs text-[color:var(--ash)]">From</div>
+            <div class="font-semibold text-[color:var(--ink)]">~€3,800</div>
           </div>
         </div>
-        <p class="text-zinc-400 text-sm leading-relaxed">The largest screen option at 11.6″. Zone 2 only (not suitable for Zone 1). Full Windows 11, MIL-STD-810H ruggedness, excellent for control room and Zone 2 process areas where screen real estate matters. ATEX only — no IECEx for international sites.</p>
+        <p class="text-[color:var(--graphite)] text-sm leading-relaxed">The largest screen option at 11.6″. Zone 2 only (not suitable for Zone 1). Full Windows 11, MIL-STD-810H ruggedness, excellent for control room and Zone 2 process areas where screen real estate matters. ATEX only — no IECEx for international sites.</p>
       </div>
 
-      <h2 class="text-xl font-bold border-b border-zinc-800 pb-2 mt-10">How we chose these picks</h2>
-      <p class="text-zinc-400 text-sm leading-relaxed">We evaluate every Ex-certified tablet against five criteria: certification scope (zone, gas group, standards), display quality, operating system ecosystem, weight/portability, and total cost of ownership. All specs are verified against official ATEX/IECEx certificates — not marketing material.</p>
+      <h2 class="text-xl font-bold border-b border-[color:rgba(0,0,0,.06)] pb-2 mt-10">How we chose these picks</h2>
+      <p class="text-[color:var(--graphite)] text-sm leading-relaxed">We evaluate every Ex-certified tablet against five criteria: certification scope (zone, gas group, standards), display quality, operating system ecosystem, weight/portability, and total cost of ownership. All specs are verified against official ATEX/IECEx certificates — not marketing material.</p>
 
-      <h2 class="text-xl font-bold border-b border-zinc-800 pb-2 mt-10">Bottom line</h2>
-      <p class="text-zinc-400 text-sm leading-relaxed">For most teams, the <strong class="text-zinc-200">ecom Tab-Ex 03 DZ2</strong> is the safest choice — it has the largest installed base, dual certification, and Samsung's familiar Android UX. If you need Windows for SAP/SCADA, the <strong class="text-zinc-200">Aegex 10 IS</strong> is the only Zone 1 option. For one-handed field portability, the <strong class="text-zinc-200">i.safe IS930.1</strong> at 8″ is hard to beat.</p>
-      <p class="text-zinc-400 text-sm leading-relaxed mt-3">For a full comparison with detailed specs, visit the <a href="/" class="text-blue-400 hover:underline">main comparison page</a>.</p>
+      <h2 class="text-xl font-bold border-b border-[color:rgba(0,0,0,.06)] pb-2 mt-10">Bottom line</h2>
+      <p class="text-[color:var(--graphite)] text-sm leading-relaxed">For most teams, the <strong class="text-[color:var(--ink)]">ecom Tab-Ex 03 DZ2</strong> is the safest choice — it has the largest installed base, dual certification, and Samsung's familiar Android UX. If you need Windows for SAP/SCADA, the <strong class="text-[color:var(--ink)]">Aegex 10 IS</strong> is the only Zone 1 option. For one-handed field portability, the <strong class="text-[color:var(--ink)]">i.safe IS930.1</strong> at 8″ is hard to beat.</p>
+      <p class="text-[color:var(--graphite)] text-sm leading-relaxed mt-3">For a full comparison with detailed specs, visit the <a href="/" class="text-blue-400 hover:underline">main comparison page</a>.</p>
     </div>
   </main>
 
-  <footer class="border-t border-zinc-800 mt-16">
-    <div class="max-w-3xl mx-auto px-6 py-8 flex flex-wrap items-center justify-between gap-4 text-xs text-zinc-600">
-      <div>© 2026 · explosionprooftablets.com</div>
-      <div>Engineering reference — not a safety certificate.</div>
+    <footer style="border-top:1px solid rgba(0,0,0,.06);background:var(--bg-alt,#eae7e2)">
+    <div class="max-w-[1140px] mx-auto px-6 py-10">
+      <div class="flex flex-wrap items-center justify-between gap-4 text-xs" style="color:var(--ash,#999)">
+        <div>&copy; 2026 &middot; explosionprooftablets.com</div>
+        <div>Engineering reference &mdash; not a safety certificate.</div>
+      </div>
     </div>
   </footer>
+<script>
+document.addEventListener('click',function(e){var d=document.getElementById('guidesDD');if(d&&!d.contains(e.target))d.classList.remove('dd-open');});
+document.querySelectorAll('#mobileMenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobileMenu').classList.add('hidden');});});
+</script>
 </body>
 </html>
