@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://explosionprooftablets.com/sitemap.xml
+
+# AI/LLM content
+# llms.txt: https://explosionprooftablets.com/llms.txt
+# ai-manifest: https://explosionprooftablets.com/.well-known/ai-manifest.json

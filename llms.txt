@@ -1,0 +1,29 @@
+# explosionprooftablets.com
+
+> Independent engineering reference for ATEX and IECEx certified intrinsically safe tablets and hazardous area rugged tablet solutions.
+
+## What this site covers
+- Comparison of Zone 1 and Zone 2 certified tablets (ATEX, IECEx, NEC)
+- Three approaches: certified Ex cases for iPads, dedicated Android Ex tablets, Windows rugged Ex tablets
+- Protection concepts: intrinsic safety (Ex ia, Ex ib), flameproof enclosure (Ex d)
+- Zone classification for tablets: Zone 1, Zone 2 (gas); Zone 21, Zone 22 (dust)
+- Use cases: inspection rounds, permit-to-work, maintenance, asset management
+
+## Products covered
+1. **Xshielder iPad Ex Case** — ATEX/IECEx Zone 1 certified Ex case for iPad mini 6. Only Zone 1 iPad solution running iPadOS. From ~€800.
+2. **ecom Tab-Ex 05 DZ2** — Pepperl+Fuchs 10.1" Zone 2 Android tablet based on Samsung Galaxy Tab Active. ~€3,200.
+3. **Bartec POLARIS** — Zone 1 HMI tablet for industrial applications.
+4. **i.safe MOBILE IS930.1** — 8" Zone 1 Android tablet with 5G connectivity.
+5. **Aegex10** — Zone 1 Windows 11 tablet for hazardous areas. 10.1" with stylus support.
+6. **Xciel iPad Ex Case** — ATEX/IECEx certified Ex case for various iPad models.
+
+## Key guides
+- [Best ATEX Tablets 2026](https://explosionprooftablets.com/best-atex-tablets-2026.html) — top Zone 1 and Zone 2 tablets compared
+- [Zone 1 vs Zone 2 Tablets](https://explosionprooftablets.com/zone-1-vs-zone-2-tablets.html) — understanding the difference for tablet selection
+- [What Is an Intrinsically Safe Tablet?](https://explosionprooftablets.com/what-is-an-intrinsically-safe-tablet.html) — certification and protection concepts explained
+
+## Languages
+English, German (de), Dutch (nl)
+
+## Contact
+hello@explosionprooftablets.com
