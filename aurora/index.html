@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Borealis — Live Aurora Forecasts & Night Sky Experiences</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#050510;--surface:#0c0c20;--border:#1a1a3a;
+  --text:#e2e0f0;--muted:#8a88a8;
+  --accent:#22d3a0;--accent2:#7c5bf5;--accent3:#e040a0;
+  --grad:linear-gradient(135deg,var(--accent2),var(--accent),var(--accent3));
+}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px);background:rgba(5,5,16,.7);border-bottom:1px solid var(--border)}
+.logo{font-size:1.3rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav ul a{color:var(--muted);font-size:.9rem;transition:color .2s}
+nav ul a:hover{color:var(--text);text-decoration:none}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(img/hero.png) center/cover no-repeat;filter:brightness(.55)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,5,16,.3) 0%,rgba(5,5,16,.9) 100%)}
+.hero-content{position:relative;z-index:2;max-width:800px;padding:2rem}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;letter-spacing:-.03em;margin-bottom:1rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:clamp(1rem,2vw,1.3rem);color:var(--muted);max-width:600px;margin:0 auto 2rem}
+.btn{display:inline-block;padding:.85rem 2.2rem;border-radius:50px;font-weight:600;font-size:1rem;transition:all .3s;border:none;cursor:pointer}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 4px 30px rgba(34,211,160,.25)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(34,211,160,.35);text-decoration:none}
+.btn-outline{border:1px solid var(--border);color:var(--text);margin-left:1rem;background:transparent}
+.btn-outline:hover{border-color:var(--accent);text-decoration:none}
+
+/* FORECAST BAR */
+.forecast-bar{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem 0;overflow:hidden}
+.forecast-track{display:flex;gap:3rem;padding:0 2rem;animation:scroll 20s linear infinite}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.forecast-item{flex-shrink:0;text-align:center;min-width:140px}
+.forecast-item .kp{font-size:2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.forecast-item .loc{color:var(--muted);font-size:.8rem;margin-top:.3rem}
+
+/* SECTIONS */
+section{padding:6rem 2rem}
+.container{max-width:1100px;margin:0 auto}
+.section-label{text-transform:uppercase;letter-spacing:.15em;font-size:.75rem;color:var(--accent);margin-bottom:.5rem}
+.section-title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:1rem}
+
+/* FEATURES */
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem}
+.feature-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;transition:all .3s}
+.feature-card:hover{border-color:var(--accent2);transform:translateY(-4px);box-shadow:0 20px 60px rgba(124,91,245,.1)}
+.feature-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.2rem;background:rgba(124,91,245,.15)}
+.feature-card h3{font-size:1.15rem;margin-bottom:.6rem}
+.feature-card p{color:var(--muted);font-size:.9rem}
+
+/* EXPERIENCE */
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
+.exp-img{border-radius:20px;overflow:hidden;border:1px solid var(--border)}
+.exp-img img{width:100%;display:block}
+.exp-text h3{font-size:1.5rem;font-weight:700;margin-bottom:1rem}
+.exp-text p{color:var(--muted);margin-bottom:1.5rem}
+.exp-stat{display:flex;gap:2rem;margin-top:1.5rem}
+.exp-stat div{text-align:center}
+.exp-stat .num{font-size:2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.exp-stat .lbl{color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+
+/* CABIN */
+.cabin-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.cabin-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
+.cabin-grid img{width:100%;border-radius:20px;border:1px solid var(--border)}
+
+/* TESTIMONIALS */
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
+.testimonial{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem}
+.testimonial .stars{color:#f0b429;margin-bottom:.8rem}
+.testimonial p{color:var(--muted);font-size:.9rem;font-style:italic;margin-bottom:1rem}
+.testimonial .author{font-weight:600;font-size:.85rem}
+.testimonial .from{color:var(--muted);font-size:.8rem}
+
+/* CTA */
+.cta{text-align:center;padding:8rem 2rem;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:50%;left:50%;width:600px;height:600px;background:radial-gradient(circle,rgba(124,91,245,.15),transparent 70%);transform:translate(-50%,-50%);pointer-events:none}
+.cta h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:1rem}
+.cta p{color:var(--muted);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:3rem 2rem;text-align:center;color:var(--muted);font-size:.85rem}
+footer .logo-foot{font-size:1.1rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav ul{display:none}
+  .experience,.cabin-grid{grid-template-columns:1fr}
+  .exp-img{order:-1}
+  section{padding:4rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">✦ Borealis</div>
+  <ul>
+    <li><a href="#forecast">Forecast</a></li>
+    <li><a href="#features">How It Works</a></li>
+    <li><a href="#experience">Experiences</a></li>
+    <li><a href="#stays">Stays</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Chase the Northern Lights</h1>
+    <p>Real-time aurora forecasts, curated night sky experiences, and hand-picked Arctic stays — all in one place.</p>
+    <a href="#forecast" class="btn btn-primary">Check Tonight's Forecast</a>
+    <a href="#experience" class="btn btn-outline">Explore Experiences</a>
+  </div>
+</section>
+
+<div class="forecast-bar" id="forecast">
+  <div class="forecast-track">
+    <div class="forecast-item"><div class="kp">Kp 5</div><div class="loc">Tromsø, NO</div></div>
+    <div class="forecast-item"><div class="kp">Kp 4</div><div class="loc">Reykjavík, IS</div></div>
+    <div class="forecast-item"><div class="kp">Kp 3</div><div class="loc">Rovaniemi, FI</div></div>
+    <div class="forecast-item"><div class="kp">Kp 6</div><div class="loc">Abisko, SE</div></div>
+    <div class="forecast-item"><div class="kp">Kp 2</div><div class="loc">Fairbanks, AK</div></div>
+    <div class="forecast-item"><div class="kp">Kp 4</div><div class="loc">Yellowknife, CA</div></div>
+    <div class="forecast-item"><div class="kp">Kp 7</div><div class="loc">Lofoten, NO</div></div>
+    <div class="forecast-item"><div class="kp">Kp 3</div><div class="loc">Kiruna, SE</div></div>
+    <!-- duplicate for seamless scroll -->
+    <div class="forecast-item"><div class="kp">Kp 5</div><div class="loc">Tromsø, NO</div></div>
+    <div class="forecast-item"><div class="kp">Kp 4</div><div class="loc">Reykjavík, IS</div></div>
+    <div class="forecast-item"><div class="kp">Kp 3</div><div class="loc">Rovaniemi, FI</div></div>
+    <div class="forecast-item"><div class="kp">Kp 6</div><div class="loc">Abisko, SE</div></div>
+    <div class="forecast-item"><div class="kp">Kp 2</div><div class="loc">Fairbanks, AK</div></div>
+    <div class="forecast-item"><div class="kp">Kp 4</div><div class="loc">Yellowknife, CA</div></div>
+    <div class="forecast-item"><div class="kp">Kp 7</div><div class="loc">Lofoten, NO</div></div>
+    <div class="forecast-item"><div class="kp">Kp 3</div><div class="loc">Kiruna, SE</div></div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="container">
+    <div class="section-label">How It Works</div>
+    <div class="section-title">Your Aurora, Predicted</div>
+    <p style="color:var(--muted);max-width:600px">We combine NOAA solar wind data, magnetometer readings, and local cloud cover to give you the best chance of seeing the lights.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🛰</div>
+        <h3>Solar Wind Tracking</h3>
+        <p>Real-time data from the DSCOVR satellite at L1 gives us 30–60 minutes advance warning of geomagnetic storms.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌦</div>
+        <h3>Cloud Cover Overlay</h3>
+        <p>Even Kp 8 means nothing under clouds. We cross-reference aurora probability with hyper-local weather forecasts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h3>Location Alerts</h3>
+        <p>Set your location and threshold. We'll ping you the moment conditions align — even at 2 AM.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📸</div>
+        <h3>Photo Conditions</h3>
+        <p>Moon phase, light pollution index, and optimal camera settings — so you capture what your eyes see.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧭</div>
+        <h3>Drive-To Maps</h3>
+        <p>Find the nearest clear-sky viewpoint with dark sky ratings and driving directions from your current location.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Season Planner</h3>
+        <p>Historical Kp data, solar cycle trends, and 27-day recurrence forecasts to plan your trip months ahead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-label">Experiences</div>
+    <div class="section-title">More Than a Forecast</div>
+    <div class="experience">
+      <div class="exp-img"><img src="img/observer.png" alt="Aurora observer on mountain peak"></div>
+      <div class="exp-text">
+        <h3>Guided Night Sky Expeditions</h3>
+        <p>Join expert aurora guides who know exactly where and when to go. Small groups, off-grid locations, and guaranteed departures from September through March.</p>
+        <p>Every expedition includes hot drinks, thermal gear, and a professional photographer to capture your experience.</p>
+        <div class="exp-stat">
+          <div><div class="num">94%</div><div class="lbl">Sighting rate</div></div>
+          <div><div class="num">12</div><div class="lbl">Locations</div></div>
+          <div><div class="num">4.9</div><div class="lbl">Avg rating</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cabin-section" id="stays">
+  <div class="container">
+    <div class="section-label">Arctic Stays</div>
+    <div class="section-title">Sleep Under the Lights</div>
+    <div class="cabin-grid">
+      <div>
+        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem">Glass-Roof Cabins</h3>
+        <p style="color:var(--muted);margin-bottom:1.5rem">Hand-picked aurora lodges with panoramic glass ceilings — watch the lights dance from your bed. Located in Finland, Norway, and Swedish Lapland, each stay is paired with our real-time alert system so staff can wake you when the show begins.</p>
+        <p style="color:var(--muted);margin-bottom:1.5rem">All stays include heated glass, private sauna, and a complimentary photography kit.</p>
+        <a href="#" class="btn btn-primary" style="font-size:.9rem">Browse Stays</a>
+      </div>
+      <img src="img/cabin.png" alt="Glass cabin under aurora">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Voices</div>
+    <div class="section-title">From Our Community</div>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"The alert woke us at 1:30 AM. We drove 20 minutes to the viewpoint and witnessed the most intense aurora of the season. Without Borealis, we would have slept through it."</p>
+        <div class="author">Marit & Jonas</div>
+        <div class="from">Tromsø, Norway</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Planned our entire Iceland trip around the season planner. 5 out of 7 nights had visible aurora. The cloud cover overlay is a game changer."</p>
+        <div class="author">David Chen</div>
+        <div class="from">Vancouver, Canada</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"The glass cabin in Inari was surreal. Lying in bed watching green curtains ripple across the sky — no words. Borealis made the whole trip effortless."</p>
+        <div class="author">Sophie Müller</div>
+        <div class="from">Munich, Germany</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Tonight Could Be the Night</h2>
+  <p>Join 40,000+ aurora chasers getting real-time alerts and curated night sky experiences.</p>
+  <a href="#" class="btn btn-primary">Get Started — It's Free</a>
+</section>
+
+<footer>
+  <div class="logo-foot">✦ Borealis</div>
+  <p>Real-time aurora forecasts & Arctic experiences</p>
+  <p style="margin-top:1rem;font-size:.75rem">Demo page — not a real service</p>
+</footer>
+
+</body>
+</html>
