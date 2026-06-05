@@ -270,7 +270,14 @@
             <span class="dd-item-title">Zone 1 vs Zone 2 Tablets</span>
             <span class="dd-item-desc">Which ATEX certification do you need?</span>
           </a>
-          <a href="/what-is-an-intrinsically-safe-tablet.html" class="dd-item">
+          <a href="/ecom-tab-ex-03-vs-isafe-is930.html" class="dd-item">
+            <span class="dd-item-title">Tab-Ex 03 vs IS930.1</span>
+            <span class="dd-item-desc">Zone 1 Android tablet head-to-head</span>
+          </a>
+          <a href="/atex-tablet-pricing.html" class="dd-item">
+            <span class="dd-item-title">ATEX Tablet Pricing</span>
+            <span class="dd-item-desc">Every certified tablet, one price table</span>
+          </a>          <a href="/what-is-an-intrinsically-safe-tablet.html" class="dd-item">
             <span class="dd-item-title">What Is an IS Tablet?</span>
             <span class="dd-item-desc">ATEX &amp; IECEx certification explained</span>
           </a>
@@ -315,7 +322,8 @@
         <a href="/best-atex-tablets-2026.html" class="mobile-nav-link !pl-5">Best ATEX Tablets 2026</a>
         <a href="/zone-1-vs-zone-2-tablets.html" class="mobile-nav-link !pl-5">Zone 1 vs Zone 2</a>
         <a href="/what-is-an-intrinsically-safe-tablet.html" class="mobile-nav-link !pl-5">What Is an IS Tablet?</a>
-        <div class="my-3 h-px" style="background:rgba(0,0,0,.08)"></div>
+        <a href="/ecom-tab-ex-03-vs-isafe-is930.html" class="mobile-nav-link !pl-5">Tab-Ex 03 vs IS930.1</a>
+        <a href="/atex-tablet-pricing.html" class="mobile-nav-link !pl-5">Pricing Comparison</a>        <div class="my-3 h-px" style="background:rgba(0,0,0,.08)"></div>
         <select class="lang-select text-xs rounded px-3 py-2 w-full" onchange="if(this.value)window.location=this.value" aria-label="Language">
           <option value="/" selected>🇬🇧 EN</option>
         <option value="/de/">🇩🇪 DE</option>
@@ -556,7 +564,8 @@
           <li><a href="/best-atex-tablets-2026.html" class="text-[#ccc] hover:text-white">Best Tablets 2026</a></li>
           <li><a href="/what-is-an-intrinsically-safe-tablet.html" class="text-[#ccc] hover:text-white">What Is an IS Tablet?</a></li>
           <li><a href="/zone-1-vs-zone-2-tablets.html" class="text-[#ccc] hover:text-white">Zone 1 vs Zone 2</a></li>
-        </ul>
+          <li><a href="/ecom-tab-ex-03-vs-isafe-is930.html" class="text-[#ccc] hover:text-white">Tab-Ex 03 vs IS930.1</a></li>
+          <li><a href="/atex-tablet-pricing.html" class="text-[#ccc] hover:text-white">Pricing Comparison</a></li>        </ul>
       </div>
       <div class="lg:col-span-3">
         <h4 class="text-[13px] uppercase tracking-wider text-[#888] mb-4">Also see</h4>
@@ -583,6 +592,7 @@ revealEls.forEach(el => observer.observe(el));
 
 // Form handler
 document.getElementById('contactForm').addEventListener('submit', function(e) {
+  gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'contact_form_submit' });
   if (this.querySelector('[name="_gotcha"]').value) { e.preventDefault(); return; }
 });
 </script>
