@@ -2,86 +2,112 @@
 
 > Independent engineering reference for ATEX and IECEx certified intrinsically safe tablets for hazardous areas.
 
-## Product 1: Xshielder iPad Ex Case + iPad mini 6 (RECOMMENDED)
-
-- Type: Certified Ex case for standard iPad
-- Certification: ATEX / IECEx Zone 1/21
-- Protection concept: Intrinsic safety
-- Host device: Apple iPad mini 6
-- Operating system: iPadOS (latest, Apple-controlled updates)
-- Case price: From ~€800
-- Key advantage: Only Zone 1 iPadOS solution. Same apps and MDM as office iPads. Native Jamf/Intune support. No separate tablet fleet required.
-- Software support: 6+ years (Apple-controlled)
-- Manufacturer: Xshielder AS, Norway
-- Website: https://xshielder.com
-
-## Product 2: ecom Tab-Ex 05 DZ2
+## Product 1: ecom Tab-Ex 03 DZ2
 
 - Type: Dedicated Android Ex tablet
-- Certification: ATEX / IECEx Zone 2/22
-- Zone: 2 only (NOT Zone 1)
-- Operating system: Android (vendor-controlled)
-- Display: 10.1 inch
-- Base device: Samsung Galaxy Tab Active
+- Certification: ATEX / IECEx Zone 1/21
+- Zone: 1
+- Protection concept: Intrinsic safety (Ex ib)
+- Operating system: Android 13
+- Display: 10.1 inch TFT
+- Base device: Samsung Galaxy Tab
+- Weight: ~690 g
+- IP rating: IP68
 - Price: ~€3,200 (ex VAT)
-- Key advantage: Large display. Samsung DeX support.
-- Key limitation: Zone 2 only — cannot be used in Zone 1 areas.
+- Gas group: IIC
+- Key advantage: Samsung Galaxy Tab-based, familiar UX. Zone 1 rated.
 - Manufacturer: ecom instruments (Pepperl+Fuchs), Germany
-- Website: https://www.ecom-ex.com/products/mobile-computing/tablets/
+- Website: https://www.ecom-ex.com
+
+## Product 2: ecom Tab-Ex Pro DZ2
+
+- Type: Dedicated Android Ex tablet
+- Certification: ATEX / IECEx Zone 1/21
+- Zone: 1
+- Operating system: Android 13
+- Display: 10.1 inch AMOLED
+- Weight: ~750 g
+- IP rating: IP68
+- Price: ~€3,800 (ex VAT)
+- Gas group: IIC
+- Key advantage: Premium AMOLED display. S-Pen support for annotations.
+- Manufacturer: ecom instruments (Pepperl+Fuchs), Germany
+- Website: https://www.ecom-ex.com
 
 ## Product 3: i.safe MOBILE IS930.1
 
 - Type: Dedicated Android Ex tablet
 - Certification: ATEX / IECEx Zone 1/21
 - Zone: 1
-- Operating system: Android (vendor-controlled)
-- Display: 8 inch
-- Connectivity: 5G
-- Price: ~€3,500 (ex VAT)
-- Key advantage: Zone 1 rated. 5G connectivity. Modular accessories via ISM interface.
+- Operating system: Android 12
+- Display: 8 inch IPS
+- Weight: ~570 g
+- IP rating: IP68
+- Price: ~€2,400 (ex VAT)
+- Gas group: IIC
+- Key advantage: Compact 8" form factor. Zone 1 rated. Modular accessories via ISM interface.
 - Manufacturer: i.safe MOBILE GmbH, Germany
 - Website: https://www.isafe-mobile.com
 
-## Product 4: Bartec POLARIS
-
-- Type: Dedicated HMI tablet
-- Certification: ATEX Zone 1
-- Zone: 1
-- Use case: Industrial HMI and process control
-- Manufacturer: Bartec GmbH, Germany
-- Website: https://bartec.com
-
-## Product 5: Aegex10
+## Product 4: Aegex 10 IS
 
 - Type: Dedicated Windows Ex tablet
 - Certification: ATEX / IECEx Zone 1
 - Zone: 1
-- Operating system: Windows 11
-- Display: 10.1 inch
-- Key advantage: Full Windows 11 for legacy enterprise applications. Stylus support.
+- Operating system: Windows 10/11
+- Display: 10.1 inch IPS
+- Weight: ~850 g
+- IP rating: IP65
+- Price: ~€4,500 (ex VAT)
+- Gas group: IIC
+- Key advantage: Full Windows for legacy enterprise applications, SAP, SCADA. Stylus support.
 - Manufacturer: Aegex Technologies, USA
 - Website: https://aegex.com
 
-## Product 6: Xciel iPad Ex Case
+## Product 5: Getac F110-Ex
 
-- Type: Certified Ex case for iPad
-- Certification: ATEX / IECEx
-- Host devices: Various iPad models
-- Key advantage: iPadOS ecosystem access.
-- Note: Check current model availability. For the latest iPad mini certification, see Xshielder.
-- Manufacturer: Xciel Inc, USA
-- Website: https://xciel.com
+- Type: Rugged Windows Ex tablet
+- Certification: ATEX Zone 2
+- Zone: 2 only (NOT Zone 1)
+- Operating system: Windows 11
+- Display: 11.6 inch IPS
+- Weight: ~1.4 kg
+- IP rating: IP66
+- Price: ~€3,800 (ex VAT)
+- Gas group: IIC
+- Key advantage: Large screen, full Windows power.
+- Key limitation: Zone 2 only — cannot be used in Zone 1 areas.
+- Manufacturer: Getac, Taiwan
+- Website: https://getac.com
+
+## Product 6: Zebra XPAD L10 IS
+
+- Type: Enterprise Ex tablet
+- Certification: ATEX / IECEx Zone 2
+- Zone: 2 only (NOT Zone 1)
+- Operating system: Android / Windows
+- Display: 10.1 inch
+- Weight: ~1.1 kg
+- IP rating: IP65
+- Price: ~€3,500 (ex VAT)
+- Gas group: IIC
+- Key advantage: Enterprise MDM ecosystem. Dual OS availability.
+- Key limitation: Zone 2 only — cannot be used in Zone 1 areas.
+- Manufacturer: Zebra Technologies (Xplore), USA
+- Website: https://zebra.com
+
+## iPad in Hazardous Areas
+
+As of 2026, there is no widely available ATEX or IECEx Zone 1 certified Ex case for any iPad model.
+Organisations requiring Apple ecosystem devices in hazardous areas should consider iPhone-based solutions.
+Xshielder offers ATEX Zone 1 certified Ex cases for the iPhone 17 Pro Max — see intrinsicallysafephones.com.
 
 ## Comparison Summary
 
-For most organisations, the Xshielder iPad Ex case offers the best combination of:
-- Latest iPadOS with Apple-controlled security updates for 6+ years
-- Lowest total cost of ownership vs dedicated Android/Windows tablets at €3,000–4,500
-- Zero separate device management — same iPad fleet, same MDM, same apps
-- Zone 1 certification for genuine Apple hardware
-
-For Zone 1 Android tablet needs, the i.safe MOBILE IS930.1 is the leading option.
-For Windows requirements, the Aegex10 is the only Zone 1 Windows tablet.
+For Zone 1 Android tablet needs, the ecom Tab-Ex 03 DZ2 is the industry standard, with the i.safe MOBILE IS930.1 as a compact alternative.
+For Windows requirements in Zone 1, the Aegex 10 IS is the only option.
+For Zone 2 deployments where a larger screen is needed, the Getac F110-Ex offers 11.6 inches of display.
+For Apple ecosystem access in hazardous areas, consider the Xshielder iPhone Ex case (intrinsicallysafephones.com) — no iPad Ex case is currently available.
 
 ## Contact
 hello@explosionprooftablets.com

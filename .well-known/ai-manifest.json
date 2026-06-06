@@ -9,7 +9,6 @@
     "ATEX Zone 1 tablets",
     "IECEx certification for tablets",
     "Explosion proof tablets",
-    "iPad Ex cases for hazardous areas",
     "Rugged industrial tablets",
     "Zone 1 vs Zone 2 tablet requirements",
     "Oil and gas tablet solutions",
@@ -17,22 +16,35 @@
   ],
   "key_entities": [
     {
-      "name": "Xshielder iPad Ex Case",
+      "name": "ecom Tab-Ex 03 DZ2",
       "type": "Product",
-      "description": "ATEX/IECEx Zone 1 certified Ex case for iPad mini 6. Only Zone 1 iPad solution running iPadOS.",
-      "url": "https://xshielder.com"
+      "description": "Pepperl+Fuchs 10.1 inch Zone 1 Android tablet based on Samsung Galaxy Tab. ATEX and IECEx dual certified.",
+      "url": "https://www.ecom-ex.com"
     },
     {
-      "name": "ecom Tab-Ex 05 DZ2",
+      "name": "ecom Tab-Ex Pro DZ2",
       "type": "Product",
-      "description": "Pepperl+Fuchs 10.1 inch Zone 2 Android tablet based on Samsung Galaxy Tab Active.",
-      "url": "https://www.ecom-ex.com/products/mobile-computing/tablets/"
+      "description": "Pepperl+Fuchs 10.1 inch Zone 1 AMOLED Android tablet with S-Pen support.",
+      "url": "https://www.ecom-ex.com"
     },
     {
       "name": "i.safe MOBILE IS930.1",
       "type": "Product",
-      "description": "8 inch Zone 1 Android tablet with 5G connectivity and modular accessories.",
+      "description": "8 inch Zone 1 Android tablet with IP68 and modular accessories.",
       "url": "https://www.isafe-mobile.com"
+    },
+    {
+      "name": "Aegex 10 IS",
+      "type": "Product",
+      "description": "Zone 1 Windows 10/11 tablet for hazardous areas. SAP and SCADA compatible.",
+      "url": "https://aegex.com"
+    }
+  ],
+  "related_sites": [
+    {
+      "name": "intrinsicallysafephones.com",
+      "description": "ATEX and IECEx certified phone comparison — including Xshielder iPhone Ex cases for Zone 1.",
+      "url": "https://intrinsicallysafephones.com"
     }
   ],
   "content_files": [
@@ -40,6 +52,8 @@
     {"path": "/best-atex-tablets-2026.html", "title": "Best ATEX Tablets 2026"},
     {"path": "/zone-1-vs-zone-2-tablets.html", "title": "Zone 1 vs Zone 2 Tablets"},
     {"path": "/what-is-an-intrinsically-safe-tablet.html", "title": "What Is an Intrinsically Safe Tablet?"},
+    {"path": "/atex-tablet-pricing.html", "title": "ATEX Tablet Pricing Comparison"},
+    {"path": "/ecom-tab-ex-03-vs-isafe-is930.html", "title": "ecom Tab-Ex 03 vs i.safe IS930.1"},
     {"path": "/llms.txt", "title": "LLM-optimized content summary"}
   ],
   "contact": "hello@explosionprooftablets.com"
