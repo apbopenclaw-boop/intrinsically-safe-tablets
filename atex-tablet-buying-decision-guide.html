@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="/favicon.ico" />
+<title>ATEX Tablet Buying Decision Guide (2026)</title>
+<meta name="description" content="Step-by-step guide to choosing an ATEX tablet. Zone 1 vs Zone 2, Android vs Windows, rugged vs Ex-case — decision framework for procurement." />
+<link rel="canonical" href="https://explosionprooftablets.com/atex-tablet-buying-decision-guide.html" />
+<link rel="alternate" hreflang="en" href="https://explosionprooftablets.com/atex-tablet-buying-decision-guide.html" />
+<link rel="alternate" hreflang="x-default" href="https://explosionprooftablets.com/atex-tablet-buying-decision-guide.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ATEX Tablet Buying Decision Guide (2026)" />
+<meta property="og:description" content="Step-by-step guide to choosing an ATEX tablet for hazardous areas." />
+<meta property="og:url" content="https://explosionprooftablets.com/atex-tablet-buying-decision-guide.html" />
+<meta property="og:image" content="https://explosionprooftablets.com/og-image.png" />
+<meta property="og:site_name" content="explosionprooftablets.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SSH7VDHZJ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4SSH7VDHZJ');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MFSPF6PH');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"ATEX Tablet Buying Decision Guide — How to Choose the Right Device in 2026","description":"Step-by-step decision framework for choosing an ATEX certified tablet for Zone 1 or Zone 2 hazardous areas.","datePublished":"2026-06-30","dateModified":"2026-06-30","publisher":{"@type":"Organization","name":"explosionprooftablets.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":"How to Choose an ATEX Tablet","step":[{"@type":"HowToStep","name":"Determine your zone classification","text":"Identify whether your hazardous area is classified as Zone 1 (explosive atmosphere likely occasionally) or Zone 2 (not likely, short periods only). This determines the minimum equipment category required."},{"@type":"HowToStep","name":"Choose your operating system","text":"Android tablets dominate Zone 1 with longer battery life and lower cost. Windows tablets are available for Zone 2 and offer compatibility with legacy SCADA and DCS software."},{"@type":"HowToStep","name":"Evaluate screen size and ruggedness","text":"8-inch tablets suit field inspections; 10-inch suits control room and documentation work. All ATEX tablets are IP65+ rated but check drop-test specs."},{"@type":"HowToStep","name":"Check the software update commitment","text":"Verify the vendor's stated security patch timeline and the underlying SoC end-of-life date. A 5-year patch commitment means nothing if the chipset BSP expires in 3 years."}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I buy a Zone 1 or Zone 2 ATEX tablet?","acceptedAnswer":{"@type":"Answer","text":"If your hazardous area classification includes any Zone 1 areas where the tablet will be used, you must procure Zone 1 (Category 2G) equipment. Zone 2 tablets cannot legally be used in Zone 1. When in doubt, specify Zone 1 — it covers both Zone 1 and Zone 2 areas."}},{"@type":"Question","name":"Android or Windows for an ATEX tablet?","acceptedAnswer":{"@type":"Answer","text":"Android dominates Zone 1 with better battery life, lower cost, and more vendor options. Windows is preferred only when you need compatibility with legacy SCADA, DCS, or desktop engineering software that has no mobile equivalent."}}]}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<style>
+  :root{--bg:#f5f3f0;--ink:#1a1a1a;--graphite:#6b6b6b;--ash:#999;--accent:#2563eb;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);}
+  .serif{font-family:'Instrument Serif',Georgia,serif;}
+  .glass-nav{position:sticky;top:0;z-index:50;background:rgba(245,243,240,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06);}
+  .card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:2rem;}
+  .badge{display:inline-block;padding:.2rem .55rem;border-radius:6px;font-size:.72rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
+  .badge-z1{background:#dcfce7;color:#166534;}
+  .badge-z2{background:#fef3c7;color:#92400e;}
+  .step{display:flex;gap:1.5rem;margin-bottom:2rem;}
+  .step-num{width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;flex-shrink:0;}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.4rem;border-radius:999px;font-size:.875rem;font-weight:500;transition:all .2s;border:none;text-decoration:none;}
+  .btn-sec{background:#fff;color:var(--ink);border:1.5px solid rgba(0,0,0,.1);}
+  .verdict{border-left:4px solid var(--accent);padding-left:1.5rem;}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16941652225"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-16941652225');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6K4NWQ45M4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6K4NWQ45M4');</script>
+</head>
+<body class="min-h-screen">
+
+<header class="glass-nav">
+  <div class="max-w-[860px] mx-auto px-6 h-16 flex items-center gap-6">
+    <a href="/" class="text-[15px] font-semibold tracking-tight">explosionprooftablets<span style="color:var(--ash)">.com</span></a>
+    <nav class="hidden md:flex items-center gap-5 text-[14px] ml-auto" style="color:var(--graphite)">
+      <a href="/" class="hover:text-[color:var(--ink)]">Home</a>
+      <a href="/best-atex-tablets-2026.html" class="hover:text-[color:var(--ink)]">Best 2026</a>
+      <a href="/zone-1-vs-zone-2-tablets.html" class="hover:text-[color:var(--ink)]">Zone 1 vs 2</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-[860px] mx-auto px-6 py-16">
+  <div class="mb-3 text-[13px]" style="color:var(--ash)">
+    <a href="/" class="hover:text-[color:var(--ink)]">Home</a> &rarr; Buying Guide
+  </div>
+
+  <h1 class="serif text-[clamp(2rem,5vw,3.2rem)] leading-[1.1] mb-6">
+    ATEX Tablet Buying Decision Guide<br><em class="italic" style="color:var(--graphite)">4 steps to the right device</em>
+  </h1>
+
+  <p class="text-[17px] leading-[1.65] mb-12" style="color:var(--graphite)">
+    Choosing an ATEX tablet involves four sequential decisions: zone classification, operating system, form factor, and software lifecycle. Get the first one wrong and the rest doesn't matter — deploying Zone 2 equipment in Zone 1 is a notifiable safety incident. This guide walks procurement and HSE teams through each decision.
+  </p>
+
+  <!-- STEP 1 -->
+  <div class="step">
+    <div class="step-num">1</div>
+    <div>
+      <h2 class="serif text-[26px] mb-3">What is your zone classification?</h2>
+      <p class="text-[16px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        This is non-negotiable. Your site's hazardous area classification document (per IEC 60079-10-1 or DSEAR risk assessment) determines the minimum equipment category.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="card">
+          <span class="badge badge-z1 mb-3">Zone 1</span>
+          <p class="text-[14px] leading-[1.6]" style="color:var(--graphite)">Explosive atmosphere likely occasionally in normal operation. Requires <strong>Category 2G</strong> equipment (Ex ib or Ex ia). More expensive, fewer options, but covers Zone 2 as well.</p>
+        </div>
+        <div class="card">
+          <span class="badge badge-z2 mb-3">Zone 2</span>
+          <p class="text-[14px] leading-[1.6]" style="color:var(--graphite)">Explosive atmosphere not likely, only brief periods. <strong>Category 3G</strong> equipment permitted (Ex nA / Ex ec). Cheaper, more options including Windows tablets. Cannot be used in Zone 1.</p>
+        </div>
+      </div>
+      <div class="verdict">
+        <p class="text-[15px] leading-[1.6]" style="color:var(--graphite)"><strong>Rule of thumb:</strong> when in doubt, specify Zone 1. It covers both zones and eliminates the risk of zone boundary disputes. See our <a href="/zone-1-vs-zone-2-tablets.html" style="color:var(--accent);border-bottom:1px solid">detailed Zone 1 vs Zone 2 comparison</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="step">
+    <div class="step-num">2</div>
+    <div>
+      <h2 class="serif text-[26px] mb-3">Android or Windows?</h2>
+      <p class="text-[16px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        This decision is driven by your software requirements, not personal preference.
+      </p>
+      <div class="card mb-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <div class="font-semibold mb-2">Android (90% of Zone 1 tablets)</div>
+            <ul class="text-[14px] leading-[1.7] space-y-1" style="color:var(--graphite)">
+              <li>+ Better battery life (8-12 hours)</li>
+              <li>+ Lower cost (&euro;2,500-4,000)</li>
+              <li>+ More Zone 1 options available</li>
+              <li>+ Mobile-first field apps</li>
+              <li>- No legacy Windows software support</li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-semibold mb-2">Windows (Zone 2 only, mostly)</div>
+            <ul class="text-[14px] leading-[1.7] space-y-1" style="color:var(--graphite)">
+              <li>+ Runs SCADA/DCS client software</li>
+              <li>+ Desktop app compatibility</li>
+              <li>+ Active Directory integration</li>
+              <li>- Shorter battery life (4-6 hours)</li>
+              <li>- Very few Zone 1 options</li>
+              <li>- Higher cost (&euro;4,000-7,000)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="verdict">
+        <p class="text-[15px] leading-[1.6]" style="color:var(--graphite)"><strong>Default to Android</strong> unless you have a specific desktop Windows application with no web or mobile equivalent. Most modern CMMS, SAP PM, and inspection tools have Android apps.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="step">
+    <div class="step-num">3</div>
+    <div>
+      <h2 class="serif text-[26px] mb-3">Screen size and form factor</h2>
+      <p class="text-[16px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        ATEX tablets come in 8-inch and 10-inch sizes. The choice depends on the primary use case:
+      </p>
+      <div class="card mb-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <div class="font-semibold mb-2">8-inch (field inspection)</div>
+            <p class="text-[14px] leading-[1.6]" style="color:var(--graphite)">One-hand operation, fits in cargo pockets, lighter (~500-600g). Best for walkdowns, checklist-based inspections, barcode scanning.</p>
+          </div>
+          <div>
+            <div class="font-semibold mb-2">10-inch (documentation)</div>
+            <p class="text-[14px] leading-[1.6]" style="color:var(--graphite)">Better for drawings, P&IDs, work orders with long text. Heavier (~700-900g). Best for control room use, engineering review, training.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 4 -->
+  <div class="step">
+    <div class="step-num">4</div>
+    <div>
+      <h2 class="serif text-[26px] mb-3">Software update lifecycle</h2>
+      <p class="text-[16px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        This is the hidden risk in ATEX tablet procurement. Vendors state a support period, but the real ceiling is the chipset vendor's BSP (Board Support Package) end-of-life. Ask two questions:
+      </p>
+      <ol class="list-decimal pl-6 text-[15px] leading-[1.7] space-y-2 mb-4" style="color:var(--graphite)">
+        <li><strong>What is the vendor's stated security patch commitment?</strong> (e.g. "Q3/2030")</li>
+        <li><strong>What SoC does the tablet use, and when does its BSP expire?</strong> After BSP expiry, kernel-level patches cannot be delivered regardless of vendor promises.</li>
+      </ol>
+      <div class="verdict">
+        <p class="text-[15px] leading-[1.6]" style="color:var(--graphite)"><strong>Demand both answers in writing</strong> before procurement sign-off. A vendor promising "7 years of updates" on a chipset that expires in 4 years cannot deliver on that promise. See our <a href="/ecom-tab-ex-03-vs-isafe-is930.html" style="color:var(--accent);border-bottom:1px solid">ecom vs i.safe comparison</a> for real-world examples.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <h2 class="serif text-[28px] mb-6 mt-8">FAQ</h2>
+  <div class="space-y-6 mb-12">
+    <div>
+      <h3 class="font-semibold text-[16px] mb-2">Zone 1 or Zone 2 tablet?</h3>
+      <p class="text-[15px] leading-[1.65]" style="color:var(--graphite)">If any area where the tablet will be used is Zone 1, you need a Zone 1 tablet. Zone 1 equipment can also be used in Zone 2, but not vice versa.</p>
+    </div>
+    <div>
+      <h3 class="font-semibold text-[16px] mb-2">Android or Windows?</h3>
+      <p class="text-[15px] leading-[1.65]" style="color:var(--graphite)">Android for 90% of use cases. Windows only if you need legacy desktop software compatibility.</p>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap gap-3">
+    <a href="/" class="btn btn-sec">&larr; All tablets compared</a>
+    <a href="/best-atex-tablets-2026.html" class="btn btn-sec">Best ATEX Tablets 2026</a>
+    <a href="/zone-1-vs-zone-2-tablets.html" class="btn btn-sec">Zone 1 vs Zone 2</a>
+  </div>
+</main>
+
+<footer class="border-t" style="border-color:rgba(0,0,0,.06)">
+  <div class="max-w-[860px] mx-auto px-6 py-8 text-[12px]" style="color:var(--ash)">
+    &copy; 2026 explosionprooftablets.com &middot; Engineering reference — not a safety certificate.
+  </div>
+</footer>
+</body>
+</html>
