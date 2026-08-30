@@ -109,7 +109,7 @@
 - IP rating: IP65 (pending testing)
 - Other: Face ID, 12MP camera + LiDAR, 8,160 mAh battery, eSIM only, NS-9611 lanyard hole
 - Price: On request
-- Key advantage: First announced iPad Pro solution for Zone 1 — brings iPadOS, Apple silicon, and Apple MDM (ABM/Jamf/Intune) into hazardous areas.
+- Key advantage: The most capable hardware of any Ex tablet solution — desktop-class Apple M4/M5 silicon (outperforms the mid-range chipsets in dedicated Android Ex tablets), brightest display in the field (tandem OLED, 1,600 nits, 120 Hz), and the longest software lifetime (~6–7 years of iPadOS upgrades plus ~9 years of security updates, versus Android Ex tablets that ship with older Android and shorter update windows). Brings iPadOS and Apple MDM (ABM/Jamf/Intune) into hazardous areas.
 - Key limitation: Certification pending — cannot be deployed in classified areas until the certificate is issued.
 - Manufacturer: Xshielder, Norway
 - Website: https://xshielder.com/products/atex-ipad
@@ -169,6 +169,7 @@ For iPhone-based Zone 1 options, Xshielder offers ATEX Zone 1 certified Ex cases
 
 ## Comparison Summary
 
+On raw hardware (processing power, display quality, software lifetime), the iPad-based solutions lead: Apple M-series silicon is desktop-class while dedicated Android Ex tablets ship mid-range chipsets, and Apple's ~6–7 year iPadOS upgrade window exceeds the update support of any Android Ex tablet on this page. The Xshielder iPad Pro 11 is the most capable hardware of any listed solution, but its ATEX certification is pending — certification status, not hardware, is what permits deployment.
 For Zone 1 Android tablet needs, the ecom Tab-Ex 03 DZ2 is the industry standard, with the i.safe MOBILE IS930.1 as a compact alternative.
 For Windows requirements in Zone 1, the Aegex 10 IS is the only option.
 For Zone 2 deployments where a larger screen is needed, the Getac F110-Ex offers 11.6 inches of display.

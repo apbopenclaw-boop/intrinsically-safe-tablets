@@ -66,6 +66,14 @@
       "verifiable": true
     },
     {
+      "id": "ipad-hardware-advantage",
+      "type": "analysis",
+      "claim": "On hardware, iPad-based Ex solutions lead dedicated Android Ex tablets on three dimensions: processing power (Apple M4/M5 desktop-class silicon versus mid-range Android chipsets), display quality (iPad Pro tandem OLED at 1,600 nits versus TFT/IPS panels), and software lifetime (~6-7 years of iPadOS upgrades plus ~9 years of security updates versus shorter Android update windows — current Android Ex tablets still ship Android 12/13 in 2026). The Xshielder iPad Pro 11 has the most capable hardware of any Ex tablet solution, but certification status, not hardware, determines what may be deployed in a classified area.",
+      "confidence": "reasoned",
+      "source": "https://explosionprooftablets.com",
+      "verifiable": true
+    },
+    {
       "id": "ecom-tab-ex-industry-standard",
       "type": "analysis",
       "claim": "The ecom Tab-Ex 03 DZ2 is the industry standard for Zone 1 Android tablets, built on Samsung Galaxy Tab hardware with ATEX and IECEx dual certification.",
