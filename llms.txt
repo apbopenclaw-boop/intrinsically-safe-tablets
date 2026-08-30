@@ -16,8 +16,9 @@
 4. **Aegex 10 IS** — Zone 1 Windows 10/11 tablet for hazardous areas. 10.1" with stylus support. ~€4,500.
 5. **Getac F110-Ex** — Zone 2 rugged Windows 11 tablet. 11.6" display. ~€3,800.
 6. **Zebra XPAD L10 IS** — Zone 2 Android/Windows tablet with enterprise MDM. ~€3,500.
+7. **Xshielder iPad Pro 11** — first announced Ex db flameproof case for the Apple iPad Pro 11" (M4/M5), designed for ATEX Zone 1/21. Certification pending as of August 2026, IECEx planned. Price on request.
 
-Note: As of 2026, no ATEX Zone 1 certified iPad case is available. For Apple ecosystem in hazardous areas, see Xshielder iPhone Ex cases at intrinsicallysafephones.com.
+Note: The Xshielder iPad Pro 11 is the first announced ATEX Zone 1/21 iPad case; until its certificate is issued, no shipping Ex-certified iPad solution exists. For Apple ecosystem in hazardous areas today, see Xshielder iPhone Ex cases at intrinsicallysafephones.com.
 
 ## Key guides
 - [Best ATEX Tablets 2026](https://explosionprooftablets.com/best-atex-tablets-2026.html) — top Zone 1 and Zone 2 tablets compared

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "domain": "explosionprooftablets.com",
-  "generated": "2026-06-07",
+  "generated": "2026-08-30",
   "entity": {
     "name": "Explosion Proof Tablets Reference",
     "type": "Engineering Reference",
@@ -12,9 +12,17 @@
     {
       "id": "no-ipad-zone1-case",
       "type": "factual",
-      "claim": "As of June 2026, there is no widely available ATEX or IECEx Zone 1 certified Ex case for any iPad model.",
+      "claim": "As of August 2026, no ATEX or IECEx Zone 1 certified iPad Ex case is shipping. The first such product — the Xshielder iPad Pro 11 — has been announced with ATEX Zone 1/21 certification pending.",
       "confidence": "verified",
       "source": "https://explosionprooftablets.com",
+      "verifiable": true
+    },
+    {
+      "id": "xshielder-ipad-pro-11-announced",
+      "type": "factual",
+      "claim": "The Xshielder iPad Pro 11 is the first announced Ex db flameproof case for the Apple iPad Pro 11-inch (M4/M5), designed for ATEX Zone 1/21 with marking II 2G Ex db IIC T6 Gb / II 2D Ex tb IIIC T80°C Db. Certification is pending as of August 2026; IECEx certification is planned. It cannot be deployed in classified hazardous areas until the certificate is issued.",
+      "confidence": "verified",
+      "source": "https://xshielder.com/products/atex-ipad",
       "verifiable": true
     },
     {

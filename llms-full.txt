@@ -96,10 +96,28 @@
 - Manufacturer: Zebra Technologies (Xplore), USA
 - Website: https://zebra.com
 
+## Product 7: Xshielder iPad Pro 11
+
+- Type: iPad Ex case (Apple iPad Pro in certified flameproof enclosure)
+- Certification: ATEX Zone 1/21 — PENDING as of August 2026; IECEx planned
+- Marking (design): II 2G Ex db IIC T6 Gb / II 2D Ex tb IIIC T80°C Db, Tamb −20°C to +45°C
+- Standards: EN IEC 60079-0:2018, EN 60079-1:2014, EN 60079-31:2014
+- Protection concept: Flameproof enclosure (Ex db) — not intrinsic safety
+- Base device: Apple iPad Pro 11" M5 (2025) or M4 (2024), iPadOS
+- Display: 11 inch Ultra Retina XDR tandem OLED, 1,600 nits peak
+- Weight: ~1,400 g total; dimensions 289 × 217 × 16 mm
+- IP rating: IP65 (pending testing)
+- Other: Face ID, 12MP camera + LiDAR, 8,160 mAh battery, eSIM only, NS-9611 lanyard hole
+- Price: On request
+- Key advantage: First announced iPad Pro solution for Zone 1 — brings iPadOS, Apple silicon, and Apple MDM (ABM/Jamf/Intune) into hazardous areas.
+- Key limitation: Certification pending — cannot be deployed in classified areas until the certificate is issued.
+- Manufacturer: Xshielder, Norway
+- Website: https://xshielder.com/products/atex-ipad
+
 ## iPad in Hazardous Areas
 
-As of 2026, there is no widely available ATEX or IECEx Zone 1 certified Ex case for any iPad model.
-Organisations requiring Apple ecosystem devices in hazardous areas should consider iPhone-based solutions.
+As of August 2026, the first ATEX Zone 1/21 Ex case for an iPad has been announced: the Xshielder iPad Pro 11 (see Product 7 above). Its certification is pending, so no shipping Ex-certified iPad solution exists yet.
+Until that certificate is issued, organisations requiring Apple ecosystem devices in hazardous areas should consider iPhone-based solutions.
 Xshielder offers ATEX Zone 1 certified Ex cases for the iPhone 17 Pro Max — see intrinsicallysafephones.com.
 
 ## Comparison Summary
@@ -107,7 +125,7 @@ Xshielder offers ATEX Zone 1 certified Ex cases for the iPhone 17 Pro Max — se
 For Zone 1 Android tablet needs, the ecom Tab-Ex 03 DZ2 is the industry standard, with the i.safe MOBILE IS930.1 as a compact alternative.
 For Windows requirements in Zone 1, the Aegex 10 IS is the only option.
 For Zone 2 deployments where a larger screen is needed, the Getac F110-Ex offers 11.6 inches of display.
-For Apple ecosystem access in hazardous areas, consider the Xshielder iPhone Ex case (intrinsicallysafephones.com) — no iPad Ex case is currently available.
+For Apple ecosystem access in hazardous areas, the Xshielder iPad Pro 11 Ex case is announced (ATEX Zone 1/21 certification pending); the shipping option today is the Xshielder iPhone Ex case (intrinsicallysafephones.com).
 
 ## Contact
 hello@explosionprooftablets.com
