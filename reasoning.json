@@ -12,9 +12,25 @@
     {
       "id": "no-ipad-zone1-case",
       "type": "factual",
-      "claim": "As of August 2026, no ATEX or IECEx Zone 1 certified iPad Ex case is shipping. The first such product — the Xshielder iPad Pro 11 — has been announced with ATEX Zone 1/21 certification pending.",
+      "claim": "As of August 2026, the only shipping ATEX/IECEx Zone 1 iPad solution is the Xciel XCZ1 flameproof enclosure for the iPad mini 4-7. No full-size Zone 1 iPad is shipping: the Atexxo converted iPad 11-inch is expected Q3 2026 and the Xshielder iPad Pro 11 case is pending certification.",
       "confidence": "verified",
-      "source": "https://explosionprooftablets.com",
+      "source": "https://www.xciel.com/rugged-ipads",
+      "verifiable": true
+    },
+    {
+      "id": "xciel-ipad-solutions",
+      "type": "factual",
+      "claim": "Xciel Inc (Texas, USA) ships ATEX/IECEx Zone 1 XCZ1 flameproof enclosures for the iPad mini 4-7 (~$3,150 for the enclosure, factory installation required) and NEC Class 1 Division 2 / ATEX Zone 2 XCRiPad rugged cases for full-size iPads including the iPad Pro 11-inch (~$1,680).",
+      "confidence": "verified",
+      "source": "https://www.xciel.com/rugged-ipads",
+      "verifiable": true
+    },
+    {
+      "id": "atexxo-ipad-conversions",
+      "type": "factual",
+      "claim": "Atexxo Manufacturing (Netherlands) ships ATEX Zone 2/22 factory-converted Apple iPads (iPad 11-inch A16, marking II 3G Ex ec ic IIC T4 Gc / II 3D Ex tc IIIB T135°C Dc, ~1,050 g) and has announced an ATEX/IECEx Zone 1/21 converted iPad 11-inch (II 2G Ex db IIC T4 Gb / II 2D Ex tb IIIA T135°C Db, ~1,100 g) expected Q3 2026.",
+      "confidence": "verified",
+      "source": "https://atexxo.com/product/explosion-proof-ipad-11-inch-ex-zone-1/",
       "verifiable": true
     },
     {

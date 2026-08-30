@@ -114,18 +114,65 @@
 - Manufacturer: Xshielder, Norway
 - Website: https://xshielder.com/products/atex-ipad
 
+## Product 8: Xciel XCZ1 iPad mini series
+
+- Type: iPad Ex enclosure (flameproof, factory-fitted — self-install not permitted)
+- Certification: ATEX / IECEx Zone 1 (manufacturer)
+- Base device: Apple iPad mini 4, 5, 6, or 7 (8.3 inch on mini 7), iPadOS
+- Price: ~$3,150 (mini 7 enclosure only); ~$3,795 full kit with mounting, stylus, cases; enclosure + iPad bundles available
+- Availability: Shipping now — the only shipping Zone 1 iPad solution as of August 2026
+- Accessories: magnet mounting, locking system, stylus, ballistic nylon case, chest harness
+- Manufacturer: Xciel Inc, Texas, USA
+- Website: https://www.xciel.com/rugged-ipads
+
+## Product 9: Xciel XCRiPad series
+
+- Type: iPad rugged Ex case
+- Certification: NEC Class 1 Division 2 / ATEX Zone 2 (manufacturer)
+- Base devices: broad coverage — iPad (gen 6–11), iPad Air, iPad Pro 11" (2019–2025), iPad mini 4–7
+- Price: ~$1,470–$1,680 (case only), e.g. XCRiPad Pro 11" at $1,680, XCRiPad mini 7 at $1,510
+- Availability: Shipping now
+- Manufacturer: Xciel Inc, Texas, USA
+- Website: https://www.xciel.com/rugged-ipads
+
+## Product 10: Atexxo Explosion Proof iPad (A16) (Ex Zone 2)
+
+- Type: Factory-converted Apple iPad (casing + protected circuit modified; not a removable case)
+- Certification: ATEX Zone 2/22 Unit Assessment Certificate — II 3G Ex ec ic IIC T4 Gc / II 3D Ex tc IIIB T135°C Dc (EU equivalent of NEC C1D2)
+- Base device: Apple iPad 11 inch (A16), iPadOS; WiFi or WiFi+5G, 128–512 GB
+- Weight: ~1,050 g; dimensions 28 × 21 × 1.6 cm
+- Limitations: Touch ID disabled by conversion
+- Price: On request
+- Availability: Shipping now
+- Manufacturer: Atexxo Manufacturing, Netherlands
+- Website: https://atexxo.com/product/explosion-proof-ipad-a16-ex-zone-2/
+
+## Product 11: Atexxo Explosion Proof iPad 11" (Ex Zone 1)
+
+- Type: Factory-converted Apple iPad (flameproof conversion)
+- Certification: ATEX II 2G Ex db IIC T4 Gb / II 2D Ex tb IIIA T135°C Db; IECEx Ex db IIC T4 Gb; CSA on request
+- Base device: Apple iPad 11 inch, iPadOS; WiFi or WiFi+5G (eSIM only), 128–512 GB; blocked-camera variant available
+- Weight: ~1,100 g; dimensions 27 × 20 × 2 cm
+- Limitations: fingerprint scanner disabled by conversion
+- Price: On request
+- Availability: Expected Q3 2026 — announced, not yet shipping
+- Manufacturer: Atexxo Manufacturing, Netherlands
+- Website: https://atexxo.com/product/explosion-proof-ipad-11-inch-ex-zone-1/
+
 ## iPad in Hazardous Areas
 
-As of August 2026, the first ATEX Zone 1/21 Ex case for an iPad has been announced: the Xshielder iPad Pro 11 (see Product 7 above). Its certification is pending, so no shipping Ex-certified iPad solution exists yet.
-Until that certificate is issued, organisations requiring Apple ecosystem devices in hazardous areas should consider iPhone-based solutions.
-Xshielder offers ATEX Zone 1 certified Ex cases for the iPhone 17 Pro Max — see intrinsicallysafephones.com.
+As of August 2026, iPad solutions exist at three levels:
+- Zone 1 shipping today: Xciel XCZ1 flameproof enclosures for the iPad mini 4–7 (Product 8) — the only shipping Zone 1 iPad option.
+- Zone 2/22 shipping today: Atexxo factory-converted iPads (Product 10) and Xciel XCRiPad C1D2/Zone 2 cases (Product 9).
+- Full-size Zone 1 announced, not yet shipping: Atexxo converted iPad 11" (Product 11, expected Q3 2026) and Xshielder iPad Pro 11 case (Product 7, certification pending) — the first for an iPad Pro.
+For iPhone-based Zone 1 options, Xshielder offers ATEX Zone 1 certified Ex cases for the iPhone 17 Pro Max — see intrinsicallysafephones.com.
 
 ## Comparison Summary
 
 For Zone 1 Android tablet needs, the ecom Tab-Ex 03 DZ2 is the industry standard, with the i.safe MOBILE IS930.1 as a compact alternative.
 For Windows requirements in Zone 1, the Aegex 10 IS is the only option.
 For Zone 2 deployments where a larger screen is needed, the Getac F110-Ex offers 11.6 inches of display.
-For Apple ecosystem access in hazardous areas, the Xshielder iPad Pro 11 Ex case is announced (ATEX Zone 1/21 certification pending); the shipping option today is the Xshielder iPhone Ex case (intrinsicallysafephones.com).
+For Apple ecosystem access in hazardous areas: Zone 1 today means the Xciel XCZ1 iPad mini enclosure or Xshielder iPhone Ex cases (intrinsicallysafephones.com); Zone 2 today means Atexxo converted iPads or Xciel XCRiPad cases; full-size Zone 1 iPads are announced by Atexxo (Q3 2026) and Xshielder (iPad Pro 11, certification pending).
 
 ## Contact
 hello@explosionprooftablets.com
