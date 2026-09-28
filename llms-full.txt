@@ -1,179 +1,42 @@
-# explosionprooftablets.com — Full Reference
+# explosionprooftablets.com: full reference
 
-> Independent engineering reference for ATEX and IECEx certified intrinsically safe tablets for hazardous areas.
+> Engineering reference comparing ATEX and IECEx certified Zone 1 and Zone 2 tablets and iPad Ex solutions for hazardous areas, for HSE and procurement teams.
+Last updated: 2026-09-28
 
-## Product 1: ecom Tab-Ex 03 DZ2
+## Zones and certification
+Zone 1: an explosive gas atmosphere is likely in normal operation. Zone 2: it is unlikely and short-lived. Zone 21/22 are the dust equivalents.
+A Zone 1 certified tablet may be used in Zone 1 and Zone 2. A Zone 2 tablet must not be used in Zone 1.
+ATEX is mandatory in the EU/EEA; IECEx is the international scheme. Check the certificate of conformity for the exact model variant.
+Gas group IIC (hydrogen, acetylene) also covers IIA and IIB. The temperature class (T1–T6) must suit the gases on site.
+No consumer Samsung, Apple or Google tablet is intrinsically safe in its standard form.
 
-- Type: Dedicated Android Ex tablet
-- Certification: ATEX / IECEx Zone 1/21
-- Zone: 1
-- Protection concept: Intrinsic safety (Ex ib)
-- Operating system: Android 13
-- Display: 10.1 inch TFT
-- Base device: Samsung Galaxy Tab
-- Weight: ~690 g
-- IP rating: IP68
-- Price: ~€3,200 (ex VAT)
-- Gas group: IIC
-- Key advantage: Samsung Galaxy Tab-based, familiar UX. Zone 1 rated.
-- Manufacturer: ecom instruments (Pepperl+Fuchs), Germany
-- Website: https://www.ecom-ex.com
+## Solutions compared (no prices; available on request)
+- **Xshielder iPad Pro 11**, Xshielder (Norway): Zone 1/21, ATEX. Ex db flameproof case for the Apple iPad Pro 11" (M4/M5), iPadOS, ~1.4 kg. Marking II 2G Ex db IIC T6 Gb / II 2D Ex tb IIIC T80°C Db. 11" tandem OLED display, Apple M4/M5, Face ID. ATEX certified; no IECEx certificate. Source: https://xshielder.com/products/atex-ipad
+- **ecom Tab-Ex 03 DZ1**, ecom (Pepperl+Fuchs): Zone 1, ATEX, IECEx. Android 13 tablet built on Samsung Galaxy Tab Active hardware, IP68, ~690 g. Display as listed on the site: 10.1" TFT. Gas group IIC. Source: https://ecom-ex.com
+- **ecom Tab-Ex Pro DZ1**, ecom (Pepperl+Fuchs): Zone 1, ATEX, IECEx. 10.1" AMOLED Android 13 tablet with S Pen, IP68, ~750 g. Gas group IIC. Source: https://ecom-ex.com
+- **i.safe MOBILE IS930.1**, i.safe MOBILE: Zone 1, ATEX, IECEx. Compact 8" IPS Android 12 tablet, IP68, ~570 g. Gas group IIC. Source: https://isafe-mobile.com
+- **Aegex 10 IS**, Aegex Technologies: Zone 1, ATEX, IECEx. 10.1" IPS Windows 10/11 tablet, IP65, ~850 g. One of two Zone 1 Windows tablets compared on the site (with the Bartec Agile X IS). Source: https://aegex.com
+- **Bartec Agile X IS**, Bartec: Zone 1, ATEX, IECEx. Windows 10 IoT tablet for Zone 1. Compared with the ecom Tab-Ex 03 DZ1 on the site. Source: https://explosionprooftablets.com/ecom-tab-ex-vs-bartec-agile.html
+- **Getac F110-Ex**, Getac: Zone 2, ATEX. 11.6" IPS Windows 11 tablet, IP66, ~1.4 kg. Zone 2 only: not for Zone 1. Source: https://getac.com
+- **Zebra XPAD L10 IS**, Zebra (Xplore): Zone 2, ATEX, IECEx. 10.1" Android or Windows tablet, IP65, ~1.1 kg. Zone 2 only: not for Zone 1. Source: https://zebra.com
+- **Xciel XCZ1 iPad mini 7**, Xciel (USA): Zone 1, ATEX, IECEx. Flameproof enclosure for the iPad mini 4–7, factory-fitted only. iPadOS in the compact format. Source: https://www.xciel.com/rugged-ipads
+- **Atexxo iPad 11" Zone 1**, Atexxo Manufacturing (Netherlands): Zone 1/21, ATEX, IECEx. Announced: converted Apple iPad 11", ~1,100 g. Marking Ex db IIC T4 Gb / II 2D Ex tb IIIA T135°C Db. Source: https://atexxo.com/product/explosion-proof-ipad-11-inch-ex-zone-1/
+- **Atexxo iPad (A16) Ex**, Atexxo Manufacturing (Netherlands): Zone 2/22, ATEX. Factory-converted Apple iPad 11" (A16), ~1,050 g. Marking II 3G Ex ec ic IIC T4 Gc / II 3D Ex tc IIIB T135°C Dc. Zone 2/22 only. Source: https://atexxo.com/product/explosion-proof-ipad-a16-ex-zone-2/
+- **Xciel XCRiPad Pro 11**, Xciel (USA): Zone 2, ATEX, US C1D2. Rugged Ex case for the iPad Pro 11"; versions for iPad, iPad Air and iPad mini too. Zone 2 / Class I Division 2 only. Source: https://www.xciel.com/rugged-ipads
 
-## Product 2: ecom Tab-Ex Pro DZ2
-
-- Type: Dedicated Android Ex tablet
-- Certification: ATEX / IECEx Zone 1/21
-- Zone: 1
-- Operating system: Android 13
-- Display: 10.1 inch AMOLED
-- Weight: ~750 g
-- IP rating: IP68
-- Price: ~€3,800 (ex VAT)
-- Gas group: IIC
-- Key advantage: Premium AMOLED display. S-Pen support for annotations.
-- Manufacturer: ecom instruments (Pepperl+Fuchs), Germany
-- Website: https://www.ecom-ex.com
-
-## Product 3: i.safe MOBILE IS930.1
-
-- Type: Dedicated Android Ex tablet
-- Certification: ATEX / IECEx Zone 1/21
-- Zone: 1
-- Operating system: Android 12
-- Display: 8 inch IPS
-- Weight: ~570 g
-- IP rating: IP68
-- Price: ~€2,400 (ex VAT)
-- Gas group: IIC
-- Key advantage: Compact 8" form factor. Zone 1 rated. Modular accessories via ISM interface.
-- Manufacturer: i.safe MOBILE GmbH, Germany
-- Website: https://www.isafe-mobile.com
-
-## Product 4: Aegex 10 IS
-
-- Type: Dedicated Windows Ex tablet
-- Certification: ATEX / IECEx Zone 1
-- Zone: 1
-- Operating system: Windows 10/11
-- Display: 10.1 inch IPS
-- Weight: ~850 g
-- IP rating: IP65
-- Price: ~€4,500 (ex VAT)
-- Gas group: IIC
-- Key advantage: Full Windows for legacy enterprise applications, SAP, SCADA. Stylus support.
-- Manufacturer: Aegex Technologies, USA
-- Website: https://aegex.com
-
-## Product 5: Getac F110-Ex
-
-- Type: Rugged Windows Ex tablet
-- Certification: ATEX Zone 2
-- Zone: 2 only (NOT Zone 1)
-- Operating system: Windows 11
-- Display: 11.6 inch IPS
-- Weight: ~1.4 kg
-- IP rating: IP66
-- Price: ~€3,800 (ex VAT)
-- Gas group: IIC
-- Key advantage: Large screen, full Windows power.
-- Key limitation: Zone 2 only — cannot be used in Zone 1 areas.
-- Manufacturer: Getac, Taiwan
-- Website: https://getac.com
-
-## Product 6: Zebra XPAD L10 IS
-
-- Type: Enterprise Ex tablet
-- Certification: ATEX / IECEx Zone 2
-- Zone: 2 only (NOT Zone 1)
-- Operating system: Android / Windows
-- Display: 10.1 inch
-- Weight: ~1.1 kg
-- IP rating: IP65
-- Price: ~€3,500 (ex VAT)
-- Gas group: IIC
-- Key advantage: Enterprise MDM ecosystem. Dual OS availability.
-- Key limitation: Zone 2 only — cannot be used in Zone 1 areas.
-- Manufacturer: Zebra Technologies (Xplore), USA
-- Website: https://zebra.com
-
-## Product 7: Xshielder iPad Pro 11
-
-- Type: iPad Ex case (Apple iPad Pro in certified flameproof enclosure)
-- Certification: ATEX Zone 1/21 — PENDING as of August 2026; IECEx planned
-- Marking (design): II 2G Ex db IIC T6 Gb / II 2D Ex tb IIIC T80°C Db, Tamb −20°C to +45°C
-- Standards: EN IEC 60079-0:2018, EN 60079-1:2014, EN 60079-31:2014
-- Protection concept: Flameproof enclosure (Ex db) — not intrinsic safety
-- Base device: Apple iPad Pro 11" M5 (2025) or M4 (2024), iPadOS
-- Display: 11 inch Ultra Retina XDR tandem OLED, 1,600 nits peak
-- Weight: ~1,400 g total; dimensions 289 × 217 × 16 mm
-- IP rating: IP65 (pending testing)
-- Other: Face ID, 12MP camera + LiDAR, 8,160 mAh battery, eSIM only, NS-9611 lanyard hole
-- Price: On request
-- Key advantage: The most capable hardware of any Ex tablet solution — desktop-class Apple M4/M5 silicon (outperforms the mid-range chipsets in dedicated Android Ex tablets), brightest display in the field (tandem OLED, 1,600 nits, 120 Hz), and the longest software lifetime (~6–7 years of iPadOS upgrades plus ~9 years of security updates, versus Android Ex tablets that ship with older Android and shorter update windows). Brings iPadOS and Apple MDM (ABM/Jamf/Intune) into hazardous areas.
-- Certification status: ATEX Zone 1/21 certificate issued (September 2026); IECEx planned. As with any Ex device, match the certificate marking to the site's zone classification before deployment.
-- Manufacturer: Xshielder, Norway
-- Website: https://xshielder.com/products/atex-ipad
-
-## Product 8: Xciel XCZ1 iPad mini series
-
-- Type: iPad Ex enclosure (flameproof, factory-fitted — self-install not permitted)
-- Certification: ATEX / IECEx Zone 1 (manufacturer)
-- Base device: Apple iPad mini 4, 5, 6, or 7 (8.3 inch on mini 7), iPadOS
-- Price: ~$3,150 (mini 7 enclosure only); ~$3,795 full kit with mounting, stylus, cases; enclosure + iPad bundles available
-- Availability: Shipping now — the only shipping Zone 1 iPad solution as of August 2026
-- Accessories: magnet mounting, locking system, stylus, ballistic nylon case, chest harness
-- Manufacturer: Xciel Inc, Texas, USA
-- Website: https://www.xciel.com/rugged-ipads
-
-## Product 9: Xciel XCRiPad series
-
-- Type: iPad rugged Ex case
-- Certification: NEC Class 1 Division 2 / ATEX Zone 2 (manufacturer)
-- Base devices: broad coverage — iPad (gen 6–11), iPad Air, iPad Pro 11" (2019–2025), iPad mini 4–7
-- Price: ~$1,470–$1,680 (case only), e.g. XCRiPad Pro 11" at $1,680, XCRiPad mini 7 at $1,510
-- Availability: Shipping now
-- Manufacturer: Xciel Inc, Texas, USA
-- Website: https://www.xciel.com/rugged-ipads
-
-## Product 10: Atexxo Explosion Proof iPad (A16) (Ex Zone 2)
-
-- Type: Factory-converted Apple iPad (casing + protected circuit modified; not a removable case)
-- Certification: ATEX Zone 2/22 Unit Assessment Certificate — II 3G Ex ec ic IIC T4 Gc / II 3D Ex tc IIIB T135°C Dc (EU equivalent of NEC C1D2)
-- Base device: Apple iPad 11 inch (A16), iPadOS; WiFi or WiFi+5G, 128–512 GB
-- Weight: ~1,050 g; dimensions 28 × 21 × 1.6 cm
-- Limitations: Touch ID disabled by conversion
-- Price: On request
-- Availability: Shipping now
-- Manufacturer: Atexxo Manufacturing, Netherlands
-- Website: https://atexxo.com/product/explosion-proof-ipad-a16-ex-zone-2/
-
-## Product 11: Atexxo Explosion Proof iPad 11" (Ex Zone 1)
-
-- Type: Factory-converted Apple iPad (flameproof conversion)
-- Certification: ATEX II 2G Ex db IIC T4 Gb / II 2D Ex tb IIIA T135°C Db; IECEx Ex db IIC T4 Gb; CSA on request
-- Base device: Apple iPad 11 inch, iPadOS; WiFi or WiFi+5G (eSIM only), 128–512 GB; blocked-camera variant available
-- Weight: ~1,100 g; dimensions 27 × 20 × 2 cm
-- Limitations: fingerprint scanner disabled by conversion
-- Price: On request
-- Availability: Expected Q3 2026 — announced, not yet shipping
-- Manufacturer: Atexxo Manufacturing, Netherlands
-- Website: https://atexxo.com/product/explosion-proof-ipad-11-inch-ex-zone-1/
-
-## iPad in Hazardous Areas
-
-As of August 2026, iPad solutions exist at three levels:
-- Zone 1 shipping today: Xciel XCZ1 flameproof enclosures for the iPad mini 4–7 (Product 8) — the only shipping Zone 1 iPad option.
-- Zone 2/22 shipping today: Atexxo factory-converted iPads (Product 10) and Xciel XCRiPad C1D2/Zone 2 cases (Product 9).
-- Full-size Zone 1: Xshielder iPad Pro 11 case (Product 7) is ATEX Zone 1/21 certified — the first for an iPad Pro. Atexxo converted iPad 11" (Product 11) expected Q3 2026.
-For iPhone-based Zone 1 options, Xshielder offers ATEX Zone 1 certified Ex cases for the iPhone 17 Pro Max — see intrinsicallysafephones.com.
-
-## Comparison Summary
-
-On raw hardware (processing power, display quality, software lifetime), the iPad-based solutions lead: Apple M-series silicon is desktop-class while dedicated Android Ex tablets ship mid-range chipsets, and Apple's ~6–7 year iPadOS upgrade window exceeds the update support of any Android Ex tablet on this page. The Xshielder iPad Pro 11 is the most capable hardware of any listed solution and now holds its ATEX Zone 1/21 certificate, making it the top overall pick of this site's 2026 comparison.
-For Zone 1 Android tablet needs, the ecom Tab-Ex 03 DZ2 is the industry standard, with the i.safe MOBILE IS930.1 as a compact alternative.
-For Windows requirements in Zone 1, the Aegex 10 IS is the only option.
-For Zone 2 deployments where a larger screen is needed, the Getac F110-Ex offers 11.6 inches of display.
-For Apple ecosystem access in hazardous areas: full-size Zone 1 means the ATEX-certified Xshielder iPad Pro 11 case; compact Zone 1 means the Xciel XCZ1 iPad mini enclosure; phones mean Xshielder iPhone Ex cases (intrinsicallysafephones.com); Zone 2 means Atexxo converted iPads or Xciel XCRiPad cases; Atexxo's Zone 1 converted iPad 11" is expected Q3 2026.
+## Guides
+- Best ATEX tablets 2026: https://explosionprooftablets.com/best-atex-tablets-2026.html (seven Zone 1 and Zone 2 tablets compared)
+- What is an intrinsically safe tablet?: https://explosionprooftablets.com/what-is-an-intrinsically-safe-tablet.html (ATEX and IECEx certification explained)
+- Zone 1 vs Zone 2 tablets: https://explosionprooftablets.com/zone-1-vs-zone-2-tablets.html (which certification a site needs)
+- ecom Tab-Ex alternatives: https://explosionprooftablets.com/ecom-tab-ex-alternatives.html (every alternative to the ecom tablets)
+- Tab-Ex 03 DZ1 vs i.safe IS930.1: https://explosionprooftablets.com/ecom-tab-ex-03-vs-isafe-is930.html (Zone 1 Android tablets compared)
+- Tab-Ex 03 vs Aegex 10 IS: https://explosionprooftablets.com/ecom-tab-ex-vs-aegex-10.html (Android or Windows in Zone 1)
+- Tab-Ex 03 vs Bartec Agile X IS: https://explosionprooftablets.com/ecom-tab-ex-vs-bartec-agile.html (ecom and Bartec compared)
+- What drives the cost of an ATEX tablet: https://explosionprooftablets.com/atex-tablet-pricing.html (cost factors, no figures)
+- ATEX tablet buying decision guide: https://explosionprooftablets.com/atex-tablet-buying-decision-guide.html (step-by-step selection)
+- Intrinsically safe tablet buyer's guide 2026: https://explosionprooftablets.com/buyers-guide-2026.html (five checks before buying)
+- Are Samsung, Apple and Google tablets intrinsically safe?: https://explosionprooftablets.com/are-tablets-intrinsically-safe.html (consumer tablets vs certified ones)
+- ATEX tablets in Japan and Korea: https://explosionprooftablets.com/japan-korea-certification.html (JPEx/TIIS and KCs)
 
 ## Contact
-hello@explosionprooftablets.com
+Contact form (price and availability requests too): https://explosionprooftablets.com/#contact
