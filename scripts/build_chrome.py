@@ -175,14 +175,14 @@ BLURB = {'en': 'Engineering reference for ATEX and IECEx certified tablets and i
          'nl': 'Technische referentie voor ATEX- en IECEx-gecertificeerde tablets en iPad Ex-oplossingen. Specificaties komen uit certificaten en datasheets van fabrikanten.',
          'es': 'Referencia técnica sobre tablets y soluciones iPad Ex con certificación ATEX e IECEx. Los datos proceden de certificados y fichas técnicas de los fabricantes.',
          'pt-br': 'Referência técnica sobre tablets e soluções iPad Ex com certificação ATEX e IECEx. Os dados vêm de certificados e fichas técnicas dos fabricantes.'}
-NETWORK = [('https://intrinsicallysafephones.com', 'intrinsicallysafephones.com'), ('https://exknowledge.com', 'exknowledge.com'), ('https://hazardousareaguide.com', 'hazardousareaguide.com')]
+# Network links removed 2026-09-30 (HAG link policy: one nofollow network line, added by hag_link_policy.py)
+NETWORK_UNUSED = [('https://intrinsicallysafephones.com', 'intrinsicallysafephones.com'), ('https://exknowledge.com', 'exknowledge.com'), ('https://hazardousareaguide.com', 'hazardousareaguide.com')]
 
 def footer(lang):
     t = S[lang]
     en = '' if lang == 'en' else ' hreflang="en"'
     guides = ''.join(f'\n          <li><a href="{guide_href(g, lang)}">{html.escape(glabel(g, lang))}</a></li>' for g in GUIDES)
     more = ''.join(f'\n          <li><a href="{PAGES[g]["en"]}"{en}>{html.escape(EN_MORE[g])}</a></li>' for g in MORE)
-    net = ''.join(f'\n          <li><a href="{u}">{n}</a></li>' for u, n in NETWORK)
     logo = LOGO.replace('#1a1a1a', '#ffffff')
     return f'''<footer class="site-footer">
   <div class="max-w-[1140px] mx-auto px-4 md:px-6 pt-16 pb-10">
@@ -196,14 +196,9 @@ def footer(lang):
         <ul class="space-y-1">{guides}
         </ul>
       </div>
-      <div class="lg:col-span-2">
+      <div class="lg:col-span-3">
         <h2 class="footer-h">{t["more"]}</h2>
         <ul class="space-y-1">{more}
-        </ul>
-      </div>
-      <div class="lg:col-span-2">
-        <h2 class="footer-h">{t["net"]}</h2>
-        <ul class="space-y-1">{net}
         </ul>
       </div>
     </div>
