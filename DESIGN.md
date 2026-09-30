@@ -45,7 +45,7 @@ Warm paper, ink and one blue. Every page uses the same light design (the three f
 
 - **Guides dropdown:** a real button with `aria-expanded`. It closes on Escape, on outside click and when focus leaves it.
 - **Mobile menu:** a dialog. Opening it moves focus to Close, Tab stays inside, Escape closes it, the page doesn't scroll behind it, and focus returns to the menu button.
-- **Forms:** add `data-isp-form` to the form and a `<p data-form-status hidden>` after it. The script validates inline, posts to formsubmit.co as JSON, fires the `generate_lead` event when sent, and shows the result in place. The inbox address is stored encoded in `site.js` and never appears in the HTML. `?inquire=` pre-fills the message.
+- **Forms:** add `data-isp-form` to the form and a `<p data-form-status hidden>` after it. The script validates inline, posts to Web3Forms (api.web3forms.com, public access key) as JSON, fires the `generate_lead` event when sent, and shows the result in place. The inbox address is stored encoded in `site.js` and never appears in the HTML. `?inquire=` pre-fills the message.
 - **Motion:** everything respects `prefers-reduced-motion`.
 
 ## Rebuilding
