@@ -1,16 +1,14 @@
 {
   "version": "1.0",
-  "name": "explosionprooftablets.com",
-  "description": "Engineering reference comparing ATEX and IECEx certified Zone 1 and Zone 2 tablets and iPad Ex solutions for hazardous areas, for HSE and procurement teams.",
+  "name": "Intrinsically Safe Tablets (explosionprooftablets.com)",
+  "description": "Independent comparison of ATEX and IECEx certified intrinsically safe and explosion-proof tablets, Ex cases and converted tablets for Zone 1 and Zone 2, built from their certificates.",
   "url": "https://explosionprooftablets.com/",
   "ai_content": {
     "llms_txt": "https://explosionprooftablets.com/llms.txt",
     "robots_txt": "https://explosionprooftablets.com/robots.txt",
-    "sitemap": "https://explosionprooftablets.com/sitemap.xml",
-    "llms_full_txt": "https://explosionprooftablets.com/llms-full.txt",
-    "reasoning": "https://explosionprooftablets.com/reasoning.json"
+    "sitemap": "https://explosionprooftablets.com/sitemap.xml"
   },
-  "contact": "https://explosionprooftablets.com/#contact",
+  "contact": "https://explosionprooftablets.com/contact/",
   "policy": {
     "allowed_usage": [
       "training",

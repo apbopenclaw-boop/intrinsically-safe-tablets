@@ -1,6 +1,6 @@
 # explosionprooftablets.com (Astro revamp, in progress)
 
-**Status 2026-10-26: Phase C in progress** (after Phase B). `npm run tablets:import -- ../explosionproof_tablets_master_data.xlsx` writes 74 tablets; the build is green (83 pages). Temporary: `src/pages/index.astro` is a stub home page, and `src/pages/compare/_index.astro` is parked until head-to-heads exist. Next: Phase C (tablet copy on the page templates, feature keys, images, Best-for menu).
+**Status 2026-10-26: Phase D done, awaiting Rory's OK to commit** (Phases A–C committed as 19eeb1c on astro-revamp, not pushed). 74 tablets, build green (83 pages). Real home page; 12 redirect pages for the old English URLs (map in `legacy/README.md`); language switcher and hreflang stripped from the DE/ES/NL/PT-BR pages; info pages reworded (no cost guide exists yet, so no references to one); `llms.txt` is generated from the collection by `src/pages/llms.txt.ts` (old static file kept as `legacy/llms.txt.old`). `src/pages/compare/_index.astro` stays parked until head-to-heads exist. Next: Phase E (Best-for shortlist, compare pairs, guides, then point the provisional redirects at them).
 ec2194d) and still talks about phones. Phase B renames phone to tablet and replaces the schema and import. Until then,
 read every rule below as "the phones-site rule we're carrying over", and the tablet decisions here as overriding it.
 Plan: `../site-repo-plan.md`. Data: `../explosionproof_tablets_master_data.xlsx` (frozen 2026-10-26; changes are

@@ -1,26 +1,904 @@
 ---
 /*
- * TEMPORARY home page (Phase B, 2026-10-26). The phones-site home page was taken out because it is built around
- * phone data (counts, brand groups, the default head-to-head, hero photos). Phase D writes the tablet home page;
- * the phones version is in urban-lamp's src/pages/index.astro for reference.
+ * Home page. Counts, brand lists and the FAQ facts come from the tablet data, so the copy stays true as the catalogue
+ * changes; the one fixed claim (every Zone 1 iPad option is flameproof) fails the build if it stops being true.
+ * Sections for head-to-heads and guides appear once those pages exist (Phase E).
  */
 import { getCollection } from 'astro:content';
+import { Image, getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { FIND_TABLETS } from '../config/site';
+import Icon, { type IconName } from '../components/Icon.astro';
+import HeroMarquee from '../components/home/HeroMarquee.astro';
+import { SITE, FIND_TABLETS, CONTACT } from '../config/site';
+import { logo, logoScale } from '../lib/brand-logos';
+import { securityEnd } from '../lib/tablets';
+import { COMPARE_PAGES } from '../data/compare-pages';
+import { GUIDE_PAGES } from '../data/guide-pages';
+import { guideImage } from '../lib/guide-images';
 
+type T = (typeof tablets)[number];
 const tablets = await getCollection('tablets');
-const current = tablets.filter((t) => t.data.status === 'current').length;
+const current = tablets.filter((t) => t.data.status === 'current');
+const byId = new Map(tablets.map((t) => [t.id, t]));
+const list = (items: string[]) => new Intl.ListFormat('en-GB', { type: 'conjunction' }).format(items);
+const plain = (brand: string) => brand.replace(/\s*\(.*\)$/, '');
+const inZone = (z: string) => (t: T) => t.data.certification.zonesGas.includes(z);
+const count = (f: (t: T) => boolean) => current.filter(f).length;
+
+const title = 'Intrinsically Safe Tablets Compared: ATEX Zone 1 & 2';
+const description = `Compare ${tablets.length} intrinsically safe and explosion-proof tablets, rugged Ex tablets and iPad Ex cases for ATEX and IECEx Zone 1 and 2.`;
+if (title.length > 60 || description.length > 160) throw new Error('Home page title or description is too long');
+
+/* ---------- Start your search: Find tablets with a filter already set ---------- */
+const brandsOf = (types: string[]) => [...new Set(current.filter((t) => types.includes(t.data.type)).map((t) => plain(t.data.brand)))].sort();
+const searches: { icon: IconName; title: string; text: string; href: string; count: number }[] = [
+  { icon: 'flame', title: 'Zone 1 tablets', text: 'Gas likely in normal operation', href: '/tablets/?zone=1', count: count(inZone('1')) },
+  { icon: 'shield', title: 'Zone 2 tablets', text: 'Gas unlikely, and only briefly', href: '/tablets/?zone=2', count: count(inZone('2')) },
+  { icon: 'monitor', title: 'Windows tablets', text: 'Desktop software in the field', href: '/tablets/?os=Windows', count: count((t) => t.data.os.name === 'Windows') },
+  { icon: 'tablet', title: 'Android tablets', text: 'Dedicated and rugged Android tablets', href: '/tablets/?os=Android', count: count((t) => t.data.os.name === 'Android') },
+  { icon: 'tablet', title: 'iPad cases and conversions', text: 'Standard iPads in certified housings', href: '/tablets/?os=iPadOS', count: count((t) => t.data.os.name === 'iPadOS') },
+  {
+    icon: 'settings',
+    title: 'Rugged tablets, Ex versions',
+    text: `${list(brandsOf(['rugged-variant']).slice(0, 3))} and more`,
+    href: '/tablets/?type=rugged-variant',
+    count: count((t) => t.data.type === 'rugged-variant'),
+  },
+];
+
+/* ---------- Brands: every maker's logo in its own colours (black where there's no colour file), alphabetical ---------- */
+const TILE_OPTICAL: Record<string, number> = { isafe: 1.15, bartec: 0.85 };
+// Xshielder's yellow logo is made for a dark surface, so it sits on its own badge, as in the hero strip
+const BADGE: Record<string, string> = { xshielder: '#171B25' };
+const brands = [...new Map(tablets.map((t) => [t.data.brandSlug, t.data.brand])).entries()]
+  .map(([slug, name]) => {
+    const img = logo('brands', slug, 'colour');
+    return { slug, name, img, badge: BADGE[slug], scale: img ? logoScale(slug, img) * (TILE_OPTICAL[slug] ?? 1) : 1 };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+const brandList = brands.map((b) => plain(b.name));
+
+/* ---------- Head-to-head: the first comparison without a sponsor product, once comparisons exist ---------- */
+const featured = COMPARE_PAGES.find((p) => p.tablets.every((id) => !byId.get(id)?.data.sponsor));
+const pair = featured
+  ? await Promise.all(
+      featured.tablets.map(async (id) => {
+        const t = byId.get(id)!;
+        const src = t.data.image ? (await getImage({ src: t.data.image, width: 720, height: 720, fit: 'contain', format: 'webp' })).src : undefined;
+        return { src };
+      }),
+    )
+  : [];
+
+/* ---------- How we compare ---------- */
+const principles: { icon: IconName; title: string; text: string }[] = [
+  { icon: 'file-check', title: 'From the certificate', text: 'Zones, markings and limits come from certificates and maker datasheets.' },
+  { icon: 'scale', title: 'Same rules for every brand', text: 'Every tablet and case is described and compared the same way.' },
+  { icon: 'flag', title: 'Unknowns flagged', text: 'Anything we could not confirm is marked as not verified, never guessed.' },
+];
+
+/* ---------- Guides, once they exist ---------- */
+const insights = GUIDE_PAGES.slice(0, 3)
+  .map((g) => ({ g, photo: guideImage(g.slug) }))
+  .filter((x) => x.photo)
+  .map(({ g, photo }) => ({ ...photo!, title: g.navLabel, href: `/guides/${g.slug}/` }));
+
+/* ---------- FAQ ---------- */
+// Every question names its subject and every answer restates it, so each reads on its own (SEO/AEO rule).
+const ipads = current.filter((t) => t.data.os.name === 'iPadOS');
+const ipadZone1 = ipads.filter(inZone('1'));
+if (ipadZone1.some((t) => !t.data.certification.protection?.startsWith('Flameproof'))) {
+  throw new Error('Home FAQ says every Zone 1 iPad option is flameproof (Ex d); re-check the copy');
+}
+const windows = current.filter((t) => t.data.os.name === 'Windows');
+const windowsZone1 = windows.filter(inZone('1'));
+const armWindows = windows.filter((t) => /arm/i.test(t.data.specs.cpuArch ?? ''));
+const ruggedBrands = brandsOf(['rugged-variant']);
+// Security update dates for current Zone 1 Android tablets, in the maker's wording
+const zone1Android = current
+  .filter((t) => t.data.os.name === 'Android' && inZone('1')(t) && t.data.os.securityUntil)
+  .sort((a, b) => a.data.os.securityUntil!.localeCompare(b.data.os.securityUntil!))
+  .map((t) => `${t.data.name} (${securityEnd(t.data.os)})`);
+
+const faq: { q: string; a: string; link?: { label: string; href: string } }[] = [
+  {
+    q: 'What is an intrinsically safe tablet?',
+    a: 'An intrinsically safe tablet is built so its circuits and battery cannot release enough electrical or thermal energy to ignite an explosive atmosphere, even with a fault. It is certified under protection type Ex i: level ia is suitable down to Zone 0, ib down to Zone 1, and ic for Zone 2 only.',
+  },
+  {
+    q: 'What is the difference between an intrinsically safe tablet and an explosion-proof tablet?',
+    a: `An intrinsically safe tablet limits its energy so it cannot ignite gas or dust. An explosion-proof (flameproof, Ex d) tablet or case accepts that ignition could happen inside it and contains it in a housing strong enough to stop the flame reaching the atmosphere outside${ipadZone1.length ? ', which is how every Zone 1 iPad option we list is certified' : ''}. Both methods can be approved for Zone 1, and the Ex marking shows which one a tablet uses.`,
+  },
+  {
+    q: 'Is the iPad intrinsically safe?',
+    a: `No, a standard iPad is not intrinsically safe and has no Ex certificate, so it cannot be used in a hazardous area on its own. An iPad can be used in Zone 1 or Zone 2 inside a certified Ex case or as a certified conversion, and we list ${ipads.length} current iPad options, ${ipadZone1.length} of them for Zone 1.`,
+    link: { label: 'See the iPad cases and conversions', href: '/tablets/?os=iPadOS' },
+  },
+  {
+    q: 'Which brands make intrinsically safe and explosion-proof tablets?',
+    a: `The makers of certified tablets for Zone 1 and Zone 2 fall into four groups. ${list(brandsOf(['dedicated']))} build dedicated Ex tablets; ${list(ruggedBrands)} sell certified Ex versions of their rugged tablets; ${list(brandsOf(['ex-case']))} make certified cases for standard tablets; and ${list(brandsOf(['conversion']))} converts standard iPads and Samsung Galaxy tablets.`,
+    link: { label: 'See every tablet we compare', href: FIND_TABLETS.href },
+  },
+  {
+    q: 'Do I need a Zone 1 or a Zone 2 tablet?',
+    a: `Whether you need a Zone 1 or a Zone 2 tablet depends on the most hazardous area your team enters. A Zone 1 tablet can also be used in Zone 2, but a Zone 2 tablet must never go into Zone 1. We list ${count(inZone('1'))} current tablets and cases for Zone 1 and ${count((t) => t.data.certification.zonesGas.join() === '2')} for Zone 2 only. Check your site’s area classification drawings, and the gas group and temperature class they call for.`,
+    link: { label: 'Filter tablets by zone', href: FIND_TABLETS.href },
+  },
+  {
+    q: 'Can a Windows tablet be used in a hazardous area?',
+    a: `Yes, a Windows tablet can be used in a hazardous area if it holds an Ex certificate for the zone. We list ${windows.length} current Windows tablets${windowsZone1.length ? `, ${windowsZone1.length} of them for Zone 1 (${list(windowsZone1.map((t) => t.data.name))})` : ''}; the rest are for Zone 2.${armWindows.length ? ` Some run Windows on Arm, which runs older x86 software through emulation, so check your field apps first.` : ''}`,
+    link: { label: 'See the Windows tablets', href: '/tablets/?os=Windows' },
+  },
+  {
+    q: 'What is the difference between ATEX, IECEx and UKEX?',
+    a: 'ATEX is the legal requirement for equipment in explosive atmospheres in the EU, and UKEX is the equivalent in Great Britain. IECEx is an international certification scheme accepted in many countries outside Europe. North America uses Class and Division ratings under the NEC and CEC, so check which scheme your site needs.',
+  },
+  {
+    q: 'Can a rugged tablet be used in a hazardous area?',
+    a: `A rugged tablet cannot be used in a hazardous area unless it also holds an Ex certificate such as ATEX or IECEx. Rugged ratings such as IP68 and MIL-STD-810H cover water, dust and drops, and say nothing about whether a tablet can ignite gas or dust. ${list(ruggedBrands)} sell certified Ex versions of some rugged tablets; the standard versions are not certified.`,
+    link: { label: 'See the rugged Ex tablets', href: '/tablets/?type=rugged-variant' },
+  },
+  {
+    q: 'How long are intrinsically safe tablets supported with security updates?',
+    a: `Security updates for current Zone 1 Android tablets run until ${list(zone1Android)}, according to each maker. Windows 11 tablets keep getting updates while they are kept on a current Windows version, and Apple guarantees at least five years of updates for each iPad, with earlier iPad Pro models supported for seven to eight years.`,
+  },
+  {
+    q: 'Which intrinsically safe tablet is best?',
+    a: 'The best intrinsically safe tablet depends on the zone, the software your team runs and the work. A crew scanning barcodes in Zone 2, an inspector who needs a camera and LiDAR, and a site that needs T6 equipment in Zone 1 will each be best served by a different tablet, so filter by the Ex rating and features you need.',
+    link: { label: 'Find tablets by Ex rating and feature', href: FIND_TABLETS.href },
+  },
+];
+
+const schema = [
+  {
+    '@type': 'WebPage',
+    '@id': `${SITE.url}/#webpage`,
+    url: `${SITE.url}/`,
+    name: title,
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    about: [
+      { '@type': 'Thing', name: 'Intrinsically safe tablet' },
+      { '@type': 'Thing', name: 'Explosion-proof tablet' },
+      { '@type': 'Thing', name: 'ATEX' },
+    ],
+    primaryImageOfPage: { '@type': 'ImageObject', url: `${SITE.url}/og-image.png` },
+  },
+  {
+    '@type': 'FAQPage',
+    '@id': `${SITE.url}/#faq`,
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
 ---
 
-<BaseLayout
-  title="Intrinsically Safe Tablets Compared | ATEX Zone 1 & 2"
-  description="Compare intrinsically safe and explosion-proof tablets, rugged Ex tablets and iPad Ex cases for ATEX Zone 1 and Zone 2."
->
-  <section class="band">
+<BaseLayout title={title} description={description} schema={schema}>
+  <!-- Legacy links pointed at the old home page form (/#contact, /?inquire=…); forward them to the contact page -->
+  <script is:inline>
+    if (location.hash === '#contact' || new URLSearchParams(location.search).has('inquire')) {
+      location.replace('/contact/' + location.search);
+    }
+  </script>
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <!-- The H1 carries the search term but looks like an eyebrow; the slogan below is styled as the headline -->
+        <h1 id="hero-title" class="eyebrow">Intrinsically safe tablets compared</h1>
+        <p class="hero-slogan">The right tablet. <span>For the right environment.</span></p>
+        <p class="lead">
+          Compare certified tablets for ATEX and IECEx Zone 1 and 2, from intrinsically safe and rugged Ex tablets to
+          explosion-proof iPad cases.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href={FIND_TABLETS.href}>{FIND_TABLETS.label} <Icon name="arrow-right" /></a>
+          {featured && <a class="btn btn-secondary" href="/compare/">Compare tablets</a>}
+        </div>
+      </div>
+      <div class="hero-media">
+        <HeroMarquee tone="colour" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Start your search: Find tablets with a filter already set -->
+  <section id="start" class="band band-white" aria-labelledby="start-title">
     <div class="container">
-      <h1>Intrinsically safe tablets compared</h1>
-      <p>{tablets.length} tablets and tablet Ex cases, {current} of them on sale today.</p>
-      <p><a class="btn btn-primary" href={FIND_TABLETS.href}>{FIND_TABLETS.label}</a></p>
+      <div class="search-head">
+        <h2 id="start-title" class="h2">Start your search here.</h2>
+        <p class="search-text">Pick the zone, operating system or kind of tablet you need, then narrow it down with filters.</p>
+      </div>
+      <ul class="pick-list search-grid">
+        {searches.map((s) => (
+          <li>
+            <a class="pick has-icon" href={s.href}>
+              <span class="pick-icon"><Icon name={s.icon} /></span>
+              <span class="pick-body">
+                <span class="pick-title">{s.title}</span>
+                <span class="pick-text">{s.text}</span>
+              </span>
+              <span class="pick-count">{s.count} {s.count === 1 ? 'tablet' : 'tablets'}</span>
+              <Icon name="arrow-right" class="pick-arrow" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Brands: copy left, logos right -->
+  <section class="band band-warm" aria-labelledby="brands-title">
+    <div class="container duo">
+      <div class="duo-copy">
+        <h2 id="brands-title" class="h2">Every major brand, side by side.</h2>
+        <p class="duo-text">
+          Compare dedicated Ex tablets, certified versions of rugged tablets, and explosion-proof cases and conversions
+          for iPad and Samsung Galaxy tablets.
+        </p>
+        <a class="arrow-link" href={FIND_TABLETS.href}>See all tablets <Icon name="arrow-right" /></a>
+      </div>
+      <ul class="logo-grid" aria-label={`Brands we compare: ${brandList.join(', ')}`}>
+        {brands.map((b) => (
+          <li class="logo-tile">
+            {b.img && b.badge ? (
+              <span class="logo-badge" style={`--badge: ${b.badge}`}>
+                <img src={b.img.src} width={b.img.width} height={b.img.height} alt={b.name} loading="lazy" style={`--scale: ${b.scale.toFixed(2)}`} />
+              </span>
+            ) : b.img ? (
+              <img src={b.img.src} width={b.img.width} height={b.img.height} alt={b.name} loading="lazy" style={`--scale: ${b.scale.toFixed(2)}`} />
+            ) : (
+              <span class="logo-text">{plain(b.name)}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Head-to-head: visual left, copy right (once comparisons exist) -->
+  {featured && (
+    <section class="band band-white" aria-labelledby="compare-title">
+      <div class="container duo duo-flip">
+        <a class="matchup" href={`/compare/${featured.slug}/`} aria-label={`Read the comparison: ${featured.h1}`}>
+          {pair.map((p, i) => (
+            <span class="matchup-photo" style={`grid-column: ${i * 2 + 1}`}>
+              {p.src && <img src={p.src} alt="" width="360" height="360" loading="lazy" />}
+            </span>
+          ))}
+          <span class="matchup-vs" aria-hidden="true">vs</span>
+        </a>
+        <div class="duo-copy">
+          <h2 id="compare-title" class="h2">Compare tablets head to head.</h2>
+          <p class="duo-text">The verdict, the differences that decide it and the full specifications, side by side.</p>
+          <div class="duo-actions">
+            <a class="btn btn-primary" href="/compare/">Compare tablets <Icon name="arrow-right" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- How we compare -->
+  <section class={`band ${featured ? 'band-warm' : 'band-white'}`} aria-labelledby="principles-title">
+    <div class="container principles">
+      <div>
+        <h2 id="principles-title" class="h2">Facts first, for every brand.</h2>
+      </div>
+      <ul class="principle-list">
+        {principles.map((p) => (
+          <li class="principle">
+            <span class="icon-badge"><Icon name={p.icon} /></span>
+            <div>
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Guides (once they exist) -->
+  {insights.length > 0 && (
+    <section class="band band-white" aria-labelledby="insights-title">
+      <div class="container">
+        <h2 id="insights-title" class="h2">Practical guidance, at your pace.</h2>
+        <ul class="insight-grid">
+          {insights.map((p) => (
+            <li>
+              <a class="insight" href={p.href}>
+                <Image src={p.img} alt={p.alt} widths={[400, 800]} sizes="(min-width: 56rem) 33vw, 100vw" />
+                <h3>{p.title}</h3>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- FAQ -->
+  <section class="band band-warm" aria-labelledby="faq-title">
+    <div class="container faq-grid">
+      <div>
+        <h2 id="faq-title" class="h2">Hazardous-area tablets, explained.</h2>
+      </div>
+      <div class="faq-list">
+        {faq.map((f) => (
+          <details class="faq">
+            <summary>
+              <h3>{f.q}</h3>
+              <Icon name="chevron-down" />
+            </summary>
+            <div class="faq-answer">
+              <p>{f.a}</p>
+              {f.link && <a class="arrow-link" href={f.link.href}>{f.link.label} <Icon name="arrow-right" /></a>}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section class="band cta" aria-labelledby="cta-title">
+    <svg class="cta-contours" viewBox="0 0 600 260" aria-hidden="true" focusable="false" preserveAspectRatio="xMaxYMid slice">
+      <g fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M420 130c0-48 46-92 104-92s92 40 92 92-38 96-96 96-100-48-100-96Z" />
+        <path d="M380 132c0-70 64-128 146-128s126 58 126 128-54 134-136 134-136-64-136-134Z" />
+        <path d="M340 134c0-92 82-166 186-166s162 76 162 166-70 172-174 172-174-80-174-172Z" />
+        <path d="M300 136c0-114 100-204 226-204s198 94 198 204-86 210-212 210-212-96-212-210Z" />
+        <path d="M262 138c0-136 118-242 264-242s234 112 234 242-102 248-250 248-248-112-248-248Z" />
+        <path d="M462 128c0-24 28-48 62-48s54 22 54 48-22 52-56 52-60-26-60-52Z" />
+      </g>
+    </svg>
+    <div class="container cta-inner">
+      <div>
+        <h2 id="cta-title" class="h2">Find the right tablet for your site.</h2>
+        <p class="cta-text">Filter every certified tablet by zone and feature, or ask our team for impartial advice.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-light" href={FIND_TABLETS.href}>{FIND_TABLETS.label} <Icon name="arrow-right" /></a>
+        <a class="btn btn-outline-light" href={CONTACT.href}>{CONTACT.label}</a>
+      </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  /* ---------- Hero ---------- */
+  .hero {
+    padding-block: 2rem 3.5rem;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgb(245 158 11 / 0.06), transparent 60%),
+      radial-gradient(1000px 500px at 10% 30%, rgb(34 197 94 / 0.05), transparent 55%),
+      var(--paper-grain);
+    background-size: auto, auto, 3px 3px;
+  }
+
+  .hero-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  /* The eyebrow is the H1, so undo the heading styles .eyebrow doesn't set */
+  .hero h1.eyebrow {
+    font-stretch: normal;
+    line-height: inherit;
+  }
+
+  .hero-slogan {
+    font-family: var(--font-display);
+    font-weight: var(--heading-weight);
+    font-stretch: var(--heading-stretch);
+    font-size: var(--text-h1);
+    line-height: 1.08;
+    letter-spacing: var(--tracking-hero);
+    color: var(--color-heading);
+    text-wrap: balance;
+  }
+  .hero-slogan span { display: block; }
+
+  .hero .lead {
+    max-width: 30rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.25rem;
+  }
+
+  .hero-media { position: relative; min-width: 0; }
+
+  .hero-art {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .hero-art img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    /* Kept faint so the strips stay the focus */
+    opacity: 0.27;
+    translate: 0 -15px;
+  }
+  .hero-media :global(.marquees) { position: relative; z-index: 1; }
+
+  /* ---------- Start your search: centred heading, tabs as a row of buttons ---------- */
+  .search-head { text-align: center; }
+  .search-text {
+    max-width: 34rem;
+    margin: 1rem auto 0;
+  }
+
+  .tabs { margin-top: 2rem; }
+  /* A quiet segmented control: the selected tab is a white key on a warm track */
+  .tab-list {
+    display: flex;
+    justify-content: center;
+    gap: 0.125rem;
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 0.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: calc(var(--radius) + 0.25rem);
+    background: var(--color-panel-warm);
+  }
+  .tab-list [role='tab'] {
+    min-height: 2.75rem;
+    padding: 0.5rem 1.15rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    background: none;
+    color: var(--color-muted);
+    font: 500 0.9375rem / 1.2 var(--font-sans);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  .tab-list [role='tab']:hover { color: var(--color-forest); }
+  .tab-list [role='tab'][aria-selected='true'] {
+    border-color: var(--color-border);
+    background: var(--color-panel);
+    color: var(--color-forest);
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgb(30 40 35 / 0.08);
+  }
+
+  .tab-panel {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 2.5rem;
+  }
+  .tab-panel:focus-visible { outline-offset: 6px; }
+
+  .panel-media {
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    max-width: 22rem;
+    overflow: hidden;
+    border-radius: var(--radius);
+  }
+  .panel-media :global(img) { width: 100%; height: 100%; object-fit: cover; }
+
+  .pick-list { display: grid; align-content: center; }
+  .pick-list li { border-bottom: 1px solid var(--color-border); }
+  .pick-list li:first-child { border-top: 1px solid var(--color-border); }
+  .pick {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 1rem;
+    min-height: 5rem;
+    padding-block: 0.75rem;
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .pick.has-icon { grid-template-columns: auto 1fr auto; }
+  .pick-icon { color: var(--color-forest); }
+  .pick-icon :global(svg) { width: 1.35rem; height: 1.35rem; }
+  .pick-body { display: grid; gap: 0.1rem; }
+  .pick-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--color-heading);
+    letter-spacing: var(--tracking-heading);
+  }
+  .pick-text { font-size: var(--text-xs); color: var(--color-muted); }
+  .pick-count { font-size: var(--text-xs); color: var(--color-muted); white-space: nowrap; }
+  .pick :global(.pick-arrow) {
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-forest);
+    transition: transform 0.15s ease;
+  }
+  .pick:hover .pick-title { color: var(--color-forest); }
+  .pick:hover :global(.pick-arrow) { transform: translateX(3px); }
+
+  /* ---------- Two-column sections: copy one side, visual the other ---------- */
+  .duo {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  .duo-text {
+    max-width: 26rem;
+    margin-top: 1.25rem;
+  }
+  .duo-copy .arrow-link { margin-top: 1rem; }
+  .duo-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.5rem;
+    margin-top: 2rem;
+  }
+  .duo-actions .arrow-link { margin-top: 0; }
+
+  /* Brand logos */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  .logo-tile {
+    display: grid;
+    place-items: center;
+    height: 6.5rem;
+    padding: 1rem;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+  .logo-tile img {
+    --logo-h: 1.75rem;
+    width: auto;
+    max-width: 80%;
+    height: calc(var(--logo-h) * var(--scale, 1));
+    object-fit: contain;
+  }
+  .logo-badge {
+    display: grid;
+    place-items: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    background: var(--badge);
+  }
+  .logo-badge img { --logo-h: 1.5rem; max-width: 100%; }
+  .logo-text { font-family: var(--font-display); font-weight: 600; color: var(--color-ink); }
+
+  /* Head-to-head visual: two phones unboxed and close together, a glow behind each, "vs" between */
+  .matchup {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: 0.25rem;
+    text-decoration: none;
+  }
+  .matchup-photo {
+    position: relative;
+    display: grid;
+    place-items: center;
+    /* Photos are square with the phone centred; a portrait frame crops the empty sides so the pair sits close */
+    width: min(100%, 15rem);
+    aspect-ratio: 2 / 3;
+  }
+  .matchup-photo::before {
+    content: '';
+    position: absolute;
+    inset: 6% -10% 8%;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgb(30 58 47 / 0.12), rgb(245 158 11 / 0.06) 55%, transparent);
+  }
+  .matchup-photo:first-child { justify-self: end; }
+  .matchup-photo:nth-child(2) { justify-self: start; }
+  .matchup-photo img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+  .matchup:hover .matchup-photo img { transform: translateY(-4px); }
+  .matchup-vs {
+    grid-row: 1;
+    grid-column: 2;
+    color: var(--color-forest);
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.625rem);
+    font-weight: 600;
+    letter-spacing: var(--tracking-heading);
+  }
+
+  /* ---------- How we compare ---------- */
+  .principles {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .principle-list { display: grid; gap: 1.5rem; }
+  .principle {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .principle h3 { font-size: var(--text-h3); }
+  .principle p {
+    margin-top: 0.3rem;
+    font-size: var(--text-sm);
+  }
+
+  /* ---------- Guides ---------- */
+  .insight-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .insight { display: block; text-decoration: none; }
+  .insight :global(img) {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+  }
+  .insight h3 {
+    margin-top: 1rem;
+    font-size: var(--text-h3);
+  }
+  .insight:hover h3 { color: var(--color-forest); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+
+  /* ---------- FAQ ---------- */
+  .faq-grid {
+    display: grid;
+    gap: 2rem;
+  }
+  .faq-list { border-top: 1px solid var(--color-border-strong); }
+  .faq { border-bottom: 1px solid var(--color-border-strong); }
+  .faq summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 3.75rem;
+    padding-block: 1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary h3 {
+    font-size: var(--text-lg);
+    letter-spacing: var(--tracking-heading);
+  }
+  .faq summary :global(svg) {
+    flex: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-forest);
+    transition: transform 0.2s ease;
+  }
+  .faq[open] summary :global(svg) { transform: rotate(180deg); }
+  .faq summary:hover h3 { color: var(--color-forest); }
+  .faq-answer { padding-bottom: 1.25rem; }
+  .faq-answer p {
+    max-width: 44rem;
+    font-size: var(--text-sm);
+  }
+  .faq-answer .arrow-link { margin-top: 0.25rem; }
+
+  /* ---------- CTA panel ---------- */
+  .cta {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(3.5rem, 3rem + 2vw, 4.5rem);
+    background: var(--color-forest);
+    border-color: var(--color-forest);
+    color: var(--color-on-dark);
+  }
+  .cta-contours {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: min(60%, 40rem);
+    height: 100%;
+    color: var(--color-on-dark);
+    opacity: 0.09;
+    pointer-events: none;
+  }
+  .cta-inner {
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+  .cta h2 { color: var(--color-on-dark); }
+  .cta-text {
+    max-width: 34rem;
+    margin-top: 1rem;
+    color: var(--color-on-dark-muted);
+  }
+  .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .cta :global(:focus-visible) { outline-color: var(--color-on-dark); }
+
+  /* ---------- Tablet and up ---------- */
+  @media (min-width: 48rem) {
+    .insight-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+    .logo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pick-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2.5rem; }
+    .pick-list li:nth-child(2) { border-top: 1px solid var(--color-border); }
+  }
+
+  /* ---------- Desktop ---------- */
+  /* On a laptop-sized screen each section fills the view (about 620px on a MacBook with the dock shown);
+     the CTA band stays its own height */
+  @media (min-width: 56rem) and (min-height: 40rem) {
+    .band:not(.cta) {
+      display: grid;
+      align-content: center;
+      min-height: 38.75rem;
+      padding-block: 4rem;
+    }
+  }
+
+  @media (min-width: 56rem) {
+    .hero { padding-block: 1rem 3rem; }
+    /*
+     * One grid for copy and strips. The right-hand column is the same square the hero image used to fill,
+     * so the hero keeps its height; flexible first and last rows centre the copy against it, as before.
+     * The strips span the H1, lead and buttons rows: brand logos centred on the H1's first line,
+     * marking pills centred on the buttons, certification marks with equal space above and below.
+     */
+    .hero { container-type: inline-size; }
+    .hero-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto auto auto auto 1fr;
+      column-gap: 3rem;
+      row-gap: 0;
+      align-items: start;
+      /* Height of a square right-hand column */
+      min-height: calc((min(100cqw - 2 * var(--gutter), var(--container)) - 3rem) / 2);
+    }
+    .hero-copy,
+    .hero-media { display: contents; }
+
+    .hero .eyebrow { grid-area: 2 / 1; }
+    .hero-slogan { grid-area: 3 / 1; }
+    .hero .lead { grid-area: 4 / 1; }
+    .hero-actions { grid-area: 5 / 1; }
+
+    /* The drawing fills the square */
+    .hero-art {
+      position: relative;
+      inset: auto;
+      grid-area: 1 / 2 / -1 / 3;
+      align-self: stretch;
+    }
+
+    .hero .hero-media :global(.marquees) {
+      position: relative;
+      z-index: 1;
+      grid-area: 3 / 2 / 6 / 3;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0;
+      height: auto;
+      min-width: 0;
+      padding: 0;
+    }
+    .hero .hero-media :global(.marquee) {
+      flex: none;
+      display: grid;
+      align-content: center;
+    }
+    /* Fixed strip heights let the centres be set exactly */
+    .hero .hero-media :global(.marquee-brands) {
+      --strip-h: 4rem;
+      height: var(--strip-h);
+      margin-top: calc(var(--text-h1) * 1.08 / 2 - var(--strip-h) / 2);
+    }
+    .hero .hero-media :global(.marquee-marks) { margin-block: auto; }
+    .hero .hero-media :global(.marquee-markings) {
+      --strip-h: 3rem;
+      height: var(--strip-h);
+      /* The buttons are 2.875rem tall and sit at the bottom of the row */
+      margin-bottom: calc((2.875rem - var(--strip-h)) / 2);
+    }
+
+    .tab-panel {
+      grid-template-columns: 21rem 1fr;
+      gap: 4rem;
+    }
+    .panel-media { max-width: none; }
+
+    .duo {
+      grid-template-columns: minmax(0, 0.9fr) 1.1fr;
+      gap: 5rem;
+    }
+    .duo-flip { grid-template-columns: 1.1fr minmax(0, 0.9fr); }
+
+    .principles,
+    .faq-grid {
+      grid-template-columns: minmax(0, 0.8fr) 1.2fr;
+      gap: 4rem;
+    }
+    .principles { align-items: center; }
+
+    .cta-inner {
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+    }
+  }
+
+  /* ---------- Laptop and up: everything a step larger, so the taller sections don't feel sparse ---------- */
+  @media (min-width: 56rem) and (min-height: 40rem) {
+    .band:not(.cta) {
+      --text-xs: 0.875rem;
+      --text-sm: 1rem;
+      --text-base: 1.125rem;
+      --text-lg: 1.3125rem;
+      --text-h3: 1.5rem;
+      --text-h2: clamp(2.25rem, 1.5rem + 2.4vw, 3.25rem);
+      font-size: var(--text-base);
+    }
+    .band:not(.cta) .btn {
+      min-height: 3.25rem;
+      padding: 0.85rem 1.75rem;
+    }
+    .band:not(.cta) .btn :global(svg),
+    .band:not(.cta) .arrow-link :global(svg) { width: 1.15rem; height: 1.15rem; }
+
+    .search-text { max-width: 38rem; }
+    .tabs { margin-top: 2.25rem; }
+    .tab-panel {
+      grid-template-columns: 26rem 1fr;
+      gap: 4.5rem;
+      padding-top: 2.75rem;
+    }
+    .pick { min-height: 5.75rem; }
+    .pick :global(.pick-arrow) { width: 1.15rem; height: 1.15rem; }
+    .pick-icon :global(svg) { width: 1.6rem; height: 1.6rem; }
+
+    .duo-text { max-width: 30rem; }
+    .logo-grid { gap: 1rem; }
+    .logo-tile { height: 8.25rem; }
+    .logo-tile img { --logo-h: 2.15rem; }
+    .logo-badge { padding: 0.75rem 1.25rem; }
+    .logo-badge img { --logo-h: 1.85rem; }
+
+    .matchup-photo { width: min(100%, 18.5rem); }
+    .matchup-vs { font-size: 2rem; }
+
+    .principle-list { gap: 2.5rem; }
+    .principle p { font-size: var(--text-base); }
+    .principle .icon-badge { width: 3.75rem; height: 3.75rem; }
+    .principle .icon-badge :global(svg) { width: 1.85rem; height: 1.85rem; }
+
+    .insight-grid { gap: 1.75rem; margin-top: 2.5rem; }
+    .insight :global(img) { aspect-ratio: 16 / 10; }
+
+    .faq summary { min-height: 4.5rem; }
+    .faq-answer p { max-width: 48rem; }
+  }
+
+  /* Tablet site: the "Start your search" tiles sit in a grid instead of beside a tab picture */
+  .search-grid .pick.has-icon { grid-template-columns: auto 1fr auto auto; }
+  .search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 0 2rem; margin-top: 2rem; }
+</style>
