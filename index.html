@@ -223,6 +223,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-53EXCZ857W');</script>
 <link rel="stylesheet" href="/assets/mobile-tables.css?v=dd78d427">
 <script src="/assets/mobile-tables.js?v=1ac5a937" defer></script>
+<link rel="stylesheet" href="/assets/requirements.css?v=1">
 </head>
 
 <body class="min-h-screen">
@@ -290,7 +291,7 @@
 
 <!-- Hero -->
 <section id="top" class="pt-20 pb-16">
-  <div class="max-w-[1140px] mx-auto px-6">
+  <div class="max-w-[1140px] mx-auto px-6 requirements-layout">
     <div class="max-w-[720px]">
       <div class="flex gap-2 mb-6">
         <span class="badge badge-z1">Zone 1</span>
@@ -311,7 +312,7 @@
     <div class="hidden lg:block mt-12">
       <img src="/img/hero-tablets.jpg" alt="ATEX and IECEx certified tablets for hazardous areas — Zone 1 and Zone 2 rugged Android and Windows devices" width="600" height="400" class="rounded-2xl" />
     </div>
-  </div>
+  <aside class="requirements-card" aria-labelledby="requirements-title"><h2 id="requirements-title">Help me choose a tablet</h2><p>Tell us what you need for your site.</p><label for="req-zone">Required zone</label><select id="req-zone" name="required_zone" class="field" form="contactForm"><option value="Not sure">Not sure</option><option value="Zone 1">Zone 1</option><option value="Zone 2">Zone 2</option></select><label for="req-os">Operating system</label><select id="req-os" name="operating_system" class="field" form="contactForm"><option value="No preference">No preference</option><option value="iPadOS">iPadOS</option><option value="Android">Android</option><option value="Windows">Windows</option></select><a class="btn btn-pri" href="#tablet-requirements" id="requirements-continue">Continue to requirements</a><p class="requirements-note">Share your requirements, then choose whether to contact us.</p></aside></div>
 </section>
 
 <!-- Solutions -->
@@ -601,7 +602,7 @@
   <div class="max-w-[640px] mx-auto px-6">
     <h2 class="serif text-[32px] leading-tight mb-3">Ask about a tablet</h2>
     <p class="text-[15px] text-[color:var(--graphite)] mb-8 leading-relaxed">Price and availability, model selection, or a question about the data on this site. We reply by email.</p>
-    <form id="contactForm" data-isp-form data-subject="explosionprooftablets.com enquiry" class="space-y-4">
+    <form id="contactForm" data-isp-form data-subject="explosionprooftablets.com enquiry" class="space-y-4"><fieldset id="tablet-requirements" class="requirements-fields"><legend tabindex="-1" id="requirements-focus">Your tablet requirements</legend><p>Requirements help us answer your enquiry. Suitability must be checked against the exact certificate and site conditions.</p><label for="req-use">Intended use (optional)</label><input class="field" id="req-use" name="use" type="text" maxlength="300"><label for="req-country">Country of use (optional)</label><input class="field" id="req-country" name="country" type="text" maxlength="300"><label for="req-quantity">Quantity (optional)</label><input class="field" data-invalid="Enter a whole quantity between 1 and 100000." id="req-quantity" name="quantity" type="number" min="1" max="100000" step="1"></fieldset><input type="hidden" name="language" value="en"><input type="hidden" name="cta_source" id="cta-source" value="contact">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label class="field-label" for="cf-name">Name</label>
@@ -678,6 +679,7 @@ revealEls.forEach(el => observer.observe(el));
 </script>
 
 
-<script src="/assets/site.js?v=737dac51" defer></script>
-<!-- hag-links --><script src="/assets/hag-links.js?v=185f49cd61" defer></script></body>
+<script src="/assets/site.js?v=cta-20261026" defer></script>
+<!-- hag-links --><script src="/assets/hag-links.js?v=185f49cd61" defer></script><script src="/assets/requirements.js?v=1" defer></script>
+</body>
 </html>
