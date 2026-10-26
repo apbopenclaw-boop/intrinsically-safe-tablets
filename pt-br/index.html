@@ -70,6 +70,7 @@
 </script>
 <link rel="stylesheet" href="/assets/mobile-tables.css?v=dd78d427">
 <script src="/assets/mobile-tables.js?v=1ac5a937" defer></script>
+<link rel="stylesheet" href="/assets/requirements.css?v=1">
 </head>
 <body class="min-h-screen">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFSPF6PH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -131,7 +132,7 @@
 
   <main id="main">
     <section class="pt-20 pb-16">
-      <div class="max-w-[1140px] mx-auto px-6">
+      <div class="max-w-[1140px] mx-auto px-6 requirements-layout">
         <div class="max-w-[720px]">
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="badge badge-z1">Zona 1</span>
@@ -149,7 +150,7 @@
             <a href="/pt-br/zone-1-vs-zone-2-tablets.html" class="btn btn-sec">Zona 1 vs Zona 2</a>
           </div>
         </div>
-      </div>
+      <aside class="requirements-card" aria-labelledby="requirements-title"><h2 id="requirements-title">Ajuda para escolher um tablet</h2><p>Conte-nos o que precisa para sua instalação.</p><label for="req-zone">Zona necessária</label><select id="req-zone" name="required_zone" class="field" form="contactForm"><option value="Não tenho certeza">Não tenho certeza</option><option value="Zona 1">Zona 1</option><option value="Zona 2">Zona 2</option></select><label for="req-os">Sistema operacional</label><select id="req-os" name="operating_system" class="field" form="contactForm"><option value="Sem preferência">Sem preferência</option><option value="iPadOS">iPadOS</option><option value="Android">Android</option><option value="Windows">Windows</option></select><a class="btn btn-pri" href="#tablet-requirements" id="requirements-continue">Continuar para os requisitos</a><p class="requirements-note">Informe seus requisitos e depois escolha se deseja entrar em contato.</p></aside></div>
     </section>
 
     <section id="solutions" class="bg-white py-20">
@@ -198,7 +199,7 @@
       <div class="max-w-[640px] mx-auto px-6">
         <h2 class="serif text-[32px] leading-tight mb-3">Dúvidas sobre um tablet</h2>
         <p class="text-[15px] text-[color:var(--graphite)] mb-8 leading-relaxed">Preço e disponibilidade, escolha de modelo ou uma pergunta sobre os dados deste site. Respondemos por e-mail.</p>
-        <form id="contactForm" data-isp-form data-subject="explosionprooftablets.com enquiry (PT-BR)" class="space-y-4">
+        <form id="contactForm" data-isp-form data-subject="explosionprooftablets.com enquiry (PT-BR)" class="space-y-4"><fieldset id="tablet-requirements" class="requirements-fields"><legend tabindex="-1" id="requirements-focus">Seus requisitos para o tablet</legend><p>Os dados ajudam a responder à consulta. A adequação deve ser verificada com o certificado exato e as condições da instalação.</p><label for="req-use">Uso pretendido (opcional)</label><input class="field" id="req-use" name="use" type="text" maxlength="300"><label for="req-country">País de uso (opcional)</label><input class="field" id="req-country" name="country" type="text" maxlength="300"><label for="req-quantity">Quantidade (opcional)</label><input class="field" data-invalid="Informe uma quantidade inteira entre 1 e 100000." id="req-quantity" name="quantity" type="number" min="1" max="100000" step="1"></fieldset><input type="hidden" name="language" value="pt-br"><input type="hidden" name="cta_source" id="cta-source" value="contact">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="field-label" for="cf-name">Nome</label>
@@ -262,6 +263,7 @@
     </div>
   </div>
 <!-- hag-sponsor:start --><div class="hag-sponsor" style="font-size:13px;line-height:1.6;opacity:.85;margin:14px auto 0;padding:0 16px 18px;max-width:1200px;text-align:center">O principal patrocinador deste site é a <a href="https://xshielder.com/?utm_source=explosionprooftablets.com&amp;utm_medium=referral&amp;utm_campaign=hag_network&amp;utm_content=footer_sponsor" rel="sponsored noopener" target="_blank" style="color:inherit;text-decoration:underline">Xshielder</a>. Quer patrocinar este site? <a href="/pt-br/#contact" style="color:inherit;text-decoration:underline">Fale conosco</a>. Parte da rede <a href="https://hazardousareaguide.com/" rel="nofollow" style="color:inherit;text-decoration:underline">Hazardous Area Guide</a>.</div><!-- hag-sponsor:end --></footer>
-<script src="/assets/site.js?v=737dac51" defer></script>
-<!-- hag-links --><script src="/assets/hag-links.js?v=185f49cd61" defer></script></body>
+<script src="/assets/site.js?v=cta-20261026" defer></script>
+<!-- hag-links --><script src="/assets/hag-links.js?v=185f49cd61" defer></script><script src="/assets/requirements.js?v=1" defer></script>
+</body>
 </html>

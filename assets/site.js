@@ -69,6 +69,7 @@
     if (f.type === 'hidden' || f.disabled || f.classList.contains('hp-input')) return '';
     var v = (f.value || '').trim();
     if (f.required && !v) return t.required;
+    if (v && f.type === 'number' && !f.validity.valid) return f.getAttribute('data-invalid') || t.required;
     if (v && f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return t.email;
     return '';
   }

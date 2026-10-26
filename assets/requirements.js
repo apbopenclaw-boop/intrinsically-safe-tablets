@@ -1,0 +1,2 @@
+/* Selections belong to the existing form via the HTML form attribute. No storage or transmission before submission. */
+(function(){var link=document.getElementById('requirements-continue');if(!link)return;link.addEventListener('click',function(e){e.preventDefault();document.getElementById('cta-source').value='homepage-requirements';document.getElementById('tablet-requirements').scrollIntoView({block:'start'});document.getElementById('requirements-focus').focus({preventScroll:true});});})();
