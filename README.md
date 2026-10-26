@@ -1,4 +1,4 @@
 # explosionprooftablets.com
 
-Engineering reference comparing ATEX and IECEx certified Zone 1 and Zone 2 tablets and iPad Ex solutions.
-Static site on GitHub Pages behind Cloudflare. See `DESIGN.md` for the design system and how to rebuild the shared page chrome and CSS.
+Astro rebuild in progress on the `astro-revamp` branch (see CLAUDE.md). The live site is still the legacy static
+site on `main`. The old English pages are in `legacy/` and the language pages in `public/`.

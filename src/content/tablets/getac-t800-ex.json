@@ -1,0 +1,103 @@
+{
+  "productId": "GT-T800EX",
+  "name": "Getac T800-Ex",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 8.1,
+  "status": "discontinued",
+  "statusNote": "No longer in Getac's range; no end-of-sale notice.",
+  "launchYear": 2015,
+  "summary": "The Getac T800-Ex is the hazardous-area version of a Getac rugged 8.1-inch tablet, certified for Zone 2/22 under IECEx. It is an intrinsically safe (Ex ic) design; its operating system version isn't published. It has been discontinued.",
+  "image": "../../assets/tablets/getac-t800-ex.webp",
+  "imageAlt": "Getac T800-Ex, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIB T130°C Dc",
+      "number": "IECEx EPS 16.0015X"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Use only in a controlled environment with reduced pollution; protect from UV light and mechanical impact (impact tested at reduced height); connection interfaces must never be used in hazardous areas; the battery must never be changed, charged or removed in hazardous areas; keep away from strong charge-generating processes; use only Getac battery packs BP2S2P2100S or BP4S1P2100S (IECEx EPS 16.0015X).",
+    "peripherals": "Connection interfaces must never be used in hazardous areas.",
+    "certifiedAccessories": "Tether; digitizer pen or stylus pen (named in the certificate)."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Not published"
+  },
+  "specs": {
+    "display": "8.1-inch",
+    "connectivity": []
+  },
+  "throughCase": [],
+  "capabilities": [],
+  "variants": [],
+  "unconfirmed": {
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [],
+  "strengths": [
+    "Certified for Zone 2/22"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "In-use weight not published"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "durabook-r8-ex",
+    "bartec-et60-65ex2-windows",
+    "winmate-m101ad-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-26",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 16.0015X issue 3 (T800-Ex), 2021-06-17, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS16.0015/003/deliverable/IECEx_EPS_16.0015X_003.pdf"
+    },
+    {
+      "label": "OfficeEasy (French reseller): Getac T800 ATEX listing: marked end of life and discontinued by the manufacturer; says certified ATEX 2/22 and IECEx; OS given inconsistently (Windows 10 Pro and Android 8.0)",
+      "url": "https://www.officeeasy.fr/tablette-getac-t800-atex.html"
+    },
+    {
+      "label": "Robustbook (reseller datasheet): Technical datasheet Getac T800 EX ATEX Tablet, PDF generated 2026-08-27: marking II 3G Ex ic op is IIC T4 Gc and II 3D Ex ic op is IIIB T130C Dc, and a note that Getac withdrew the model (archived 2024-04-21). Content seen only through a search summary; the PDF text could not be extracted",
+      "url": "https://robustbook.bitblade.io/datasheets/erzeugt/getac-t800-ex-atex-en.pdf"
+    },
+    {
+      "label": "ITWire: Getac out there and blow up that tablet, 2015-08-04: T800-Ex is based on the T800, ATEX Zone 2 and 22 certified, from A$3,570 via Synnex Australia",
+      "url": "https://itwire.com/business-it-news/hardware-and-storage/getac-out-there-and-blow-up-that-tablet"
+    },
+    {
+      "label": "Digitimes: News 2015-07-30: Getac upgrades the T800 with ATEX Zone 2 and 22 certified hardware and renames it T800-Ex (seen only as a search-result snippet; page not fetched)",
+      "url": "https://digitimes.com/news/a20150730PD202.html"
+    }
+  ]
+}

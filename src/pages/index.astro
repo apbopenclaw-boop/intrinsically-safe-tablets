@@ -1,0 +1,26 @@
+---
+/*
+ * TEMPORARY home page (Phase B, 2026-10-26). The phones-site home page was taken out because it is built around
+ * phone data (counts, brand groups, the default head-to-head, hero photos). Phase D writes the tablet home page;
+ * the phones version is in urban-lamp's src/pages/index.astro for reference.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { FIND_TABLETS } from '../config/site';
+
+const tablets = await getCollection('tablets');
+const current = tablets.filter((t) => t.data.status === 'current').length;
+---
+
+<BaseLayout
+  title="Intrinsically Safe Tablets Compared | ATEX Zone 1 & 2"
+  description="Compare intrinsically safe and explosion-proof tablets, rugged Ex tablets and iPad Ex cases for ATEX Zone 1 and Zone 2."
+>
+  <section class="band">
+    <div class="container">
+      <h1>Intrinsically safe tablets compared</h1>
+      <p>{tablets.length} tablets and tablet Ex cases, {current} of them on sale today.</p>
+      <p><a class="btn btn-primary" href={FIND_TABLETS.href}>{FIND_TABLETS.label}</a></p>
+    </div>
+  </section>
+</BaseLayout>

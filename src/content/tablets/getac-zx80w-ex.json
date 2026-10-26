@@ -1,0 +1,171 @@
+{
+  "productId": "GT-ZX80WEX",
+  "name": "Getac ZX80W-EX",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 8,
+  "status": "current",
+  "launchYear": 2026,
+  "summary": "The Getac ZX80W-EX is the hazardous-area version of a Getac rugged 8-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 IoT Enterprise LTSC.",
+  "image": "../../assets/tablets/getac-zx80w-ex.webp",
+  "imageAlt": "Getac ZX80W-EX, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx EPS 25.0039X Current (issue 0); no separate ZX80W-EX certificate found; ATEX not published"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T130°C Dc",
+      "number": "IECEx EPS 25.0039X (ZX80-Exc), assumed to cover the Windows variant"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "As ZX80-Exc: protect from UV and mechanical impact; interfaces never used in hazardous areas; battery never changed, charged or removed in hazardous areas; not next to strong charge-generating processes; batteries BP1S1P4060B or BP1S1P4990B.",
+    "peripherals": "All connection interfaces (USB, Thunderbolt, DC-in, docking connector, LAN, serial) must never be used in hazardous areas (certificate condition). Optional internal modules named in the certificate are covered as part of the certified tablet.",
+    "certifiedAccessories": "Same list as ZX80-EX: certificate names hand strap, shoulder strap, digitizer pen and tether. Anti-static screen film for hazardous use. Hand strap with stylus holder, rotating hand strap and vehicle cradle on the datasheet. NOT for hazardous areas: USB-C adapter, vehicle adapter, chargers, batteries."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 IoT Enterprise LTSC",
+    "edition": "Windows 11 IoT Enterprise LTSC (Arm); LTSC 2024 inferred",
+    "securityUntil": "2034-10-10",
+    "updates": "Security updates until October 2034"
+  },
+  "specs": {
+    "display": "8-inch",
+    "resolution": "1920 × 1200",
+    "brightness": "1000 nits",
+    "chip": "Qualcomm QCS6490 octa-core 1.9 GHz (max 2.7 GHz)",
+    "cpuArch": "Arm",
+    "ram": "12 GB",
+    "camera": "16 MP autofocus",
+    "frontCamera": "8 MP webcam",
+    "battery": "Internal typical 4060; optional 4990",
+    "hotSwap": "Headline claims high-capacity hot-swappable batteries (non-hazardous areas only)",
+    "ports": "USB 3.2 Gen1 Type-C (DP, PD), microSD or hybrid nano-SIM tray; optional 1D/2D barcode",
+    "network": "Wi-Fi 6E; optional 4G LTE, 5G Sub-6",
+    "wifi": "Wi-Fi 6E",
+    "bluetooth": "Bluetooth 5.2",
+    "gnss": "Dedicated L1/L5 GPS",
+    "sim": "Nano-SIM 4FF, eSIM",
+    "keys": "Power + 3 programmable (Windows key, volume up, volume down default)",
+    "pen": "Digitizer pen",
+    "storage": "256 GB, microSD",
+    "replaceableBattery": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6E",
+      "eSIM"
+    ],
+    "weightG": 780,
+    "dimensionsMm": "243.2 × 165.1 × 23.1",
+    "ipRating": "IP67",
+    "ruggedness": "MIL-STD-810H; 1.8 m (6 ft) drop",
+    "operatingTemp": "−21 °C to +55 °C (standard ZX80W: −29 to +63)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (8 MP webcam)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 IoT Enterprise LTSC on Arm; x86 apps need emulation, compatibility not verified)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.iecex.number": "No certificate names the Windows ZX80W-EX yet. This is from the ZX80-EX certificate, which covers the same hardware.",
+    "certification.ambient": "No certificate names the Windows ZX80W-EX yet. This is from the ZX80-EX certificate, which covers the same hardware.",
+    "safety.conditions": "No certificate names the Windows ZX80W-EX yet. This is from the ZX80-EX certificate, which covers the same hardware.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "os.securityUntil": "Getac's date for the standard model; Getac lists no separate date for the EX version.",
+    "capabilities.Windows desktop software": "Not confirmed by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "Security updates until October 2034",
+    "User-replaceable battery"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Windows on Arm: x86/x64 apps run through emulation and need Arm64 drivers"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "durabook-r8-ex",
+    "bartec-et60-65ex2-windows",
+    "winmate-m101ad-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 25.0039X issue 0 (ZX80-Exc), 2026-01-28, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS25.0039/000/deliverable/IECEx_EPS_25.0039_000.pdf"
+    },
+    {
+      "label": "IECEx: IECEx online certificate database: holder searches for Getac, Winmate, Zebra, Panasonic, Dell, Durabook, Xplore, Twinhead (2026-10-25)",
+      "url": "https://www.iecex-certs.com/"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 IoT Enterprise LTSC 2024 (extended end listed 10/11/2034)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-iot-enterprise-ltsc-2024"
+    },
+    {
+      "label": "Getac: ZX80W-EX (G1) product specification, generated 2026-08-12",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX80W-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: ZX80W-EX accessory spec brochure",
+      "url": "https://www.getac.com/content/dam/getac/product-accessory-data-pdf/en/Getac_ZX80W-EX_Accessory.pdf"
+    },
+    {
+      "label": "Getac via PR Newswire: Press release 2026-06-03: ZX80W and ZX80W-EX",
+      "url": "https://www.prnewswire.com/news-releases/getacs-new-8-inch-zx80w-and-zx80w-ex-tablets-blend-windows-11-functionality-with-energy-efficient-fanless-design-for-all-day-productivity-in-the-field-302784433.html"
+    }
+  ]
+}

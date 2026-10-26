@@ -1,0 +1,290 @@
+{
+  "productId": "AX-IPM6-Z1",
+  "name": "Atexxo Zone 1 iPad mini 6",
+  "brand": "Atexxo",
+  "brandSlug": "atexxo",
+  "manufacturer": {
+    "name": "Atexxo B.V.",
+    "country": "Netherlands",
+    "website": "https://atexxo.com"
+  },
+  "type": "conversion",
+  "screenIn": 8.3,
+  "hostDevice": "iPad mini (6th generation)",
+  "otherHosts": [
+    "iPad mini (A17 Pro)"
+  ],
+  "fitting": "unit",
+  "removable": "No (permanently converted: flameproof enclosure around the iPad, not to be opened in a hazardous location; bottom cover opened outside the Ex area only for charging and SIM)",
+  "status": "current",
+  "launchYear": 2022,
+  "summary": "The Atexxo Zone 1 iPad mini 6 is a standard iPad mini (6th generation) converted by Atexxo for hazardous areas, certified for Zone 1/21 under ATEX and IECEx. It is a flameproof (Ex d) design, and the tablet runs iPadOS 27.",
+  "image": "../../assets/tablets/atexxo-zone-1-ipad-mini-6.webp",
+  "imageAlt": "Atexxo Zone 1 iPad mini 6, front view",
+  "certification": {
+    "otherSchemes": [
+      "INMETRO (Brazil) DNV 25.0026 X/00, revision 01 (2025-04-17",
+      "certificate first issued 2025-03-07), valid until 2028-11-16"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex db IIC T4 Gb / II 2D Ex tb IIIA T135°C Db",
+      "kind": "type-examination",
+      "number": "EPS 22 ATEX 1",
+      "status": "ATEX rev. 3 (2025-04-01) and IECEx Current, issue 3 (2025-04-01), checked 2026-10-25"
+    },
+    "iecex": {
+      "marking": "Ex db IIC T4 Gb / Ex tb IIIA T135°C Db",
+      "number": "IECEx EPS 22.0020X"
+    },
+    "northAmerica": "CSA 80152658 (NA certificate CSA23CA80152658X; original 2023-06-07 for the mini 6, updated 2025-05-05 to add the mini 7): Canada Ex db IIC T4 Gb; US Class I, Zone 1, AEx db IIC T4 Gb; Ta −20 to +50°C, charging +10 to +45°C. The certificate also allows the marking 'Class I, Division 2, Groups A, B, C & D, T4'. Gas only; no Class II/III (dust) rating.",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Flameproof enclosure (Ex db)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIA",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "ATEX EPS 22 ATEX 1 162 X rev. 3 and IECEx EPS 22.0020X issue 3: Ta −20°C to +50°C. Repair of flameproof joints not allowed (EN/IEC 60079-1 values). Minimum property class of screws A4-70; only original parts from the manufacturer. Glass window to be protected from impact energy above 2 J. Device shall not be opened in a hazardous location; battery charging only outside the hazardous location. Added by CSA 80152658 and INMETRO DNV 25.0026 X (not in the ATEX/IECEx text): SIM card cover and bottom cover opened only outside the hazardous location and kept screwed in place; charging only at +10°C to +45°C (CSA); check the enclosure and corner bumpers for damage before use in a hazardous area (INMETRO).",
+    "peripherals": "SIM and charging covers must be closed and screwed in place; opened only outside the hazardous area; charging only +10 to +45°C",
+    "certifiedAccessories": "Shoulder strap for Zone 1 and Zone 2 phones and tablets (Atexxo product). Ex rating not stated separately."
+  },
+  "os": {
+    "name": "iPadOS",
+    "version": "iPadOS 27",
+    "atLaunch": "iPadOS 15",
+    "edition": "iPadOS (consumer; no LTSC or enterprise edition)",
+    "upgradeLimit": "Still supported by iPadOS 27 (current)",
+    "securityUntil": "2026-09-24",
+    "updates": "Security updates guaranteed until at least September 2026 (Apple's minimum)"
+  },
+  "specs": {
+    "display": "8.3-inch Liquid Retina IPS LCD, P3, True Tone, antireflective coating",
+    "resolution": "2266 × 1488 (326 ppi)",
+    "brightness": "500 nits",
+    "chip": "Apple A15 Bionic (6-core CPU, 5-core GPU)",
+    "cpuArch": "Arm",
+    "ram": "4 GB",
+    "camera": "12 MP Wide, f/1.8",
+    "frontCamera": "12 MP Ultra Wide, Center Stage",
+    "video": "4K video",
+    "battery": "5034",
+    "batteryWh": "19.3",
+    "hotSwap": "No",
+    "batteryLife": "Up to 10 hours web or video on Wi-Fi",
+    "ports": "USB-C; magnetic Apple Pencil connector",
+    "docking": "USB-C hubs and docks; Smart Connector or magnetic keyboard accessories where the iPad has them. Not usable through sealed Ex cases except the USB-C or Lightning charging port where the case exposes it.",
+    "network": "Wi-Fi only or Wi-Fi + Cellular (5G)",
+    "wifi": "Wi-Fi 6 (802.11ax)",
+    "bluetooth": "Bluetooth 5.0",
+    "gnss": "GPS/GNSS on Wi-Fi + Cellular models; digital compass and Wi-Fi location on all",
+    "sim": "eSIM and Nano-SIM (cellular models)",
+    "keys": "Top button with Touch ID sensor, volume buttons; no programmable hardware key",
+    "biometrics": "Touch ID (top button)",
+    "pen": "Apple Pencil (2nd generation), Apple Pencil (USB-C); magnetic attach and charge (2nd gen)",
+    "storage": "64 GB, 256 GB",
+    "replaceableBattery": false,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6",
+      "eSIM"
+    ],
+    "weightG": 990,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "240 × 170 × 22",
+    "operatingTemp": "−20 °C to +50 °C",
+    "cameraFree": true,
+    "partNumbers": "EXd-TABLET-M6-64, -64-CEL, -256, -256-CEL (incl. iPad mini 6); EXd-TABLET-M6-64-CEL-BC (blocked cameras); EXd-TABLET-M6-* (customer iPad conversion)"
+  },
+  "throughCase": [
+    {
+      "label": "Face ID / Touch ID",
+      "value": "Touch ID (top-button fingerprint scanner) REMOVED"
+    },
+    {
+      "label": "Side and volume buttons",
+      "value": "Aluminium push buttons held by stainless retaining washers (3 buttons)"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Rear camera works (glass opening); '-BC' variants have blocked cameras"
+    },
+    {
+      "label": "Front camera",
+      "value": "Works (all original features preserved except as listed)"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Works through toughened glass front window"
+    },
+    {
+      "label": "Screen cover",
+      "value": "Toughened specialty glass front window (flameproof joint)"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C through the bottom cover (removed by the user to charge in a safe area; charging only outside the Ex area, +10 to +45°C)"
+    },
+    {
+      "label": "Speakers and microphones",
+      "value": "Preserved ('all features of the original product are preserved')"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Via the removable bottom cover, outside the Ex area only"
+    },
+    {
+      "label": "SIM card",
+      "value": "Nano-SIM via the side cover (screwed), opened outside the Ex area only; page says 'self SIM-card installation and change'"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Fingerprint scanner (Touch ID) removed; blocked-camera '-BC' variant available"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (third-party PTT apps over Wi-Fi/cellular; no PTT key; Ex-rated? n/a)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party lone-worker apps)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based scanning; no scan engine); not possible on the blocked-camera '-BC' variant"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (no NFC reader on any iPad)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no LiDAR on this iPad)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (FaceTime, Teams or remote-assist apps; needs camera and audio access through the case)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (iPadOS only)"
+    },
+    {
+      "label": "Bluetooth gas detectors",
+      "value": "Via app (Bluetooth 5.0; vendor app; no maker-certified integration listed)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: II 2G Ex db IIC T4 Gb | II 2D Ex tb IIIA T135°C Db; II 3D Ex tc IIIB T135°C Dc"
+    }
+  ],
+  "unconfirmed": {
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.battery": "Apple states battery capacity in watt-hours only; this figure is from the case maker's documents.",
+    "removable": "Not stated by the maker for this exact model.",
+    "throughCase.Front camera": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Speakers and microphones": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Lone worker": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "capabilities.Bluetooth gas detectors": "Not confirmed by the maker for this exact model."
+  },
+  "features": [
+    "camera-free"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Also certified for Class I Division 2 in North America",
+    "5G on cellular versions",
+    "Camera-free version available for sites that restrict cameras",
+    "A standard iPad mini (6th generation) inside, with the same apps and Apple device management"
+  ],
+  "limitations": [
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIA: combustible flyings only, not dusts",
+    "Apple's minimum update period for this iPad has ended: for existing fleets only",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [
+    "zone-1-tablets",
+    "ipad"
+  ],
+  "alternatives": [
+    "joy-factory-axtion-extreme-ipad-mini",
+    "xciel-xcz1-ipad-mini-6",
+    "xshielder-ipad-pro-11"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "Bureau Veritas CPS Germany: EU-Type Examination Certificate EPS 22 ATEX 1 162 X, revision 3, 2025-04-01 (EXd-TABLET-M6 and M7), read from Atexxo PDF",
+      "url": "https://atexxo.com/wp-content/uploads/2025/04/atex-certificate-1-product-flyer-brochure-produit-produkt-flyer-volantino-prodotto-listovka-produkta-folleto-de-productonew.pdf"
+    },
+    {
+      "label": "IECEx Certificate Database (Bureau Veritas CPS): IECEx EPS 22.0020X issue 3, 2025-04-01, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS22.0020/003/deliverable/IECEx_EPS_22.0020X_003.pdf"
+    },
+    {
+      "label": "DNV Business Assurance Brasil: INMETRO Certificate of Conformity DNV 25.0026 X/00, rev. 01, 2025-03-07",
+      "url": "https://atexxo.com/wp-content/uploads/2025/04/dnv-250026-x-exd-tablet-m6-and-m7-rev-01new.pdf"
+    },
+    {
+      "label": "CSA Group: Certificate of Compliance 80152658 (project 80243362), 2025-05-05",
+      "url": "https://atexxo.com/wp-content/uploads/2025/05/cofc_80243362_ennew.pdf"
+    },
+    {
+      "label": "Xciel: XCZ1 iPad Mini 6 datasheet (PDF)",
+      "url": "https://cdn.hibuwebsites.com/5a8aca1a55574b489d306f762b121113/files/uploaded/XCZ1_iPad_Mini_6_(6).pdf"
+    },
+    {
+      "label": "Atexxo: Explosion Proof iPad Mini 7 (Ex Zone 1) product page + flyer",
+      "url": "https://atexxo.com/product/explosion-proof-ipad-mini-7-ex-zone-1/"
+    },
+    {
+      "label": "Atexxo: Explosion Proof iPad Mini 6 (Ex Zone 1) product page",
+      "url": "https://atexxo.com/product/explosion-proof-ipad-mini-6-ex-zone-1/"
+    },
+    {
+      "label": "Apple: Identify your iPad model (model numbers, years)",
+      "url": "https://support.apple.com/en-us/108043"
+    },
+    {
+      "label": "Apple: UK PSTI Statements of Compliance, one per model (regulatoryinfo.apple.com/ukpsti): first supply date and minimum 5-year defined support period",
+      "url": "https://regulatoryinfo.apple.com/ukpsti"
+    },
+    {
+      "label": "Apple: iPadOS 27 compatibility list (apple.com/os/ipados)",
+      "url": "https://www.apple.com/os/ipados/"
+    },
+    {
+      "label": "Atexxo: Explosion Proof iPad (A16) / (10.9) / Mini 6 / Mini 7 / Pro (Ex Zone 2) product pages and flyers",
+      "url": "https://atexxo.com/product/explosion-proof-ipad-a16-ex-zone-2/"
+    },
+    {
+      "label": "BGR / EveryMac / 9to5Mac: iPadOS 27 drops iPad mini 5, iPad 8, iPad Air 3, iPad Pro 11-inch 1st gen (release 2026-09-14)",
+      "url": "https://www.bgr.com/2190915/ipad-models-that-wont-get-ipados-27-update/"
+    }
+  ]
+}

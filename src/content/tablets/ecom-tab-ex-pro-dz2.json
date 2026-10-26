@@ -1,0 +1,151 @@
+{
+  "productId": "PF-TEPRO-DZ2",
+  "name": "ecom Tab-Ex Pro DZ2",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "ecom lists it as discontinued.",
+  "successor": "ecom-tab-ex-04-pro-dz2",
+  "launchYear": 2020,
+  "summary": "The ecom Tab-Ex Pro DZ2 is an intrinsically safe (Ex ic) 10.1-inch Android tablet from ecom (Pepperl+Fuchs), certified for Zone 2/22 under ATEX and IECEx. It runs Android 11. It has been discontinued; the ecom Tab-Ex 04 Pro DZ2 replaces it.",
+  "image": "../../assets/tablets/ecom-tab-ex-pro-dz2.webp",
+  "imageAlt": "ecom Tab-Ex Pro DZ2, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T5 Gc / II 3D Ex ic IIIB T80°C Dc",
+      "kind": "type-examination",
+      "number": "EPS 20 ATEX 1",
+      "status": "IECEx Current, checked 2026-10-25. Product discontinued. There was no 'Tab-Ex Pro DZ1': this model is Zone 2 only."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T5 Gc / Ex ic IIIB T80°C Dc",
+      "number": "IECEx EPS 20.0050X",
+      "scope": "Issue 0, 2020-07-24"
+    },
+    "northAmerica": "SGS: Class I, Division 2, Groups A,B,C,D T5; Class I, Zone 2, Group IIC, T5; Ta −20 °C to +55 °C",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T5",
+    "maxSurfaceTemp": "80 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "conditions": "Charging and wired data (USB, POGO) and battery/SD/SIM changes only in ordinary locations; Ex-protective case conductive coating inspected; protect from UV, static (IECEx EPS 20.0050X)."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 11",
+    "atLaunch": "Android 9",
+    "edition": "Android 11 (latest firmware)"
+  },
+  "specs": {
+    "display": "10.1-inch",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "480 nits",
+    "chip": "Qualcomm SDM670 octa-core 64-bit (2.0 + 1.7 GHz)",
+    "cpuArch": "Arm",
+    "ram": "4 GB",
+    "camera": "13 MP with flash",
+    "frontCamera": "8 MP",
+    "battery": "7400 mAh",
+    "batteryWh": "28.12 Wh",
+    "batteryLife": "Up to 15 h",
+    "network": "LTE",
+    "wifi": "Wi-Fi 802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 5.0",
+    "nfc": "Yes (EMV L1)",
+    "gnss": "GPS",
+    "sim": "1 x nano-SIM",
+    "biometrics": "Fingerprint (D2 only)",
+    "touch": "Gloves / wet conditions",
+    "storage": "64 GB, microSD up to 512 GB",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "connectivity": [
+      "4G",
+      "Wi-Fi 802",
+      "NFC"
+    ],
+    "weightG": 930,
+    "dimensionsMm": "243.5 × 170.2 × 9.9 (device; DZ2 about 930 g)",
+    "ipRating": "IP64 (ATEX/IECEx); IP68 industrial (MIL-STD-810G)",
+    "operatingTemp": "−20 °C to +55 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "os.atLaunch": "From a single or secondary source; the maker doesn't state it for this model.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "User-replaceable battery",
+    "Among the lightest Zone 2 tablets of its size we list, at 930 g in use"
+  ],
+  "limitations": [
+    "Discontinued; the ecom Tab-Ex 04 Pro DZ2 replaces it",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "ecom-tab-ex-04-pro-dz2",
+    "isafe-is940-2",
+    "touchstar-ts3300"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX Certificate of Conformity EPS 20 ATEX 1 131 X, Rev 0 (2020-07-24), Tab-Ex Pro DZ2",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/tab-ex-02-series/pro/ATEX_certificate_Tab-Ex_Pro_DZ2.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 20.0050X issue 0 (2020-07-24), Tab-Ex Pro DZ2",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/48889/view"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex Pro DZ2 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-pro-dz2/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ecom FAQ: Release Plans of Major Products (OS and security patch plan; last updated 2025-11-18)",
+      "url": "https://support.ecom-ex.com/457976005.html"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "productId": "IS-945.1",
+  "name": "i.safe MOBILE IS945.1",
+  "brand": "i.safe MOBILE",
+  "brandSlug": "isafe",
+  "manufacturer": {
+    "name": "i.safe MOBILE GmbH",
+    "country": "Germany",
+    "website": "https://www.isafe-mobile.com"
+  },
+  "type": "dedicated",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2024,
+  "summary": "The i.safe MOBILE IS945.1 is an intrinsically safe (Ex ib) 10.1-inch Windows tablet from i.safe MOBILE, certified for Zone 1/21 under ATEX and IECEx. It runs Windows 11 IoT Enterprise LTSC for Arm64.",
+  "image": "../../assets/tablets/isafe-is945-1.webp",
+  "imageAlt": "i.safe MOBILE IS945.1, front view",
+  "certification": {
+    "otherSchemes": [
+      "IA South Africa, PCEC China, INMETRO, Japan-Ex, KCs"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex ib IIC T4 Gb / II 2D Ex ib IIIC T135°C Db",
+      "kind": "type-examination",
+      "number": "EPS 24 ATEX 1",
+      "status": "IECEx Current, issue 1 (2025-02-06), checked 2026-10-25 (same certificate as IS-940.1)."
+    },
+    "iecex": {
+      "marking": "Ex ib IIC T4 Gb / Ex ib IIIC T135°C Db",
+      "number": "IECEx EPS 24.0001X (issue 1, 2025-02-06"
+    },
+    "northAmerica": "NEC 500 (QPS LR3081-7, 2025-08-13): Class I Div 1 Groups A, B, C, D T4; Class II Div 1 Groups E, F, G 155 °C; Class III; IP64; −20 °C to +55 °C",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ib)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": true,
+    "charging": "Yes",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Battery may be replaced outside explosion hazardous areas only; protect against excessive UV light and high electrostatic charge; USB-C interface under IP cover may only be opened outside hazardous areas; 16-pin ISM interface must be closed with its cover when not in use in hazardous areas; ambient −20 °C to +55 °C; charging temperature limited to 0 °C to +45 °C (IECEx EPS 24.0001X issue 1). Safety instructions: protect from high-energy impacts; zones 1, 2, 21, 22 only. (certificate shared with IS-940.1; Windows safety instructions not read)",
+    "peripherals": "Same as IS-940.1: covers closed; in Ex areas only the approved 16-pin ISM accessories (IS-HS2A.1, IS-RSM3A.1, IS-PTTB1A.1, IS-HDHS1x.1), dock on 12-pin, nano-SIM and approved microSD.",
+    "certifiedAccessories": "As IS-940.1 (headsets, PTT button, remote speaker microphone, IS-DS940.1 dock, multi charger, leather cases, vehicle mount)."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 IoT Enterprise LTSC for Arm64",
+    "edition": "Windows 11 IoT Enterprise LTSC for Arm64",
+    "securityUntil": "2034-10-10",
+    "updates": "Security updates until October 2034"
+  },
+  "specs": {
+    "display": "10.1-inch Corning Gorilla Glass V3, usable with gloves",
+    "resolution": "1200 × 1920 (assumed same panel as IS940.1)",
+    "chip": "Qualcomm QCM6490 octa-core",
+    "cpuArch": "Arm",
+    "ram": "8 GB",
+    "camera": "12 MP autofocus",
+    "frontCamera": "5 MP fixed focus",
+    "battery": "8160",
+    "batteryWh": "30.2",
+    "ports": "USB-C; 12-pin docking interface; 16-pin ISM interface; nano-SIM + eSIM; microSD",
+    "docking": "IS-DS940.1 docking station; IS-MC930.1 multi charger; vehicle mount",
+    "network": "5G NR and 4G LTE (maker says 4G/5G options)",
+    "wifi": "Wi-Fi 6",
+    "bluetooth": "Bluetooth 5.2",
+    "nfc": "Yes",
+    "gnss": "GPS, A-GPS, Glonass, A-Glonass, Beidou, Galileo",
+    "sim": "Nano-SIM + eSIM",
+    "keys": "Red function key (assignable, e.g. lone worker); freely programmable key",
+    "touch": "Usable with gloves (maker); wet-touch not stated",
+    "keyboard": "No (slate)",
+    "storage": "128 GB, microSD supported",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6",
+      "NFC",
+      "eSIM"
+    ],
+    "weightG": 1059,
+    "dimensionsMm": "266.17 × 168.46 × 19.82",
+    "ipRating": "IP68",
+    "ruggedness": "MIL-STD-810H",
+    "operatingTemp": "−20 °C to +55 °C",
+    "partNumbers": "Model M945A01; battery BPIS945A.1A (MBP940AA01) per DoC"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via accessory (IS-PTTB1A.1 PTT button on the 16-pin ISM interface; Ex-rated? yes) and PTT app"
+    },
+    {
+      "label": "Emergency / SOS",
+      "value": "Built in (red function key, assignable e.g. to lone worker)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (red key assigned to a lone-worker application; third-party app)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (12 MP camera-based; no dedicated scan engine listed)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC per the shared IECEx certificate; not on the product page)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor listed)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (cameras, Wi-Fi 6 / 5G; Teams or similar third-party app)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 IoT Enterprise LTSC on Arm64; x86/x64 apps via emulation)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "IS-MOP1B.1 Mobile Operator Panel",
+      "description": "The IS945.1 combined with the IS-CS1A.1 connectivity system as a docked operator panel. The connectivity module needs a separate Ex enclosure.",
+      "certificates": "EPS 24 ATEX 1 010 X; IECEx EPS 24.0001X issue 1"
+    },
+    {
+      "name": "IS945.M1",
+      "description": "Mining version, also certified for Group I (underground mining).",
+      "marking": "ATEX: I M1 Ex ia I Ma | IECEx: Ex ia I Ma",
+      "certificates": "EPS 25 ATEX 1 003 X; IECEx EPS 25.0003X"
+    }
+  ],
+  "unconfirmed": {
+    "safety.peripherals": "From the certificate shared with the IS940.1.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.securityUntil": "Microsoft's end date for Windows 11 IoT Enterprise LTSC 2024. The maker doesn't state the edition year.",
+    "specs.resolution": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.nfc": "From a single or secondary source; the maker doesn't state it for this model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "charge-in-zone",
+    "updates-2030",
+    "mining-version"
+  ],
+  "strengths": [
+    "May be charged inside the hazardous area, within the certificate's limits",
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Also certified for Class I Division 1 in North America",
+    "A mining version (Group I) is also available",
+    "5G connectivity"
+  ],
+  "limitations": [
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Windows on Arm: x86/x64 apps run through emulation and need Arm64 drivers",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [
+    "zone-1-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "eaton-gecma-is-tablet-pc",
+    "ecom-tab-ex-05-dz1",
+    "xshielder-ipad-pro-11"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany): IECEx EPS 24.0001X issue 1 (2025-02-06), IS940.1 / IS945.1 / IS-DS940.1",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1879883/view"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: EU Declaration of Conformity 1073CC05REV01 IS945.1 (EPS 24 ATEX 1 010 X)",
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/DOC/PRO/CER/DOC_PRO_CER_1073CC05REV01-IS945.1-EU-Declaration-of-Conformity-sgd__SALL__AWEB__V1.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 IoT Enterprise LTSC 2024 (extended end listed 10/11/2034)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-iot-enterprise-ltsc-2024"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS945.1 product page (Zone 1/21)",
+      "url": "https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is9451"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS945.2 product page (Zone 2/22)",
+      "url": "https://www.isafe-mobile.com/en/products/product-range/zone-2/22/is9452"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: News 2023-11-23: 5G Android and Windows tablet IS940.1 / IS945.1 for hazardous areas",
+      "url": "https://www.isafe-mobile.com/en/company/news/detail/5g-androidtm-and-windows-tablet-with-charging-option-for-hazardous-areas"
+    }
+  ]
+}

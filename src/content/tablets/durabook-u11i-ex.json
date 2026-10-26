@@ -1,0 +1,162 @@
+{
+  "productId": "DB-U11IEX",
+  "name": "Durabook U11I-EX",
+  "brand": "Durabook",
+  "brandSlug": "durabook",
+  "manufacturer": {
+    "name": "Twinhead International Corp. (Durabook)",
+    "country": "Taiwan",
+    "website": "https://www.durabook.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 11.6,
+  "status": "current",
+  "launchYear": 2024,
+  "summary": "The Durabook U11I-EX is the hazardous-area version of a Durabook rugged 11.6-inch tablet, certified for Zone 2/22 under ATEX. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
+  "image": "../../assets/tablets/durabook-u11i-ex.webp",
+  "imageAlt": "Durabook U11I-EX, front view",
+  "certification": {
+    "otherSchemes": [
+      "MIL-STD-810H",
+      "IP66"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T4 Gc / II 3D Ex ic IIIB T135°C Dc",
+      "kind": "conformity",
+      "number": "TPS 23 ATEX 123637",
+      "status": "ATEX certificate of conformity number quoted in the user manual (ATEX file ATEX-U11I-EX, R2, 2025-08-01); status not independently checked; no IECEx; UKEX not found"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Must be used with the ATEX case supplied by Twinhead, packed as the manual describes. Must not be connected to any external device. Battery may only be charged in a safe area with the supplied adapter (FSP065-RBBN3, 19 V, 3.42 A, 65 W). Do not replace or charge the battery in explosive environments. Do not use the device without the ATEX case in explosive environments. Use only Japone Technology X11BA-H (9600 mAh) or X11BA-M (4800 mAh) batteries.",
+    "peripherals": "Per the manual: the tablet shall not be connected to any external device. All I/O ports are covered by explosion-proof brackets that must be fitted (with screws) before entering the ATEX area. The anti-static leather case is mandatory.",
+    "certifiedAccessories": "Supplied with the Ex tablet and part of the certification: ATEX anti-static leather case, bottom bracket and screws, stylus and tether. AC adapter and power cord for the safe area only. The datasheet lists 2-bay and 8-bay chargers, hand strap, shoulder straps, tablet stand and other accessories without Ex status; none is named as Ex-certified."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Pro",
+    "edition": "Windows 11 Pro 64-bit",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "11.6-inch",
+    "resolution": "1920 × 1080",
+    "brightness": "1000 (optional sunlight-readable DynaVue)",
+    "chip": "Intel Core i7-1250U vPro / i5-1230U vPro (12th gen)",
+    "cpuArch": "x86",
+    "ram": "8 (up to 32), LPDDR4x onboard",
+    "camera": "Optional 11 MP autofocus with flash",
+    "frontCamera": "2 MP; optional 5 MP IR for Windows Hello",
+    "battery": "4800 typical (7.6 V); optional hi-cap 9600",
+    "batteryWh": "36.5",
+    "hotSwap": "Optional bridge battery, 5 minute swap",
+    "batteryLife": "10 h standard, 20 h hi-cap (MobileMark 2014)",
+    "ports": "Thunderbolt 4, USB-A, audio, microSD, RJ45, 20-pin pogo dock, nano-SIM, DC-in; optional smart card, USB-C, second USB-A, USB 2.0, RS232/422/485, barcode",
+    "docking": "20-pin pogo (docks not for Ex area)",
+    "network": "Wi-Fi 6E; optional 4G LTE, 5G (project based)",
+    "wifi": "Intel Wi-Fi 6E AX211",
+    "bluetooth": "Bluetooth 5.3",
+    "gnss": "Optional u-blox NEO-M9N",
+    "sim": "Nano-SIM",
+    "keys": "5 buttons (2 user-defined)",
+    "biometrics": "Optional fingerprint, Windows Hello",
+    "touch": "User-selectable finger/water, glove, stylus",
+    "pen": "Optional digitizer",
+    "storage": "256 GB NVMe (options 512 GB, 1000 GB, 2000 GB), microSD",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G"
+    ],
+    "weightG": 1490,
+    "dimensionsMm": "317 × 215 × 23.8 (tablet)",
+    "ipRating": "IP66",
+    "ruggedness": "MIL-STD-810H; 6 ft (1.8 m), 26 faces",
+    "operatingTemp": "−20 °C to +60 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D barcode reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 Pro, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.number": "From Durabook's user manual, which reproduces the certificate of conformity; the certificate itself isn't published.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.weightG": "From a single source; the maker's figures vary."
+  },
+  "features": [
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "User-replaceable battery"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "ATEX only: no IECEx certificate"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "getac-f110-ex",
+    "bartec-et60-65ex2-windows",
+    "winmate-m101ad-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 Home and Pro (25H2 end listed 10/13/2027; 24H2 10/14/2026)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro"
+    },
+    {
+      "label": "Durabook: U11-EX (US) datasheet, Sep. 2025 V4",
+      "url": "https://media.durabook.com/wp-content/uploads/2025/09/25171506/DURABOOK_DM_U11-EX_US_20250923.pdf"
+    },
+    {
+      "label": "Durabook (Twinhead): U11I-EX user manual V2.0 (file U11I-EX_User Manual_20260706), incl. ATEX certificate number and special conditions; ATEX file R1 dated 2024-02-20",
+      "url": "https://durabook-manual.s3.eu-central-1.amazonaws.com/U11I-EX_User+Manual_20260706.pdf"
+    },
+    {
+      "label": "Durabook via PR Newswire UK: Press release 2024-02-27: ATEX-certified R8-EX and U11I-EX (URL from research file 02, not re-fetched in this pass)",
+      "url": "https://prnewswire.co.uk/news-releases/durabook-expands-rugged-tablet-portfolio-with-atex-certified-models-for-explosive-environments-302070775.html"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "productId": "GT-K120EX",
+  "name": "Getac K120-EX G3",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 12.5,
+  "status": "current",
+  "summary": "The Getac K120-EX G3 is the hazardous-area version of a Getac rugged 12.5-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
+  "image": "../../assets/tablets/getac-k120-ex.webp",
+  "imageAlt": "Getac K120-EX G3, front view",
+  "certification": {
+    "otherSchemes": [
+      "MIL-STD-810H"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 0 (2025-12-09), checked 2026-10-25; ATEX not published; UKEX not found"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T130°C Dc",
+      "number": "IECEx EPS 25.0062X",
+      "scope": "Issue 0, 2025-12-09, model \"K120-Exc\""
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Protect from excessive UV light and mechanical impact (reduced-height impact test). Connection interfaces never used in hazardous areas. Battery never changed, charged or removed in hazardous areas. Not next to strong charge-generating processes. Use only Li-ion battery BP3S1P2100S-01.",
+    "peripherals": "All connection interfaces (USB, Thunderbolt, DC-in, docking connector, LAN, serial) must never be used in hazardous areas (certificate condition). Optional internal modules named in the certificate are covered as part of the certified tablet. LAN (RJ45), two Thunderbolt 4 and serial port are barred from hazardous areas.",
+    "certifiedAccessories": "Named in the certificate: hand strap, shoulder strap, shoulder harness strap, digitizer pen and tether. Anti-static screen protection film made for hazardous use. No Ex-listed keyboard: the standard K120 has a keyboard but none is listed for the Ex model. NOT for hazardous areas: AC adapters, USB-C adapter, chargers, spare batteries and the spare SSD kit (non-hazardous areas only)."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Pro",
+    "edition": "Windows 11 Pro",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "12.5-inch",
+    "resolution": "1920 × 1080",
+    "brightness": "1200 nits",
+    "chip": "Intel Core i5-1335U / i5-1345U vPro / i7-1355U / i7-1365U vPro (13th gen)",
+    "cpuArch": "x86",
+    "ram": "16 (options 32, 64), DDR5",
+    "camera": "8 MP autofocus",
+    "frontCamera": "5 MP webcam or Windows Hello camera",
+    "battery": "2 x 2100 typical (2040 min), 11.1 V",
+    "ports": "2 x Thunderbolt 4, USB 3.2 Gen2 Type-A, RJ45, DC-in (optional), audio; optional serial, barcode, HF RFID, smart card; micro-SIM optional",
+    "docking": "Getac DS100 (G2-R datasheet lists it; not on the G3 datasheet)",
+    "network": "Wi-Fi 6E; optional 4G LTE, 5G Sub-6",
+    "wifi": "Intel Wi-Fi 6E AX211",
+    "bluetooth": "Bluetooth 5.3",
+    "keys": "Power + 5 programmable buttons",
+    "pen": "Dual-mode touch with digitizer pen",
+    "keyboard": "Standard K120 is a convertible with keyboard; no keyboard in Ex datasheet",
+    "storage": "256 GB NVMe (options up to 2000 GB)",
+    "replaceableBattery": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G"
+    ],
+    "weightG": 1700,
+    "dimensionsMm": "329.5 × 238 × 24",
+    "ipRating": "IP66",
+    "ruggedness": "MIL-STD-810H; 1.8 m (6 ft) drop",
+    "operatingTemp": "−21 °C to +55 °C (standard K120: −29 to +63)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF RFID reader)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (via optional HF RFID reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 Pro, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.iecex.number": "Getac's certificate names the model with a 'c' suffix and doesn't name the generation. We matched it to this generation by its batteries, dust group and ambient range.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.edition": "The maker doesn't state the edition year."
+  },
+  "features": [
+    "nfc",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "User-replaceable battery"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "durabook-u11i-ex",
+    "bartec-et60-65ex2-windows",
+    "winmate-m101ad-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 25.0062X issue 0 (K120-Exc), 2025-12-09, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS25.0062/000/deliverable/IECEx_EPS_25.0062_000.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 Home and Pro (25H2 end listed 10/13/2027; 24H2 10/14/2026)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro"
+    },
+    {
+      "label": "Getac: K120-EX (G3) product specification, generated 2026-08-06",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_K120G3-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: K120-EX accessory spec brochure",
+      "url": "https://www.getac.com/content/dam/getac/product-accessory-data-pdf/en/Getac_K120-EX_Accessory.pdf"
+    },
+    {
+      "label": "Getac: K120 (standard, non-Ex) product specification, generated 2026-08-06",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_K120_EN_Product.pdf"
+    }
+  ]
+}

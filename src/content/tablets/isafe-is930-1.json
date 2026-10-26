@@ -1,0 +1,220 @@
+{
+  "productId": "IS-930.1",
+  "name": "i.safe MOBILE IS930.1",
+  "brand": "i.safe MOBILE",
+  "brandSlug": "isafe",
+  "manufacturer": {
+    "name": "i.safe MOBILE GmbH",
+    "country": "Germany",
+    "website": "https://www.isafe-mobile.com"
+  },
+  "type": "dedicated",
+  "screenIn": 8,
+  "status": "current",
+  "launchYear": 2019,
+  "summary": "The i.safe MOBILE IS930.1 is an intrinsically safe (Ex ib) 8-inch Android tablet from i.safe MOBILE, certified for Zone 1/21 under ATEX, IECEx and UKEX. It runs Android 14.",
+  "image": "../../assets/tablets/isafe-is930-1.webp",
+  "imageAlt": "i.safe MOBILE IS930.1, front view",
+  "certification": {
+    "otherSchemes": [
+      "EAC, KCs (Korea), INMETRO (Brazil), Japan-Ex, IA (South Africa), PESO (India), TELEC"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex ib IIC T4 Gb / II 2D Ex ib IIIC T135°C Db IP6X",
+      "kind": "type-examination",
+      "number": "EPS 19 ATEX 1",
+      "status": "IECEx Current, issue 0 (2019-12-20), checked 2026-10-25. ATEX and UKEX numbers taken from the EU/UK DoC 1030CC13REV00 (2022-09-29); certificate PDFs not read."
+    },
+    "iecex": {
+      "marking": "Ex ib IIC T4 Gb / Ex ib IIIC T135°C Db IP6X",
+      "number": "IECEx EPS 19.0034X",
+      "scope": "Issue 0, 2019-12-20"
+    },
+    "ukex": "CML 21UKEX2490X",
+    "northAmerica": "NEC 500: Class I Div 1 Groups A, B, C, D T4; Class II Div 1 Groups E, F, G T135°C; Class III Div 1",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ib)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +60 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: battery may be charged outside explosion hazardous areas only; protect against permanent UV light and high electrostatic charge processes; permitted ambient temperature −20 °C to +60 °C. Safety instructions: all interface covers closed in Ex areas; charging only outside Ex areas (+5 to +35 °C); battery not interchangeable.",
+    "peripherals": "Opening any interface or connector cover in an Ex area is not permitted. Wired data connection and charging only outside Ex areas (docking station IS-DS930.1, i.safe PROTECTOR cables). A commercial microSD card may be used in its slot in the Ex area (IECEx text).",
+    "certifiedAccessories": "Maker page lists: IS-DS930.1 docking station set (RJ45, 3 x USB), IS-MC930.1 six-bay multi charger, i.safe PROTECTOR 2.0 / 3.0 USB-C cables, leather case with shoulder/belt/carry straps, vehicle mount. Charging and cable accessories are for use outside Ex areas. Which accessories are Ex-rated for use inside Ex areas is not stated for IS930.1."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 14",
+    "atLaunch": "Android 9",
+    "edition": "Android 14",
+    "securityUntil": "2027-03-31",
+    "securityUntilLabel": "Q1 2027",
+    "updates": "Security updates until Q1 2027"
+  },
+  "specs": {
+    "display": "8-inch Glove-usable touch display; Corning Gorilla Glass V3 stated on the IS930.M1 page (not on the IS930.1 page)",
+    "chip": "Qualcomm Snapdragon SDM660 octa-core",
+    "cpuArch": "Arm",
+    "ram": "4 GB",
+    "camera": "13 MP autofocus",
+    "frontCamera": "5 MP fixed focus",
+    "battery": "8160",
+    "batteryWh": "30.2",
+    "hotSwap": "No",
+    "ports": "USB-C; 24-pin docking interface; magnetic charger port; earphone jack; microSD slot; micro-SIM",
+    "docking": "Office dock IS-DS930.1 (RJ45, 3 x USB); IS-MC930.1 six-bay multi charger; vehicle mount",
+    "network": "4G LTE (no 5G)",
+    "wifi": "Wi-Fi 5 (802.11 a/b/g/n/ac/e/k/r/h) with hotspot",
+    "bluetooth": "Bluetooth 5",
+    "nfc": "Yes",
+    "gnss": "GPS, A-GPS, Glonass, Beidou (Galileo added on IS930.M1 page)",
+    "sim": "Micro-SIM",
+    "keys": "SOS key (red); two freely programmable keys",
+    "touch": "Usable with gloves (maker); wet-touch not stated",
+    "keyboard": "No (slate)",
+    "storage": "64 GB, microSD up to 512 GB",
+    "replaceableBattery": false,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 5",
+      "NFC"
+    ],
+    "weightG": 890,
+    "dimensionsMm": "237 × 156 × 22",
+    "ipRating": "IP68",
+    "exIp": "IP6X (dust marking)",
+    "ruggedness": "MIL-STD-810H",
+    "operatingTemp": "−20 °C to +60 °C",
+    "cameraFree": true,
+    "partNumbers": "Model M93A01 (DoC); article numbers not published on maker page"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (PTT/PoC app on a programmable key; no PTT button accessory listed for IS930)"
+    },
+    {
+      "label": "Emergency / SOS",
+      "value": "Built in (dedicated red SOS key)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (LWP ready: third-party application required, per maker page)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based; no dedicated scan engine listed)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor listed)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (front and rear cameras, Wi-Fi/LTE; third-party app)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "IS930.M1",
+      "description": "Mining version, also certified for Group I (underground mining).",
+      "marking": "ATEX: I M1 Ex ia I Ma IP64 | IECEx: Ex ia I Ma IP64",
+      "certificates": "EPS 19 ATEX 1 128 X; IECEx EPS 19.0063X"
+    }
+  ],
+  "unconfirmed": {
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.atLaunch": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.battery": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.hotSwap": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.cameraFree": "Listed by a distributor; the maker doesn't list it.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "camera-free",
+    "mining-version"
+  ],
+  "strengths": [
+    "ATEX, IECEx and UKEX certified, with published certificate numbers",
+    "Also certified for Class I Division 1 in North America",
+    "A mining version (Group I) is also available",
+    "5G connectivity",
+    "Camera-free version available for sites that restrict cameras"
+  ],
+  "limitations": [
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Security updates end in Q1 2027",
+    "Battery isn't user-replaceable",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [
+    "zone-1-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "ecom-tab-ex-05-dz1",
+    "atexxo-zone-1-galaxy-tab-active5",
+    "eaton-gecma-is-tablet-pc"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany): IECEx EPS 19.0034X issue 0 (2019-12-20), IS930.1",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/16228/view"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: UK/EU Declaration of Conformity 1030CC13REV00 IS930.1 (dated 2022-09-29; lists EPS 19 ATEX 1 071 X and CML 21UKEX2490X)",
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/DOC/PRO/CER/DOC_PRO_CER_1030CC13REV00-i.safe-MOBILE-IS930.1-EU-UKCA-Declaration-of-Conformity.docx__SALL__AWEB__V1.pdf"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS930.1 Safety Instructions 1030MM11REV05",
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/DOC/PRO/MM/DOC_PRO_MM_IS930.1_Safety_Instructions_DINA6_1030MM11__SALL__AWEB__V5.pdf"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS930.1 product page (Zone 1/21)",
+      "url": "https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is9301"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS930.2 product page (Zone 2/22)",
+      "url": "https://www.isafe-mobile.com/en/products/product-range/zone-2/22/is9302"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS930.M1 mining product page",
+      "url": "https://www.isafe-mobile.com/en/products/product-range/mining/is930m1"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: Security updates page (Security Patch Updates table), read 2026-10-25",
+      "url": "https://www.isafe-mobile.com/en/support/security-updates"
+    }
+  ]
+}

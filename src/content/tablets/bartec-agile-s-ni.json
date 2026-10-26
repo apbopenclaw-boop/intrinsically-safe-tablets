@@ -1,0 +1,205 @@
+{
+  "productId": "BT-AGILE-S-NI",
+  "name": "BARTEC Agile S NI",
+  "brand": "BARTEC",
+  "brandSlug": "bartec",
+  "manufacturer": {
+    "name": "BARTEC GmbH",
+    "country": "Germany",
+    "website": "https://bartec.com"
+  },
+  "type": "dedicated",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2020,
+  "summary": "The BARTEC Agile S NI is an intrinsically safe (Ex ic) 10.1-inch Windows tablet from BARTEC, certified for Zone 2/22 under ATEX, IECEx and UKEX. It runs Windows 10 IoT Enterprise LTSC.",
+  "image": "../../assets/tablets/bartec-agile-s-ni.webp",
+  "imageAlt": "BARTEC Agile S NI, front view",
+  "certification": {
+    "otherSchemes": [
+      "Inmetro, KC (Korea), CCC (China), CML Japan (JPN 2082X), UL Brazil"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T4 Gc / II 3D Ex ic IIIB T130°C Dc IP64",
+      "kind": "type-examination",
+      "number": "EPS 19 ATEX 1",
+      "status": "IECEx Current, issue 0 (2020-01-17), checked 2026-10-26. UKEX CML 21UKEX2346X issue 0 (2021-06-24) read; it refers to EPS 19 ATEX 1 179X issue 0, confirming the ATEX number. ATEX certificate PDF is a scan and was not read."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T4 Gc / Ex ic IIIB T130°C Dc IP64",
+      "number": "IECEx EPS 19.0079X",
+      "scope": "Issue 0, 2020-01-17"
+    },
+    "ukex": "CML 21UKEX2346X",
+    "northAmerica": "NEC 500: Class I Div 2 Groups A, B, C, D T4A (CSA file 180267); operating −10 °C to +50 °C",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: battery pack changed or charged only outside hazardous areas; connection or disconnection of external ports, opening the enclosure or replacing the battery live only if the atmosphere is shown to be absent; protect from high-energy impacts, permanent UV and static-generating processes; ambient −20 °C to +50 °C; follow the manufacturer's safety instructions strictly. Quick start guide: battery must be locked in the Ex area; connectors not to be used in the Ex area.",
+    "peripherals": "All external I/O (micro HDMI, USB-A, USB-C, audio, DC charging, microSD, micro-SIM) sit under a protective cover and may be used outside hazardous areas only. Headset connection only outside Ex areas. Non-certified accessories endanger explosion protection.",
+    "certifiedAccessories": "BARTEC accessory sheet 435825 lists carry case, 4-point belt, leather carry case, docking and vehicle accessories; which items are Ex-rated for use inside Ex areas was not checked."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 10 IoT Enterprise LTSC",
+    "edition": "Windows 10 IoT Enterprise LTSC 2021, version 21H2 (BARTEC image SNILTSC21R02, build 114), 64-bit, multilingual",
+    "securityUntil": "2032-01-13",
+    "updates": "Security updates until January 2032"
+  },
+  "specs": {
+    "display": "10.1-inch IPS, optically bonded, Gorilla Glass (8H)",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "800 nits",
+    "outdoor": "Sunlight readable (optical bonding, 800 nits)",
+    "chip": "Intel Core i5-7300U (Kaby Lake) 2.6 GHz, turbo 3.5 GHz",
+    "cpuArch": "x86",
+    "ram": "8 or 16",
+    "camera": "8 MP autofocus with LED flash",
+    "frontCamera": "2 MP",
+    "battery": "5140 mAh",
+    "batteryWh": "38.04 Wh",
+    "hotSwap": "Yes (integrated 330 mAh bridge battery)",
+    "batteryLife": "Up to 8 h (3 h charging)",
+    "ports": "Micro HDMI; USB 3.0 Type A; USB 3.0 Type C; audio combo; DC charging port; microSD; micro-SIM; built-in Honeywell N6600 1D/2D imager; HF RFID reader 13.56 MHz",
+    "docking": "Accessory sheet lists docking and vehicle accessories (not read)",
+    "network": "Wi-Fi; optional 4G/LTE",
+    "wifi": "IEEE 802.11 a/b/g/n/ac dual band",
+    "bluetooth": "Bluetooth 5.0",
+    "nfc": "Yes (HF RFID/NFC reader, ISO 14443/15693/18092)",
+    "gnss": "GPS/QZSS, GLONASS, BeiDou, Galileo ready, up to 2.5 m precision",
+    "sim": "Micro-SIM (LTE option)",
+    "keys": "Power, home, 2 programmable function keys, 2 volume keys",
+    "touch": "Projective capacitive; finger, stylus or glove mode",
+    "pen": "Stylus supported (mode setting)",
+    "keyboard": "No (slate)",
+    "storage": "256 GB mSATA SSD, MicroSD (SDXC up to 2 TB)",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G",
+      "NFC"
+    ],
+    "weightG": 1200,
+    "dimensionsMm": "271.8 × 197.2 × 21",
+    "ipRating": "IP65 (datasheet)",
+    "exIp": "IP64 (marking)",
+    "ruggedness": "MIL-STD-810G",
+    "operatingTemp": "−20 °C to +50 °C (Zone 2/22)",
+    "partNumbers": "B7-A2B4-102112111100 (8 GB RAM) / B7-A2B4-102122111100 (16 GB RAM); certified type B7-A2B*-****/********"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Emergency / SOS",
+      "value": "Via app (two programmable function keys)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (Honeywell N6600 1D/2D imager)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (HF 13.56 MHz reader, read/write ISO 14443 A/B, 15693, Mifare, FeliCa)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (ISO 18092 NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor listed)"
+    },
+    {
+      "label": "High-accuracy GNSS",
+      "value": "Built in (GNSS module, up to 2.5 m precision; not RTK)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (8 MP rear, 2 MP front cameras)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10 IoT Enterprise LTSC, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX, IECEx and UKEX certified, with published certificate numbers",
+    "Also certified for Class I Division 2 in North America",
+    "Built-in barcode imager",
+    "Security updates until January 2032",
+    "User-replaceable battery"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "isafe-is945-2",
+    "ecom-pad-ex-01-p12-dz2",
+    "eaton-gecma-is-tablet-pc"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "BARTEC GmbH: UKEX certificate CML 21UKEX2346X, Agile S NI",
+      "url": "https://bartec.com/wp-content/uploads/2026/03/CML21UKEX2346X_0.pdf"
+    },
+    {
+      "label": "IECEx online certificate database: IECEx EPS 19.0079X issue 0 (2020-01-17), Agile S NI",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/16932/view"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 10 IoT Enterprise LTSC 2019 (extended end listed 1/10/2029)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-iot-enterprise-ltsc-2019"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 10 IoT Enterprise LTSC 2021 (extended end listed 1/14/2032)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-iot-enterprise-ltsc-2021"
+    },
+    {
+      "label": "BARTEC GmbH: Datasheet Agile S NI 434032 (REV-A-12-2023)",
+      "url": "https://bartec.com/wp-content/uploads/2025/12/434032_ds-AGILE-S-NI_EN_2023-12.pdf"
+    },
+    {
+      "label": "BARTEC GmbH: Quick Start Guide Agile S NI (B1-A2B0-7E0001)",
+      "url": "https://bartec.com/wp-content/uploads/2025/12/B1-A2B0-7E0001_EN_C_QuickStartGuide_Agile-S-NI.pdf"
+    },
+    {
+      "label": "BARTEC GmbH: Agile S NI product page",
+      "url": "https://bartec.com/products-solutions/product-finder/product-detail/tablet-agile-s-ni/"
+    }
+  ]
+}

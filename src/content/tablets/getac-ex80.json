@@ -1,0 +1,161 @@
+{
+  "productId": "GT-EX80",
+  "name": "Getac EX80",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "dedicated",
+  "screenIn": 8,
+  "status": "discontinued",
+  "statusNote": "No longer in Getac's range; Getac names no Zone 0/1 successor.",
+  "launchYear": 2017,
+  "summary": "The Getac EX80 is an intrinsically safe (Ex ia) 8-inch Windows tablet from Getac, certified for Zone 1/21 under ATEX and IECEx. It runs Windows 10 Pro. It has been discontinued.",
+  "image": "../../assets/tablets/getac-ex80.webp",
+  "imageAlt": "Getac EX80, front view",
+  "certification": {
+    "otherSchemes": [
+      "UL 913 C1/C2 Div 1",
+      "MIL-STD-810G",
+      "IP67"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "Ex ia op is IIC T4 Ga / Ex ia op is IIIC T135°C Da",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 4, checked 2026-10-25; ATEX not published"
+    },
+    "iecex": {
+      "marking": "Ex ia op is IIC T4 Ga / Ex ia op is IIIC T135°C Da",
+      "number": "IECEx SIR 16.0005X",
+      "scope": "Issue 4, 2021-09-09, EX80 Tablet"
+    },
+    "northAmerica": "UL 913 Class I and II Division 1 (Getac news)",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "0",
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "20",
+      "21",
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ia) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Ga / Da",
+    "ambient": "−20 °C to +50 °C",
+    "zone0Note": "Zone 0 rated only inside the case supplied by the maker."
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Charge only in the non-hazardous area, with the adapter or cradle supplied by the manufacturer, within the ambient range of both charger and tablet. Data download via the cradle only to an unpowered device (flash drive). MicroSIM may be inserted or removed only in the non-hazardous area. No user-serviceable parts; battery pack is integral and not user-replaceable. Use only where there is a low risk of mechanical impact.",
+    "peripherals": "Charging cradle and data download in non-hazardous areas only; microSIM changes in non-hazardous areas only.",
+    "certifiedAccessories": "Not itemised in the certificate. Getac news lists a rotatable hand strap with kickstand and stylus holder, hard-tip stylus, charging dock, shoulder straps and office dock; their Ex status is not stated."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 10 Pro",
+    "edition": "Windows 10 Pro",
+    "upgradeLimit": "Windows 10 22H2 is the last Windows 10 version",
+    "securityUntil": "2025-10-14",
+    "updates": "Security updates ended in October 2025"
+  },
+  "specs": {
+    "display": "8-inch IPS, LumiBond 2.0",
+    "resolution": "1280 × 800 (WXGA)",
+    "brightness": "600 nits",
+    "camera": "8 MP with LED flash",
+    "frontCamera": "Full HD webcam",
+    "batteryLife": "More than 8 hours",
+    "docking": "Charging dock (supplied) and office dock",
+    "network": "Wi-Fi 802.11 a/b/g/n; optional 4G LTE",
+    "wifi": "802.11 a/b/g/n dual band",
+    "bluetooth": "Bluetooth 4.0",
+    "nfc": "HF RFID (contactless smartcard reader)",
+    "gnss": "Dedicated GPS",
+    "biometrics": "Contactless smart card (HF RFID); TPM 2.0, BitLocker",
+    "touch": "Rain, glove and stylus touch modes",
+    "pen": "Hard-tip stylus",
+    "replaceableBattery": false,
+    "gloveTouch": true,
+    "connectivity": [
+      "4G"
+    ],
+    "ipRating": "IP67",
+    "ruggedness": "MIL-STD-810G; 1.8 m (6 ft) drop",
+    "operatingTemp": "−21 °C to +50 °C (news: -5.8 to 122 °F)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "RFID",
+      "value": "Built in (contactless HF RFID smart card reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (8 MP rear, Full HD webcam)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10 Pro, now out of support)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "The IECEx marking is from the certificate. The ATEX version is from Getac's own information; the ATEX certificate isn't published.",
+    "certification.iecex.marking": "The IECEx marking is from the certificate. The ATEX version is from Getac's own information; the ATEX certificate isn't published.",
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.securityUntil": "Getac's date for the standard model; Getac lists no separate date for the EX version.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [],
+  "strengths": [
+    "Zone 0 rated when used in the supplied case",
+    "ATEX and IECEx certified"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Security updates ended in October 2025",
+    "Battery isn't user-replaceable",
+    "In-use weight not published"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "eaton-gecma-is-tablet-pc",
+    "isafe-is945-1",
+    "ecom-tab-ex-05-dz1"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / SIRA (CSA Group UK): IECEx SIR 16.0005X issue 4 (EX80 Tablet), 2021-09-09, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/SIR/IECExSIR16.0005/004/deliverable/IECEx_SIR_16.0005X_004.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 10 Home and Pro (22H2 end listed 10/15/2025)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro"
+    },
+    {
+      "label": "Getac: ATEX & IECEx certifications page (no certificate numbers; points to spec sheets)",
+      "url": "https://www.getac.com/en/certifications/atex-iecex/"
+    },
+    {
+      "label": "Getac: EX80 launch news page (Zone 0, ATEX, IECEx, UL913)",
+      "url": "https://www.getac.com/us/news/us-getac-ex80-fully-rugged-tablet-is-intrinsically-safe-and-certified-for-zone-0-atex-iecex-and-ul913-certified-for-use-in-the-most-hazardous-and-explosive-environments/"
+    }
+  ]
+}

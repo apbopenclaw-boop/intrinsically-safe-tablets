@@ -1,0 +1,263 @@
+{
+  "productId": "XC-XCZ1-M5",
+  "name": "Xciel XCZ1 iPad mini 5",
+  "brand": "Xciel",
+  "brandSlug": "xciel",
+  "manufacturer": {
+    "name": "Xciel Inc",
+    "country": "USA",
+    "website": "https://www.xciel.com"
+  },
+  "type": "ex-case",
+  "screenIn": 7.9,
+  "hostDevice": "iPad mini (5th generation)",
+  "otherHosts": [
+    "iPad mini 4"
+  ],
+  "fitting": "factory-fitted",
+  "removable": "No (certificate: the iPad shall not be removed from the aluminium case)",
+  "status": "current",
+  "statusNote": "Xciel still lists it and says it has iPad mini 5 stock. Apple no longer sells the iPad mini 5, so supply is limited.",
+  "launchYear": 2019,
+  "summary": "The Xciel XCZ1 iPad mini 5 is a flameproof (Ex d) case for the iPad mini (5th generation), certified for Zone 1 under ATEX and IECEx. The tablet inside is a standard iPad mini (5th generation) running iPadOS 26, so it works with the same apps and device management.",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex db IIC T5 Gb",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 2 (2023-06-22), checked 2026-10-25; ATEX not found"
+    },
+    "iecex": {
+      "marking": "Ex db IIC T5 Gb",
+      "number": "IECEx EXV 19.0026X"
+    },
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [],
+    "protection": "Flameproof enclosure (Ex db)",
+    "gasGroup": "IIC",
+    "tempClass": "T5",
+    "epl": "Gb",
+    "ambient": "−20 °C to +45 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "The iPad Mini shall not be removed from the aluminium case. The iPad shall not be charged when hazardous atmospheres are present. Resellers, end users and Xciel are not allowed to repair the flameproof joints. The cover bolts should not be removed; they may only be replaced with identical ones (A2 stainless M5x0.8x8 mm Torx head, or pan head if Torx is not available, tensile strength at least 500 MPa, torque 5.9 N.m). After recharging, inspect the plug threads and female threads, install the power plug with all threads fully engaged and tighten the set screw (M4 x 0.70 mm A2-70 cup point) with the tool provided, checking it sits in the groove of the plug head. Rubber bumpers must be fitted at all times and inspected before each use.",
+    "peripherals": "Lightning charging plug with set screw must be fully engaged and tightened; charge only outside the hazardous area",
+    "certifiedAccessories": "Options listed (magnet mount, locking system, touch pen, ballistic nylon case, nylon X strap, hard shell case); Ex rating of accessories not stated"
+  },
+  "os": {
+    "name": "iPadOS",
+    "version": "iPadOS 26",
+    "atLaunch": "iPadOS 12.2",
+    "edition": "iPadOS (consumer; no LTSC or enterprise edition)",
+    "upgradeLimit": "iPadOS 26 (dropped by iPadOS 27)",
+    "securityUntil": "2024-03-26",
+    "updates": "Security updates guaranteed until at least March 2024 (Apple's minimum)"
+  },
+  "specs": {
+    "display": "7.9-inch Retina IPS LCD, P3, True Tone, antireflective coating",
+    "resolution": "2048 × 1536 (326 ppi)",
+    "brightness": "500 nits",
+    "chip": "Apple A12 Bionic",
+    "cpuArch": "Arm",
+    "ram": "3 GB",
+    "camera": "8 MP",
+    "frontCamera": "7 MP FaceTime HD",
+    "video": "1080p video",
+    "battery": "5124",
+    "batteryWh": "19.1",
+    "hotSwap": "No",
+    "batteryLife": "Up to 10 hours web or video on Wi-Fi",
+    "ports": "Lightning",
+    "docking": "USB-C hubs and docks; Smart Connector or magnetic keyboard accessories where the iPad has them. Not usable through sealed Ex cases except the USB-C or Lightning charging port where the case exposes it.",
+    "network": "Wi-Fi only or Wi-Fi + Cellular (LTE)",
+    "wifi": "802.11ac, dual band, MIMO",
+    "bluetooth": "Bluetooth 5.0",
+    "gnss": "GPS/GNSS on Wi-Fi + Cellular models; digital compass and Wi-Fi location on all",
+    "sim": "Nano-SIM and eSIM (cellular models)",
+    "keys": "Top (sleep/wake) button, volume buttons, Home button with Touch ID; no programmable hardware key",
+    "biometrics": "Touch ID (home button)",
+    "pen": "Apple Pencil (1st generation)",
+    "storage": "64 GB, 256 GB",
+    "replaceableBattery": false,
+    "pttKey": false,
+    "connectivity": [
+      "4G",
+      "eSIM"
+    ],
+    "weightG": 1111,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "241 × 171 × 15 (datasheet); certificate: 171 × 240 × 17",
+    "ipRating": "IP54",
+    "operatingTemp": "−20 °C to +45 °C",
+    "cameraFree": true,
+    "partNumbers": "XCZ1MINI5; XCZ1 mini 5-64-x, -256-x, -4G variants; XCZ1 Mini 5-WOC; XCZ1 mini 5 Kit"
+  },
+  "throughCase": [
+    {
+      "label": "Apple Pencil / stylus",
+      "value": "Capacitive stylus compatible (Xciel 'MicroFibre Capacitive Stylus' option); Apple Pencil attach/charge not possible through the sealed case (not stated by Xciel)"
+    },
+    {
+      "label": "Side and volume buttons",
+      "value": "External power, volume and mute buttons"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Works through a sapphire glass window; stylus and gloves compatible"
+    },
+    {
+      "label": "Screen cover",
+      "value": "Integral glass window (part of the flameproof enclosure)"
+    },
+    {
+      "label": "Charging",
+      "value": "Lightning cable through a screwed plug (set screw); charge outside the hazardous area only"
+    },
+    {
+      "label": "USB-C port",
+      "value": "No USB-C: iPad mini 4/5 use Lightning behind the sealed plug"
+    },
+    {
+      "label": "SIM card",
+      "value": "SIM card cover; user may remove its fasteners"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Nothing removed in the standard case; -NIC option removes the camera modules"
+    },
+    {
+      "label": "Mounting points",
+      "value": "Magnet Mounting System (XCZ1-MM), locking system, carrying handle, shoulder strap, chest harness (options)"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (third-party PTT apps over Wi-Fi/cellular; no PTT key; Ex-rated? n/a)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party lone-worker apps)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based scanning; no scan engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (no NFC reader on any iPad)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no LiDAR on this iPad)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (FaceTime, Teams or remote-assist apps; needs camera and audio access through the case)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (iPadOS only)"
+    },
+    {
+      "label": "Bluetooth gas detectors",
+      "value": "Via app (Bluetooth 5.0; vendor app; no maker-certified integration listed)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.ram": "Apple doesn't publish RAM; from independent teardowns.",
+    "specs.battery": "Apple states battery capacity in watt-hours only; this figure is from the case maker's documents.",
+    "specs.dimensionsMm": "From a single source.",
+    "fitting": "Not stated by the maker for this exact model.",
+    "throughCase.Apple Pencil / stylus": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Touchscreen": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Removed or disabled": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Lone worker": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "capabilities.Bluetooth gas detectors": "Not confirmed by the maker for this exact model."
+  },
+  "features": [
+    "camera-free"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Camera-free version available for sites that restrict cameras",
+    "A standard iPad mini (5th generation) inside, with the same apps and Apple device management"
+  ],
+  "limitations": [
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C",
+    "No dust zone rating",
+    "Apple's minimum update period for this iPad has ended: for existing fleets only",
+    "Ambient rating tops out at +45 °C",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [
+    "zone-1-tablets",
+    "ipad"
+  ],
+  "alternatives": [
+    "joy-factory-axtion-extreme-ipad-mini",
+    "xshielder-ipad-pro-11",
+    "atexxo-zone-1-ipad-mini-6"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx Certificate Database (ExVeritas): IECEx EXV 19.0026X issue 2, 2023-06-22, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EXV/IECExEXV19.0026/002/deliverable/IECEx_EXV_19.0026X_002.pdf"
+    },
+    {
+      "label": "IECEx Certificate Database (Bureau Veritas CPS): IECEx EPS 20.0048X issue 1, 2021-12-16, Current (EXd-TABLET-M5; issue 0 titled TAB-EXd-IPAD-M5)",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS20.0048/001/deliverable/IECEx_EPS_20.0048X_001.pdf"
+    },
+    {
+      "label": "IECEx Certificate Database (ExVeritas): IECEx EXV 23.0054X issue 1, 2025-01-20, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EXV/IECExEXV23.0054/001/deliverable/IECEx_EXV_23.0054X_001.pdf"
+    },
+    {
+      "label": "Xciel: XCZ1 iPad Mini 5 datasheet (PDF, 2022-10)",
+      "url": "https://cdn.hibuwebsites.com/5a8aca1a55574b489d306f762b121113/files/uploaded/XCZ1%20iPad%20Mini%205%20101222.pdf"
+    },
+    {
+      "label": "Xciel: XCZ1 iPad Mini 6 datasheet (PDF)",
+      "url": "https://cdn.hibuwebsites.com/5a8aca1a55574b489d306f762b121113/files/uploaded/XCZ1_iPad_Mini_6_(6).pdf"
+    },
+    {
+      "label": "Xciel: I.S. iPad range page (read 2026-10-25)",
+      "url": "https://www.xciel.com/rugged-ipads"
+    },
+    {
+      "label": "Xciel: Online store: XCZ1 iPad mini 7 / 6 / 5 enclosure pages (read 2026-10-25)",
+      "url": "https://xciel-inc-1.mybigcommerce.com/zone-1-iecex-xcz1-ipad-mini-7-enclosure/"
+    },
+    {
+      "label": "Apple: Identify your iPad model (model numbers, years)",
+      "url": "https://support.apple.com/en-us/108043"
+    },
+    {
+      "label": "Apple: UK PSTI Statements of Compliance, one per model (regulatoryinfo.apple.com/ukpsti): first supply date and minimum 5-year defined support period",
+      "url": "https://regulatoryinfo.apple.com/ukpsti"
+    },
+    {
+      "label": "Apple: iPadOS 27 compatibility list (apple.com/os/ipados)",
+      "url": "https://www.apple.com/os/ipados/"
+    },
+    {
+      "label": "BGR / EveryMac / 9to5Mac: iPadOS 27 drops iPad mini 5, iPad 8, iPad Air 3, iPad Pro 11-inch 1st gen (release 2026-09-14)",
+      "url": "https://www.bgr.com/2190915/ipad-models-that-wont-get-ipados-27-update/"
+    }
+  ]
+}

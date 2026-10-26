@@ -1,0 +1,168 @@
+{
+  "productId": "GT-ZX10EX-G1",
+  "name": "Getac ZX10-EX (first generation)",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "Getac now lists the G2 generation in its place; it published no end-of-sale date.",
+  "successor": "getac-zx10-ex",
+  "launchYear": 2024,
+  "summary": "The Getac ZX10-EX (first generation) is the hazardous-area version of a Getac rugged 10.1-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Android 12. It has been discontinued; the Getac ZX10-EX G2 replaces it.",
+  "image": "../../assets/tablets/getac-zx10-ex-g1.webp",
+  "imageAlt": "Getac ZX10-EX (first generation), front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 2, checked 2026-10-25; ATEX not published"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T130°C Dc",
+      "number": "IECEx EPS 23.0005X (issue 2 current"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "As ZX10 G2: protect from UV and mechanical impact; interfaces never used in hazardous areas; battery never changed, charged or removed in hazardous areas; not next to strong charge-generating processes; batteries BP1S1P4990B or BP1S2P4990B.",
+    "peripherals": "All connection interfaces (USB, Thunderbolt, DC-in, docking connector, LAN, serial) must never be used in hazardous areas (certificate condition). Optional internal modules named in the certificate are covered as part of the certified tablet.",
+    "certifiedAccessories": "Named in the certificate (issue 0): hand strap, shoulder strap or harness strap, capacitive soft-tip stylus and tether. Chargers and adapters not for hazardous areas."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 12",
+    "edition": "Android 12.0",
+    "securityUntil": "2027-01-31",
+    "updates": "Security updates until January 2027"
+  },
+  "specs": {
+    "display": "10.1-inch",
+    "resolution": "1920 × 1200",
+    "brightness": "800 nits",
+    "chip": "Qualcomm Snapdragon 660 octa-core 1.95 GHz, Adreno 512",
+    "cpuArch": "Arm",
+    "ram": "4 (option 6)",
+    "camera": "16 MP autofocus",
+    "frontCamera": "8 MP webcam",
+    "battery": "Typical 4990 (min 4870), 3.84 V; optional 9980",
+    "ports": "USB 3.2 Gen1 Type-C, USB 2.0 host, DC-in, microSD; optional smart card, barcode, HF RFID/NFC combo",
+    "network": "Wi-Fi 5; optional 4G LTE, dual SIM",
+    "wifi": "802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 5.0",
+    "gnss": "Dedicated GPS",
+    "keys": "Power + 4 programmable",
+    "pen": "Dual-mode touch with digitizer",
+    "storage": "64 GB (option 128 GB) eMMC, microSD",
+    "replaceableBattery": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 1040,
+    "dimensionsMm": "275 × 192 × 17.9",
+    "ipRating": "IP66",
+    "ruggedness": "MIL-STD-810H; 1.8 m (6 ft) drop",
+    "operatingTemp": "−21 °C to +55 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF RFID/NFC combo reader)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (optional combo reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.iecex.number": "Getac's certificate names the model with a 'c' suffix and doesn't name the generation. We matched it to this generation by its batteries, dust group and ambient range.",
+    "os.securityUntil": "Getac's date for the standard model; Getac lists no separate date for the EX version.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "barcode"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Optional built-in barcode imager",
+    "User-replaceable battery",
+    "Among the lightest Zone 2 tablets of its size we list, at 1040 g in use"
+  ],
+  "limitations": [
+    "Discontinued; the Getac ZX10-EX G2 replaces it",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "getac-zx10-ex",
+    "bartec-et60-65ex2-android",
+    "atexxo-zone-2-galaxy-tab-active5-pro"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 23.0005X issue 2 (ZX10-Ex, ZX10-Exc), 2025-07-10, Current (issue 0 of 2024-02-21 also read)",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS23.0005/002/deliverable/IECEx_EPS_23.0005X_002.pdf"
+    },
+    {
+      "label": "Getac: ZX10-EX (first gen, Snapdragon 660) product specification, generated 2025-05-21",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX10-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: ZX10-EX accessory spec brochure",
+      "url": "https://www.getac.com/content/dam/getac/product-accessory-data-pdf/en/Getac_ZX10-EX_Accessory.pdf"
+    },
+    {
+      "label": "Getac: ZX10-EX product page (shows G2 spec; text says Android 13, spec table Android 15)",
+      "url": "https://www.getac.com/en/products/tablets/zx10-ex/"
+    },
+    {
+      "label": "Getac: Getac Device Update Center: security update end dates and policy (5 years from first availability, 90-day cadence)",
+      "url": "https://www.getac.com/en/getac-device-update-center/"
+    },
+    {
+      "label": "Elvac: Getac ZX10-EX article dated 2024-02-29",
+      "url": "https://www.elvac.eu/?p=25564"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "productId": "AEG-100M",
+  "name": "Aegex 100M",
+  "brand": "Aegex",
+  "brandSlug": "aegex",
+  "manufacturer": {
+    "name": "Aegex Technologies LLC",
+    "country": "USA"
+  },
+  "type": "dedicated",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "Availability unclear: Aegex's website has gone offline and a distributor lists it as end of life, though another still shows stock. Eaton sells a tablet with identical specifications.",
+  "successor": "eaton-gecma-is-tablet-pc",
+  "launchYear": 2024,
+  "summary": "The Aegex 100M is an intrinsically safe (Ex ia) 10.1-inch Windows tablet from Aegex, certified for Zone 1/21 under ATEX and IECEx. It runs Windows 11 IoT Enterprise. It has been discontinued; the Eaton MTL GECMA IS Tablet PC replaces it.",
+  "certification": {
+    "otherSchemes": [
+      "CSA Class I Zone 1/0 listing (per distributors)",
+      "India certification announced by Aegex (news page seen only as a search result",
+      "certificate not read)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 1G Ex ia IIC T4 Ga / II 1D Ex ia IIIC T135°C Da",
+      "kind": "type-examination",
+      "number": "Nemko 25ATEX1007X",
+      "status": "IECEx Current, issue 1 (2026-02-20), checked 2026-10-25. The earlier IECEx SNA 24.0004X (Ex ia IIB T4 Ga) was CANCELLED on 2025-10-22 at the CB's request after consulting the applicant. Cancellation does not affect equipment already released."
+    },
+    "iecex": {
+      "marking": "Ex ia IIC T4 Ga / Ex ia IIIC T135°C Da",
+      "number": "IECEx NMK 25.0015X (issue 1, 2026-02-20"
+    },
+    "northAmerica": "UL 913 8th ed.: Class I, II, III Div 1 and Div 2 Groups C, D T4; Class I Zone 0 AEx ia IIB T4 Ga (gas group IIB in North America, not IIC); CSA C22.2 No. 60079-0/-11",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "0",
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "20",
+      "21",
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ia)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Ga / Da",
+    "ambient": "−20 °C to +55 °C",
+    "zone0Note": "Zone 0 rated only inside the case supplied by the maker."
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "IECEx NMK 25.0015X conditions: do not remove or replace the battery pack in hazardous areas; use only battery pack AAEB-100-XX and charge it only on the tablet; charge only with Aegex charger AAAK-0XX-01; do not open the SIM/SD port in a hazardous location; in Zone 0 the product must be used inside the Aegex leather case APAC-100-01 (aluminium enclosure, friction hazard); avoid friction on the enclosure; inspect for damage; service only by Aegex; do not charge, connect or disconnect in hazardous areas; no accessories or extensions in hazardous areas; Ta −20 °C to +55 °C.",
+    "peripherals": "No accessories or extensions in hazardous areas; do not open the SIM/SD port, do not connect or disconnect anything (charging contact, dock) in hazardous areas.",
+    "certifiedAccessories": "Zone 0 leather case APAC-100-01 (mandatory in Zone 0), battery AAEB-100-XX, charger AAAK-0XX-01, DS100M dock (safe area only), shoulder strap and stylus in the box. No Ex-rated peripherals are allowed in the Ex area."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 IoT Enterprise",
+    "edition": "Windows 11 IoT Enterprise (channel/LTSC year not stated; Eaton: 'Windows 11 IoT')",
+    "securityUntil": "2034-10-10",
+    "updates": "Security updates until October 2034"
+  },
+  "specs": {
+    "display": "10.1-inch AHVA (IPS-type), 1000:1 contrast, 170 degree viewing angle",
+    "resolution": "2560 × 1600 (WQXGA)",
+    "brightness": "540 nits",
+    "chip": "Intel quad-core Atom (Apollo Lake) 1.6 GHz base, 1.8 GHz burst",
+    "cpuArch": "x86",
+    "ram": "8 GB",
+    "camera": "8 MP autofocus with flash (Eaton: camera-free version available)",
+    "frontCamera": "Front camera 1920 x 1080 stills (megapixels not stated; 2 MP in Eaton manual)",
+    "video": "1080p at 30 fps",
+    "battery": "2 x 3450 (7.2 V)",
+    "batteryWh": "49.68",
+    "batteryLife": "Typical 12 h (Eaton datasheet)",
+    "ports": "5-pin magnetic charging connector; docking connector (LAN, USB 2.0/3.0, USB-C, HDMI, SD, audio jack); microSDXC and nano-SIM under port cover; VESA 75 x 35 mm mount (Eaton)",
+    "docking": "Dock DS100M (Aegex) / GEC-ATP-DOST-01 (Eaton), safe area only; shoulder strap; VESA mount",
+    "network": "Wi-Fi; optional LTE-A Cat 12 / UMTS",
+    "wifi": "802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 5.2",
+    "nfc": "Yes",
+    "gnss": "GPS, GLONASS, Galileo",
+    "sim": "Nano-SIM (LTE version)",
+    "pen": "Stylus supplied (type not stated)",
+    "keyboard": "No (slate)",
+    "apps": "AegexScan barcode-scanning application (optional, Aegex)",
+    "storage": "256 GB, MicroSDXC up to 2 TB",
+    "replaceableBattery": false,
+    "connectivity": [
+      "4G",
+      "NFC"
+    ],
+    "weightG": 1430,
+    "dimensionsMm": "278 × 207 × 13.8 (28.3 at battery)",
+    "ipRating": "IP67",
+    "operatingTemp": "−20 °C to +55 °C",
+    "partNumbers": "A100MW1CB0A01 (Connection.com listing); Zone 0 case APAC-100-01; charger AAAK-0XX-01; dock DS100M"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (AegexScan; camera-based, no dedicated engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (front and rear cameras; Windows app)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 IoT Enterprise, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "The IECEx marking is from the certificate. The ATEX version is from a distributor and Eaton's identical certificate; the ATEX certificate isn't published.",
+    "certification.iecex.marking": "The IECEx marking is from the certificate. The ATEX version is from a distributor and Eaton's identical certificate; the ATEX certificate isn't published.",
+    "certification.otherSchemes": "Stated by the maker; we haven't seen the certificate.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "os.securityUntil": "Microsoft's end date for Windows 11 IoT Enterprise LTSC 2024. The maker doesn't state the edition year.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "updates-2030"
+  ],
+  "strengths": [
+    "Zone 0 rated when used in the supplied case",
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Also certified for Class I Division 1 in North America"
+  ],
+  "limitations": [
+    "Discontinued; the Eaton MTL GECMA IS Tablet PC replaces it",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Battery isn't user-replaceable"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "eaton-gecma-is-tablet-pc",
+    "isafe-is945-1",
+    "ecom-tab-ex-05-dz1"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx online certificate database: IECEx NMK 25.0015X issue 1 (2026-02-20), Aegex 100M",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/2031484/view"
+    },
+    {
+      "label": "IECEx online certificate database: IECEx SNA 24.0004X (2024-07-15), Aegex 100M, CANCELLED 2025-10-22",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1797180/view"
+    },
+    {
+      "label": "IECEx online certificate database: IECEx NMK 25.0029X issue 0 (2026-05-26), Eaton GECMA IS Tablet PC",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1997154/view"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 IoT Enterprise LTSC 2024 (extended end listed 10/11/2034)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-iot-enterprise-ltsc-2024"
+    },
+    {
+      "label": "Aegex Technologies LLC: Aegex100M datasheet ADDH-015-02-02 (2024), hosted by ATEXshop (shows older IIB markings)",
+      "url": "https://www.atexshop.com/images/pdf/aegex-100m-datasheet_(1).pdf"
+    },
+    {
+      "label": "Eaton: Datasheet EPS GECMA IS Tablet PC Rev 2 (April 2026): ATEX 'II 1 GD Ex ia IIC T4 Ga', Windows 11 IoT",
+      "url": "https://www.eaton.com/content/dam/eaton/products/process-safety-automation-test-and-measurement/crouse-hinds/catalog-pages/eaton-mtl-gecma-en-is-tablet-pc-datasheet-1125.pdf"
+    },
+    {
+      "label": "Eaton: Instruction manual INM MTL GECMA IS Tablet PC Rev 1 (May 2026): certificates Nemko 25ATEX1018X, IECEx NMK 25.0029X, UL CER230869",
+      "url": "https://www.eaton.com/content/dam/eaton/products/process-safety-automation-test-and-measurement/crouse-hinds/instruction-sheets/eaton-mtl-gecma-en-is-tablet-pc-installation-sheet.pdf"
+    },
+    {
+      "label": "ATEXshop (distributor): Aegex 100M product page: 'End of Life, no longer available'; ATEX 25ATEX1007X; read 2026-10-25",
+      "url": "https://www.atexshop.com/aegex100m.html"
+    },
+    {
+      "label": "ABLE Instruments (UK reseller): Aegex 100M product page: 'In Stock', GBP 2,580 (undated)",
+      "url": "https://ableinstruments.com/product/aegex-100m-intrinsically-safe-windows-11-tablet/"
+    },
+    {
+      "label": "Intrinsically Safe Store (distributor): Aegex 100M product page: 'currently unavailable / out of stock'",
+      "url": "https://intrinsicallysafestore.com/product/aegex-100m-intrinsically-safe-tablet"
+    }
+  ]
+}

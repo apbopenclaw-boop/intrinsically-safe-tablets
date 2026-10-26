@@ -1,0 +1,365 @@
+{
+  "$comment": "Product photo per tablet slug, processed by `npm run tablets:images` (scripts/tablet_images.mjs). Official packshots only: front-on, plain background, one device.",
+  "tablets": {
+    "aegex-10-is": {
+      "url": "https://img.controlglobal.com/files/base/ebm/controlglobal/image/2022/09/1663367418903-aegex10.png",
+      "sourcePage": "https://www.controlglobal.com/vendors/products/2016/aegex10-intrinsically-safe-windows-10-tablet",
+      "note": "Front-on, plain background, one device; trade-press copy of Aegex's own Aegex10 product shot (aegex.com did not respond, product discontinued). Only 250x179 px, so it will upscale ~4x and look soft; treat as a placeholder. Better-resolution alternative (900x500, angled, but also shows a battery/dock unit beside the tablet): https://mining.com/wp-content/uploads/2016/06/A1.jpg. Confidence: right product, weak resolution."
+    },
+    "aegex-100m": {
+      "sourcePage": "https://www.eaton.com/content/dam/eaton/products/process-safety-automation-test-and-measurement/crouse-hinds/catalog-pages/eaton-mtl-gecma-en-is-tablet-pc-datasheet-1125.pdf",
+      "note": "No image. Tried: aegex.com (no response), web search for Aegex 100M (nothing), Aegex10 trade-press images (those show the older Aegex10 / Aegex 10 IS, not the 100M). The Eaton MTL GECMA IS tablet packshot (see eaton-gecma-is-tablet-pc) may be the same hardware family, but our sources do not confirm the 100M is that unit, so I did not reuse it."
+    },
+    "armadex-ex-unicase": {
+      "url": "https://armadex.com/wp-content/uploads/2025/12/unicase_ipad_a16-1.png",
+      "sourcePage": "https://armadex.com/product/ex-ipad-a16/",
+      "note": "Near front-on (very slightly turned) render of the Ex UniCase with an iPad (A16) in it, 1000x1000, light grey background, one device. Gallery has three more views (-2 side, -3 landscape, plain file = slightly rotated). Ex and IECEx logos baked into the top corners. IMPORTANT: armadex.com returns 403 to curl and scripts (bot protection); I confirmed 200 image/png 1000x1000 only from a real browser session, so the image script may fail on it. Confidence: image correct, download may be blocked."
+    },
+    "atexxo-zone-1-galaxy-tab-active5": {
+      "url": "https://atexxo.com/wp-content/uploads/2026/01/samsung-galaxy-tab-active5-a-prova-di-esplosione-ex-zona-1.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-active5-ex-zone-1/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1759x2560 PNG with transparent background, one device. Atexxo uses one file per language for this product (this is the Italian-named copy; the Norwegian-named copy is the same picture at 735x920). Other language copies show the back. Confidence: high."
+    },
+    "atexxo-zone-1-ipad-mini-5": {
+      "sourcePage": "https://atexxo.com/wp-content/uploads/2025/04/atex-certificate-1-product-flyer-brochure-produit-produkt-flyer-volantino-prodotto-listovka-produkta-folleto-de-productonew.pdf",
+      "note": "No image. Atexxo has no web page or media-library image for a Zone 1 iPad mini 5 (checked its product sitemap, WordPress media API and /product/ URLs; 404). The Zone 1 mini 6 render (atexxo-zone-1-ipad-mini-6) shows a different case cut-out for a different host, so I did not reuse it. Only the PDF flyer covers this model."
+    },
+    "atexxo-zone-1-ipad-mini-6": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/02/explosion-proof-ipad-mini-6-ex-zone-1-front.webp",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-ipad-mini-6-ex-zone-1/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render in the grey Exd enclosure with black corner guards, 1423x1920 WebP, transparent background. Confidence: high."
+    },
+    "atexxo-zone-1-ipad-mini-7": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/02/explosion-proof-ipad-mini-7-ex-zone-1-front.webp",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-ipad-mini-7-ex-zone-1/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1455x1920 WebP, transparent background. Same enclosure as the mini 6 Zone 1 render, different wallpaper. Confidence: high."
+    },
+    "atexxo-zone-2-galaxy-tab-a9": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/04/explosion-proof-samsung-galaxy-tab-a9-ex-zone-2-front.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-a9-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1681x2560 PNG, transparent background. The page's main image is the back view; this '-front' file is the right one. Confidence: high."
+    },
+    "atexxo-zone-2-galaxy-tab-active5-pro": {
+      "url": "https://atexxo.com/wp-content/uploads/2026/06/samsung-galaxy-tab-active5-pro-antideflagrante-ex-zona-2.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-active5-pro-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on landscape render, 1959x2560 PNG (2.7 MB), transparent background. This is the Italian-named copy; the German-named copy is the same view at 735x920 (smaller file). The Norwegian-named copy is a side view and the Spanish one a back view. Confidence: high."
+    },
+    "atexxo-zone-2-galaxy-tab-s10-fe": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/06/explosionsgeschutztes-samsung-galaxy-tab-s10-fe-ex-zone-2.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-s10-fe-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1893x2560 PNG, transparent background. This is the German-named copy; the Norwegian-named copy is a back view, the Italian one a side view. Confidence: high."
+    },
+    "atexxo-zone-2-galaxy-tab-s9-fe": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/02/explosion-proof-samsung-galaxy-tab-s9-fe-ex-zone-2-voorkant.webp",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-s9-fe-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render ('voorkant' = front), 1299x1920 WebP, transparent background. Confidence: high."
+    },
+    "atexxo-zone-2-ipad-10-9": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/02/explosion-proof-ipad-ex-zone-2-voorkant.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-ipad-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render ('voorkant' = front) of the iPad 10th generation 10.9-inch Zone 2 conversion, 1999x2560 PNG, transparent background. Confidence: high."
+    },
+    "atexxo-zone-2-ipad-a16": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/04/explosion-proof-ipad-a16-ex-zone-2-front.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-ipad-a16-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1964x2560 PNG, transparent background. The screen wallpaper is the iPad 10th-gen one; Atexxo's A16 page shows the same artwork. Confidence: high for the case, medium for the exact iPad generation shown."
+    },
+    "atexxo-zone-2-ipad-mini-6": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/02/explosion-proof-ipad-mini-6-ex-zone-2-front.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-ipad-mini-6-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1884x2560 PNG, transparent background. Confidence: high."
+    },
+    "atexxo-zone-2-ipad-mini-7": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/02/explosion-proof-ipad-mini-7-ex-zone-2-front.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-ipad-mini-7-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1799x2560 PNG, transparent background. Nearly identical to the mini 6 render apart from wallpaper. Confidence: high."
+    },
+    "atexxo-zone-2-ipad-pro-11": {
+      "url": "https://atexxo.com/wp-content/uploads/2025/02/explosion-proof-ipad-pro-2024-ex-zone-2-front.png",
+      "sourcePage": "https://atexxo.com/product/explosion-proof-ipad-pro-2024-ex-zone-2/",
+      "note": "Ex hexagon logo baked into the lower-right corner of the render (not removable). Front-on render, 1876x2560 PNG, transparent background. Caveat: Atexxo's page is for the iPad Pro 11-inch 2024 (M4); I found no separate M5 page or render, so this is the nearest official image (same chassis). Confidence: medium."
+    },
+    "bartec-agile-s-ni": {
+      "url": "https://bartec.com/wp-content/uploads/2025/09/Tablet_PC_Agile_S_NI.png",
+      "sourcePage": "https://bartec.com/products-solutions/product-finder/product-detail/tablet-agile-s-ni/",
+      "note": "Front-on 10-inch tablet with orange trim, 2400x1640 PNG, plain light background, one device. File is the full-size original of the 1024x700 thumbnail used on the page (a 2048x1399 version also exists). Confidence: high. (The URL in our sources for this product, bartec-agile-s-ni, returns 404; the working page is the sourcePage given.)"
+    },
+    "bartec-agile-x-is": {
+      "url": "https://dl346112f5pwo.cloudfront.net/media/images/assets/5/5/55d30b7a041643688482b042d63c3f0f.png",
+      "sourcePage": "https://www.levata.com/en-gb/bartec-17-a1bf-124122111000-tablet",
+      "note": "Discontinued. Front-on packshot of the Agile X IS (orange-ringed black tablet, plain background), 1000x667 PNG. Source is reseller Levata (listing 'BARTEC AGILE-X-IS 10 inch Windows Tablets'), a copy of Bartec's own image; Bartec's own site no longer carries it. Slightly low resolution, the device fills most of the frame. Confidence: medium-high."
+    },
+    "bartec-et60-65ex2-android": {
+      "url": "https://bartec.com/wp-content/uploads/2025/09/BARTEC_ET60EX2_ET65EX_Android_Tablet.png",
+      "sourcePage": "https://bartec.com/products-solutions/product-finder/product-detail/bartec-et60-65ex2-android-tablet/",
+      "note": "Front-on landscape render with Android home screen, 2400x1640 PNG, plain light background. This is the page's og:image at full size. The ET60/ET65 (EX2) share one picture on the page. Confidence: high."
+    },
+    "bartec-et60-65ex2-windows": {
+      "url": "https://bartec.com/wp-content/uploads/2026/03/BARTEC-ET60-ET65EX-Windows-Tablet-2048x1399.png",
+      "sourcePage": "https://bartec.com/products-solutions/product-finder/product-detail/bartec-et60-65ex2-windows-tablet/",
+      "note": "Front-on landscape render with Windows 11 wallpaper, 2048x1399 PNG, plain light background. Deliberately the 2048 rendition: the unsuffixed original is 10000x6833 px (32 MB). Confidence: high."
+    },
+    "dell-latitude-7220ex": {
+      "url": "https://www.atexshop.com/media/catalog/product/cache/9acef7d1ef9b6ecea35dddea8ea8fdff/f/r/frontside.png",
+      "sourcePage": "https://www.atexshop.com/dell-latitude-7220ex-rugged-atex.html",
+      "note": "Discontinued. Slightly angled (about 20 degrees) front view of the Latitude 7220EX Rugged Extreme with yellow edge trim, 1250x1000 PNG, white box background. Reseller (atexshop.com) copy of Dell's packshot; dell.com no longer carries the product. The cache path contains a hash that could change if the shop reprocesses images. Confidence: medium-high."
+    },
+    "durabook-r8-ex": {
+      "url": "https://media.durabook.com/wp-content/uploads/2024/02/21003828/R8-EX-fully-rugged-tablet.png",
+      "sourcePage": "https://www.durabook.com/us/products/r8-ex-tablet/",
+      "note": "Front-on, no text, 1181x796 PNG. Shows the tablet with its grey/yellow-stitched rubber protection boot (the EX is sold with it; I did not confirm the boot is mandatory). The page also has an annotated front view (R8EX-Front-en.jpg, with callout labels) which I rejected. Confidence: medium-high."
+    },
+    "durabook-u11i-ex": {
+      "url": "https://media.durabook.com/wp-content/uploads/2024/02/23224420/U11I-EX-fully-rugged-tablet.png",
+      "sourcePage": "https://www.durabook.com/us/products/u11i-ex-tablet/",
+      "note": "Front-on, no text, 1181x796 PNG, tablet shown in its grey protection boot (same caveat as the R8-EX). Annotated alternative with callouts: U11-EX-Front.jpg on the same page. Confidence: medium-high."
+    },
+    "eaton-gecma-is-tablet-pc": {
+      "url": "https://www.eaton.com/content/dam/eaton/products/process-safety-automation-test-and-measurement/crouse-hinds/images/eaton-gecma-tablet-screen-fc.png",
+      "sourcePage": "https://www.eaton.com/gb/en-gb/catalog/process-safety-automation-measurement/mtl-gecma-is-tablet-pc.html",
+      "note": "Front-on, plain white background, one device (tablet in its black dock), 1000x1000 PNG; the page's og:image. IMPORTANT: eaton.com blocks curl (HTTP/2 stream error, no response), so I could not run the required curl check. I verified 200 image/png 1000x1000 and viewed the picture from a real browser session. The image script may fail to download it. Confidence: image correct, download uncertain."
+    },
+    "ecom-pad-ex-01-p12-dz2": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/3/8/csm_Pad-Ex_01_P12_Gallery_1_827435b2e2.png",
+      "sourcePage": "https://www.ecom-ex.com/products/mobile-computing/tablets-windows/pad-ex-01-p12-dz2/",
+      "note": "Front-on landscape gallery image, 800x800 PNG, light grey background. Screen shows a Pepperl+Fuchs splash and the bezel carries Durabook branding (ecom builds on a Durabook base). Device spans about 700 px of the 800 canvas. Confidence: high."
+    },
+    "ecom-pad-ex-01": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/2/3/csm_Pad-Ex_01_P8_DZ2_Gallery_1_fe5c505bd1.png",
+      "sourcePage": "https://www.ecom-ex.com/products/archive/mobile-computing/pad-ex-01-p8-dz2/",
+      "note": "Discontinued; from ecom's archived P8 DZ2 page. Front-on landscape, 800x800 PNG, ecom wallpaper on screen. The same page's slightly angled view is Gallery_2. Confidence: high (the slug covers the Pad-Ex 01 P8 generation)."
+    },
+    "ecom-tab-ex-02-dz1": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/7/d/csm_Tab-Ex_02_DZ1_Gallery_1_46b8f7349a.jpg",
+      "sourcePage": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-02-dz1/",
+      "note": "Discontinued; ecom archive page. Front-on portrait, 800x800 JPG, white background; the wrist strap hangs out on the right which slightly widens the silhouette. Confidence: high."
+    },
+    "ecom-tab-ex-02-dz2": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/0/a/csm_tab-ex_02_360_1_34d1241574.jpg",
+      "sourcePage": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-02-dz2/",
+      "note": "Discontinued; ecom archive page. Front-on, yellow Zone 2 variant, 650x650 JPG, white background with a faint floor reflection under the device. Device is only about 570 px tall, just under the 600 px target. It is the only still on that page (rest are a 360-degree sequence). Confidence: high on product, medium on resolution."
+    },
+    "ecom-tab-ex-03-dz1": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/6/3/csm_Tab-Ex_03_DZ1_Gallery_1_10a80d8b2b.png",
+      "sourcePage": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-03-dz1/",
+      "note": "Discontinued; ecom archive page. Front-on portrait, blue Zone 1 variant, 800x800 PNG, light grey background. Confidence: high."
+    },
+    "ecom-tab-ex-03-dz2": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/d/c/csm_Tab-Ex_03_DZ2_Gallery_1_f22f588024.png",
+      "sourcePage": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-03-dz2/",
+      "note": "Discontinued; ecom archive page. Almost front-on (a few degrees of turn), yellow Zone 2 variant, 800x800 PNG. Gallery_2 on the same page is more angled; Gallery_3 is the back. Confidence: high."
+    },
+    "ecom-tab-ex-04-pro-dz2": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/7/6/csm_Tab-Ex_04_Pro_DZ2_Gallery_3_2d2d125f31.png",
+      "sourcePage": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-04-pro-dz2/",
+      "note": "Discontinued; ecom archive page. Slightly angled landscape (about 10 degrees), 800x800 PNG, P+F splash screen. A strictly front-on view exists (Gallery_1, 3f/1c54cc82) but it carries a '5G' text badge in the corner, so I chose the clean one. Confidence: high."
+    },
+    "ecom-tab-ex-05-dz1": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/f/d/csm_Tab-Ex_05_DZ1_p12_73d269f9b6.png",
+      "sourcePage": "https://www.ecom-ex.com/products/mobile-computing/tablets-android/tab-ex-05-dz1/",
+      "note": "Front-on portrait with blue key strip, 800x800 PNG, light grey background, clean. The '_front' file on the page is the same pose but with a '5G' text badge beside the device. Confidence: high."
+    },
+    "ecom-tab-ex-05-dz2": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/0/0/csm_Tab-Ex_05_DZ2_p12_86b96e0813.png",
+      "sourcePage": "https://www.ecom-ex.com/products/mobile-computing/tablets-android/tab-ex-05-dz2/",
+      "note": "Slightly angled portrait (about 5 degrees) with orange Zone 2 key strip, 800x800 PNG, clean. The strictly front-on '_front' file has a '5G' text badge. Confidence: high."
+    },
+    "ecom-tab-ex-pro-dz2": {
+      "url": "https://www.ecom-ex.com/fileadmin/_processed_/e/c/csm_Tab-Ex_Pro_DZ2_Gallery_1_a983f4ae0c.png",
+      "sourcePage": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-pro-dz2/",
+      "note": "Discontinued; ecom archive page. Landscape, slightly angled (about 10 degrees), orange trim, ecom wallpaper, 800x800 PNG. Confidence: high."
+    },
+    "getac-ex80": {
+      "url": "https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/2019/04/bulktransporter_4629_getac.png",
+      "sourcePage": "https://www.bulktransporter.com/technology/article/21656869/getac-ex80-tablet-certified-for-most-hazardous-explosive-environments",
+      "note": "Discontinued. Getac's own EX80 product shot as published by trade magazine Bulk Transporter: angled (about 30 degrees) landscape, white background, soft floor shadow, 1540x866 PNG; the device is only about 580 px wide in the 1540 px frame. Getac's current site has no EX80 page (404); Getac's press page only has a collage. Confidence: medium-high."
+    },
+    "getac-f110-ex-g6": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/New-F110G7EX-1.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/f110-ex/",
+      "note": "Reused G7 image: Getac shows no separate G6 packshot any more. Front-on landscape with stylus tether, ATEX badge, 550x550 PNG. The G6 and G7 F110-EX look the same from the front per Getac's datasheets, but I could not verify the G6 visually. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: medium (generation)."
+    },
+    "getac-f110-ex": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/New-F110G7EX-1.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/f110-ex/",
+      "note": "F110 G7 EX. Front-on landscape with stylus tether, ATEX badge, 550x550 PNG. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: high on product."
+    },
+    "getac-k120-ex-g2-r": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_K120G3-EX_01-2.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/k120-ex/",
+      "note": "Reused K120 G3 EX image: no G2 packshot on Getac's site. Front-on landscape, ATEX badge, 550x550 PNG. Chassis looks the same from the front but I could not verify the older G2 visually. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: medium (generation)."
+    },
+    "getac-k120-ex": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_K120G3-EX_01-2.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/k120-ex/",
+      "note": "K120 G3 EX. Front-on landscape, ATEX badge, 550x550 PNG. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: high on product."
+    },
+    "getac-t800-ex": {
+      "url": "https://www.touchpoint.com.au/wp-content/uploads/2023/02/14_getac.png",
+      "sourcePage": "https://www.touchpoint.com.au/shop/getac-t800-ex-fully-rugged-tablet/",
+      "note": "Discontinued. Angled (about 30 degrees) landscape view of the T800 chassis, 1295x905 PNG, light background, from Australian reseller Touchpoint's T800-EX listing (a copy of Getac's packshot). The device shown has no visible ATEX marking, so it may be the plain T800 body that the EX shares. Getac's own T800-EX page is gone (404). Confidence: medium-low."
+    },
+    "getac-ux10-ex-g2-r": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_UX10G5-EX_11-2.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/ux10-ex/",
+      "note": "Reused UX10 G5 EX image: no G2 packshot on Getac's site. Front-on landscape, ATEX badge, 550x550 PNG. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: medium (generation)."
+    },
+    "getac-ux10-ex": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_UX10G5-EX_11-2.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/ux10-ex/",
+      "note": "UX10 G5 EX. Front-on landscape, ATEX badge, 550x550 PNG. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: high on product."
+    },
+    "getac-zx10-ex-g1": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_ZX10G2-EX_01-2.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/zx10-ex/",
+      "note": "Reused ZX10 G2 EX image: no G1 packshot on Getac's site. Front-on landscape with Android screen, 550x550 PNG. G1 and G2 look the same from the front but I could not verify the G1 visually. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: medium (generation)."
+    },
+    "getac-zx10-ex": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_ZX10G2-EX_01-2.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/zx10-ex/",
+      "note": "ZX10 G2 EX. Front-on landscape with Android screen, 550x550 PNG. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: high on product."
+    },
+    "getac-zx70-ex": {
+      "url": "https://www.touchpoint.com.au/wp-content/uploads/2023/02/20_getac.png",
+      "sourcePage": "https://www.touchpoint.com.au/shop/getac-zx70-ex-tablet/",
+      "note": "Discontinued. Angled (about 20 degrees) close-up of the yellow ZX70 (device touches the frame edges) with ATEX hexagon badge, 1091x907 PNG, light background, from Touchpoint's ZX70-EX listing (copy of Getac's packshot). Getac's own ZX70-EX page is gone (404). Confidence: medium-high."
+    },
+    "getac-zx80-ex": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_ZX80-EX_01-12.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/zx80-ex/",
+      "note": "Front-on landscape with Android screen, hand-strap tether, ATEX badge, 550x550 PNG. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: high."
+    },
+    "getac-zx80w-ex": {
+      "url": "https://www.getac.com/content/dam/getac/all-sites-img/Getac_ZX80W-EX_01-2.png",
+      "sourcePage": "https://www.getac.com/en/products/tablets/zx80w-ex/",
+      "note": "Front-on landscape with Windows screen, tether, ATEX badge, 550x550 PNG. Nearly identical to the ZX80 EX shot apart from the screen. Only 550x550 PNG, so the device is about 450-500 px on its long side (below the 600 px target); expect the script's upscale warning. Getac's larger images on the same page are lifestyle shots with effects. Confidence: high."
+    },
+    "isafe-is910-1": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/i.safe_MOBILE_IS910.1_Front.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/archive/is9101",
+      "note": "Discontinued; i.safe MOBILE archive page. Front-on portrait, orange trim, neutral screen with Ex logo, 1681x2500 PNG, transparent/plain background. Full-size original from i.safe's media folder (page itself uses resized copies). Confidence: high."
+    },
+    "isafe-is910-2": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/PHO_PRO_FRO_IS910.2-neutral__SALL__AIN__V2.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/archive/is9102",
+      "note": "Discontinued. Front-on portrait, yellow trim, 1681x2500 PNG, plain background. Full-size original. Same pose and layout as the IS910.1 shot, different trim colour. Confidence: high."
+    },
+    "isafe-is930-1": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/PHO_PRO_FRO_IS930.1-Front__SALL__AIN__V6.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is9301",
+      "note": "Portrait, tilted about 15 degrees and floating, with a floor shadow and a pale smudge at the lower left that background removal may not clear; 2077x2500 PNG. i.safe's page shows no flat front-on still (a 360-degree set exists: PHO_PRO_360_IS930-1-360Grad-01__SALL__AIN__V1.png in .../pim/PHO/PRO/360/, also tilted). Confidence: high on product, medium on pose."
+    },
+    "isafe-is930-2": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/PHO_PRO_FRO_IS930.2-Front__SALL__AIN__V6.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/zone-2/22/is9302",
+      "note": "Same pose as the IS930.1 image, yellow-gold trim for Zone 2; 2077x2500 PNG, tilted about 15 degrees with the same floor smudge. Confidence: high on product, medium on pose."
+    },
+    "isafe-is940-1": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/PHO_PRO_FRO_IS940.1_Front__SALL__AIN__V1.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is9401",
+      "note": "Landscape, tilted about 10 degrees and floating with a soft floor shadow, red trim, 2500x1805 PNG, plain background. No flat front-on still on the page. Confidence: high on product, medium on pose."
+    },
+    "isafe-is940-2": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/PHO_PRO_FRO_IS940.2_Front__SALL__AIN__V1.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/zone-2/22/is9402",
+      "note": "Landscape, tilted about 10 degrees, yellow trim for Zone 2, 2500x1805 PNG, plain background. Confidence: high on product, medium on pose."
+    },
+    "isafe-is945-1": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/PHO_PRO_FRO_IS945.1_Front__SALL__AIN__V1.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is9451",
+      "note": "Landscape, tilted, red trim, 2500x1805 PNG. The file i.safe serves for the IS945.1 is byte-identical to the IS940.1 image, so the maker shows no visual difference; reused as-is. Confidence: medium (same picture as IS940.1)."
+    },
+    "isafe-is945-2": {
+      "url": "https://www.isafe-mobile.com/fileadmin/pim/PHO/PRO/FRO/PHO_PRO_FRO_IS945.2_Front__SALL__AIN__V1.png",
+      "sourcePage": "https://www.isafe-mobile.com/en/products/product-range/zone-2/22/is9452",
+      "note": "Landscape, tilted, yellow trim, 2500x1805 PNG. Byte-identical to the IS940.2 image on i.safe's server; reused as-is. Confidence: medium (same picture as IS940.2)."
+    },
+    "joy-factory-axtion-extreme-ipad-mini": {
+      "url": "https://thejoyfactory.com/wp-content/uploads/2025/07/axtion-extreme-iecex-zone-one-zone-21-hazloc-case-front-hta30XX__82796-1.jpg",
+      "sourcePage": "https://thejoyfactory.com/tw/%E7%94%A2%E5%93%81/axtion-extreme-iecex-atex-ts-zone-1-21%E7%B5%82%E6%A5%B5%E4%BF%9D%E8%AD%B7%E6%AE%BC-%E7%9B%B8%E5%AE%B9-ipad-mini-a17-pro/",
+      "note": "Front-on render of the red aXtion Extreme Zone 1/21 case with an iPad mini on screen, 1280x1280 JPG, white background, one device. Source page is the Taiwanese-language product page (the only one I found for HTA3021); the image files are not language-specific. Confidence: high."
+    },
+    "otterbox-hardline-ipad-air": {
+      "sourcePage": "https://otterboxbusiness.com/hardline/",
+      "note": "No usable image. Tried: otterboxbusiness.com/hardline (only a 480x272 category image), OtterBox press release (the product-render asset has been deleted, returns 400), IShn and CES award pages (lifestyle photo with a worker, and a 500x281 group shot of front, back and straps). Product is discontinued and OtterBox's catalogue PDF has no extractable packshot."
+    },
+    "panasonic-toughpad-fz-g1-atex": {
+      "url": "https://eu.connect.panasonic.com/sites/default/files/styles/full_width/public/media/image/2022-11/fz-g1-atex-imagescreen.jpg.webp",
+      "sourcePage": "https://eu.connect.panasonic.com/gb/en/case-studies/exmar-revolutionizing-maritime-logistics-toughpad-fz-g1-atex",
+      "note": "Discontinued. File named 'fz-g1-atex-imagescreen': angled (about 25 degrees) landscape FZ-G1 with Windows 8 tiles, white background, 1680x1396 WebP. Device is about 850 px wide in the 1680 px frame. Image is Panasonic's own, from its EU case-study page for the FZ-G1 ATEX. A 6016x5000 JPG original exists at .../files/media/image/2022-11/fz-g1-atex-imagescreen.jpg (5 MB). Confidence: high on product."
+    },
+    "rino-ex-nr-case-ipad-10-2": {
+      "note": "No image. No maker site in our sources. Two web searches for the Rino Ex NR case returned nothing for that name or brand; the results were only Xciel, Atexxo and Arktake cases for the same iPad, which are different products."
+    },
+    "touchstar-ts3300": {
+      "url": "https://touchstar.co.uk/wp-content/uploads/2025/10/TS3200_front-3-copy.jpg",
+      "sourcePage": "https://touchstar.co.uk/products/rugged-mobile-computers/ts3300/",
+      "note": "Angled (about 20 degrees) landscape front view, alt text 'TS3300 Front', 800x552 JPG, white background. The file name says TS3200 although the page is the TS3300 (Touchstar reuses it). A flat front-on version exists (TS3200_back_lores486x385.jpg, misleadingly named, 550x550) but is lower resolution. Fuelstar app on screen. Confidence: medium (low resolution and TS3200 file name)."
+    },
+    "winmate-m101ad-ex": {
+      "url": "https://www.winmate.com/upload/Product/L4/Product-M101AD-EX_F-L4-O-202408201332140.png",
+      "sourcePage": "https://www.winmate.com/en/Product/M101AD-EX",
+      "note": "Front-on landscape, Windows 10 screen, 450x450 PNG, plain background, clean. Resolution is low: device is about 420 px wide, so it will be upscaled. Winmate's 45-degree version is Product-M101AD-EX_45-L4-I.png (also 450x450). Confidence: high on product."
+    },
+    "winmate-m101s-ex": {
+      "url": "https://www.winmate.com/upload/Product/L4/Product-M101S-EX-F-L4-O-202302151511030.png",
+      "sourcePage": "https://www.winmate.com/en/Product/M101S-EX",
+      "note": "Front-on landscape, 450x450 PNG, plain background, clean; shows a cable on the left side. Low resolution (device about 420 px wide). Confidence: high on product."
+    },
+    "winmate-m700dq8-ex": {
+      "url": "https://www.winmate.com/upload/Product/L4/Product-M700DQ8-EX-F-L4-O-202203140921010.png",
+      "sourcePage": "https://www.winmate.com/en/Product/M700DQ8-EX",
+      "note": "Discontinued; Winmate still serves the page. Front-on portrait 7-inch Android, 450x450 PNG, plain background. Low resolution (device about 420 px tall). Confidence: high on product."
+    },
+    "xciel-xcripad-11": {
+      "url": "https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/174/images/481/XCRiPad_Front__68077.1650472969.1280.1280__93620.1693339784.1280.1280.png?c=1",
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/xcripad-11-11th-generation/",
+      "note": "Weak match: Xciel's store uses ONE generic photo (black XCRiPad case, iPad Air-style home screen) on its XCRiPad pages; the file is byte-identical for XCRiPad 11, Air 11, mini 7 and Pro 11, and it is only 480x640 (device about 420 px tall, under target). Xciel's main site (xciel.com) uses the same picture. If you want four different pictures here, this source cannot supply them. Front-on, white background. Confidence: low-medium. (The BigCommerce URL is the 1280 request variant; the image really is 480x640.)"
+    },
+    "xciel-xcripad-air-11": {
+      "url": "https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/170/images/475/XCRiPad_Front_5__99973.1708103652.1280.1280__43777.1733866734.1280.1280.png?c=1",
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/xcripad-air-11-2024/",
+      "note": "Weak match: Xciel's store uses ONE generic photo (black XCRiPad case, iPad Air-style home screen) on its XCRiPad pages; the file is byte-identical for XCRiPad 11, Air 11, mini 7 and Pro 11, and it is only 480x640 (device about 420 px tall, under target). Xciel's main site (xciel.com) uses the same picture. If you want four different pictures here, this source cannot supply them. Front-on, white background. Confidence: low-medium."
+    },
+    "xciel-xcripad-mini-7": {
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/xcripad-mini-7/",
+      "note": "Not used: Xciel's only image is the generic XCRiPad photo, which shows a full-size iPad, not the mini. (Generic image was https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/173/images/479/XCRiPad_Front__68077.1650472969.1280.1280__90900.1708104859.1280.1280.png?c=1.) Weak match: Xciel's store uses ONE generic photo (black XCRiPad case, iPad Air-style home screen) on its XCRiPad pages; the file is byte-identical for XCRiPad 11, Air 11, mini 7 and Pro 11, and it is only 480x640 (device about 420 px tall, under target). Xciel's main site (xciel.com) uses the same picture. If you want four different pictures here, this source cannot supply them. Front-on, white background; note the picture shows a full-size iPad, not a mini. Confidence: low."
+    },
+    "xciel-xcripad-pro-11": {
+      "url": "https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/168/images/472/XCRiPad_Front_5__99973.1708103652.1280.1280__43777.1733866734.1280.1280.png?c=1",
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/xcripad-pro-11-2024/",
+      "note": "Weak match: Xciel's store uses ONE generic photo (black XCRiPad case, iPad Air-style home screen) on its XCRiPad pages; the file is byte-identical for XCRiPad 11, Air 11, mini 7 and Pro 11, and it is only 480x640 (device about 420 px tall, under target). Xciel's main site (xciel.com) uses the same picture. If you want four different pictures here, this source cannot supply them. Front-on, white background. Confidence: low-medium."
+    },
+    "xciel-xcz1-ipad-mini-4": {
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/copy-of-zone-1-iecex-xcz1-ipad-mini-5-enclosure/",
+      "note": "No usable image. Xciel's store has a single image for this product: a 436x152 PNG showing the orange XCZ1 enclosure front and back side by side (two devices, about 110 px tall each), far below the 600 px target. Xciel's own site and PDFs offer nothing larger; a distributor search (ERS, Rockall) found only the XCRiPad Zone 2 cases. Page is mislabelled in the store URL (copy-of-...-mini-5) but its title is 'XCZ1 iPad mini 4 enclosure'; image URL if you want it anyway: https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/138/images/419/orange-final__14324.1579128467.1280.1280__14345.1580923040.386.513.jpg?c=1"
+    },
+    "xciel-xcz1-ipad-mini-5": {
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/zone-1-iecex-xcz1-ipad-mini-5-enclosure/",
+      "note": "No usable image. Xciel's store has a single image for this product: a 436x152 PNG showing the orange XCZ1 enclosure front and back side by side (two devices, about 110 px tall each), far below the 600 px target. Xciel's own site and PDFs offer nothing larger; a distributor search (ERS, Rockall) found only the XCRiPad Zone 2 cases. Image if you want it anyway: https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/113/images/380/orange-final__14324.1579128467.386.513.png?c=1"
+    },
+    "xciel-xcz1-ipad-mini-6": {
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/zone-1-iecex-xcz1-ipad-mini-6-enclosure/",
+      "note": "No usable image. Xciel's store has a single image for this product: a 436x152 PNG showing the orange XCZ1 enclosure front and back side by side (two devices, about 110 px tall each), far below the 600 px target. Xciel's own site and PDFs offer nothing larger; a distributor search (ERS, Rockall) found only the XCRiPad Zone 2 cases. Image if you want it anyway: https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/166/images/461/orange-final__14324.1579128467.1280.1280__77404.1705523945.386.513.png?c=1"
+    },
+    "xciel-xcz1-ipad-mini-7": {
+      "sourcePage": "https://xciel-inc-1.mybigcommerce.com/zone-1-iecex-xcz1-ipad-mini-7-enclosure/",
+      "note": "No usable image. Xciel's store has a single image for this product: a 436x152 PNG showing the orange XCZ1 enclosure front and back side by side (two devices, about 110 px tall each), far below the 600 px target. Xciel's own site and PDFs offer nothing larger; a distributor search (ERS, Rockall) found only the XCRiPad Zone 2 cases. Image if you want it anyway: https://cdn11.bigcommerce.com/s-wxp2e14h2w/products/171/images/477/orange-final__14324.1579128467.1280.1280__77404.1705523945.1280.1280__22184.1733871258.386.513.png?c=1"
+    },
+    "xshielder-ipad-pro-11": {
+      "url": "https://xshielder.com/hubfs/07_Xshielder_-_Ipad_Pro_3D_Renders__-_PSS_Image_3_-_Light_BG.webp",
+      "sourcePage": "https://xshielder.com/products/atex-ipad",
+      "note": "Official 3D render on a light background, one device, landscape, in perspective and tilted about 10-15 degrees (not front-on), 1600x1600 WebP; stylus not in shot. The page has no strictly flat front view on a light background. Alternatives on the same site: 07_Xshielder_-_Ipad_Pro_Display-1.webp (front-on portrait, 1600x1600 but on a black background) and the PSS_Image_4 Light_BG render (more tilted, with a stylus). Confidence: high on product, medium on pose."
+    },
+    "zebra-l10-atex-android": {
+      "url": "https://dl346112f5pwo.cloudfront.net/media/images/assets/c/a/ca03b72e01c745aea4fe870b1fe7ade1.jpg",
+      "sourcePage": "https://www.levata.com/de-de/zebra-rtl10b1-o4aa0x0040a6-tablet",
+      "note": "Discontinued. Front-on XSLATE L10 RuggedPro Android tablet with carry handle and Android lock screen, 1000x1000 JPG, white background, from reseller Levata's listing described as the ATEX/IECEx Android L10. A copy of Zebra's image; Zebra's site no longer has a page for the L10 ATEX (spec sheet only). I could not tell whether the ATEX build has the handle shown. Alternative: .../assets/f/7/f7c849040d784ab2b5ca5653d4739552.jpg (angled). Confidence: low-medium."
+    },
+    "zebra-l10-atex-windows": {
+      "url": "https://dl346112f5pwo.cloudfront.net/media/images/assets/8/f/8ff6fd44e6a542d28ccdf0b420058f13.jpg",
+      "sourcePage": "https://www.levata.com/zebra-rpl10-lro6w4w4a0x0n0-tablet",
+      "note": "Discontinued. Angled (about 25-30 degrees) XSLATE L10 with Windows 10 start screen and Zebra logo, 1000x1000 JPG, white background; from reseller Levata's 'Zebra XSLATE L10 ATEX Win. 10 Pro' listing (copy of Zebra's render; the ATEX version looks identical from outside, no ATEX badge visible). Zebra's own page no longer lists it. Confidence: medium."
+    }
+  }
+}

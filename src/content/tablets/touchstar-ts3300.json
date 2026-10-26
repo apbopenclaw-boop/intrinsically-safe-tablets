@@ -1,0 +1,159 @@
+{
+  "productId": "TS-3300",
+  "name": "TouchStar TS3300",
+  "brand": "TouchStar",
+  "brandSlug": "touchstar",
+  "manufacturer": {
+    "name": "TouchStar Technologies Ltd",
+    "country": "United Kingdom",
+    "website": "https://touchstar.co.uk"
+  },
+  "type": "dedicated",
+  "screenIn": 7,
+  "status": "current",
+  "launchYear": 2022,
+  "summary": "The TouchStar TS3300 is an Ex ec ic 7-inch Android tablet from TouchStar, certified for Zone 2/22 under ATEX and IECEx. It runs Android (version not published).",
+  "image": "../../assets/tablets/touchstar-ts3300.webp",
+  "imageAlt": "TouchStar TS3300, front view",
+  "certification": {
+    "otherSchemes": [
+      "UKCA / CE (datasheet)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ec ic IIC T5 Gc / II 3D Ex ic IIIC T105°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 1 (2025-05-13), checked 2026-10-25. ATEX certification unconfirmed."
+    },
+    "iecex": {
+      "marking": "Ex ec ic IIC T5 Gc / Ex ic IIIC T105°C Dc",
+      "number": "IECEx EMT 22.0002X (issue 1, 2025-05-13"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Increased safety and intrinsic safety (Ex ec ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T5",
+    "maxSurfaceTemp": "105 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−10 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: do not attach the equipment to the charging cradle in a hazardous area; charge only via the cradle supplied by the manufacturer (Um 12 V d.c.); battery charging only at +10 °C to +45 °C.",
+    "peripherals": "Charging cradle only in the non-hazardous area; the certificate describes a micro-SD card and SIM socket but their use in the Ex area is not stated in the text read.",
+    "certifiedAccessories": "Cradle with magnetic one-handed insertion (non-hazardous area only; vehicle mounting). Optional EM3080W-V2 barcode imager."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android (version not published)",
+    "atLaunch": "Android 10",
+    "edition": "Android 10.0"
+  },
+  "specs": {
+    "display": "7-inch Colour TFT IPS, anti-glare, high-impact polycarbonate touchscreen",
+    "resolution": "1024 × 600 (WSVGA)",
+    "outdoor": "Direct-sunlight-readable IPS (maker claim)",
+    "chip": "Qualcomm octa-core (Kryo Gold quad 2.2 GHz + Kryo Silver quad 1.843 GHz)",
+    "cpuArch": "Arm",
+    "ram": "3 GB",
+    "camera": "10 MP (Sony) with Luxeon flash",
+    "frontCamera": "Front camera (solid state) named in the IECEx description",
+    "battery": "9000 mAh",
+    "batteryWh": "33 Wh",
+    "ports": "MicroSD; SIM socket; USB OTG via cradle interface",
+    "docking": "Rugged cradle (HGV, van, forklift mounting; magnetic one-handed insertion, locking)",
+    "network": "3G/4G LTE (Cat 6 or Cat 4)",
+    "wifi": "802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 5.0 / BLE",
+    "gnss": "GPS, Glonass, BeiDou",
+    "sim": "SIM socket",
+    "keys": "Power button",
+    "touch": "Capacitive option, glove friendly",
+    "pen": "Signature capture on the touchscreen",
+    "keyboard": "No",
+    "storage": "32 GB (64 GB optional), microSD",
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 800,
+    "dimensionsMm": "223 × 131 × 25 (W × H × D)",
+    "ipRating": "IP54",
+    "exIp": "IP54 (stated in the IECEx EMT 22.0002X equipment description, not in the marking)",
+    "ruggedness": "1.5 m drop to concrete",
+    "operatingTemp": "−10 °C to +50 °C (charging +10 to +45)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional EM3080W-V2 imager)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (10 MP rear camera; front-facing camera named in the certificate)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "Only an IECEx certificate is published. The ATEX marking is from TouchStar's datasheet.",
+    "certification.iecex.marking": "Only an IECEx certificate is published. The ATEX marking is from TouchStar's datasheet.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.atLaunch": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.edition": "The maker doesn't state the edition year."
+  },
+  "features": [
+    "barcode"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Optional built-in barcode imager"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C",
+    "Not certified below −10 °C ambient",
+    "No published end date for security updates"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "ecom-tab-ex-05-dz2",
+    "isafe-is930-2",
+    "getac-zx80-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx online certificate database: IECEx EMT 22.0002X issue 1 (2025-05-13), TouchStar TS3300",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1912967/view"
+    },
+    {
+      "label": "TouchStar Technologies: TS3300 datasheet (uploaded 2025-11)",
+      "url": "https://touchstar.co.uk/wp-content/uploads/2025/11/TouchStar-TS3300-ATEX-Rugged-Android-Tablet.pdf"
+    },
+    {
+      "label": "Fuel Oil News: TouchStar TS3300 launch article, 2022-11-18 (Android 10.0, 7 inch, ATEX Zone 2 claim)",
+      "url": "https://fueloilnews.co.uk/?p=1627948"
+    }
+  ]
+}

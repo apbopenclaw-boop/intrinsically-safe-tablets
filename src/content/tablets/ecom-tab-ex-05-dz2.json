@@ -1,0 +1,230 @@
+{
+  "productId": "PF-TE05-DZ2",
+  "name": "ecom Tab-Ex 05 DZ2",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 8,
+  "status": "current",
+  "launchYear": 2025,
+  "summary": "The ecom Tab-Ex 05 DZ2 is an intrinsically safe (Ex ic) 8-inch Android tablet from ecom (Pepperl+Fuchs), certified for Zone 2/22 under ATEX and IECEx. It runs Android 16.",
+  "image": "../../assets/tablets/ecom-tab-ex-05-dz2.webp",
+  "imageAlt": "ecom Tab-Ex 05 DZ2, front view",
+  "certification": {
+    "otherSchemes": [
+      "KC Korea 25-KA4BO-0563X and 25-KA4BO-0564X (ecom files CERT-8026/8027)",
+      "Inmetro Brazil TÜV 25.0337 X (CERT-7867)",
+      "IA/MASC South Africa MASC S/25-8053X"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T5 Gc / II 3D Ex ic IIIC T85°C Dc",
+      "kind": "type-examination",
+      "number": "EPS 24 ATEX 1",
+      "status": "IECEx Current, issue 0, checked 2026-10-25. ATEX is a voluntary Certificate of Conformity (Bureau Veritas), not a notified-body EU-type examination (not required for category 3)."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T5 Gc / Ex ic IIIC T85°C Dc",
+      "number": "IECEx EPS 24.0090X",
+      "scope": "Issue 0, 2025-02-06"
+    },
+    "northAmerica": "SGS certificate SGSNA/25/SUW/00031X (ecom file CERT-B178A, effective 2025-05-24; covers DZ2 and D2): Class I and II, Division 2, Class III, Division 1 & 2, Groups A-D, F and G, T5; Zone 2 Group IIC T5; Zone 22 Group IIIB T100°C; −20 °C ≤ Ta ≤ 50 °C. Under NEC/CEC the limits are Ta +50 °C and dust group IIIB, not +55 °C / IIIC as under ATEX/IECEx. Charging under the SGS certificate only at −5 °C to +45 °C (ATEX/IECEx: −5 °C to +55 °C).",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T5",
+    "maxSurfaceTemp": "85 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: use where the risk of mechanical hazards is low; not near processes generating high electrostatic charges; the Ex-protective case must be correctly fitted before entering hazardous areas; battery pack and SIM/SD replacement only in ordinary areas; wired connections via USB-C or POGO pins only in ordinary areas; charge only at −5 °C to +55 °C, only from non-shock-hazard supplies (SELV/PELV/ES1) with Um 16 V max, 3.2 A max; repairs by manufacturer or authorised centre. Audio port has intrinsic-safety entity parameters (Uo 3 V, Io 250 mA).",
+    "peripherals": "No wired connections in the Ex area (USB-C, POGO keyboard port). The 3.5 mm audio port may be used with intrinsically safe audio equipment matching its entity parameters (e.g. ecom HS-Ex 01 J).",
+    "certifiedAccessories": "Named in the certificate: S Pen ST T05 X2, leather case LC T05 X2, chest harness CH T05 X2, hand strap HA T05 X2R, belt clip BC T01, carrying strap CS T05, stylus tether ST 01. The HS-Ex 01 J in-ear headset has its own IECEx certificate (EPS 25.0070X, Current) for the audio port. Lite Cradle, DC T01 X2 desktop charger, passive holder, screen protector and microSD card are not named in the certificate; chargers and cradles are for use outside the hazardous area only."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 16",
+    "atLaunch": "Android 14",
+    "edition": "Android (Samsung One UI); Android Enterprise Recommended, Samsung Knox 3.10",
+    "upgradeLimit": "Android 22 (ecom claim)",
+    "securityUntil": "2032-03-31",
+    "securityUntilLabel": "Q1 2032",
+    "updates": "Security updates until Q1 2032"
+  },
+  "specs": {
+    "display": "8-inch TFT, capacitive multitouch, 60 Hz / adaptive up to 120 Hz; Corning Gorilla Glass 3 (DZ1/DZ2), Gorilla Glass 5 (D2)",
+    "resolution": "1920 × 1200 (WUXGA), 283 ppi, 16:10",
+    "brightness": "600 nits",
+    "outdoor": "Maker claims optimum readability in direct sunlight (600 nits max)",
+    "chip": "Samsung Exynos 1380 (S5E8835) octa-core, 4 x 2.4 GHz + 4 x 2.0 GHz, 5 nm",
+    "cpuArch": "Arm",
+    "ram": "6 GB",
+    "camera": "13 MP autofocus, 8x digital zoom (camera-free version available)",
+    "frontCamera": "5 MP",
+    "video": "UHD 4K (3840 x 2160) at 30 fps",
+    "battery": "5050 (typical)",
+    "batteryWh": "18.87 (typical)",
+    "batteryLife": "Up to 14 h",
+    "ports": "USB 2.0 Type-C; 3.5 mm audio jack and POGO pins on DZ2; microSD; nano-SIM / eSIM",
+    "docking": "DZ2: Lite Cradle, DC T01 X2 desktop charger, passive holder with tilt/swivel (ordinary areas)",
+    "network": "5G Sub-6 and 4G LTE; Wi-Fi-only version also available",
+    "wifi": "Wi-Fi 6 (802.11 a/b/g, Wi-Fi 4/5/6 2.4 + 5 GHz)",
+    "bluetooth": "Bluetooth 5.3",
+    "nfc": "Yes",
+    "gnss": "GPS, Glonass, Beidou, Galileo",
+    "sim": "Nano-SIM and eSIM (optional)",
+    "keys": "Function key (programmable: PTT, emergency call, alarm) and Active button",
+    "biometrics": "Face recognition; fingerprint only on the D2 model",
+    "touch": "Yes: glove touch and wet-hands operation (maker)",
+    "pen": "Samsung S Pen included (pressure sensitive), with Tab-Ex S Pen holder",
+    "keyboard": "No keyboard; wireless DeX with Bluetooth keyboard/mouse; POGO keyboard-dock port on DZ2 (ordinary areas only)",
+    "storage": "128 GB, microSD up to 1 TB",
+    "replaceableBattery": false,
+    "gloveTouch": true,
+    "pttKey": true,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6",
+      "NFC",
+      "eSIM"
+    ],
+    "weightG": 595,
+    "dimensionsMm": "131.8 × 228.4 × 14.5 (W × H × D)",
+    "ipRating": "IP68 (EN/IEC 60529)",
+    "ruggedness": "MIL-STD-810H",
+    "operatingTemp": "−20 °C to +55 °C",
+    "cameraFree": true,
+    "partNumbers": "TAB-EX05-DZ2-* (datasheet t221646; WiFi and WWAN types)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (programmable function key assignable to PTT, per ecom)"
+    },
+    {
+      "label": "Emergency / SOS",
+      "value": "Built in (freely programmable function key, e.g. emergency call or alarm)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (key assigned to alarm/emergency; third-party or ecom lone-worker solution)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via accessory (ecom Ident-Ex 02 wireless 1D/2D scanner; Ex-rated? yes) or camera-based via app"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor listed)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (front and rear cameras, Google ARCore ready; ecom promotes remote-support use)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android; Samsung DeX gives a desktop-style Android UI)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Tab-Ex 05 D2",
+      "description": "North American version, certified for Class I Division 2 only, with no ATEX or IECEx rating."
+    }
+  ],
+  "unconfirmed": {
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.upgradeLimit": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.securityUntil": "ecom states security updates until 2032, which matches Samsung's Enterprise Edition commitment.",
+    "specs.weightG": "From a single source; the maker's figures vary.",
+    "specs.dimensionsMm": "From a single source."
+  },
+  "features": [
+    "nfc",
+    "camera-free",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Also certified for Class I Division 1 in North America",
+    "Ex-rated barcode scanner available as an accessory",
+    "5G connectivity",
+    "Security updates until Q1 2032"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C",
+    "Battery isn't user-replaceable"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "isafe-is930-2",
+    "touchstar-ts3300",
+    "getac-zx80-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX Certificate of Conformity EPS 24 ATEX 1 257 X, Rev 0 (2025-02-06), Tab-Ex 05 DZ2 (ecom CERT-7574)",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/tab-ex-05/ATEX_certificate_Tab-Ex_05_DZ2_CERT-7574.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 24.0090X issue 0 (2025-02-06), Tab-Ex 05 DZ2",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1823370/view"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 24.0082X issue 1 (2025-08-05), Tab-Ex 05 DZ1",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1956282/view"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 05 DZ2 product page (Zone 2/22 & Div 2)",
+      "url": "https://www.ecom-ex.com/products/mobile-computing/tablets-android/tab-ex-05-dz2/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 05 DZ1 product page (Zone 1/21 & Div 1)",
+      "url": "https://www.ecom-ex.com/products/mobile-computing/tablets-android/tab-ex-05-dz1/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ecom FAQ: Release Plans of Major Products (OS and security patch plan; last updated 2025-11-18)",
+      "url": "https://support.ecom-ex.com/457976005.html"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Blog 2025-01-16: Tab-Ex 05, the latest 8-inch tablet from Pepperl+Fuchs, now with 5G",
+      "url": "https://www.ecom-ex.com/blog/post/tab-ex-05-the-latest-8-inch-tablet-from-pepperl-fuchs/"
+    },
+    {
+      "label": "Pepperl+Fuchs: News: 8-inch Tab-Ex 05 tablet sets new standards in 5G communication (Android updates up to Android 22, security updates up to 2032)",
+      "url": "https://www.pepperl-fuchs.com/en/news/8-inch-tab-ex-r-05-tablet-sets-new-standards-in-5g-communication-gn4481"
+    },
+    {
+      "label": "Android Authority: This Galaxy device gets 8 years of OS updates from Samsung, but it's not for you (Tab Active5 Enterprise Edition vs standard: 8 years vs 4 OS updates / 5 years of patches)",
+      "url": "https://www.androidauthority.com/samsung-galaxy-tab-active-5-8-years-updates-3427445/"
+    }
+  ]
+}

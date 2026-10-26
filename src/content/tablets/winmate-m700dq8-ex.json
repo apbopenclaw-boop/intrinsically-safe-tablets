@@ -1,0 +1,164 @@
+{
+  "productId": "WM-M700DQ8EX",
+  "name": "Winmate M700DQ8-EX",
+  "brand": "Winmate",
+  "brandSlug": "winmate",
+  "manufacturer": {
+    "name": "Winmate Inc.",
+    "country": "Taiwan",
+    "website": "https://www.winmate.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 7,
+  "status": "discontinued",
+  "statusNote": "Winmate lists it as discontinued. Its successor, the M700DQ9, has no Ex version.",
+  "launchYear": 2022,
+  "summary": "The Winmate M700DQ8-EX is the hazardous-area version of a Winmate rugged 7-inch tablet, certified for Zone 2 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Android 9. It has been discontinued.",
+  "image": "../../assets/tablets/winmate-m700dq8-ex.webp",
+  "imageAlt": "Winmate M700DQ8-EX, front view",
+  "certification": {
+    "otherSchemes": [
+      "CE",
+      "FCC",
+      "IP65",
+      "MIL-STD-810G"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC Gc",
+      "kind": "not-published",
+      "status": "IECEx Current (generic M700 type), checked 2026-10-25; ATEX number not published"
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T4 Gc",
+      "number": "IECEx SIR 21.0010X",
+      "scope": "Issue 1, 2025-11-18, type M700XXXXXXXXXXX"
+    },
+    "northAmerica": "C1D2 (badge on datasheet images)",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "tempClass": "T4",
+    "epl": "Gc",
+    "ambient": "−10 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Charge only in the non-hazardous area with the supplied adapter or cradle (max 4.2 V, 3 A, 0 to 40 °C). The main battery is user-replaceable but not to be swapped in hazardous areas. Connecting or disconnecting ports, opening the enclosure or changing the battery only when the atmosphere is shown to be absent.",
+    "peripherals": "External ports and battery only when the atmosphere is shown to be absent (certificate)."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 9",
+    "edition": "Android 9.0"
+  },
+  "specs": {
+    "display": "7-inch TFT, optical bonding",
+    "resolution": "1280 × 720",
+    "brightness": "650 nits",
+    "chip": "Qualcomm Snapdragon 660 octa-core up to 2.2 GHz",
+    "cpuArch": "Arm",
+    "ram": "3 GB",
+    "camera": "13 MP autofocus with LED",
+    "frontCamera": "8 MP",
+    "battery": "5300 (3.7 V)",
+    "batteryWh": "19.6",
+    "batteryLife": "20 hours",
+    "ports": "USB 3.0 Type-C OTG, microSD, micro-SIM, audio combo, docking connector",
+    "network": "Wi-Fi; optional 4G LTE",
+    "nfc": "Optional",
+    "gnss": "GPS, GLONASS",
+    "sim": "Micro-SIM",
+    "keys": "Volume, power, home, menu, return, trigger",
+    "touch": "Glove and rain modes",
+    "storage": "32 GB, microSD",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 550,
+    "dimensionsMm": "212.4 × 132.8 × 19",
+    "ipRating": "IP65",
+    "ruggedness": "MIL-STD-810G; 5 ft (1.5 m)",
+    "operatingTemp": "−10 °C to +50 °C (battery mode)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Via accessory (barcode scanner listed without details; Ex-rated? not stated)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (optional NFC)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: II 3G Ex ic IIC Gc; Ex ic IIC T4 Gc, Ta −10 °C to +50 °C"
+    }
+  ],
+  "unconfirmed": {
+    "certification.atex.marking": "From the certificate for the Winmate M700 range, which doesn't name this exact model.",
+    "certification.iecex.number": "From the certificate for the Winmate M700 range, which doesn't name this exact model.",
+    "certification.iecex.marking": "From the certificate for the Winmate M700 range, which doesn't name this exact model.",
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.tempClass": "From the certificate for the Winmate M700 range, which doesn't name this exact model.",
+    "certification.ambient": "From the certificate for the Winmate M700 range, which doesn't name this exact model.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours."
+  },
+  "features": [
+    "nfc"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "User-replaceable battery",
+    "Among the lightest Zone 2 tablets of its size we list, at 550 g in use"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "Zone 2 only, so not for Zone 1 areas",
+    "No dust zone rating",
+    "Not certified below −10 °C ambient"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "getac-zx80-ex",
+    "bartec-et60-65ex2-android",
+    "touchstar-ts3300"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / SIRA (CSA Group UK): IECEx SIR 21.0010X issue 1 (M700XXXXXXXXXXX), 2025-11-18, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/SIR/IECExSIR21.0010/001/deliverable/IECEx_SIR_21.0010X_001.pdf"
+    },
+    {
+      "label": "Winmate: M700DQ8-EX datasheet page (Rev. V.240215.260626)",
+      "url": "https://www.winmate.com/en/product/exportHtml/M700DQ8-EX"
+    },
+    {
+      "label": "Winmate: M700DQ9 product page (no -EX variant; DQ8 listed as discontinued, replaced by DQ9, per web-search summary of the page)",
+      "url": "https://www.winmate.com/en/Product/M700DQ9"
+    }
+  ]
+}

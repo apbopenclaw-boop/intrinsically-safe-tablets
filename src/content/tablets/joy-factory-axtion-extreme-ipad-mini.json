@@ -1,0 +1,267 @@
+{
+  "productId": "JF-HTA3021",
+  "name": "The Joy Factory aXtion Extreme iPad mini",
+  "brand": "The Joy Factory",
+  "brandSlug": "joy-factory",
+  "manufacturer": {
+    "name": "The Joy Factory Inc.",
+    "country": "USA",
+    "website": "https://thejoyfactory.com"
+  },
+  "type": "ex-case",
+  "screenIn": 8.3,
+  "hostDevice": "iPad mini (A17 Pro)",
+  "otherHosts": [],
+  "fitting": "factory-fitted",
+  "removable": "No (certificate: do not open the enclosure; iPad replacement through Joy Factory only)",
+  "status": "current",
+  "launchYear": 2025,
+  "summary": "The Joy Factory aXtion Extreme iPad mini is a flameproof (Ex d) case for the iPad mini (A17 Pro), certified for Zone 1/21 under ATEX and IECEx. The tablet inside is a standard iPad mini (A17 Pro) running iPadOS 27, so it works with the same apps and device management.",
+  "image": "../../assets/tablets/joy-factory-axtion-extreme-ipad-mini.webp",
+  "imageAlt": "The Joy Factory aXtion Extreme iPad mini, front view",
+  "certification": {
+    "otherSchemes": [
+      "TS (Taiwan) per an earlier research note",
+      "not re-verified. RoHS and REACH compliant (datasheet)."
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex db IIC T6 Gb / II 2D Ex tb IIIC T85°C Db",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 0 (2025-04-14), checked 2026-10-25; ATEX not verified"
+    },
+    "iecex": {
+      "marking": "Ex db IIC T6 Gb / Ex tb IIIC T85°C Db",
+      "number": "IECEx TPS 25.0016X"
+    },
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Flameproof enclosure (Ex db)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T6",
+    "maxSurfaceTemp": "85 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +40 °C (standard range: no Ta is marked on IECEx TPS 25.0016X, so IEC 60079-0 applies)"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "1) Do not open the enclosure (opening voids certification; contact Joy Factory if the iPad needs replacing). 2) I/O port fully engaged after charging and locking lever latched in use. 3) Protect glass window from impact energy above 2 J. 4) Do not charge in a potentially flammable environment. 5) Fasteners with yield stress 240 MPa or more. 6) Screws not to be removed; replace only with SUS 304 M4x6 / M4x8, torque 8 kgf-cm. 7) Rubber bumpers must be fitted at all times and inspected before each use. 8) Flameproof joints are not intended to be repaired. 9) Remove from service if the enclosure, screen or rear camera window is cracked or deformed or bumpers are missing.",
+    "peripherals": "Stainless I/O port with latch: user may dismantle it to charge in a non-hazardous area; must be fully engaged and latched before use in the Ex area",
+    "certifiedAccessories": "Premium adjustable anti-static leather hand strap (included), shoulder strap ports, VESA 75 and 1/4-20 mounting. Ex rating of straps and mounts not stated separately; the certificate covers the enclosure."
+  },
+  "os": {
+    "name": "iPadOS",
+    "version": "iPadOS 27",
+    "atLaunch": "iPadOS 18.1",
+    "edition": "iPadOS (consumer; no LTSC or enterprise edition)",
+    "upgradeLimit": "Still supported by iPadOS 27 (current)",
+    "securityUntil": "2029-10-23",
+    "updates": "Security updates guaranteed until at least October 2029 (Apple's minimum)"
+  },
+  "specs": {
+    "display": "8.3-inch Liquid Retina IPS LCD, P3, True Tone, fully laminated, antireflective coating",
+    "resolution": "2266 × 1488 (326 ppi)",
+    "brightness": "500 nits",
+    "chip": "Apple A17 Pro (6-core CPU, 5-core GPU)",
+    "cpuArch": "Arm",
+    "ram": "8 GB",
+    "camera": "12 MP Wide, f/1.8, True Tone flash",
+    "frontCamera": "12 MP Center Stage",
+    "video": "4K video",
+    "battery": "5034",
+    "batteryWh": "19.3",
+    "hotSwap": "No",
+    "batteryLife": "Up to 10 hours web or video on Wi-Fi (9 hours cellular)",
+    "ports": "USB-C (USB 3, 10 Gb/s); magnetic Apple Pencil connector",
+    "docking": "USB-C hubs and docks; Smart Connector or magnetic keyboard accessories where the iPad has them. Not usable through sealed Ex cases except the USB-C or Lightning charging port where the case exposes it.",
+    "network": "Wi-Fi only or Wi-Fi + Cellular (5G sub-6 GHz)",
+    "wifi": "Wi-Fi 6E (802.11ax), 2x2 MIMO",
+    "bluetooth": "Bluetooth 5.3",
+    "gnss": "GPS/GNSS on Wi-Fi + Cellular models; digital compass and Wi-Fi location on all",
+    "sim": "eSIM only (no SIM tray)",
+    "keys": "Top button with Touch ID sensor, volume buttons; no programmable hardware key",
+    "biometrics": "Touch ID (top button)",
+    "pen": "Apple Pencil Pro, Apple Pencil (USB-C); hover",
+    "storage": "128 GB, 256 GB, 512 GB",
+    "replaceableBattery": false,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6E",
+      "eSIM"
+    ],
+    "weightG": 1396,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "249 × 192 × 27 (certificate); datasheet 248 × 192 × 27",
+    "ipRating": "IP68",
+    "ruggedness": "MIL-STD-810H, 122 cm (4 ft) drop",
+    "partNumbers": "HTA3021"
+  },
+  "throughCase": [
+    {
+      "label": "Side and volume buttons",
+      "value": "Power and volume buttons integrated through the aluminium enclosure (certificate: buttons are aluminium)"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Rear-facing camera fully functional (glass opening)"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Pressure-resistant, multi-layered composite, anti-glare glass screen protector; touch use implied"
+    },
+    {
+      "label": "Screen cover",
+      "value": "Pressure-resistant multi-layered composite anti-glare glass screen protector (certificate: front panel is glass)"
+    },
+    {
+      "label": "Charging",
+      "value": "Stainless steel I/O port with latch: dismantle in a non-hazardous area to charge; refit and latch before use in the Ex area"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Via the stainless I/O port (user-dismantled outside the Ex area)"
+    },
+    {
+      "label": "SIM card",
+      "value": "No SIM tray (iPad mini 7 is eSIM only); no SIM cover mentioned"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Nothing stated as removed or disabled"
+    },
+    {
+      "label": "Mounting points",
+      "value": "VESA 75; 1/4-inch universal mount (1/4-20 UNC); shoulder strap ports; anti-static leather hand strap"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (third-party PTT apps over Wi-Fi/cellular; no PTT key; Ex-rated? n/a)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party lone-worker apps)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based scanning; no scan engine) (rear camera 'fully functional')"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (no NFC reader on any iPad)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no LiDAR on this iPad)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (FaceTime, Teams or remote-assist apps; needs camera and audio access through the case)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (iPadOS only)"
+    },
+    {
+      "label": "Bluetooth gas detectors",
+      "value": "Via app (Bluetooth 5.3; vendor app; no maker-certified integration listed)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "The IECEx marking is from the certificate. The ATEX version is from The Joy Factory's datasheet; the ATEX certificate isn't published.",
+    "certification.iecex.marking": "The IECEx marking is from the certificate. The ATEX version is from The Joy Factory's datasheet; the ATEX certificate isn't published.",
+    "certification.otherSchemes": "Stated by the maker; we haven't seen the certificate.",
+    "certification.ambient": "The certificate marks no ambient range, so the standard default applies (−20 °C to +40 °C, IEC 60079-0).",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.ram": "Apple doesn't publish RAM; from independent teardowns.",
+    "specs.battery": "Apple states battery capacity in watt-hours only; this figure is from the case maker's documents.",
+    "specs.weightG": "From a single source; the maker's figures vary.",
+    "fitting": "Not stated by the maker for this exact model.",
+    "throughCase.Touchscreen": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.SIM card": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Removed or disabled": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Lone worker": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "capabilities.Bluetooth gas detectors": "Not confirmed by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "T6 temperature class, the strictest rating",
+    "5G on cellular versions",
+    "A standard iPad mini (A17 Pro) inside, with the same apps and Apple device management"
+  ],
+  "limitations": [
+    "Ambient rating tops out at +40 °C",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [
+    "zone-1-tablets",
+    "ipad"
+  ],
+  "alternatives": [
+    "xciel-xcz1-ipad-mini-6",
+    "xshielder-ipad-pro-11",
+    "atexxo-zone-1-ipad-mini-6"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx Certificate Database (TUV SUD): IECEx TPS 25.0016X issue 0, 2025-04-14, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/TPS/IECExTPS25.0016/000/deliverable/IECEx_TPS_25.0016_000.pdf"
+    },
+    {
+      "label": "Bureau Veritas CPS Germany: EU-Type Examination Certificate EPS 22 ATEX 1 162 X, revision 3, 2025-04-01 (EXd-TABLET-M6 and M7), read from Atexxo PDF",
+      "url": "https://atexxo.com/wp-content/uploads/2025/04/atex-certificate-1-product-flyer-brochure-produit-produkt-flyer-volantino-prodotto-listovka-produkta-folleto-de-productonew.pdf"
+    },
+    {
+      "label": "IECEx Certificate Database (Bureau Veritas CPS): IECEx EPS 22.0020X issue 3, 2025-04-01, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS22.0020/003/deliverable/IECEx_EPS_22.0020X_003.pdf"
+    },
+    {
+      "label": "The Joy Factory: HTA3021 data sheet (PDF dated 2025-02-26 in its metadata; file name suffix 0226 = 26 Feb; hosted by Joy Factory under a /2026/06/ upload path)",
+      "url": "https://thejoyfactory.com/wp-content/uploads/2026/06/HTA3021-Data-sheet-0226.pdf"
+    },
+    {
+      "label": "The Joy Factory: HTA3021 datasheet (Dec 2025, US)",
+      "url": "https://thejoyfactory.com/wp-content/uploads/2025/12/datasheet-HTA3021_Document_TJF.pdf"
+    },
+    {
+      "label": "The Joy Factory: APAC launch press release, 2025-03-17",
+      "url": "https://thejoyfactory.com/?p=2404"
+    },
+    {
+      "label": "Apple: Identify your iPad model (model numbers, years)",
+      "url": "https://support.apple.com/en-us/108043"
+    },
+    {
+      "label": "Apple: UK PSTI Statements of Compliance, one per model (regulatoryinfo.apple.com/ukpsti): first supply date and minimum 5-year defined support period",
+      "url": "https://regulatoryinfo.apple.com/ukpsti"
+    },
+    {
+      "label": "Apple: iPadOS 27 compatibility list (apple.com/os/ipados)",
+      "url": "https://www.apple.com/os/ipados/"
+    },
+    {
+      "label": "BGR / EveryMac / 9to5Mac: iPadOS 27 drops iPad mini 5, iPad 8, iPad Air 3, iPad Pro 11-inch 1st gen (release 2026-09-14)",
+      "url": "https://www.bgr.com/2190915/ipad-models-that-wont-get-ipados-27-update/"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "productId": "AX-A9-Z2",
+  "name": "Atexxo Zone 2 Galaxy Tab A9",
+  "brand": "Atexxo",
+  "brandSlug": "atexxo",
+  "manufacturer": {
+    "name": "Atexxo B.V.",
+    "country": "Netherlands",
+    "website": "https://atexxo.com"
+  },
+  "type": "conversion",
+  "screenIn": 8.7,
+  "hostDevice": "Samsung Galaxy Tab A9",
+  "otherHosts": [],
+  "fitting": "unit",
+  "status": "current",
+  "statusNote": "Listed by Atexxo; one distributor shows it as out of stock.",
+  "launchYear": 2025,
+  "summary": "The Atexxo Zone 2 Galaxy Tab A9 is a standard Samsung Galaxy Tab A9 converted by Atexxo for hazardous areas, rated for Zone 2/22 under ATEX. It is an Ex ec ic-rated design, and the tablet runs Android 16.",
+  "image": "../../assets/tablets/atexxo-zone-2-galaxy-tab-a9.webp",
+  "imageAlt": "Atexxo Zone 2 Galaxy Tab A9, front view",
+  "certification": {
+    "otherSchemes": [
+      "NEC C1D2 equivalence claimed (marketing only)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ec ic IIC T4 Gc / II 3D Ex tc IIIB T135°C Dc",
+      "kind": "not-published"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Increased safety and intrinsic safety (Ex ec ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc"
+  },
+  "safety": {
+    "certifiedAccessories": "Passive stylus (on request; Ex rating not stated). Four reinforced tether / anchor points on the unit; shoulder strap mentioned on the Active5 Pro flyer only. No Ex-rated keyboard, dock or charger listed"
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 16",
+    "atLaunch": "Android 13",
+    "edition": "Android with One UI",
+    "upgradeLimit": "Android upgrades ended 2026-10-23 per endoflife.date",
+    "securityUntil": "2027-10-31",
+    "updates": "Security updates until October 2027"
+  },
+  "specs": {
+    "display": "8.7-inch TFT LCD",
+    "resolution": "1340 × 800 (WXGA+), up to 60 Hz",
+    "chip": "Octa-core (2.2 GHz + 2 GHz); chipset name not on Samsung UK page",
+    "cpuArch": "Arm",
+    "ram": "4 (64 GB model); 8 (128 GB model)",
+    "camera": "8 MP, autofocus, no flash",
+    "frontCamera": "2 MP",
+    "video": "Full HD 1080p at 30 fps recording",
+    "battery": "5100 mAh",
+    "batteryWh": "19.6 Wh",
+    "hotSwap": "No",
+    "ports": "USB-C (USB 2.0), 3.5 mm headset jack, microSD",
+    "network": "LTE (SM-X115) or Wi-Fi only (SM-X110); no 5G",
+    "wifi": "Wi-Fi 5 (802.11 a/b/g/n/ac), 2.4 + 5 GHz",
+    "bluetooth": "Bluetooth 5.3",
+    "nfc": "No",
+    "gnss": "GPS, GLONASS, BeiDou, Galileo, QZSS",
+    "sim": "LTE model with SIM (type not stated on the page)",
+    "storage": "64 GB or 128 GB, microSD up to 1 TB",
+    "replaceableBattery": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 5"
+    ],
+    "weightG": 780,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "230 × 150 × 16",
+    "cameraFree": false,
+    "partNumbers": "EX-TABLET-SAM-8.7-64; EX-TABLET-SAM-8.7-64-CEL; EX-TABLET-SAM-8.7-128; EX-TABLET-SAM-8.7-128-CEL; EX-TABLET-SAM-8.7-* (conversion service, tablet excluded)"
+  },
+  "throughCase": [
+    {
+      "label": "Apple Pencil / stylus",
+      "value": "Passive stylus on request for glove use. A9 has no S Pen support"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Yes: usable as an intrinsically safe photo/video camera per Atexxo"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Yes (glove use via passive stylus on request)"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C charger listed (100-240 V). Ex-area charging rules not stated"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Not described (charger listed)"
+    },
+    {
+      "label": "SIM card",
+      "value": "Self SIM-card installation"
+    },
+    {
+      "label": "Mounting points",
+      "value": "Four reinforced tether / anchor points"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (Android PTT apps; Atexxo does not list PTT)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based; no dedicated scan engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (base tablet has no NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (base tablet has no depth sensor)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (front and rear cameras retained; camera marketed as an intrinsically safe video camera)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android tablet)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.otherSchemes": "Stated by Atexxo; not in the certificate conditions.",
+    "certification.epl": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.gasGroup": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.dustGroup": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.tempClass": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.maxSurfaceTemp": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.upgradeLimit": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.securityUntil": "Samsung publishes no date for this model; this is the Galaxy Tab A9+ date.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.sim": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.cameraFree": "Listed by a distributor; the maker doesn't list it.",
+    "throughCase.Apple Pencil / stylus": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Rear cameras": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Touchscreen": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Charging": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.USB-C port": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.SIM card": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Mounting points": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [],
+  "strengths": [
+    "5G on cellular versions",
+    "A standard Samsung Galaxy Tab A9 inside, with the same apps and standard device management",
+    "Among the lightest Zone 2 tablets of its size we list, at 780 g in use"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "Ex marking not yet confirmed against a published certificate",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "ATEX only: no IECEx certificate",
+    "Security updates end in October 2027"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "getac-zx80-ex",
+    "ecom-tab-ex-05-dz2",
+    "isafe-is930-2"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx: IECEx online certificate database: holder searches for Getac, Winmate, Zebra, Panasonic, Dell, Durabook, Xplore, Twinhead (2026-10-25)",
+      "url": "https://www.iecex-certs.com/"
+    },
+    {
+      "label": "endoflife.date: Samsung Galaxy Tab (page last updated 2026-10-10; dates approximate to the year per the page)",
+      "url": "https://endoflife.date/samsung-galaxy-tab"
+    },
+    {
+      "label": "Atexxo: Product flyer, Galaxy Tab A9 Zone 2/22 (uploaded 2025/04)",
+      "url": "https://atexxo.com/wp-content/uploads/2025/04/atex_samsung_a9_explosion_proof_ex-product-flyer-folleto-de-productonew.pdf"
+    },
+    {
+      "label": "Atexxo: Product page: Explosion Proof Samsung Galaxy Tab A9 (Ex Zone 2)",
+      "url": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-a9-ex-zone-2/"
+    },
+    {
+      "label": "Atexxo: Downloads page (certificate list: no Samsung tablet certificates listed, checked 2026-10-25)",
+      "url": "https://atexxo.com/downloads/"
+    },
+    {
+      "label": "Atexxo: Home page product list (Samsung tablet conversions: Active5, Active5 Pro, S10 FE, S9 FE, A9; checked 2026-10-25)",
+      "url": "https://atexxo.com/"
+    },
+    {
+      "label": "Samsung Electronics UK: Galaxy Tab A9 LTE (SM-X115) specifications page",
+      "url": "https://www.samsung.com/uk/business/tablets/galaxy-tab-a/galaxy-tab-a9-lte-graphite-64gb-sm-x115nzaaeua/"
+    },
+    {
+      "label": "Samsung Electronics UK: Galaxy Tab A9+ 5G (SM-X216B) specifications page",
+      "url": "https://www.samsung.com/uk/business/tablets/galaxy-tab-a/galaxy-tab-a9-plus-5g-graphite-128gb-sm-x216bzaeeub/"
+    },
+    {
+      "label": "Samsung Mobile Security: Security update scope and cycle by model (monthly / quarterly / biannual), read 2026-10-25",
+      "url": "https://security.samsungmobile.com/workScope.smsb"
+    },
+    {
+      "label": "Rockall Safety: Zone 2 ATEX Samsung Galaxy Tab S10 FE (SKU EX-TABLET-SAM-10.9-128, out of stock, no price)",
+      "url": "https://www.rockallsafety.co.uk/product/zone-2-atex-samsung-galaxy-tab-s10-fe/"
+    },
+    {
+      "label": "BGR: Samsung Is Ending Support For These Galaxy Tablets In 2027",
+      "url": "https://bgr.com/2238266/samsung-galaxy-tablets-losing-support-2027/"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "productId": "WM-M101ADEX",
+  "name": "Winmate M101AD-EX",
+  "brand": "Winmate",
+  "brandSlug": "winmate",
+  "manufacturer": {
+    "name": "Winmate Inc.",
+    "country": "Taiwan",
+    "website": "https://www.winmate.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2024,
+  "summary": "The Winmate M101AD-EX is the hazardous-area version of a Winmate rugged 10.1-inch tablet, certified for Zone 2 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 IoT Enterprise LTSC.",
+  "image": "../../assets/tablets/winmate-m101ad-ex.webp",
+  "imageAlt": "Winmate M101AD-EX, front view",
+  "certification": {
+    "otherSchemes": [
+      "KCs Ex ic IIC T4 Gc (Korea)",
+      "CE",
+      "FCC",
+      "MIL-STD-810H",
+      "IP65"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T4 Gc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 3 (2025-11-18), checked 2026-10-25; ATEX number not published; UKEX not found"
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T4 Gc",
+      "number": "IECEx SIR 18.0025X",
+      "scope": "Issue 3, 2025-11-18"
+    },
+    "northAmerica": "Class I, Division 2, Groups A, B, C, D, T4 (datasheet)",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "tempClass": "T4",
+    "epl": "Gc",
+    "ambient": "−10 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Charge only in the non-hazardous area with the adapter or cradle supplied by the manufacturer. Protect from liquid and dust contamination (pollution degree 2 or better). Connecting or disconnecting external ports, opening the enclosure or replacing the battery pack is permitted only when the explosive atmosphere is shown to be absent. Periodically inspect the interior where condensation can occur. USB-A, USB-C, audio output, RJ45 and DC-in may be used only in safe areas. In hazardous areas the tablet must be secured by a Kensington lock with a suitable string length so it cannot be carried out of a pollution degree 2 area.",
+    "peripherals": "USB-A, USB-C, audio output, RJ45 and DC-in only in safe areas (certificate). Other port, SD and SIM operations only when the atmosphere is shown to be absent.",
+    "certifiedAccessories": "Certificate names only the manufacturer battery pack, the supplied 19 V adapter and cradle (charging outside hazardous areas) and a Kensington lock. Datasheet accessories (desk dock, vehicle dock, vehicle cradle, vehicle charger, hand strap, shoulder strap, carry bag) carry no Ex marking; no keyboard."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 IoT Enterprise LTSC",
+    "edition": "Windows 11 IoT Enterprise LTSC (64-bit); Windows 10 IoT Enterprise LTSC optional",
+    "securityUntil": "2034-10-10",
+    "updates": "Security updates until October 2034"
+  },
+  "specs": {
+    "display": "10.1-inch IPS LED, optical bonding, anti-glare",
+    "resolution": "1920 × 1200",
+    "brightness": "800 nits",
+    "outdoor": "Sunlight readable (maker)",
+    "chip": "Intel Core i5-1235U (up to 4.4 GHz)",
+    "cpuArch": "x86",
+    "ram": "8 (options 16, 32)",
+    "camera": "8 MP autofocus with LED",
+    "frontCamera": "2 MP",
+    "battery": "4558 typical (11.55 V), Li-polymer 3S2P",
+    "batteryWh": "52.6",
+    "hotSwap": "Yes, hot-swappable battery (swap outside hazardous areas per the Ex certificate)",
+    "batteryLife": "8 hours",
+    "ports": "USB 3.0 Type-A, USB 3.0 Type-C (PD, ALT), RJ45, micro SDXC, nano-SIM, audio combo, 19-pin docking connector; optional HF RFID, 1D/2D barcode",
+    "docking": "Desk dock, vehicle dock, vehicle cradle (not Ex-rated)",
+    "network": "Wi-Fi; optional 4G LTE, 5G",
+    "gnss": "GPS, GLONASS",
+    "sim": "Nano-SIM",
+    "keys": "Power, home, 2 volume, 2 programmable",
+    "pen": "Capacitive stylus (included)",
+    "keyboard": "Tablet only",
+    "storage": "128 GB SSD (options 256 GB, 512 GB, 1000 GB, 2000 GB), microSDXC",
+    "replaceableBattery": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G"
+    ],
+    "weightG": 1200,
+    "dimensionsMm": "271.5 × 198.2 × 23.3",
+    "ipRating": "IP65",
+    "ruggedness": "MIL-STD-810H; 4 ft (1.2 m)",
+    "operatingTemp": "−10 °C to +50 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D reader)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF 13.56 MHz reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 IoT Enterprise LTSC, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "os.securityUntil": "Microsoft's end date for Windows 11 IoT Enterprise LTSC 2024. The maker doesn't state the edition year.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Also certified for Class I Division 2 in North America",
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "Security updates until October 2034"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "No dust zone rating",
+    "Not certified below −10 °C ambient"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "bartec-et60-65ex2-windows",
+    "getac-ux10-ex",
+    "durabook-u11i-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / SIRA (CSA Group UK): IECEx SIR 18.0025X issue 3 (M101S, M101AD, M101AD-EXYYZZ, M101ADW-EXYYZZ), 2025-11-18, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/SIR/IECExSIR18.0025/003/deliverable/IECEx_SIR_18.0025X_003.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 IoT Enterprise LTSC 2024 (extended end listed 10/11/2034)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-iot-enterprise-ltsc-2024"
+    },
+    {
+      "label": "Winmate: M101AD-EX datasheet page (Rev. V.260321.260305)",
+      "url": "https://www.winmate.com/en/product/exportHtml/M101AD-EX"
+    },
+    {
+      "label": "Winmate: ATEX newsletter 2025-04-24 (M101AD-EX and M101S-EX)",
+      "url": "https://www.winmate.com/en/StaticPages/Newsletter/ATEX_20250424_News_Winmate-HQ_Global-EN.html"
+    }
+  ]
+}

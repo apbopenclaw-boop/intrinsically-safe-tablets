@@ -1,0 +1,261 @@
+{
+  "productId": "AX-S9FE-Z2",
+  "name": "Atexxo Zone 2 Galaxy Tab S9 FE",
+  "brand": "Atexxo",
+  "brandSlug": "atexxo",
+  "manufacturer": {
+    "name": "Atexxo B.V.",
+    "country": "Netherlands",
+    "website": "https://atexxo.com"
+  },
+  "type": "conversion",
+  "screenIn": 10.9,
+  "hostDevice": "Samsung Galaxy Tab S9 FE",
+  "otherHosts": [],
+  "fitting": "unit",
+  "status": "current",
+  "statusNote": "Listed by Atexxo; one distributor shows it as out of stock.",
+  "launchYear": 2025,
+  "summary": "The Atexxo Zone 2 Galaxy Tab S9 FE is a standard Samsung Galaxy Tab S9 FE converted by Atexxo for hazardous areas, rated for Zone 2/22 under ATEX. It is an Ex ec ic-rated design, and the tablet runs Android 13.",
+  "image": "../../assets/tablets/atexxo-zone-2-galaxy-tab-s9-fe.webp",
+  "imageAlt": "Atexxo Zone 2 Galaxy Tab S9 FE, front view",
+  "certification": {
+    "otherSchemes": [
+      "NEC C1D2 equivalence claimed (marketing only)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ec ic IIC T4 Gc / II 3D Ex tc IIIB T135°C Dc",
+      "kind": "not-published"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Increased safety and intrinsic safety (Ex ec ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc"
+  },
+  "safety": {
+    "certifiedAccessories": "Passive stylus (on request; Ex rating not stated). Four reinforced tether / anchor points on the unit; shoulder strap mentioned on the Active5 Pro flyer only. No Ex-rated keyboard, dock or charger listed"
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 13",
+    "edition": "Android with One UI",
+    "securityUntil": "2028-09-30",
+    "updates": "Security updates until September 2028"
+  },
+  "specs": {
+    "display": "10.9-inch TFT LCD; glass type not stated",
+    "resolution": "2304 × 1440 (WUXGA+), up to 90 Hz",
+    "brightness": "600 nits",
+    "outdoor": "720 nits in High Brightness Mode outdoors",
+    "chip": "Samsung Exynos 1380 (octa-core, 2.4 GHz + 2 GHz)",
+    "cpuArch": "Arm",
+    "ram": "6 GB",
+    "camera": "8 MP, autofocus, no flash",
+    "frontCamera": "12 MP",
+    "video": "4K UHD at 30 fps",
+    "battery": "8000 mAh",
+    "batteryWh": "30.8 Wh",
+    "hotSwap": "No",
+    "batteryLife": "Internet up to 16 h; video up to 18 h",
+    "ports": "USB-C (USB 2.0; also used for audio), microSD",
+    "network": "5G (SM-X516B) or Wi-Fi only (SM-X510)",
+    "wifi": "Wi-Fi 6 (802.11ax), 2.4 + 5 GHz",
+    "bluetooth": "Bluetooth 5.3",
+    "nfc": "No",
+    "gnss": "GPS, GLONASS, BeiDou, Galileo, QZSS",
+    "sim": "5G model: eSIM-based dual SIM; physical SIM not confirmed on Samsung UK page (Atexxo says 'Physical SIM + eSIM')",
+    "biometrics": "Fingerprint sensor",
+    "pen": "S Pen included (IP68)",
+    "keyboard": "Book Cover Keyboard (sold separately) with POGO connection and DeX",
+    "storage": "128 GB (UK); 256 GB option by region, microSD up to 1 TB",
+    "replaceableBattery": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6",
+      "eSIM"
+    ],
+    "weightG": 1090,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "280 × 190 × 16",
+    "cameraFree": false,
+    "partNumbers": "EX-TABLET-SAM-10.9-128; EX-TABLET-SAM-10.9-128-CEL; EX-TABLET-SAM-10.9-256; EX-TABLET-SAM-10.9-256-CEL; EX-TABLET-SAM-10.9-* (conversion service, tablet excluded). Identical SKU family to Atexxo's Tab S10 FE page. Rockall shows SKU MOB-EX-SAM-S26-257 for this product"
+  },
+  "throughCase": [
+    {
+      "label": "Face ID / Touch ID",
+      "value": "No: fingerprint scanner removed"
+    },
+    {
+      "label": "Apple Pencil / stylus",
+      "value": "Passive stylus on request for glove use. S Pen use not stated (base tablet supports S Pen)"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Yes: usable as an intrinsically safe photo/video camera per Atexxo"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Yes (glove use via passive stylus on request)"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C charger listed (100-240 V). Ex-area charging rules not stated"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Not described (charger listed)"
+    },
+    {
+      "label": "SIM card",
+      "value": "Self SIM-card installation or eSIM"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Fingerprint scanner"
+    },
+    {
+      "label": "Mounting points",
+      "value": "Four reinforced tether / anchor points"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (Android PTT apps; Atexxo does not list PTT)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based; no dedicated scan engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (base tablet has no NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (base tablet has no depth sensor)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (front and rear cameras retained; camera marketed as an intrinsically safe video camera)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android tablet)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.otherSchemes": "Stated by Atexxo; not in the certificate conditions.",
+    "certification.epl": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.gasGroup": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.dustGroup": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.tempClass": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.maxSurfaceTemp": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.network": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.sim": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.cameraFree": "Listed by a distributor; the maker doesn't list it.",
+    "throughCase.Face ID / Touch ID": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Apple Pencil / stylus": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Rear cameras": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Touchscreen": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Charging": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.USB-C port": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.SIM card": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Removed or disabled": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Mounting points": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [],
+  "strengths": [
+    "5G on cellular versions",
+    "A standard Samsung Galaxy Tab S9 FE inside, with the same apps and standard device management"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "Ex marking not yet confirmed against a published certificate",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "ATEX only: no IECEx certificate",
+    "Security updates end in September 2028"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "bartec-et60-65ex2-android",
+    "getac-zx10-ex",
+    "isafe-is940-2"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx: IECEx online certificate database: holder searches for Getac, Winmate, Zebra, Panasonic, Dell, Durabook, Xplore, Twinhead (2026-10-25)",
+      "url": "https://www.iecex-certs.com/"
+    },
+    {
+      "label": "endoflife.date: Samsung Galaxy Tab (page last updated 2026-10-10; dates approximate to the year per the page)",
+      "url": "https://endoflife.date/samsung-galaxy-tab"
+    },
+    {
+      "label": "Atexxo: Product flyer, Galaxy Tab S9 FE Zone 2/22 (uploaded 2025/03)",
+      "url": "https://atexxo.com/wp-content/uploads/2025/03/atex_samsung_explosion_proof_ex_tablet_android-product-flyer-folleto-de-productonew.pdf"
+    },
+    {
+      "label": "Atexxo: Product page: Explosion Proof Samsung Galaxy Tab S9 FE (Ex Zone 2)",
+      "url": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-s9-fe-ex-zone-2/"
+    },
+    {
+      "label": "Atexxo: Downloads page (certificate list: no Samsung tablet certificates listed, checked 2026-10-25)",
+      "url": "https://atexxo.com/downloads/"
+    },
+    {
+      "label": "Atexxo: Home page product list (Samsung tablet conversions: Active5, Active5 Pro, S10 FE, S9 FE, A9; checked 2026-10-25)",
+      "url": "https://atexxo.com/"
+    },
+    {
+      "label": "Samsung Electronics UK: Galaxy Tab S9 FE 5G (SM-X516B) specifications page",
+      "url": "https://www.samsung.com/uk/business/tablets/galaxy-tab-s/galaxy-tab-s9-fe-5g-gray-128gb-sm-x516bzaaeub/"
+    },
+    {
+      "label": "Samsung Mobile Security: Security update scope and cycle by model (monthly / quarterly / biannual), read 2026-10-25",
+      "url": "https://security.samsungmobile.com/workScope.smsb"
+    },
+    {
+      "label": "Atexxo: Product page: Explosion Proof Samsung Galaxy Tab S10 FE (Ex Zone 2)",
+      "url": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-s10-fe-ex-zone-2/"
+    },
+    {
+      "label": "Samsung Electronics UK: Galaxy Tab S10 FE 5G (SM-X526B) specifications page",
+      "url": "https://www.samsung.com/uk/business/tablets/galaxy-tab-s/galaxy-tab-s10-fe-grey-128gb-5g-sm-x526bzareub/"
+    },
+    {
+      "label": "Rockall Safety: Zone 2 ATEX Samsung Galaxy Tab S10 FE (SKU EX-TABLET-SAM-10.9-128, out of stock, no price)",
+      "url": "https://www.rockallsafety.co.uk/product/zone-2-atex-samsung-galaxy-tab-s10-fe/"
+    },
+    {
+      "label": "Rockall Safety: Zone 2 ATEX Samsung Galaxy Tab S9 FE (SKU shown MOB-EX-SAM-S26-257, out of stock, no price)",
+      "url": "https://www.rockallsafety.co.uk/product/zone-2-atex-samsung-galaxy-tab-s9-fe/"
+    },
+    {
+      "label": "BGR: Samsung Is Ending Support For These Galaxy Tablets In 2027",
+      "url": "https://bgr.com/2238266/samsung-galaxy-tablets-losing-support-2027/"
+    }
+  ]
+}

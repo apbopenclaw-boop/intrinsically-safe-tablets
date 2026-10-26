@@ -1,0 +1,265 @@
+{
+  "productId": "AX-GTA5P-Z2",
+  "name": "Atexxo Zone 2 Galaxy Tab Active5 Pro",
+  "brand": "Atexxo",
+  "brandSlug": "atexxo",
+  "manufacturer": {
+    "name": "Atexxo B.V.",
+    "country": "Netherlands",
+    "website": "https://atexxo.com"
+  },
+  "type": "conversion",
+  "screenIn": 10.1,
+  "hostDevice": "Samsung Galaxy Tab Active5 Pro",
+  "otherHosts": [],
+  "fitting": "unit",
+  "status": "current",
+  "statusNote": "Listed by Atexxo; one distributor shows it as out of stock.",
+  "summary": "The Atexxo Zone 2 Galaxy Tab Active5 Pro is a standard Samsung Galaxy Tab Active5 Pro converted by Atexxo for hazardous areas, rated for Zone 2/22 under ATEX. It is an Ex ec ic-rated design, and the tablet runs Android 16.",
+  "image": "../../assets/tablets/atexxo-zone-2-galaxy-tab-active5-pro.webp",
+  "imageAlt": "Atexxo Zone 2 Galaxy Tab Active5 Pro, front view",
+  "certification": {
+    "otherSchemes": [
+      "MIL-STD-810H listed on flyer for the converted unit (base tablet property)",
+      "NEC C1D2 equivalence claimed (marketing)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ec ic IIC T4 Gc / II 3D Ex tc IIIB T85°C Dc",
+      "kind": "not-published"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Increased safety and intrinsic safety (Ex ec ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "85 °C",
+    "epl": "Gc / Dc"
+  },
+  "safety": {
+    "certifiedAccessories": "Passive stylus (on request; Ex rating not stated). Four reinforced tether / anchor points on the unit; shoulder strap mentioned on the Active5 Pro flyer only. No Ex-rated keyboard, dock or charger listed"
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 16",
+    "atLaunch": "Android 15",
+    "edition": "Android with One UI; Knox",
+    "upgradeLimit": "Samsung UK: up to 8 years of firmware and maintenance updates; number of OS generations not stated. endoflife.date shows Android upgrades to 2029-05",
+    "securityUntil": "2033-05-31",
+    "updates": "Security updates until May 2033"
+  },
+  "specs": {
+    "display": "10.1-inch TFT LCD, 120 Hz adaptive; Corning Gorilla Glass Victus+",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "600 nits",
+    "outdoor": "Samsung quotes 600 nits (up from 480 nits on the previous model)",
+    "chip": "Qualcomm Snapdragon (4 nm; exact model not named on Samsung UK page)",
+    "cpuArch": "Arm",
+    "ram": "8 (256 GB model); 6 on 128 GB variants where offered",
+    "camera": "12 MP, autofocus, flash",
+    "frontCamera": "8 MP",
+    "video": "4K UHD at 30 fps recording",
+    "battery": "10100 mAh",
+    "batteryWh": "38.9 Wh",
+    "hotSwap": "Yes: dual hot-swap, one battery at a time (screen goes off while the battery is out)",
+    "ports": "USB-C (USB 3.2 Gen 1), 3.5 mm headset jack, POGO connector, microSD slot",
+    "docking": "POGO charging dock and POGO keyboard (sold separately); cradle for No Battery Mode",
+    "network": "Wi-Fi only (SM-X350) or 5G (SM-X356B)",
+    "wifi": "Wi-Fi 6E (802.11ax), 2.4 / 5 / 6 GHz",
+    "bluetooth": "Bluetooth 5.4",
+    "nfc": "Yes (including front tagging)",
+    "gnss": "GPS, GLONASS, BeiDou, Galileo, QZSS (dual GPS)",
+    "sim": "Dual SIM: physical SIM plus eSIM (5G model)",
+    "keys": "Active Key (customisable for apps, barcode scanning or IT remapping)",
+    "biometrics": "Fingerprint sensor",
+    "pen": "S Pen supported",
+    "keyboard": "POGO keyboard (sold separately); DeX on monitor",
+    "storage": "128 GB or 256 GB, microSD up to 2 TB",
+    "replaceableBattery": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6E",
+      "NFC",
+      "eSIM"
+    ],
+    "weightG": 1200,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "264 × 188 × 19",
+    "ruggedness": "MIL-STD-810H compliant (Atexxo flyer; base-tablet rating)",
+    "partNumbers": "EX-TABLET-GTA5-PRO-128 (Zone 2/22, 128 GB, includes tablet); EX-TABLET-GTA5-PRO-256 (256 GB, includes tablet); EX-TABLET-GTA5-PRO-* (conversion and certification service, 'only for new tablets')"
+  },
+  "throughCase": [
+    {
+      "label": "Face ID / Touch ID",
+      "value": "No: fingerprint scanner removed"
+    },
+    {
+      "label": "Apple Pencil / stylus",
+      "value": "Passive stylus on request for glove use. S Pen use not stated"
+    },
+    {
+      "label": "Side and volume buttons",
+      "value": "Yes: 'pushbuttons' preserved"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Yes: front and rear camera preserved"
+    },
+    {
+      "label": "Front camera",
+      "value": "Yes: preserved"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Yes (glove use via passive stylus on request)"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C charger preserved. Ex-area charging rules not stated"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Preserved"
+    },
+    {
+      "label": "SIM card",
+      "value": "Self SIM-card installation or eSIM"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Fingerprint scanner"
+    },
+    {
+      "label": "Mounting points",
+      "value": "Four reinforced tether / anchor points; shoulder strap on request"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (Active Key is programmable for apps; Atexxo does not list PTT)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based; no dedicated scan engine)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (base tablet has no depth sensor)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (front and rear cameras retained; camera marketed as an intrinsically safe video camera)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android tablet)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.otherSchemes": "Stated by Atexxo; not in the certificate conditions.",
+    "certification.epl": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.gasGroup": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.dustGroup": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.tempClass": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.maxSurfaceTemp": "Marking as stated by Atexxo. Atexxo doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.upgradeLimit": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.chip": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.ram": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.weightG": "From a single source; the maker's figures vary.",
+    "specs.ruggedness": "From a single source.",
+    "throughCase.Face ID / Touch ID": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Apple Pencil / stylus": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Side and volume buttons": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Rear cameras": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Front camera": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Touchscreen": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Charging": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.USB-C port": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.SIM card": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Removed or disabled": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Mounting points": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model."
+  },
+  "features": [
+    "updates-2030"
+  ],
+  "strengths": [
+    "5G on cellular versions",
+    "Security updates until May 2033",
+    "Hot-swappable battery for long shifts",
+    "A standard Samsung Galaxy Tab Active5 Pro inside, with the same apps and standard device management"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "Ex marking not yet confirmed against a published certificate",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "ATEX only: no IECEx certificate"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "bartec-et60-65ex2-android",
+    "getac-zx10-ex",
+    "isafe-is940-2"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx: IECEx online certificate database: holder searches for Getac, Winmate, Zebra, Panasonic, Dell, Durabook, Xplore, Twinhead (2026-10-25)",
+      "url": "https://www.iecex-certs.com/"
+    },
+    {
+      "label": "endoflife.date: Samsung Galaxy Tab (page last updated 2026-10-10; dates approximate to the year per the page)",
+      "url": "https://endoflife.date/samsung-galaxy-tab"
+    },
+    {
+      "label": "Atexxo: Product flyer, Galaxy Tab Active5 Pro Zone 2/22 (uploaded 2026/06)",
+      "url": "https://atexxo.com/wp-content/uploads/2026/06/atex_samsung_galaxy_tab_active5_pro_explosion_proof_ex-product-flyer-brochure-produit-produkt-flyer-volantino-prodotto-listovka-produkta-folleto-de-productonew.pdf"
+    },
+    {
+      "label": "Atexxo: Product page: Explosion Proof Samsung Galaxy Tab Active5 Pro (Ex Zone 2)",
+      "url": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-active5-pro-ex-zone-2/"
+    },
+    {
+      "label": "Atexxo: Downloads page (certificate list: no Samsung tablet certificates listed, checked 2026-10-25)",
+      "url": "https://atexxo.com/downloads/"
+    },
+    {
+      "label": "Atexxo: Home page product list (Samsung tablet conversions: Active5, Active5 Pro, S10 FE, S9 FE, A9; checked 2026-10-25)",
+      "url": "https://atexxo.com/"
+    },
+    {
+      "label": "Samsung Electronics UK: Galaxy Tab Active5 Pro (SM-X356B) specifications page",
+      "url": "https://www.samsung.com/uk/business/tablets/galaxy-tab-active/galaxy-tab-active5-pro-green-256gb-sm-x356bzgeeeb/"
+    },
+    {
+      "label": "Samsung Mobile Security: Security update scope and cycle by model (monthly / quarterly / biannual), read 2026-10-25",
+      "url": "https://security.samsungmobile.com/workScope.smsb"
+    },
+    {
+      "label": "Rockall Safety: Zone 2 ATEX Samsung Galaxy Tab S10 FE (SKU EX-TABLET-SAM-10.9-128, out of stock, no price)",
+      "url": "https://www.rockallsafety.co.uk/product/zone-2-atex-samsung-galaxy-tab-s10-fe/"
+    },
+    {
+      "label": "Samsung Newsroom US: Samsung Introduces Galaxy XCover7 Pro and Galaxy Tab Active5 Pro, 2025-04-14",
+      "url": "https://news.samsung.com/us/samsung-introduces-galaxy-xcover7-pro-galaxy-tab-active5-pro-ruggedized-devices-frontline-excellence/"
+    }
+  ]
+}

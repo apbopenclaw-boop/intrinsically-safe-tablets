@@ -1,0 +1,180 @@
+{
+  "productId": "PF-PADEX01-P12-DZ2",
+  "name": "ecom Pad-Ex 01 P12 DZ2",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 11.6,
+  "status": "current",
+  "launchYear": 2024,
+  "summary": "The ecom Pad-Ex 01 P12 DZ2 is an intrinsically safe (Ex ic) 11.6-inch Windows tablet from ecom (Pepperl+Fuchs), certified for Zone 2/22 under ATEX and IECEx. It runs Windows 11 Pro, version 25H2.",
+  "image": "../../assets/tablets/ecom-pad-ex-01-p12-dz2.webp",
+  "imageAlt": "ecom Pad-Ex 01 P12 DZ2, front view",
+  "certification": {
+    "otherSchemes": [
+      "Japan CML 19 JPN 2478 X, IA/MASC South Africa S/19-6224X, Inmetro TÜV 20.1444 X, China CCC 2020322309003372, KC Korea 24-KA4BO-0914X / 0915X"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc IP64 / II 3D Ex ic op is IIIB T135°C Dc IP64",
+      "kind": "type-examination",
+      "number": "EPS 16 ATEX 1",
+      "status": "IECEx Current, issue 6 (2025-08-05), checked 2026-10-25. ATEX is a voluntary Certificate of Conformity (Bureau Veritas)."
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc IP64 / Ex ic op is IIIB T135°C Dc IP64",
+      "number": "IECEx EPS 16.0072X",
+      "scope": "Issue 6, 2025-08-05"
+    },
+    "northAmerica": "SGS certificate SGSNA/24/SUW/00031X (ecom file CERT-7421A): Class I, Zone 2, AEx ic IIC T4 Gc IP64; Class I, Div 2, Groups A-D T4; Zone 22, AEx ic IIIB T135°C Dc; Class II, Div 2, Class III, Div 1, Groups F, G, T135°C",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−10 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Battery pack removed, changed or charged only outside hazardous areas; impact test done with reduced height, protect from high-energy impacts, excessive UV and high electrostatic charge; external connections never used in hazardous areas; interface cover closed in hazardous areas; clean only with a damp cloth; use only manufacturer-approved accessories (X-strap, shoulder strap, hand strap, leather case, stylus ST P01 P12).",
+    "peripherals": "No external connections in the Ex area (Thunderbolt 4, USB-A, micro HDMI, audio, DC-in, dock pogo); interface cover closed.",
+    "certifiedAccessories": "Certificate allows only: X-strap, shoulder strap, hand strap, leather case (LC P01 A01) and stylus with tether (ST P01 P12). Other accessories on the ecom page (CA P01 A01, HA P01 A01, BP P01 P12 batteries, DC P01 HC dock) are for use outside Ex areas."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Pro, version 25H2",
+    "atLaunch": "Windows 11 Pro",
+    "edition": "Windows 11 Pro (64-bit); ecom release plan lists Win11 25H2",
+    "upgradeLimit": "Windows 11 feature updates (no fixed limit)",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "11.6-inch TFT LCD, capacitive multitouch, 16:9",
+    "resolution": "1920 × 1080 (Full HD)",
+    "brightness": "1000 nits",
+    "outdoor": "Maker claims 'Can be used in sunlight' (11.6-inch FHD DynaVue SR display, 1000 nits)",
+    "chip": "Intel Core i5-1235U (12th gen, vPro); optional Core i7-1255U (DZ2 only)",
+    "cpuArch": "x86",
+    "ram": "16 GB",
+    "camera": "11 MP autofocus (optional)",
+    "frontCamera": "2 MP (optional)",
+    "battery": "3900 mAh",
+    "batteryWh": "43.29 Wh",
+    "ports": "Thunderbolt 4; USB 3.2 Gen 2 Type A; micro HDMI; audio combo jack; microSD; 35-pin pogo docking connector; DC-in; optional nano-SIM",
+    "docking": "Dock connector with pass-through (35-pin pogo); DC P01 HC desktop dock (ordinary areas)",
+    "network": "Optional 4G LTE (Sierra Wireless EM7565); Wi-Fi 6E",
+    "wifi": "Intel Wi-Fi 6E AX211",
+    "bluetooth": "Bluetooth 5.3",
+    "gnss": "GPS, Glonass, Beidou, Galileo",
+    "sim": "Optional 1 x nano-SIM",
+    "keys": "On/off, volume up/down, Windows touch button, barcode/camera touch button, programmable touch button",
+    "touch": "Can be operated while wearing gloves",
+    "pen": "Passive stylus with tether (ST P01 P12) supplied",
+    "keyboard": "No (slate); keyboard connector not listed",
+    "storage": "256 GB, microSDXC",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 1200,
+    "dimensionsMm": "298 × 192 × 20 (W × H × D)",
+    "ipRating": "IP64",
+    "exIp": "IP64",
+    "ruggedness": "MIL-STD-810H / MIL-STD-461F",
+    "operatingTemp": "−10 °C to +55 °C",
+    "cameraFree": true,
+    "partNumbers": "PAD-EX01P12DZ2* (datasheet 480991); Art.-No. 480991-100049 (ThinManager-ready)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional Honeywell N670X 1D/2D scan engine; Ex-certified as part of the unit)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor listed)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (optional 2 MP front and 11 MP rear cameras; Windows video-call app)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 Pro, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "camera-free",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Also certified for Class I Division 1 in North America",
+    "Optional built-in barcode imager",
+    "User-replaceable battery",
+    "Camera-free version available for sites that restrict cameras"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "Not certified below −10 °C ambient"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "bartec-agile-s-ni",
+    "isafe-is945-2",
+    "durabook-u11i-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX Certificate of Conformity EPS 16 ATEX 1 163 X, Rev 5 (2023-12-18), Pad-Ex 01 (ecom CERT-4731E)",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/pad-ex_01_p12/ATEX_certificate_Pad-Ex_P12_DZ2_CERT-4731E.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 16.0072X issue 6 (2025-08-05), Pad-Ex 01 family incl. P12",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1956272/view"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 Home and Pro (25H2 end listed 10/13/2027; 24H2 10/14/2026)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Pad-Ex 01 P12 DZ2 product page",
+      "url": "https://www.ecom-ex.com/products/mobile-computing/tablets-windows/pad-ex-01-p12-dz2/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ecom FAQ: Release Plans of Major Products (OS and security patch plan; last updated 2025-11-18)",
+      "url": "https://support.ecom-ex.com/457976005.html"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "productId": "AEG-10-IS",
+  "name": "Aegex 10 IS",
+  "brand": "Aegex",
+  "brandSlug": "aegex",
+  "manufacturer": {
+    "name": "Aegex Technologies LLC",
+    "country": "USA"
+  },
+  "type": "dedicated",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "Discontinued by Aegex; its IECEx certificate has been cancelled.",
+  "successor": "aegex-100m",
+  "launchYear": 2016,
+  "summary": "The Aegex 10 IS is an intrinsically safe (Ex ib) 10.1-inch Windows tablet from Aegex, certified for Zone 1/21 under IECEx. Its operating system version isn't published. It has been discontinued; the Aegex 100M replaces it.",
+  "image": "../../assets/tablets/aegex-10-is.webp",
+  "imageAlt": "Aegex 10 IS, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "iecex": {
+      "marking": "Ex ib IIC T4 Gb / Ex ib IIIC T135°C Db IP6X",
+      "number": "IECEx BKI 15.0005X (issue 6, 2018-11-16"
+    },
+    "northAmerica": "UL 913 Class I, II, III Div 1",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ib)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +50 °C (+55 °C at T3)"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: charging or replacing the battery pack in explosive atmospheres is forbidden; follow the manual and label; replacing the SIM card in explosive atmospheres is forbidden."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Not published",
+    "edition": "Windows 10 Pro or Windows 10 Enterprise LTSB (year not stated); Windows 8.1 also offered",
+    "securityUntil": "2025-10-14",
+    "updates": "Security updates ended in October 2025"
+  },
+  "specs": {
+    "display": "10.1-inch",
+    "brightness": "540 nits",
+    "chip": "Intel (i7 variant listed by ATEXshop)",
+    "ram": "8 GB",
+    "camera": "8 MP",
+    "frontCamera": "2 MP",
+    "network": "Wi-Fi, Cat 12 LTE",
+    "nfc": "Yes (NFC/RFID)",
+    "storage": "256 GB (SD up to 2 TB)",
+    "connectivity": [
+      "4G",
+      "NFC"
+    ],
+    "dimensionsMm": "about 275 × 206 × 13.7 (28.2 at battery)",
+    "ipRating": "IP65",
+    "operatingTemp": "−20 °C to +50 °C",
+    "partNumbers": "AEG-SKU-A10i7-432 (ATEXshop SKU for the Core i7 variant)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (AegexScan)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC/RFID)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: IECEx (issue 6, three options): Ex ib IIC T6 Gb or Ex ib IIC T4 Gb (Ta -10/-20 °C to +50 °C); Ex ib IIC T3 Gb (Ta -10/-20 °C to +55 °C) | IECEx (issue 6, three options): Ex ib IIIC T85°C Db IP6X or Ex ib IIIC T135°C Db IP6X (to +50 °C); Ex ib IIIC T200°C Db IP6X (to +55 °C)"
+    }
+  ],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.tempClass": "The certificate allows T6, T4 or T3 depending on the build; check the label on the device.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "os.securityUntil": "Microsoft ended Windows 10 Pro support on 14 October 2025. The maker doesn't state the edition; an LTSC edition would run longer.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc"
+  ],
+  "strengths": [
+    "Certified for Zone 1/21"
+  ],
+  "limitations": [
+    "Discontinued; the Aegex 100M replaces it",
+    "Security updates ended in October 2025",
+    "In-use weight not published",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "aegex-100m",
+    "eaton-gecma-is-tablet-pc",
+    "isafe-is945-1"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx online certificate database: IECEx BKI 15.0005X issue 6 (2018-11-16), Aegex 10, CANCELLED 2022-12-22",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/6038/view"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 10 Home and Pro (22H2 end listed 10/15/2025)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro"
+    },
+    {
+      "label": "ATEXshop (distributor): Aegex 10 product page: End of Life; Aegex end-of-sale notice 1Q 2022",
+      "url": "https://www.atexshop.com/aegex-10-is-intrinsically-safe-tablet.html"
+    }
+  ]
+}

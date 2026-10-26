@@ -1,0 +1,263 @@
+{
+  "productId": "AX-GTA5-Z1",
+  "name": "Atexxo Zone 1 Galaxy Tab Active5",
+  "brand": "Atexxo",
+  "brandSlug": "atexxo",
+  "manufacturer": {
+    "name": "Atexxo B.V.",
+    "country": "Netherlands",
+    "website": "https://atexxo.com"
+  },
+  "type": "conversion",
+  "screenIn": 8,
+  "hostDevice": "Samsung Galaxy Tab Active5",
+  "otherHosts": [],
+  "fitting": "unit",
+  "status": "current",
+  "launchYear": 2026,
+  "summary": "The Atexxo Zone 1 Galaxy Tab Active5 is a standard Samsung Galaxy Tab Active5 converted by Atexxo for hazardous areas, certified for Zone 1/21 under ATEX and IECEx. It is a flameproof (Ex d) design, and the tablet runs Android 16.",
+  "image": "../../assets/tablets/atexxo-zone-1-galaxy-tab-active5.webp",
+  "imageAlt": "Atexxo Zone 1 Galaxy Tab Active5, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex db IIC T6 Gb / II 2D Ex tb IIIC T85°C Db",
+      "kind": "type-examination",
+      "number": "EPS 26 ATEX 1",
+      "status": "IECEx Current, issue 0 (2026-09-09), checked 2026-10-25; ATEX revision 0 read from PDF 2026-10-25"
+    },
+    "iecex": {
+      "marking": "Ex db IIC T6 Gb / Ex tb IIIC T85°C Db",
+      "number": "IECEx EPS 26.0044X",
+      "scope": "Issue 0, 2026-09-09, Bureau Veritas CPS Germany"
+    },
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Flameproof enclosure (Ex db)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T6",
+    "maxSurfaceTemp": "85 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Ambient temperature range −20 °C ≤ Ta ≤ +50 °C. A repair of flameproof joints is not allowed according to EN/IEC 60079-1 values. Minimum property class of screws must be A4-70; only original parts from the manufacturer shall be used. The glass window must be protected from high impact energy > 2 J. Device shall not be opened in hazardous location. Battery charging is only allowed outside hazardous location. Additional accessory EX-ATEXXO-STRAP can be used only as original part from manufacturer.",
+    "peripherals": "SIM card installation only in a safe area, by removing the aluminium SIM cover. Bottom cover may be removed by the user only to charge in a safe area. No Ex-rated cable, dock or keyboard is listed, so none should be connected in the Ex area. Atexxo's page says storage can be extended to 1 TB with microSD; the certificate does not address microSD.",
+    "certifiedAccessories": "EX-ATEXXO-STRAP (named in the certificate; original part from Atexxo only). No Ex-rated keyboard, dock, pen or harness listed. Charger is not Ex-rated (charging only outside the hazardous area)."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 16",
+    "atLaunch": "Android 14",
+    "edition": "Android with One UI; Knox; Enterprise Edition and standard SKUs exist",
+    "upgradeLimit": "Standard: up to 4 generations of OS upgrades (Samsung UK/AU). Enterprise Edition: up to 8 generations per Samsung DE page",
+    "securityUntil": "2029-01-31",
+    "updates": "Security updates until January 2029"
+  },
+  "specs": {
+    "display": "8-inch TFT LCD, 120 Hz adaptive; Corning Gorilla Glass 5",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "600 nits",
+    "chip": "Samsung Exynos 1380 (octa-core, 2.4 GHz + 2 GHz)",
+    "cpuArch": "Arm",
+    "ram": "6 (128 GB model); 8 (256 GB model)",
+    "camera": "13 MP, autofocus, flash",
+    "frontCamera": "5 MP",
+    "video": "4K UHD at 30 fps recording",
+    "battery": "5050 mAh",
+    "batteryWh": "19.44 Wh",
+    "batteryLife": "Video playback up to 16 h; Wi-Fi internet up to 14 h; LTE internet up to 15 h",
+    "ports": "USB-C (USB 2.0), 3.5 mm headset jack, POGO pins, microSD slot",
+    "docking": "POGO connector (Samsung POGO dock accessories not verified for this model)",
+    "network": "Wi-Fi only (SM-X300) or 5G (SM-X306B)",
+    "wifi": "Wi-Fi 6 (802.11ax), 2.4 + 5 GHz, Wi-Fi Direct",
+    "bluetooth": "Bluetooth 5.3",
+    "nfc": "Yes",
+    "gnss": "GPS, GLONASS, BeiDou, Galileo, QZSS",
+    "sim": "5G model: SIM plus eSIM ('dual SIM capability' in Samsung text; Atexxo: 'physical SIM and/or eSIM'); none on Wi-Fi model",
+    "keys": "Programmable Active Key (barcode, apps, PTT mapping via Knox); power and volume keys",
+    "biometrics": "Fingerprint sensor",
+    "touch": "Glove and outdoor touch claimed by Samsung",
+    "pen": "S Pen supported (IP68 S Pen in the box on the UK page)",
+    "keyboard": "POGO pins on the tablet; Samsung keyboard cover not confirmed for this model",
+    "storage": "128 GB or 256 GB, microSD up to 1 TB",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": true,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6",
+      "NFC",
+      "eSIM"
+    ],
+    "weightG": 940,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "240 × 150 × 20 (Atexxo: 24 × 15 × 2 cm)",
+    "ipRating": "IP64 (Atexxo page; the Samsung base tablet itself is IP68)",
+    "ruggedness": "MIL-STD-810H compliant (Atexxo flyer and page; base-tablet rating)",
+    "operatingTemp": "−20 °C to +50 °C (certificate Ta",
+    "cameraFree": false,
+    "partNumbers": "EXd-TABLET-GTA5-128 (Wi-Fi, 128 GB); EXd-TABLET-GTA5-128-CEL (Wi-Fi + 5G, 128 GB); EXd-TABLET-GTA5-256; EXd-TABLET-GTA5-256-CEL; EXd-TABLET-GTA5-* (conversion service for a customer's new Samsung tablet)"
+  },
+  "throughCase": [
+    {
+      "label": "Side and volume buttons",
+      "value": "Yes: push buttons are mounted in the housing and in the front cover (aluminium)"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Yes, behind a toughened glass opening in the housing"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Yes: front touch display under toughened specialty glass"
+    },
+    {
+      "label": "Screen cover",
+      "value": "Toughened specialty glass front window. Must be protected from impact energy above 2 J"
+    },
+    {
+      "label": "Charging",
+      "value": "Remove the aluminium bottom cover and charge in a safe area only. Charging in the hazardous location is forbidden"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Only with the bottom cover removed in a safe area (charging)"
+    },
+    {
+      "label": "SIM card",
+      "value": "Self-installation in a safe area by removing the aluminium SIM cover; eSIM also supported"
+    },
+    {
+      "label": "Mounting points",
+      "value": "Integrated lug for fall prevention; optional EX-ATEXXO-STRAP (original part only)"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (Samsung says the Active5 can act as a walkie-talkie; Atexxo does not list PTT; Active Key is programmable)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based; no dedicated scan engine)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (base tablet has no depth sensor)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (front and rear cameras retained; camera marketed as an intrinsically safe video camera)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android tablet)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "safety.peripherals": "The SIM and cover rules are from the certificate. Atexxo's page adds a microSD rule that isn't in the certificate.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.upgradeLimit": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.securityUntil": "Samsung's date for the standard model. The Enterprise Edition gets longer support; the converter doesn't say which it uses.",
+    "specs.docking": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.sim": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.touch": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.keyboard": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.ipRating": "From a single source; not stated in the Ex certificate.",
+    "specs.ruggedness": "From a single source.",
+    "specs.operatingTemp": "From a single source.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "T6 temperature class, the strictest rating",
+    "5G on cellular versions",
+    "A standard Samsung Galaxy Tab Active5 inside, with the same apps and standard device management",
+    "Among the lightest Zone 1 tablets of its size we list, at 940 g in use"
+  ],
+  "limitations": [
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [
+    "zone-1-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "ecom-tab-ex-05-dz1",
+    "isafe-is930-1",
+    "xciel-xcz1-ipad-mini-5"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 26.0044X issue 0, 2026-09-09, Ex d and t housing for Samsung Tablet, type EXd-TABLET-GTA5 (database record and certificate PDF)",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS26.0044/000/deliverable/IECEx_EPS_26.0044_000.pdf"
+    },
+    {
+      "label": "Bureau Veritas CPS Germany (notified body 2004): EU-Type Examination Certificate EPS 26 ATEX 1 161 X, revision 0, 2026-09-09 (PDF read as page images)",
+      "url": "https://atexxo.com/wp-content/uploads/2026/09/EU-Type-Examination-Certificate-Atex-25TH0457-EPS-26-ATEX-1-161-X.pdf"
+    },
+    {
+      "label": "endoflife.date: Samsung Galaxy Tab (page last updated 2026-10-10; dates approximate to the year per the page)",
+      "url": "https://endoflife.date/samsung-galaxy-tab"
+    },
+    {
+      "label": "Atexxo: Product flyer, Galaxy Tab Active 5 Zone 1/21 (uploaded 2026/06)",
+      "url": "https://atexxo.com/wp-content/uploads/2026/06/atex_iecex_samsung_galaxy_active_tab5_zone_1_21_explosion_proof_ex-1-product-flyer-brochure-produit-produkt-flyer-volantino-prodotto-listovka-produkta-folleto-de-productonew.pdf"
+    },
+    {
+      "label": "Atexxo: Product page: Explosion proof Samsung Galaxy Tab Active5 (Ex Zone 1)",
+      "url": "https://atexxo.com/product/explosion-proof-samsung-galaxy-tab-active5-ex-zone-1/"
+    },
+    {
+      "label": "Atexxo: Downloads page (certificate list: no Samsung tablet certificates listed, checked 2026-10-25)",
+      "url": "https://atexxo.com/downloads/"
+    },
+    {
+      "label": "Samsung Electronics UK: Galaxy Tab Active5 5G (SM-X306B) specifications page",
+      "url": "https://www.samsung.com/uk/business/tablets/galaxy-tab-active/galaxy-tab-active5-green-128gb-sm-x306bzgaeea/"
+    },
+    {
+      "label": "Atexxo: Home page product list (Samsung tablet conversions: Active5, Active5 Pro, S10 FE, S9 FE, A9; checked 2026-10-25)",
+      "url": "https://atexxo.com/"
+    },
+    {
+      "label": "Samsung Electronics Australia: Galaxy Tab Active5 Wi-Fi (SM-X300) page",
+      "url": "https://www.samsung.com/au/business/tablets/galaxy-tab-active/galaxy-tab-active5-sm-x300nzgas03/"
+    },
+    {
+      "label": "Samsung Electronics Germany: Galaxy Tab Active5 5G Enterprise Edition (SM-X306B) page",
+      "url": "https://www.samsung.com/de/business/tablets/galaxy-tab-active/galaxy-tab-active5-5g-sm-x306bzgaeeb/"
+    },
+    {
+      "label": "Intrinsically Safe Store: Zone 1 and 21 Atexxo Explosion Proof Tablet (Samsung Galaxy Tab Active5), seen 2026-10-25",
+      "url": "https://intrinsicallysafestore.com/product/zone-1-explosion-proof-samsung-galaxy-tablet/"
+    },
+    {
+      "label": "Samsung Business Insights: Meet the Galaxy Tab Active5, 2024-02-15",
+      "url": "https://insights.samsung.com/2024/02/15/meet-the-galaxy-tab-active5-a-device-built-to-keep-up-with-your-workday/"
+    },
+    {
+      "label": "SamMobile: Samsung Galaxy Enterprise Editions: eight years of OS and security updates, 2024-03-21",
+      "url": "https://www.sammobile.com/news/samsung-galaxy-enterprise-editions-eight-years-os-security-updates/"
+    }
+  ]
+}

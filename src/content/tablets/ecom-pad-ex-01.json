@@ -1,0 +1,144 @@
+{
+  "productId": "PF-PADEX01-P8",
+  "name": "ecom Pad-Ex 01",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 11.6,
+  "status": "discontinued",
+  "statusNote": "ecom lists it as discontinued.",
+  "successor": "ecom-pad-ex-01-p12-dz2",
+  "launchYear": 2017,
+  "summary": "The ecom Pad-Ex 01 is an intrinsically safe (Ex ic) 11.6-inch Windows tablet from ecom (Pepperl+Fuchs), certified for Zone 2/22 under ATEX and IECEx. It runs Windows 10 Pro. It has been discontinued; the ecom Pad-Ex 01 P12 DZ2 replaces it.",
+  "image": "../../assets/tablets/ecom-pad-ex-01.webp",
+  "imageAlt": "ecom Pad-Ex 01, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T4 Gc IP64 / II 3D Ex ic IIIB T135°C Dc IP64",
+      "kind": "type-examination",
+      "number": "EPS 16 ATEX 1",
+      "status": "IECEx Current (family certificate), checked 2026-10-25. Product discontinued."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T4 Gc IP64 / Ex ic IIIB T135°C Dc IP64",
+      "number": "IECEx EPS 16.0072X",
+      "scope": "Family certificate, issue 6 2025-08-05"
+    },
+    "northAmerica": "SGS: Class I, II, III, Division 2, Groups A-G, T4, 135°C; Class I, Zone 2, Group IIC, T4; Ta −10 °C to +55 °C",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−10 °C to +55 °C"
+  },
+  "safety": {
+    "conditions": "Battery pack removed, changed or charged only outside hazardous areas; reduced-height impact test; protect from high-energy impacts, UV and static; external connections never used in hazardous areas."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 10 Pro",
+    "edition": "Windows 10 Pro (64-bit)",
+    "securityUntil": "2025-10-14",
+    "updates": "Security updates ended in October 2025"
+  },
+  "specs": {
+    "display": "11.6-inch Optically bonded sunlight-readable LCD, capacitive multitouch",
+    "resolution": "1920 × 1080",
+    "brightness": "1000 nits",
+    "chip": "Intel Core i7-8550U (8th gen) 1.8 GHz, turbo 4.0 GHz",
+    "cpuArch": "x86",
+    "ram": "8 (16 optional)",
+    "camera": "8 MP autofocus with LED",
+    "frontCamera": "2 MP",
+    "battery": "3950 (7800 optional)",
+    "ports": "2 x USB 3.0 Type A; headphone/mic jack; docking connector; microSD; SIM slot",
+    "network": "Optional LTE; Wi-Fi AC9260",
+    "bluetooth": "Bluetooth 5.0",
+    "keys": "Power, volume, Windows touch button, barcode/camera touch button, programmable touch button",
+    "storage": "256 GB M.2 GB SATA SSD (512 GB optional)",
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 1200,
+    "dimensionsMm": "298 × 192 × 20",
+    "ipRating": "IP64",
+    "exIp": "IP64",
+    "operatingTemp": "−10 °C to +55 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D scanner)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10 Pro, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "os.securityUntil": "Microsoft ended Windows 10 Pro support on 14 October 2025. The maker doesn't state the edition; an LTSC edition would run longer.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "barcode"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Optional built-in barcode imager"
+  ],
+  "limitations": [
+    "Discontinued; the ecom Pad-Ex 01 P12 DZ2 replaces it",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "Not certified below −10 °C ambient"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "ecom-pad-ex-01-p12-dz2",
+    "bartec-agile-s-ni",
+    "isafe-is945-2"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX Certificate of Conformity EPS 16 ATEX 1 163 X, Rev 4, Pad-Ex 01 P8",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/pad-ex_01_p8/ATEX_certificate_Pad-Ex_01_P8.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 16.0072X issue 6 (2025-08-05), Pad-Ex 01 family incl. P12",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1956272/view"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 10 Home and Pro (22H2 end listed 10/15/2025)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Pad-Ex 01 / P8 DZ2 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/pad-ex-01-p8-dz2/"
+    }
+  ]
+}

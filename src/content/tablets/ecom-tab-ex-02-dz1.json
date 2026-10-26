@@ -1,0 +1,161 @@
+{
+  "productId": "PF-TE02-DZ1",
+  "name": "ecom Tab-Ex 02 DZ1",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 8,
+  "status": "discontinued",
+  "statusNote": "ecom lists it as discontinued.",
+  "successor": "ecom-tab-ex-03-dz1",
+  "launchYear": 2019,
+  "summary": "The ecom Tab-Ex 02 DZ1 is a flameproof (Ex d) 8-inch Android tablet from ecom (Pepperl+Fuchs), certified for Zone 1/21 under ATEX and IECEx. It runs Android 9. It has been discontinued; the ecom Tab-Ex 03 DZ1 replaces it.",
+  "image": "../../assets/tablets/ecom-tab-ex-02-dz1.webp",
+  "imageAlt": "ecom Tab-Ex 02 DZ1, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 2GD Ex db ia op is IIC T5 Gb / II 2GD Ex tb ia op is IIIC T100°C Db",
+      "kind": "type-examination",
+      "number": "Sira 19 ATEX 1017X",
+      "status": "IECEx Current (issue 2, 2021-01-12), checked 2026-10-25. Product discontinued (ecom archive)."
+    },
+    "iecex": {
+      "marking": "Ex db ia op is IIC T5 Gb / Ex tb ia op is IIIC T100°C Db",
+      "number": "IECEx SIR 19.0012X",
+      "scope": "Issue 2, 2021-01-12"
+    },
+    "northAmerica": "CSA: Class I, II, Division 1, Groups A-G T5; Class I, Zone 1 AEx db ia op is IIC T5 Gb; Zone 21 AEx tb ia op is IIIC T100°C Db; Ta −20 °C to +50 °C",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Flameproof enclosure (Ex db) with an intrinsically safe circuit (Ex ia)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T5",
+    "maxSurfaceTemp": "100 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "conditions": "ATEX Sira 19 ATEX 1017X X conditions: use only in areas with a low risk of mechanical impact; no electrical connections in the hazardous area (charging/data only via the dedicated charger or dock in the non-hazardous area); the WWAN model may be opened for SIM access only in the non-hazardous area; other models must not be opened by the user; if either enclosure is opened or damaged, remove from the explosive atmosphere and have it repaired by the OEM."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 9",
+    "edition": "Android (version not printed; latest firmware Android 9 per earlier research)"
+  },
+  "specs": {
+    "display": "8-inch TFT",
+    "resolution": "1280 × 800 (WXGA)",
+    "brightness": "480 nits",
+    "chip": "Exynos 7 Octa 1.6 GHz octa-core (Cortex-A53)",
+    "cpuArch": "Arm",
+    "ram": "3 GB",
+    "camera": "8 MP AF (non-camera option)",
+    "frontCamera": "5 MP",
+    "battery": "4450 mAh",
+    "batteryWh": "16.91 Wh",
+    "batteryLife": "Up to 11 h",
+    "network": "LTE Cat. 6 (LTE model)",
+    "wifi": "Wi-Fi 802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 4.2",
+    "nfc": "Yes",
+    "gnss": "GPS",
+    "biometrics": "Face recognition",
+    "touch": "Gloves, wet conditions and snow",
+    "storage": "16 GB, microSD up to 256 GB (cannot be fitted or replaced after delivery)",
+    "gloveTouch": true,
+    "connectivity": [
+      "4G",
+      "Wi-Fi 802",
+      "NFC"
+    ],
+    "weightG": 1250,
+    "dimensionsMm": "162.1 × 256.0 × 33.3",
+    "ipRating": "IP64 (ATEX/IECEx) / IP65 (industrial)",
+    "operatingTemp": "−20 °C to +50 °C",
+    "cameraFree": true
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "camera-free"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Camera-free version available for sites that restrict cameras"
+  ],
+  "limitations": [
+    "Discontinued; the ecom Tab-Ex 03 DZ1 replaces it",
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "ecom-tab-ex-03-dz1",
+    "isafe-is930-1",
+    "atexxo-zone-1-galaxy-tab-active5"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX certificate Sira 19ATEX1017X issue 1, Tab-Ex 02 DZ1",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/tab-ex-02-series/atex_certificate_tab-ex-02-dz1_en.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx SIR 19.0012X issue 2 (2021-01-12), Tab-Ex 02 DZ1 gas/dust",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/51706/view"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx SIR 19.0011X issue 2 (2021-01-12), Tab-Ex 02 DZ1 Mining",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/51704/view"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 02 DZ1 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-02-dz1/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 02 DZ2 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-02-dz2/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ecom FAQ: Release Plans of Major Products (OS and security patch plan; last updated 2025-11-18)",
+      "url": "https://support.ecom-ex.com/457976005.html"
+    }
+  ]
+}

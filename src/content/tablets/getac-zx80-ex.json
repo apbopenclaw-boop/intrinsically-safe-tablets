@@ -1,0 +1,183 @@
+{
+  "productId": "GT-ZX80EX",
+  "name": "Getac ZX80-EX",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 8,
+  "status": "current",
+  "launchYear": 2026,
+  "summary": "The Getac ZX80-EX is the hazardous-area version of a Getac rugged 8-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Android 15.",
+  "image": "../../assets/tablets/getac-zx80-ex.webp",
+  "imageAlt": "Getac ZX80-EX, front view",
+  "certification": {
+    "otherSchemes": [
+      "MIL-STD-810H",
+      "Android Enterprise Recommended"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 0 (2026-01-28), checked 2026-10-25; ATEX not published; UKEX not found"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T130°C Dc",
+      "number": "IECEx EPS 25.0039X",
+      "scope": "Issue 0, 2026-01-28, model \"ZX80-Exc\""
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Ambient −21 to +55 °C. Protect from excessive UV light and mechanical impact (reduced-height impact test). Connection interfaces never used in hazardous areas. Battery never changed, charged or removed in hazardous areas. Not next to strong charge-generating processes. Use only battery BP1S1P4060B or BP1S1P4990B.",
+    "peripherals": "All connection interfaces (USB, Thunderbolt, DC-in, docking connector, LAN, serial) must never be used in hazardous areas (certificate condition). Optional internal modules named in the certificate are covered as part of the certified tablet. USB-C, microSD and SIM tray barred from hazardous areas.",
+    "certifiedAccessories": "Named in the IECEx certificate: hand strap, shoulder strap, digitizer pen and tether. Anti-static screen film for hazardous use. Rotating hand strap with kickstand and vehicle cradle (datasheet) are not named in the certificate. NOT for hazardous areas: 65 W USB-C adapter, vehicle adapter, chargers, batteries (replace in non-hazardous areas only)."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 15",
+    "edition": "Android 15.0",
+    "upgradeLimit": "At least three Android versions per generation (Getac, device dependent)",
+    "securityUntil": "2029-02-28",
+    "updates": "Security updates until February 2029"
+  },
+  "specs": {
+    "display": "8-inch TFT LCD wide viewing angle; Ex model has 0.6 mm thicker glass per ZX80W-EX press release",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "1000 nits",
+    "outdoor": "Getac sunlight-readable",
+    "chip": "Qualcomm QCS6490 octa-core 1.9 GHz (max 2.7 GHz), Adreno 643, Hexagon NPU 13 TOPS",
+    "cpuArch": "Arm",
+    "ram": "12 GB",
+    "camera": "16 MP autofocus",
+    "frontCamera": "8 MP",
+    "battery": "Internal typical 4060 (min 3950), 3.86 V; optional second battery 4990 typical",
+    "hotSwap": "Internal battery plus optional swappable 4990 mAh battery; hot-swap not stated for the Ex datasheet",
+    "ports": "USB 3.2 Gen1 Type-C (DP, PD), microSD (or hybrid nano-SIM tray + microSD), audio combo; optional 1D/2D barcode imager, NFC; all barred from hazardous areas",
+    "docking": "Vehicle cradle (accessory)",
+    "network": "Wi-Fi 6E; optional 4G LTE, 5G Sub-6, dual SIM with eSIM",
+    "wifi": "Wi-Fi 6E 802.11ax",
+    "bluetooth": "Bluetooth 5.2",
+    "nfc": "Optional (13.56 MHz)",
+    "gnss": "Optional dedicated GPS (GPS, GLONASS, Galileo, BeiDou; US, UK, EU, AU, NZ only)",
+    "sim": "Nano-SIM 4FF, eSIM optional",
+    "keys": "Power + 3 programmable buttons",
+    "touch": "Dual-mode touch (multi-touch and digitizer)",
+    "pen": "Digitizer pen",
+    "keyboard": "Tablet only",
+    "storage": "256 GB, microSD",
+    "replaceableBattery": true,
+    "gloveTouch": false,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6E",
+      "eSIM"
+    ],
+    "weightG": 780,
+    "dimensionsMm": "243.2 × 165.1 × 23.1",
+    "ipRating": "IP67",
+    "ruggedness": "MIL-STD-810H; 1.8 m (6 ft) drop",
+    "operatingTemp": "−21 °C to +55 °C (standard ZX80: −29 to +63)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (optional NFC)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (16 MP rear, 8 MP front)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.iecex.number": "Getac's certificate names the model with a 'c' suffix and doesn't name the generation. We matched it to this generation by its batteries, dust group and ambient range.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.atLaunch": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.upgradeLimit": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.securityUntil": "Getac's date for the standard model; Getac lists no separate date for the EX version.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "barcode"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "User-replaceable battery",
+    "Among the lightest Zone 2 tablets of its size we list, at 780 g in use"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "bartec-et60-65ex2-android",
+    "ecom-tab-ex-05-dz2",
+    "isafe-is930-2"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 25.0039X issue 0 (ZX80-Exc), 2026-01-28, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS25.0039/000/deliverable/IECEx_EPS_25.0039_000.pdf"
+    },
+    {
+      "label": "Getac: ZX80-EX (G1) product specification, generated 2026-08-06",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX80-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: ZX80-EX accessory spec brochure",
+      "url": "https://www.getac.com/content/dam/getac/product-accessory-data-pdf/en/Getac_ZX80-EX_Accessory.pdf"
+    },
+    {
+      "label": "Getac: ZX80 (standard, non-Ex) product specification, generated 2026-08-06, used for Ex-vs-standard differences",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX80_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: Getac Device Update Center: security update end dates and policy (5 years from first availability, 90-day cadence)",
+      "url": "https://www.getac.com/en/getac-device-update-center/"
+    },
+    {
+      "label": "Getac: ZX80-EX product page",
+      "url": "https://www.getac.com/en/products/tablets/zx80-ex/"
+    }
+  ]
+}

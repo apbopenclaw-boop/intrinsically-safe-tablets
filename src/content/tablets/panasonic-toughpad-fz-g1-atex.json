@@ -1,0 +1,152 @@
+{
+  "productId": "PA-FZG1ATEX-MK4",
+  "name": "Panasonic Toughpad FZ-G1 ATEX",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "manufacturer": {
+    "name": "Panasonic Connect",
+    "country": "Japan",
+    "website": "https://eu.connect.panasonic.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "No longer sold. Panasonic's later Toughbook G2 and G3 have no ATEX version.",
+  "launchYear": 2018,
+  "summary": "The Panasonic Toughpad FZ-G1 ATEX is the hazardous-area version of a Panasonic rugged 10.1-inch tablet, certified for Zone 2 under ATEX and IECEx. It is an Ex ic ec design running Windows 10 Pro. It has been discontinued.",
+  "image": "../../assets/tablets/panasonic-toughpad-fz-g1-atex.webp",
+  "imageAlt": "Panasonic Toughpad FZ-G1 ATEX, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "Ex ic ec IIC T3 Gc",
+      "kind": "not-published",
+      "status": "IECEx SUSPENDED 2026-03-06 at the ExCB's request after consulting Panasonic; certificate note: does not affect products made or installed before that date. ATEX status not found."
+    },
+    "iecex": {
+      "marking": "Ex ic ec IIC T3 Gc",
+      "number": "IECEx TUR 14.0008X",
+      "scope": "Issue 9, 2021-09-17"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [],
+    "protection": "Increased safety and intrinsic safety (Ex ic ec)",
+    "gasGroup": "IIC",
+    "tempClass": "T3",
+    "epl": "Gc",
+    "ambient": "+5 °C to +45 °C (FZ-G1S and FZ-G1T)"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Portable equipment, not to be permanently installed in the hazardous area. External connections are forbidden in hazardous areas. Before use, check the display, jacks and port covers for damage and that covers are closed. Use only with the original leather case. Non-metallic parts must not be exposed to long-term UV or frequent temperature changes. Protect from mechanical impact; remove damaged equipment from the hazardous area. Do not rub plastic parts or the display. Follow the \"Supplementary Instructions FZ-G1 series\". The battery-loading power supply and optional accessories (except SIM, microSD and smart card) were excluded from the evaluation because they are not allowed in Zone 2.",
+    "peripherals": "Forbidden to use any external connection in hazardous areas. The configuration port (microSD or USB 2.0 or GPS) option \"cannot be operated in ATEX environment\" (spec sheet).",
+    "certifiedAccessories": "Only the original leather case (mandatory) and digitiser pen with tether are supplied. AC adapter CF-AA6413CG and port replicator are excluded from the evaluation (not for Zone 2). No Ex-rated keyboard, dock or scanner."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 10 Pro",
+    "edition": "Windows 10 Pro",
+    "securityUntil": "2025-10-14",
+    "updates": "Security updates ended in October 2025"
+  },
+  "specs": {
+    "display": "10.1-inch IPS-alpha TFT outdoor",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "800 nits",
+    "chip": "Intel Core i5-6300U vPro (2.4 GHz)",
+    "cpuArch": "x86",
+    "ram": "8 DDR3L",
+    "camera": "8 MP autofocus with LED (optional)",
+    "frontCamera": "HD 720p",
+    "battery": "4400 (10.8 V Li-ion)",
+    "batteryWh": "47.5",
+    "batteryLife": "Up to 14 hours (MobileMark 2007, 60 cd/m2)",
+    "ports": "USB 3.0, optional USB 2.0 or microSD via configuration port, RJ-45 (LAN) , HDMI, headset, 24-pin port replicator connector",
+    "docking": "24-pin port replicator (not for Ex use)",
+    "network": "Wi-Fi, optional LTE",
+    "wifi": "Intel Dual Band Wireless-AC 8260",
+    "bluetooth": "4.1 + EDR Class 1",
+    "gnss": "Optional GPS via configuration port",
+    "biometrics": "TPM 1.2; optional smart card (project based)",
+    "touch": "10-finger capacitive touch + digitiser",
+    "pen": "Digitiser pen with tether",
+    "keyboard": "Tablet only",
+    "storage": "256 GB SSD, microSD/SDXC via configuration port (not for ATEX use)",
+    "replaceableBattery": true,
+    "gloveTouch": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 1600,
+    "dimensionsMm": "290 × 200 × 45 (with leather case)",
+    "ipRating": "IP54 (tested by TÜV)",
+    "exIp": "IP54 (spec sheet; \"tested by TÜV for ATEX certification\")",
+    "ruggedness": "100 cm drop (tested by TÜV)",
+    "operatingTemp": "+5 °C to +45 °C (Ex)",
+    "partNumbers": "FZ-G1S****** (no WWAN, IIC) and FZ-G1T****** (with WWAN, IIB)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (8 MP rear, 720p front)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10 Pro, x86; out of support)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: Ex ic ec IIC T3 Gc (FZ-G1S, no WWAN); Ex ic ec IIB T3 Gc (FZ-G1T, with WWAN); ATEX: II 3G of the same, per spec sheet"
+    }
+  ],
+  "unconfirmed": {
+    "safety.batterySwap": "Not stated in the certificate. It forbids all external connections in the zone.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.securityUntil": "Microsoft ended Windows 10 Pro support on 14 October 2025. The maker doesn't state the edition; an LTSC edition would run longer.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.partNumbers": "Order codes from a certificate or distributor; confirm them with the maker when ordering.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "User-replaceable battery"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T3 temperature class: fine for most gases, but not those that ignite below 200 °C",
+    "No dust zone rating",
+    "Ambient rating tops out at +45 °C"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "bartec-et60-65ex2-windows",
+    "getac-ux10-ex",
+    "winmate-m101ad-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / TUV Rheinland (TUR): IECEx TUR 14.0008X issue 9 (Panasonic FZ-G1 series), 2021-09-17, SUSPENDED 2026-03-06",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/TUR/IECExTUR14.0008/009/deliverable/IECEx_TUR_14.0008X_009.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 10 Home and Pro (22H2 end listed 10/15/2025)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro"
+    },
+    {
+      "label": "Panasonic: Toughpad FZ-G1 ATEX spec sheet, FZ-G1mk4 ATEX dated 2019-12-03",
+      "url": "https://eu.connect.panasonic.com/sites/default/files/media/document/2019-10/TOUGHBOOK%20G1%20ATEX%20Spec%20Sheet_English.pdf"
+    }
+  ]
+}

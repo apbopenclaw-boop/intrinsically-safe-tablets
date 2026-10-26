@@ -1,0 +1,161 @@
+{
+  "productId": "WM-M101SEX",
+  "name": "Winmate M101S-EX",
+  "brand": "Winmate",
+  "brandSlug": "winmate",
+  "manufacturer": {
+    "name": "Winmate Inc.",
+    "country": "Taiwan",
+    "website": "https://www.winmate.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2019,
+  "summary": "The Winmate M101S-EX is the hazardous-area version of a Winmate rugged 10.1-inch tablet, certified for Zone 2 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 10 IoT Enterprise.",
+  "image": "../../assets/tablets/winmate-m101s-ex.webp",
+  "imageAlt": "Winmate M101S-EX, front view",
+  "certification": {
+    "otherSchemes": [
+      "KCs Ex ic IIC T4 Gc",
+      "CE",
+      "FCC",
+      "MIL-STD-810G",
+      "IP65"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T4 Gc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 3, checked 2026-10-25; ATEX number not published"
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T4 Gc",
+      "number": "IECEx SIR 18.0025X (issue 3, 2025-11-18"
+    },
+    "northAmerica": "Class I, Division 2, Groups A, B, C, D, T4A (datasheet)",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "tempClass": "T4",
+    "epl": "Gc",
+    "ambient": "−10 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Charge only in the non-hazardous area with the adapter or cradle supplied by the manufacturer. Protect from liquid and dust contamination (pollution degree 2 or better). Connecting or disconnecting external ports, opening the enclosure or replacing the battery pack is permitted only when the explosive atmosphere is shown to be absent. Periodically inspect the interior where condensation can occur. Charging via the supplied adapter (19 V) and cradle (max 4.0 A) outside hazardous locations. Main battery pack BS101 is user-replaceable.",
+    "peripherals": "External ports and battery operations only when the atmosphere is shown to be absent (certificate).",
+    "certifiedAccessories": "Certificate names only the manufacturer battery pack BS101, supplied adapter and cradle. Datasheet lists desk dock, vehicle dock, vehicle cradle, vehicle charger, battery charger, hand strap, shoulder strap, carry bag, VESA kit without Ex marking."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 10 IoT Enterprise",
+    "edition": "Windows 10 IoT Enterprise (64-bit); LTSC edition not stated"
+  },
+  "specs": {
+    "display": "10.1-inch IPS, optical bonding, anti-glare",
+    "resolution": "1920 × 1200",
+    "brightness": "800 nits",
+    "chip": "Intel Core i5-7200U (option i5-7300U)",
+    "cpuArch": "x86",
+    "ram": "8 (option 16)",
+    "camera": "8 MP autofocus",
+    "frontCamera": "2 MP",
+    "battery": "5140 typical (7.4 V), Li-polymer 2S1P",
+    "batteryWh": "38.0",
+    "hotSwap": "Yes, hot-swappable",
+    "batteryLife": "8 hours",
+    "ports": "USB 3.0 Type-A, USB 3.0 Type-C, microSDXC, micro-SIM, audio combo, 19-pin docking; optional micro HDMI, HF RFID, 1D/2D barcode",
+    "docking": "Desk dock, vehicle dock, vehicle cradle, battery charger, VESA kit",
+    "network": "Wi-Fi; optional 4G LTE",
+    "gnss": "GPS, GLONASS",
+    "sim": "Micro-SIM",
+    "keys": "Power, home, 2 volume, 2 programmable",
+    "pen": "Capacitive stylus (included)",
+    "storage": "128 GB SSD (options 256 GB, 512 GB), microSDXC",
+    "replaceableBattery": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 1250,
+    "dimensionsMm": "271.8 × 197.2 × 21",
+    "ipRating": "IP65",
+    "ruggedness": "MIL-STD-810G; 4 ft (1.2 m)",
+    "operatingTemp": "−10 °C to +50 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D reader)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10 IoT Enterprise, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "barcode"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified",
+    "Also certified for Class I Division 2 in North America",
+    "Optional built-in barcode imager",
+    "User-replaceable battery",
+    "Hot-swappable battery for long shifts"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "No dust zone rating",
+    "Not certified below −10 °C ambient",
+    "Ships with Windows 10: check which edition and its support end date"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "bartec-et60-65ex2-windows",
+    "getac-ux10-ex",
+    "durabook-u11i-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / SIRA (CSA Group UK): IECEx SIR 18.0025X issue 3 (M101S, M101AD, M101AD-EXYYZZ, M101ADW-EXYYZZ), 2025-11-18, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/SIR/IECExSIR18.0025/003/deliverable/IECEx_SIR_18.0025X_003.pdf"
+    },
+    {
+      "label": "Winmate: M101S-EX datasheet page (Rev. V.260321.260826)",
+      "url": "https://www.winmate.com/en/product/exportHtml/M101S-EX"
+    },
+    {
+      "label": "Winmate: ATEX newsletter 2025-04-24 (M101AD-EX and M101S-EX)",
+      "url": "https://www.winmate.com/en/StaticPages/Newsletter/ATEX_20250424_News_Winmate-HQ_Global-EN.html"
+    }
+  ]
+}
