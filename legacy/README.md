@@ -10,17 +10,17 @@ and search engines to the closest new page. Swap these for real 301s in Cloudfla
 
 | Old URL | New page | Note |
 |---|---|---|
-| /are-tablets-intrinsically-safe.html | / |
-| /atex-tablet-buying-decision-guide.html | /tablets/ |
+| /are-tablets-intrinsically-safe.html | /guides/is-ipad-intrinsically-safe/ | Final (Phase E, 2026-10-27)
+| /atex-tablet-buying-decision-guide.html | /guides/intrinsically-safe-tablet-buyers-guide/ | Final (Phase E, 2026-10-27)
 | /atex-tablet-pricing.html | /tablets/ | prices are on request
 | /best-atex-tablets-2026.html | /best/zone-1-tablets/ | Final (Phase E, 2026-10-26)
-| /buyers-guide-2026.html | /tablets/ |
+| /buyers-guide-2026.html | /guides/intrinsically-safe-tablet-buyers-guide/ | Final (Phase E, 2026-10-27)
 | /ecom-tab-ex-03-vs-isafe-is930.html | /compare/ecom-tab-ex-05-dz1-vs-isafe-is930-1/ | Final (Phase E, 2026-10-27) 
 | /ecom-tab-ex-alternatives.html | /tablets/ecom-tab-ex-05-dz1/ |
 | /ecom-tab-ex-vs-aegex-10.html | /compare/eaton-gecma-is-tablet-pc-vs-ecom-tab-ex-05-dz1/ | Final (Phase E, 2026-10-27) 
 | /ecom-tab-ex-vs-bartec-agile.html | /compare/eaton-gecma-is-tablet-pc-vs-ecom-tab-ex-05-dz1/ | Final (Phase E, 2026-10-27) 
 | /japan-korea-certification.html | /tablets/ |
-| /what-is-an-intrinsically-safe-tablet.html | / |
+| /what-is-an-intrinsically-safe-tablet.html | /guides/intrinsically-safe-tablet-buyers-guide/ | Final (Phase E, 2026-10-27)
 | /zone-1-vs-zone-2-tablets.html | / |
 
 `llms-full.txt`, `reasoning.json`, `sitemap.xml` and `404.html` belonged to the old site (Astro now generates the sitemap
