@@ -66,7 +66,6 @@
     "video": "4K UHD at 30 fps recording",
     "battery": "10100 mAh",
     "batteryWh": "38.9 Wh",
-    "hotSwap": "Yes: dual hot-swap, one battery at a time (screen goes off while the battery is out)",
     "ports": "USB-C (USB 3.2 Gen 1), 3.5 mm headset jack, POGO connector, microSD slot",
     "docking": "POGO charging dock and POGO keyboard (sold separately); cradle for No Battery Mode",
     "network": "Wi-Fi only (SM-X350) or 5G (SM-X356B)",
@@ -80,7 +79,6 @@
     "pen": "S Pen supported",
     "keyboard": "POGO keyboard (sold separately); DeX on monitor",
     "storage": "128 GB or 256 GB, microSD up to 2 TB",
-    "replaceableBattery": true,
     "pttKey": false,
     "connectivity": [
       "5G",
@@ -200,7 +198,6 @@
   "strengths": [
     "5G on cellular versions",
     "Security updates until May 2033",
-    "Hot-swappable battery for long shifts",
     "A standard Samsung Galaxy Tab Active5 Pro inside, with the same apps and standard device management"
   ],
   "limitations": [

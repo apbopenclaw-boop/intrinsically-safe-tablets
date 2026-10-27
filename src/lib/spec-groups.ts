@@ -140,7 +140,7 @@ export function specGroups(p: Tablet): SpecGroup[] {
       rows: [
         ...specRows(['keys'], { keys: 'Keys' }),
         row('Push-to-talk key', yn(s.pttKey), ...(s.pttKey ? ['capabilities.Push-to-talk'] : [])),
-        row('Glove touch', yn(s.gloveTouch)),
+        row('Glove touch', yn(s.gloveTouch), 'specs.touch'),
         ...specRows(['biometrics', 'accessories'], { biometrics: 'Biometrics', accessories: 'Accessory interface' }),
       ],
     },

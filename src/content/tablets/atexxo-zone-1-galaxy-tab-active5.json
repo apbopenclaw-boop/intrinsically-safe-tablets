@@ -92,7 +92,6 @@
     "pen": "S Pen supported (IP68 S Pen in the box on the UK page)",
     "keyboard": "POGO pins on the tablet; Samsung keyboard cover not confirmed for this model",
     "storage": "128 GB or 256 GB, microSD up to 1 TB",
-    "replaceableBattery": true,
     "gloveTouch": true,
     "pttKey": true,
     "connectivity": [

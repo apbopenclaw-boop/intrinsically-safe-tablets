@@ -1109,6 +1109,13 @@ def build(p, bases, through, caps, sources, variants_by_parent, existing):
     launch = use(p, "Launch", "launchYear", notes, ctx)
     if launch and re.match(r"\d{4}", str(launch)):
         tab["launchYear"] = int(str(launch)[:4])
+    if ttype in ("ex-case", "conversion"):
+        # The base tablet's user-replaceable or hot-swap battery doesn't survive a sealed Ex housing unless the maker
+        # says so (the housing's own rule is safety.batterySwap), so the host's battery claims aren't published
+        if specs.get("replaceableBattery"):
+            del specs["replaceableBattery"]
+        if specs.get("hotSwap", "").lower().startswith("yes"):
+            del specs["hotSwap"]
     tab.update({
         "summary": "",
         **({k: existing[k] for k in ("image", "imageAlt") if k in existing}),
