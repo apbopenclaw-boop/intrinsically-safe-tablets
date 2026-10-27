@@ -21,7 +21,7 @@ and search engines to the closest new page. Swap these for real 301s in Cloudfla
 | /ecom-tab-ex-vs-bartec-agile.html | /compare/eaton-gecma-is-tablet-pc-vs-ecom-tab-ex-05-dz1/ | Final (Phase E, 2026-10-27) 
 | /japan-korea-certification.html | /tablets/ |
 | /what-is-an-intrinsically-safe-tablet.html | /guides/intrinsically-safe-tablet-buyers-guide/ | Final (Phase E, 2026-10-27)
-| /zone-1-vs-zone-2-tablets.html | / |
+| /zone-1-vs-zone-2-tablets.html | /guides/zone-1-vs-zone-2-tablets/ | Final (Phase E, 2026-10-27)
 
 `llms-full.txt`, `reasoning.json`, `sitemap.xml` and `404.html` belonged to the old site (Astro now generates the sitemap
 and 404). The German (`/de/`), Spanish (`/es/`), Dutch (`/nl/`), Brazilian Portuguese (`/pt-br/`) and privacy pages stay live in

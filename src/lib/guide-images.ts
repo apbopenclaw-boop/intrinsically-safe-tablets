@@ -4,29 +4,8 @@ import type { ImageMetadata } from 'astro';
 
 const files = import.meta.glob<ImageMetadata>('../assets/guides/*.webp', { eager: true, import: 'default' });
 
-const PHOTOS: Record<string, { file: string; alt: string }[]> = {
-  'rugged-vs-intrinsically-safe-tablets': [
-    { file: 'marine-deck-tablet-pocket-detail', alt: "A worker in orange coveralls on a ship's deck, slipping a tablet into a back pocket" },
-    { file: 'fuel-depot-worker-conversation', alt: 'Two workers in hard hats and high-visibility coveralls talking beside a tanker at a fuel depot, one holding a tablet' },
-  ],
-  'android-vs-iphone-hazardous-areas': [
-    { file: 'offshore-platform-walkway', alt: 'An offshore worker in orange coveralls walking along a platform walkway above the sea' },
-    { file: 'chemical-facility-shared-tablet-check', alt: 'Two workers in hard hats looking at a tablet together outside a chemical facility' },
-  ],
-  'discontinued-intrinsically-safe-tablets': [
-    { file: 'tank-farm-workers', alt: 'Two workers in high-visibility clothing at a tank farm, one holding a tablet' },
-    { file: 'offshore-worker-close-conversation', alt: 'An offshore worker in a hard hat and safety glasses talking with a colleague on a platform above the sea' },
-    { file: 'processing-plant-pumps-sunrise', alt: 'Two workers in hard hats and high-visibility clothing beside pumps and pipework at a processing plant at sunrise' },
-  ],
-  'intrinsically-safe-tablet-cost': [
-    { file: 'gas-plant-path-sunset', alt: 'Two workers in hard hats walking along a path through a gas processing plant at sunset' },
-    { file: 'distillery-worker-vessels', alt: 'A worker in overalls and a hairnet reading a tablet among stainless steel vessels at a distillery' },
-  ],
-  faq: [
-    { file: 'pharma-cleanroom-conversation', alt: 'Two people in cleanroom suits talking beside stainless steel tanks in a pharmaceutical plant' },
-    { file: 'paint-production-over-shoulder', alt: 'A worker in a hard hat and safety glasses checking a mixing vessel at a paint production plant' },
-  ],
-};
+// No tablet guide photos yet (the phones site's were never copied over): add entries here when Rory supplies them
+const PHOTOS: Record<string, { file: string; alt: string }[]> = {};
 
 /** The guide's photos with alt text, main photo first (empty when it has none) */
 export const guidePhotos = (slug: string) =>
