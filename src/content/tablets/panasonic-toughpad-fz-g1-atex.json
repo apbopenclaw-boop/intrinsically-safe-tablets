@@ -78,7 +78,6 @@
     "keyboard": "Tablet only",
     "storage": "256 GB SSD, microSD/SDXC via configuration port (not for ATEX use)",
     "replaceableBattery": true,
-    "gloveTouch": false,
     "connectivity": [
       "4G"
     ],

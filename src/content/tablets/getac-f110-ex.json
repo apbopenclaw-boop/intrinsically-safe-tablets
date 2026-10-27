@@ -86,7 +86,6 @@
     "apps": "Getac Utility, Camera, Geolocation, Barcode Manager, KeyWedge Barcode Reader Utility (trial)",
     "storage": "256 GB PCIe NVMe SSD (options 512 GB, 1000 GB, 2000 GB)",
     "replaceableBattery": true,
-    "gloveTouch": true,
     "pttKey": false,
     "connectivity": [
       "5G",

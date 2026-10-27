@@ -87,7 +87,6 @@
     "keyboard": "Tablet only",
     "storage": "256 GB, microSD",
     "replaceableBattery": true,
-    "gloveTouch": false,
     "pttKey": false,
     "connectivity": [
       "5G",

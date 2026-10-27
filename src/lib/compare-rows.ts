@@ -34,8 +34,8 @@ function groupsFor(p: Tablet): SpecGroup[] {
       rows: [
         row('Certified for', zoneLabel(p)),
         row('Protection', c.protection ?? c.note),
-        row('Gas group', c.gasGroup),
-        row('Temperature class', c.tempClass && `${c.tempClass} (≤ ${TEMP_CLASS_MAX[c.tempClass]} °C)`),
+        row('Gas group', c.gasGroup, 'certification.gasGroup'),
+        row('Temperature class', c.tempClass && `${c.tempClass} (≤ ${TEMP_CLASS_MAX[c.tempClass]} °C)`, 'certification.tempClass'),
         row('Mining version', miningVersion(p)),
       ],
     },

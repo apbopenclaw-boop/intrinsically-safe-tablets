@@ -963,7 +963,9 @@ def build(p, bases, through, caps, sources, variants_by_parent, existing):
     if removable:
         specs["replaceableBattery"] = str(removable).startswith("Yes")
     if specs.get("touch"):
-        specs["gloveTouch"] = bool(re.search(r"glove", specs["touch"], re.I))
+        # Only a stated glove mode counts; silence (or "glove mode not stated") is "Not in our data", never "No"
+        if re.search(r"glove", specs["touch"], re.I) and not re.search(r"glove[^;.]*not stated", specs["touch"], re.I):
+            specs["gloveTouch"] = True
     if specs.get("keys"):
         specs["pttKey"] = bool(re.search(r"\bPTT\b|push-to-talk", specs["keys"], re.I))
     specs["connectivity"] = [x for x in (
