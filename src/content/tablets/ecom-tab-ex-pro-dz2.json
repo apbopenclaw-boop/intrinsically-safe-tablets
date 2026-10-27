@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic IIC T5 Gc / II 3D Ex ic IIIB T80°C Dc",
       "kind": "type-examination",
-      "number": "EPS 20 ATEX 1",
+      "number": "EPS 20 ATEX 1 131 X",
       "status": "IECEx Current, checked 2026-10-25. Product discontinued. There was no 'Tab-Ex Pro DZ1': this model is Zone 2 only."
     },
     "iecex": {

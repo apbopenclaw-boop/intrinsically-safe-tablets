@@ -13,7 +13,7 @@
   "status": "discontinued",
   "statusNote": "No longer in Getac's range; Getac names no Zone 0/1 successor.",
   "launchYear": 2017,
-  "summary": "The Getac EX80 is an intrinsically safe (Ex ia) 8-inch Windows tablet from Getac, certified for Zone 1/21 under ATEX and IECEx. It runs Windows 10 Pro. It has been discontinued.",
+  "summary": "The Getac EX80 is an intrinsically safe (Ex ia) 8-inch Windows tablet from Getac, certified for Zone 1/21 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It runs Windows 10 Pro. It has been discontinued.",
   "image": "../../assets/tablets/getac-ex80.webp",
   "imageAlt": "Getac EX80, front view",
   "certification": {
@@ -122,8 +122,7 @@
   },
   "features": [],
   "strengths": [
-    "Zone 0 rated when used in the supplied case",
-    "ATEX and IECEx certified"
+    "Zone 0 rated when used in the supplied case"
   ],
   "limitations": [
     "No longer in the maker's current range",

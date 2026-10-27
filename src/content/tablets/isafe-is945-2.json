@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic IIC T4 Gc / II 3D Ex ic IIIC T135°C Dc",
       "kind": "type-examination",
-      "number": "EPS 25 ATEX 1",
+      "number": "EPS 25 ATEX 1 002 X",
       "status": "IECEx Current, issue 0 (2025-03-31), checked 2026-10-25. ATEX per DoC."
     },
     "iecex": {
@@ -161,6 +161,7 @@
   ],
   "bestFor": [
     "zone-2-tablets",
+    "division-1-tablets",
     "windows-tablets"
   ],
   "alternatives": [

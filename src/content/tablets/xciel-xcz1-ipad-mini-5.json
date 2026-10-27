@@ -19,7 +19,7 @@
   "status": "current",
   "statusNote": "Xciel still lists it and says it has iPad mini 5 stock. Apple no longer sells the iPad mini 5, so supply is limited.",
   "launchYear": 2019,
-  "summary": "The Xciel XCZ1 iPad mini 5 is a flameproof (Ex d) case for the iPad mini (5th generation), certified for Zone 1 under ATEX and IECEx. The tablet inside is a standard iPad mini (5th generation) running iPadOS 26, so it works with the same apps and device management.",
+  "summary": "The Xciel XCZ1 iPad mini 5 is a flameproof (Ex d) case for the iPad mini (5th generation), certified for Zone 1 under IECEx. Xciel also states ATEX certification, but the certificate isn't published. The tablet inside is a standard iPad mini (5th generation) running iPadOS 26, so it works with the same apps and device management.",
   "certification": {
     "otherSchemes": [],
     "standards": [],
@@ -192,7 +192,6 @@
     "camera-free"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Camera-free version available for sites that restrict cameras",
     "A standard iPad mini (5th generation) inside, with the same apps and Apple device management"
   ],

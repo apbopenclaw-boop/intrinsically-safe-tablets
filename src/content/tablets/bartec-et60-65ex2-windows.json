@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T135°C Dc IP64",
       "kind": "type-examination",
-      "number": "EPS 26 ATEX 1",
+      "number": "EPS 26 ATEX 1 034 X",
       "status": "IECEx Current, issue 0 (2026-07-21), checked 2026-10-26. ATEX EPS 26 ATEX 1 034 X confirmed by BARTEC EU DoC B1-T2E0-7C0003 (ET60EX2 Windows, 2026-08-11; Bureau Veritas CPS Germany, NB 2004; Category 3, internal production control)."
     },
     "iecex": {

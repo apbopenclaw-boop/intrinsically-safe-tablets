@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic IIC T4 Gc IP64 / II 3D Ex ic IIIC T135°C Dc IP64",
       "kind": "type-examination",
-      "number": "EPS 19 ATEX 1",
+      "number": "EPS 19 ATEX 1 072 X",
       "status": "IECEx Current, issue 0 (2020-01-31), checked 2026-10-25. ATEX per DoC 1041CC06REV00. Zone 2 ATEX (category 3) does not need a notified body type examination."
     },
     "iecex": {
@@ -90,7 +90,7 @@
     "gloveTouch": true,
     "pttKey": false,
     "connectivity": [
-      "5G",
+      "4G",
       "Wi-Fi 5",
       "NFC"
     ],
@@ -152,7 +152,6 @@
   "strengths": [
     "ATEX and IECEx certified, with published certificate numbers",
     "Also certified for Class I Division 2 in North America",
-    "5G connectivity",
     "Certified for ambient temperatures up to +60 °C"
   ],
   "limitations": [
@@ -163,6 +162,7 @@
   ],
   "bestFor": [
     "zone-2-tablets",
+    "division-1-tablets",
     "android-tablets"
   ],
   "alternatives": [

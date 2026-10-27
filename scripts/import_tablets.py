@@ -243,6 +243,9 @@ N_ASSUMED_SILENT = "Not stated in the certificate. {reason}"
 N_MAKER_ONLY = "Stated by {brand}; not in the certificate conditions."
 
 NOTE_RULES = [
+    # BARTEC's own sources disagree (product page IP64, datasheet IP66); IP64 is the figure in the Ex marking
+    ("Ex products", "BT-ET6XEX2-AND", {"IP rating"},
+     "BARTEC's product page gives IP64 and its datasheet IP66; IP64 is the figure in the Ex marking."),
     # The Xshielder iPad cover's certification cells carry no flag: Rory confirmed it's ATEX certified and asked for it
     # to be stated plainly (decision D3, 2026-10-26; logged on the workbook's Fact check sheet).
     # Maker claims with no certificate or declaration published
@@ -781,7 +784,8 @@ def build(p, bases, through, caps, sources, variants_by_parent, existing):
             atex["kind"] = "not-published"
         else:
             atex["kind"] = "type-examination"
-        num = re.search(r"\b((?:[A-Z][A-Za-zÜ]*|TÜV|TUV)\s?\d{2}\s?ATEX\s?[\dA-Z ]*?\d+\s?X?)\b", a)
+        # The whole number, spaced or not: "EPS 24 ATEX 1 228 X", "Sira 19 ATEX 1017X", "TPS 23 ATEX 123637 0002 X"
+        num = re.search(r"\b((?:[A-Z][A-Za-zÜ]*|TÜV|TUV)\s?\d{2}\s?ATEX\s?\d+(?:\s\d+)*(?:\s?X)?)(?!\w)", a)
         if num:
             atex["number"] = num.group(1).strip()
         if status_text:
@@ -803,10 +807,12 @@ def build(p, bases, through, caps, sources, variants_by_parent, existing):
     na = use(p, "North America (NEC/CEC)", "certification.northAmerica", notes, ctx)
     if na and not re.match(r"^(not\b|none\b|no\b|on request)", str(na), re.I):
         cert["northAmerica"] = minus(str(na))
-        if re.search(r"Div(?:ision)?\.?,? ?1\b|C1D1", str(na)):
-            cert["division"] = "Class I Division 1"
-        elif re.search(r"Div(?:ision)?\.?,? ?2\b|C1D2", str(na)):
-            cert["division"] = "Class I Division 2"
+        # The Class I (gas) Division only: "Class II, Div 2, Class III, Div 1" must not read as Class I Division 1
+        div = re.search(r"Class I(?!I)\b[^;.]*?Div(?:ision)?\.?,? ?([12])\b|C1D([12])", str(na))
+        if not div and "Class" not in str(na):
+            div = re.search(r"Div(?:ision)?\.?,? ?([12])\b", str(na))
+        if div:
+            cert["division"] = f"Class I Division {div.group(1) or div.group(2)}"
         if "certification.northAmerica" in notes and "division" in cert:
             notes["certification.division"] = notes["certification.northAmerica"]
 
@@ -961,7 +967,9 @@ def build(p, bases, through, caps, sources, variants_by_parent, existing):
     if specs.get("keys"):
         specs["pttKey"] = bool(re.search(r"\bPTT\b|push-to-talk", specs["keys"], re.I))
     specs["connectivity"] = [x for x in (
-        "5G" if "5G" in specs.get("network", "") else "4G" if re.search(r"4G|LTE", specs.get("network", "")) else None,
+        # "4G LTE (no 5G)" must not read as 5G
+        "5G" if re.search(r"\b5G\b", re.sub(r"\bno 5G\b", "", specs.get("network", ""))) else
+        "4G" if re.search(r"4G|LTE", specs.get("network", "")) else None,
         (re.match(r"Wi-Fi \w+", specs.get("wifi", "")) or [None])[0],
         "NFC" if specs.get("nfc", "").startswith("Yes") else None,
         "eSIM" if "eSIM" in specs.get("sim", "") else None,
@@ -1084,7 +1092,7 @@ def build(p, bases, through, caps, sources, variants_by_parent, existing):
         "type": ttype,
     }
     if size:
-        tab["screenIn"] = size
+        tab["screenIn"] = int(size) if float(size).is_integer() else size
     if ttype in ("ex-case", "conversion"):
         tab["hostDevice"] = hosts[0]
         tab["otherHosts"] = hosts[1:]
@@ -1137,6 +1145,17 @@ def schemes(t):
     return join_and([c.get("atex") and "ATEX", c.get("iecex") and "IECEx", c.get("ukex") and "UKEX"])
 
 
+def scheme_phrase(t):
+    """" under ATEX and IECEx" for the summary. An ATEX rating with no published certificate isn't called certified when
+    another scheme's certificate is, so the sentence doesn't claim more than the documents show."""
+    c = t["certification"]
+    unpublished = c.get("atex", {}).get("kind") == "not-published"
+    shown = join_and([c.get("atex") and not unpublished and "ATEX", c.get("iecex") and "IECEx", c.get("ukex") and "UKEX"])
+    if unpublished and shown:
+        return f" under {shown}. {t['brand']} also states ATEX certification, but the certificate isn't published"
+    return f" under {schemes(t)}" if schemes(t) else ""
+
+
 def protection_phrase(t):
     """Adjective for the product's protection. Only Ex i products are called intrinsically safe."""
     kind = t["_ctx"]["kind"]
@@ -1154,7 +1173,7 @@ def summary(t, names):
     c, o = t["certification"], t["os"]
     zones = zone_label(c["zonesGas"], c["zonesDust"])
     verb = "rated for" if t["_ctx"]["marking_unverified"] else "certified for"
-    under = f" under {schemes(t)}" if schemes(t) else ""
+    under = scheme_phrase(t)
     adj = protection_phrase(t)
     size = f"{t['screenIn']:g}-inch " if t.get("screenIn") else ""
     os_v = o["version"]
@@ -1199,7 +1218,7 @@ def strengths(t, lighter):
         out.append("May be charged inside the hazardous area, within the certificate's limits")
     if re.search(r"data[^.]{0,30} in the (?:hazardous area|zone)", t["safety"].get("peripherals", ""), re.I):
         out.append("USB-C can be used for data in the zone")
-    if c.get("atex") and c.get("iecex"):
+    if c.get("atex") and c.get("iecex") and c["atex"].get("kind") != "not-published":
         out.append(f"{schemes(t)} certified" + (", with published certificate numbers" if c["atex"].get("number") and c["iecex"].get("number") else ""))
     if c.get("division") and "certification.division" not in u:
         out.append(f"Also certified for {c['division']} in North America")
@@ -1342,7 +1361,7 @@ def alternatives(t, tabs):
 
 
 def best_for(t):
-    """Provisional tags until the Best for pages are planned (Phase E)."""
+    """Best for pages whose pool the tablet belongs to, linked from its page once the Best for page exists."""
     if t["status"] != "current":
         return []
     out = []
@@ -1350,6 +1369,10 @@ def best_for(t):
         out.append("zone-1-tablets")
     if t["certification"]["zonesGas"] == ["2"]:
         out.append("zone-2-tablets")
+    if t["certification"].get("division") and "certification.division" not in t["unconfirmed"]:
+        out.append("division-1-tablets")
+    if "mining-version" in t["features"]:
+        out.append("mining")
     out.append({"iPadOS": "ipad", "Windows": "windows-tablets", "Android": "android-tablets"}.get(t["os"]["name"], "other"))
     return out
 

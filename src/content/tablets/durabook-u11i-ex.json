@@ -24,7 +24,7 @@
     "atex": {
       "marking": "II 3G Ex ic IIC T4 Gc / II 3D Ex ic IIIB T135°C Dc",
       "kind": "conformity",
-      "number": "TPS 23 ATEX 123637",
+      "number": "TPS 23 ATEX 123637 0001 X",
       "status": "ATEX certificate of conformity number quoted in the user manual (ATEX file ATEX-U11I-EX, R2, 2025-08-01); status not independently checked; no IECEx; UKEX not found"
     },
     "zonesGas": [

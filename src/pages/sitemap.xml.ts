@@ -43,7 +43,6 @@ export const GET: APIRoute = async () => {
     ...bestPages,
     ...tabletPages,
     // The /compare/ index changes whenever one of its head-to-heads does
-    // The /compare/ hub is parked (src/pages/compare/_index.astro) until the first head-to-heads exist (Phase E)
     ...(comparePages.length ? [{ loc: `${SITE.url}/compare/`, lastmod: latest(comparePages.map((c) => c.lastmod)), priority: '0.8' }] : []),
     ...comparePages,
     ...guidePages,

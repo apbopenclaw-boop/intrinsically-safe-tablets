@@ -30,7 +30,7 @@
     "atex": {
       "marking": "II 2G Ex db IIC T4 Gb / II 2D Ex tb IIIA T135°C Db",
       "kind": "type-examination",
-      "number": "EPS 22 ATEX 1",
+      "number": "EPS 22 ATEX 1 162 X",
       "status": "ATEX rev. 3 (2025-04-01) and IECEx Current, issue 3 (2025-04-01), checked 2026-10-25"
     },
     "iecex": {
@@ -228,6 +228,7 @@
   ],
   "bestFor": [
     "zone-1-tablets",
+    "division-1-tablets",
     "ipad"
   ],
   "alternatives": [

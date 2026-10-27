@@ -27,7 +27,7 @@
     "atex": {
       "marking": "II 2G Ex db ia IIC T6 Gb / II 2D Ex tb ia IIIC T80°C Db",
       "kind": "type-examination",
-      "number": "EPS 24 ATEX 1",
+      "number": "EPS 24 ATEX 1 228 X",
       "status": "IECEx Current, issue 1 (2025-08-05), checked 2026-10-25. ATEX certificate read from ecom PDF (EU-type examination, BV notified body 2004)."
     },
     "iecex": {
@@ -175,6 +175,7 @@
   ],
   "bestFor": [
     "zone-1-tablets",
+    "division-1-tablets",
     "android-tablets"
   ],
   "alternatives": [

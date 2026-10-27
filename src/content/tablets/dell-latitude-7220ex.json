@@ -13,7 +13,7 @@
   "status": "discontinued",
   "statusNote": "No longer sold, and its IECEx certificate was cancelled in 2023. Dell has no Ex successor.",
   "launchYear": 2019,
-  "summary": "The Dell Latitude 7220EX is the hazardous-area version of a Dell rugged 11.6-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued.",
+  "summary": "The Dell Latitude 7220EX is the hazardous-area version of a Dell rugged 11.6-inch tablet, certified for Zone 2/22 under IECEx. Dell also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued.",
   "image": "../../assets/tablets/dell-latitude-7220ex.webp",
   "imageAlt": "Dell Latitude 7220EX, front view",
   "certification": {
@@ -112,7 +112,6 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Certified for ambient temperatures up to +60 °C"
   ],
   "limitations": [

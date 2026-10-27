@@ -12,7 +12,7 @@
   "screenIn": 8,
   "status": "current",
   "launchYear": 2026,
-  "summary": "The Getac ZX80-EX is the hazardous-area version of a Getac rugged 8-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Android 15.",
+  "summary": "The Getac ZX80-EX is the hazardous-area version of a Getac rugged 8-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Android 15.",
   "image": "../../assets/tablets/getac-zx80-ex.webp",
   "imageAlt": "Getac ZX80-EX, front view",
   "certification": {
@@ -133,7 +133,6 @@
     "barcode"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager",
     "5G on cellular versions",
     "User-replaceable battery",

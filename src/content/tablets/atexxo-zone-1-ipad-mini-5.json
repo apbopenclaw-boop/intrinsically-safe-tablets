@@ -18,7 +18,7 @@
   "statusNote": "No longer in Atexxo's range.",
   "successor": "atexxo-zone-1-ipad-mini-6",
   "launchYear": 2020,
-  "summary": "The Atexxo Zone 1 iPad mini 5 is a standard iPad mini (5th generation) converted by Atexxo for hazardous areas, certified for Zone 1 under ATEX and IECEx. It is a flameproof (Ex d) design, and the tablet runs iPadOS 26. It has been discontinued; the Atexxo Zone 1 iPad mini 6 replaces it.",
+  "summary": "The Atexxo Zone 1 iPad mini 5 is a standard iPad mini (5th generation) converted by Atexxo for hazardous areas, certified for Zone 1 under IECEx. Atexxo also states ATEX certification, but the certificate isn't published. It is a flameproof (Ex d) design, and the tablet runs iPadOS 26. It has been discontinued; the Atexxo Zone 1 iPad mini 6 replaces it.",
   "certification": {
     "otherSchemes": [],
     "standards": [],
@@ -197,7 +197,6 @@
     "camera-free"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Camera-free version available for sites that restrict cameras",
     "A standard iPad mini (5th generation) inside, with the same apps and Apple device management"
   ],

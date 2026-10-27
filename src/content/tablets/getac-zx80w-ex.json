@@ -12,7 +12,7 @@
   "screenIn": 8,
   "status": "current",
   "launchYear": 2026,
-  "summary": "The Getac ZX80W-EX is the hazardous-area version of a Getac rugged 8-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 IoT Enterprise LTSC.",
+  "summary": "The Getac ZX80W-EX is the hazardous-area version of a Getac rugged 8-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 IoT Enterprise LTSC.",
   "image": "../../assets/tablets/getac-zx80w-ex.webp",
   "imageAlt": "Getac ZX80W-EX, front view",
   "certification": {
@@ -120,11 +120,11 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager",
     "5G on cellular versions",
     "Security updates until October 2034",
-    "User-replaceable battery"
+    "User-replaceable battery",
+    "Among the lightest Zone 2 tablets of its size we list, at 780 g in use"
   ],
   "limitations": [
     "Zone 2 only, so not for Zone 1 areas",

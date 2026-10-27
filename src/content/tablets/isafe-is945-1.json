@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 2G Ex ib IIC T4 Gb / II 2D Ex ib IIIC T135°C Db",
       "kind": "type-examination",
-      "number": "EPS 24 ATEX 1",
+      "number": "EPS 24 ATEX 1 010 X",
       "status": "IECEx Current, issue 1 (2025-02-06), checked 2026-10-25 (same certificate as IS-940.1)."
     },
     "iecex": {
@@ -178,6 +178,8 @@
   ],
   "bestFor": [
     "zone-1-tablets",
+    "division-1-tablets",
+    "mining",
     "windows-tablets"
   ],
   "alternatives": [

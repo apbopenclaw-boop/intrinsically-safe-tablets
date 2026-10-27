@@ -11,7 +11,7 @@
   "type": "rugged-variant",
   "screenIn": 11.6,
   "status": "current",
-  "summary": "The Getac F110-EX G7 is the hazardous-area version of a Getac rugged 11.6-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
+  "summary": "The Getac F110-EX G7 is the hazardous-area version of a Getac rugged 11.6-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
   "image": "../../assets/tablets/getac-f110-ex.webp",
   "imageAlt": "Getac F110-EX G7, front view",
   "certification": {
@@ -133,11 +133,11 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager",
     "5G on cellular versions",
     "User-replaceable battery",
-    "Hot-swappable battery for long shifts"
+    "Hot-swappable battery for long shifts",
+    "Certified for ambient temperatures up to +60 °C"
   ],
   "limitations": [
     "Zone 2 only, so not for Zone 1 areas",

@@ -16,7 +16,7 @@
   "removable": "No (certificate: do not open the enclosure; iPad replacement through Joy Factory only)",
   "status": "current",
   "launchYear": 2025,
-  "summary": "The Joy Factory aXtion Extreme iPad mini is a flameproof (Ex d) case for the iPad mini (A17 Pro), certified for Zone 1/21 under ATEX and IECEx. The tablet inside is a standard iPad mini (A17 Pro) running iPadOS 27, so it works with the same apps and device management.",
+  "summary": "The Joy Factory aXtion Extreme iPad mini is a flameproof (Ex d) case for the iPad mini (A17 Pro), certified for Zone 1/21 under IECEx. The Joy Factory also states ATEX certification, but the certificate isn't published. The tablet inside is a standard iPad mini (A17 Pro) running iPadOS 27, so it works with the same apps and device management.",
   "image": "../../assets/tablets/joy-factory-axtion-extreme-ipad-mini.webp",
   "imageAlt": "The Joy Factory aXtion Extreme iPad mini, front view",
   "certification": {
@@ -202,7 +202,6 @@
   },
   "features": [],
   "strengths": [
-    "ATEX and IECEx certified",
     "T6 temperature class, the strictest rating",
     "5G on cellular versions",
     "A standard iPad mini (A17 Pro) inside, with the same apps and Apple device management"

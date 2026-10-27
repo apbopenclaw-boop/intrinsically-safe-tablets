@@ -12,7 +12,7 @@
   "screenIn": 7,
   "status": "current",
   "launchYear": 2022,
-  "summary": "The TouchStar TS3300 is an Ex ec ic 7-inch Android tablet from TouchStar, certified for Zone 2/22 under ATEX and IECEx. It runs Android (version not published).",
+  "summary": "The TouchStar TS3300 is an Ex ec ic 7-inch Android tablet from TouchStar, certified for Zone 2/22 under IECEx. TouchStar also states ATEX certification, but the certificate isn't published. It runs Android (version not published).",
   "image": "../../assets/tablets/touchstar-ts3300.webp",
   "imageAlt": "TouchStar TS3300, front view",
   "certification": {
@@ -122,7 +122,6 @@
     "barcode"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager"
   ],
   "limitations": [

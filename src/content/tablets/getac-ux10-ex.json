@@ -12,7 +12,7 @@
   "screenIn": 10.1,
   "status": "current",
   "launchYear": 2026,
-  "summary": "The Getac UX10-EX G5 is the hazardous-area version of a Getac rugged 10.1-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
+  "summary": "The Getac UX10-EX G5 is the hazardous-area version of a Getac rugged 10.1-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
   "image": "../../assets/tablets/getac-ux10-ex.webp",
   "imageAlt": "Getac UX10-EX G5, front view",
   "certification": {
@@ -129,7 +129,6 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager",
     "5G on cellular versions",
     "User-replaceable battery"

@@ -14,7 +14,7 @@
   "statusNote": "Getac now lists the G7 generation in its place; it published no end-of-sale date.",
   "successor": "getac-f110-ex",
   "launchYear": 2021,
-  "summary": "The Getac F110-EX G6 is the hazardous-area version of a Getac rugged 11.6-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued; the Getac F110-EX G7 replaces it.",
+  "summary": "The Getac F110-EX G6 is the hazardous-area version of a Getac rugged 11.6-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued; the Getac F110-EX G7 replaces it.",
   "image": "../../assets/tablets/getac-f110-ex-g6.webp",
   "imageAlt": "Getac F110-EX G6, front view",
   "certification": {
@@ -122,7 +122,6 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager",
     "5G on cellular versions",
     "User-replaceable battery",

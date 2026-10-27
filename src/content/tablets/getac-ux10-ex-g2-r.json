@@ -14,7 +14,7 @@
   "statusNote": "Getac now lists the G5 generation in its place; it published no end-of-sale date.",
   "successor": "getac-ux10-ex",
   "launchYear": 2021,
-  "summary": "The Getac UX10-EX G2-R is the hazardous-area version of a Getac rugged 10.1-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued; the Getac UX10-EX G5 replaces it.",
+  "summary": "The Getac UX10-EX G2-R is the hazardous-area version of a Getac rugged 10.1-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued; the Getac UX10-EX G5 replaces it.",
   "image": "../../assets/tablets/getac-ux10-ex-g2-r.webp",
   "imageAlt": "Getac UX10-EX G2-R, front view",
   "certification": {
@@ -126,7 +126,6 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager",
     "User-replaceable battery"
   ],

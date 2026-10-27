@@ -12,7 +12,7 @@
   "screenIn": 10.1,
   "status": "current",
   "launchYear": 2024,
-  "summary": "The Winmate M101AD-EX is the hazardous-area version of a Winmate rugged 10.1-inch tablet, certified for Zone 2 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 IoT Enterprise LTSC.",
+  "summary": "The Winmate M101AD-EX is the hazardous-area version of a Winmate rugged 10.1-inch tablet, certified for Zone 2 under IECEx. Winmate also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 IoT Enterprise LTSC.",
   "image": "../../assets/tablets/winmate-m101ad-ex.webp",
   "imageAlt": "Winmate M101AD-EX, front view",
   "certification": {
@@ -127,11 +127,11 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Also certified for Class I Division 2 in North America",
     "Optional built-in barcode imager",
     "5G on cellular versions",
-    "Security updates until October 2034"
+    "Security updates until October 2034",
+    "User-replaceable battery"
   ],
   "limitations": [
     "Zone 2 only, so not for Zone 1 areas",
@@ -141,6 +141,7 @@
   ],
   "bestFor": [
     "zone-2-tablets",
+    "division-1-tablets",
     "windows-tablets"
   ],
   "alternatives": [

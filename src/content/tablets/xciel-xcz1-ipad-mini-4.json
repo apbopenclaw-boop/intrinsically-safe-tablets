@@ -18,7 +18,7 @@
   "statusNote": "No longer in Xciel's range.",
   "successor": "xciel-xcz1-ipad-mini-5",
   "launchYear": 2017,
-  "summary": "The Xciel XCZ1 iPad mini 4 is a flameproof (Ex d) case for the iPad mini 4, certified for Zone 1 under ATEX and IECEx. The tablet inside is a standard iPad mini 4 running iPadOS 15, so it works with the same apps and device management. It has been discontinued; the Xciel XCZ1 iPad mini 5 replaces it.",
+  "summary": "The Xciel XCZ1 iPad mini 4 is a flameproof (Ex d) case for the iPad mini 4, certified for Zone 1 under IECEx. Xciel also states ATEX certification, but the certificate isn't published. The tablet inside is a standard iPad mini 4 running iPadOS 15, so it works with the same apps and device management. It has been discontinued; the Xciel XCZ1 iPad mini 5 replaces it.",
   "certification": {
     "otherSchemes": [],
     "standards": [],
@@ -183,7 +183,6 @@
     "camera-free"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Camera-free version available for sites that restrict cameras",
     "A standard iPad mini 4 inside, with the same apps and Apple device management"
   ],

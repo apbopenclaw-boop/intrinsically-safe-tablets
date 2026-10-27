@@ -13,12 +13,12 @@ and search engines to the closest new page. Swap these for real 301s in Cloudfla
 | /are-tablets-intrinsically-safe.html | / |
 | /atex-tablet-buying-decision-guide.html | /tablets/ |
 | /atex-tablet-pricing.html | /tablets/ | prices are on request
-| /best-atex-tablets-2026.html | /tablets/?zone=1 | Phase E: /best/zone-1-tablets/
+| /best-atex-tablets-2026.html | /best/zone-1-tablets/ | Final (Phase E, 2026-10-26)
 | /buyers-guide-2026.html | /tablets/ |
-| /ecom-tab-ex-03-vs-isafe-is930.html | /tablets/ecom-tab-ex-03-dz1/ | Phase E: the head-to-head
+| /ecom-tab-ex-03-vs-isafe-is930.html | /compare/ecom-tab-ex-05-dz1-vs-isafe-is930-1/ | Final (Phase E, 2026-10-27) 
 | /ecom-tab-ex-alternatives.html | /tablets/ecom-tab-ex-05-dz1/ |
-| /ecom-tab-ex-vs-aegex-10.html | /tablets/ecom-tab-ex-03-dz1/ | Phase E: the head-to-head
-| /ecom-tab-ex-vs-bartec-agile.html | /tablets/ecom-tab-ex-03-dz1/ | Phase E: the head-to-head
+| /ecom-tab-ex-vs-aegex-10.html | /compare/eaton-gecma-is-tablet-pc-vs-ecom-tab-ex-05-dz1/ | Final (Phase E, 2026-10-27) 
+| /ecom-tab-ex-vs-bartec-agile.html | /compare/eaton-gecma-is-tablet-pc-vs-ecom-tab-ex-05-dz1/ | Final (Phase E, 2026-10-27) 
 | /japan-korea-certification.html | /tablets/ |
 | /what-is-an-intrinsically-safe-tablet.html | / |
 | /zone-1-vs-zone-2-tablets.html | / |

@@ -14,7 +14,7 @@
   "statusNote": "i.safe MOBILE has moved it to the archive of its range.",
   "successor": "isafe-is930-2",
   "launchYear": 2017,
-  "summary": "The i.safe MOBILE IS910.2 is an intrinsically safe (Ex ic) 8-inch Android tablet from i.safe MOBILE, certified for Zone 2/22 under ATEX and IECEx. It runs Android 8. It has been discontinued; the i.safe MOBILE IS930.2 replaces it.",
+  "summary": "The i.safe MOBILE IS910.2 is an intrinsically safe (Ex ic) 8-inch Android tablet from i.safe MOBILE, certified for Zone 2/22 under IECEx. i.safe MOBILE also states ATEX certification, but the certificate isn't published. It runs Android 8. It has been discontinued; the i.safe MOBILE IS930.2 replaces it.",
   "image": "../../assets/tablets/isafe-is910-2.webp",
   "imageAlt": "i.safe MOBILE IS910.2, front view",
   "certification": {
@@ -115,7 +115,6 @@
     "nfc"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Certified for ambient temperatures up to +60 °C"
   ],
   "limitations": [

@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T135°C Dc IP64",
       "kind": "type-examination",
-      "number": "EPS 25 ATEX 1",
+      "number": "EPS 25 ATEX 1 087 X",
       "status": "IECEx Current, issue 0 (2025-08-26), checked 2026-10-26. ATEX EPS 25 ATEX 1 087 X confirmed by BARTEC EU DoC B1-T2E0-7C0001 (2026-01-15; Bureau Veritas CPS Germany, NB 2004; Category 3, internal production control). UL certificates of compliance issued 2026-02-09 (NA types only)."
     },
     "iecex": {
@@ -156,7 +156,7 @@
     "os.securityUntil": "Zebra's security-update date for the ET60/ET65 the tablet is built on; BARTEC says it needs a LifeGuard service contract.",
     "specs.resolution": "From a single or secondary source; the maker doesn't state it for this model.",
     "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
-    "specs.ipRating": "From a single source; not stated in the Ex certificate.",
+    "specs.ipRating": "BARTEC's product page gives IP64 and its datasheet IP66; IP64 is the figure in the Ex marking.",
     "removable": "Not stated by the maker for this exact model.",
     "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
   },
@@ -178,6 +178,7 @@
   ],
   "bestFor": [
     "zone-2-tablets",
+    "division-1-tablets",
     "android-tablets"
   ],
   "alternatives": [

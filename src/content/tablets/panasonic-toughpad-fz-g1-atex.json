@@ -13,7 +13,7 @@
   "status": "discontinued",
   "statusNote": "No longer sold. Panasonic's later Toughbook G2 and G3 have no ATEX version.",
   "launchYear": 2018,
-  "summary": "The Panasonic Toughpad FZ-G1 ATEX is the hazardous-area version of a Panasonic rugged 10.1-inch tablet, certified for Zone 2 under ATEX and IECEx. It is an Ex ic ec design running Windows 10 Pro. It has been discontinued.",
+  "summary": "The Panasonic Toughpad FZ-G1 ATEX is the hazardous-area version of a Panasonic rugged 10.1-inch tablet, certified for Zone 2 under IECEx. Panasonic also states ATEX certification, but the certificate isn't published. It is an Ex ic ec design running Windows 10 Pro. It has been discontinued.",
   "image": "../../assets/tablets/panasonic-toughpad-fz-g1-atex.webp",
   "imageAlt": "Panasonic Toughpad FZ-G1 ATEX, front view",
   "certification": {
@@ -117,7 +117,6 @@
   },
   "features": [],
   "strengths": [
-    "ATEX and IECEx certified",
     "User-replaceable battery"
   ],
   "limitations": [

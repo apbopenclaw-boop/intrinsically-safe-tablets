@@ -75,7 +75,7 @@
     "storage": "64 GB or 128 GB, microSD up to 1 TB",
     "replaceableBattery": false,
     "connectivity": [
-      "5G",
+      "4G",
       "Wi-Fi 5"
     ],
     "weightG": 780,
@@ -170,7 +170,6 @@
   },
   "features": [],
   "strengths": [
-    "5G on cellular versions",
     "A standard Samsung Galaxy Tab A9 inside, with the same apps and standard device management",
     "Among the lightest Zone 2 tablets of its size we list, at 780 g in use"
   ],

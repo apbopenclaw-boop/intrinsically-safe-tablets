@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 2G Ex ib IIC T4 Gb / II 2D Ex ib IIIC T135°C Db IP6X",
       "kind": "type-examination",
-      "number": "EPS 19 ATEX 1",
+      "number": "EPS 19 ATEX 1 071 X",
       "status": "IECEx Current, issue 0 (2019-12-20), checked 2026-10-25. ATEX and UKEX numbers taken from the EU/UK DoC 1030CC13REV00 (2022-09-29); certificate PDFs not read."
     },
     "iecex": {
@@ -93,7 +93,7 @@
     "gloveTouch": true,
     "pttKey": false,
     "connectivity": [
-      "5G",
+      "4G",
       "Wi-Fi 5",
       "NFC"
     ],
@@ -167,8 +167,8 @@
     "ATEX, IECEx and UKEX certified, with published certificate numbers",
     "Also certified for Class I Division 1 in North America",
     "A mining version (Group I) is also available",
-    "5G connectivity",
-    "Camera-free version available for sites that restrict cameras"
+    "Camera-free version available for sites that restrict cameras",
+    "Among the lightest Zone 1 tablets of its size we list, at 890 g in use"
   ],
   "limitations": [
     "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
@@ -178,6 +178,8 @@
   ],
   "bestFor": [
     "zone-1-tablets",
+    "division-1-tablets",
+    "mining",
     "android-tablets"
   ],
   "alternatives": [

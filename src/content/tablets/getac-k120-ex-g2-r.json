@@ -14,7 +14,7 @@
   "statusNote": "Getac now lists the G3 generation in its place; it published no end-of-sale date.",
   "successor": "getac-k120-ex",
   "launchYear": 2021,
-  "summary": "The Getac K120-EX G2-R is the hazardous-area version of a Getac rugged 12.5-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued; the Getac K120-EX G3 replaces it.",
+  "summary": "The Getac K120-EX G2-R is the hazardous-area version of a Getac rugged 12.5-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued; the Getac K120-EX G3 replaces it.",
   "image": "../../assets/tablets/getac-k120-ex-g2-r.webp",
   "imageAlt": "Getac K120-EX G2-R, front view",
   "certification": {
@@ -119,7 +119,6 @@
     "updates-2030"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "Optional built-in barcode imager",
     "5G on cellular versions",
     "Certified for ambient temperatures up to +60 °C"

@@ -105,35 +105,47 @@
   "throughCase": [
     {
       "label": "Face ID / Touch ID",
-      "value": "Face ID listed as working ('Face ID: secure access without removing gloves'; front camera 'with Face ID')"
+      "value": "Yes: Face ID works through the cover (confirmed by Xshielder)"
     },
     {
       "label": "Apple Pencil / stylus",
-      "value": "Xshielder capacitive stylus (22 g, interchangeable tips, lanyard) offered; Apple Pencil attach/charge through the cover not stated"
+      "value": "Yes: stylus input works through the cover (confirmed by Xshielder); Xshielder capacitive stylus (22 g, interchangeable tips, lanyard) offered"
+    },
+    {
+      "label": "Side and volume buttons",
+      "value": "Yes: usable through the cover (Xshielder: all iPad Pro functions available)"
     },
     {
       "label": "Rear cameras",
-      "value": "12 MP Wide camera with 4K video and ProRes listed as available"
+      "value": "Yes: 12 MP Wide camera with 4K video and ProRes works through the cover (confirmed by Xshielder)"
     },
     {
       "label": "LiDAR",
-      "value": "Listed ('Pro camera with LiDAR'); window detail not stated"
+      "value": "Yes: LiDAR works through the cover (confirmed by Xshielder)"
     },
     {
       "label": "Front camera",
-      "value": "Landscape 12 MP Center Stage camera with Face ID listed as available"
+      "value": "Yes: landscape 12 MP Center Stage camera with Face ID works through the cover (confirmed by Xshielder)"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Yes: works through the cover (Xshielder: all iPad Pro functions available)"
     },
     {
       "label": "Charging",
-      "value": "USB-C port (50% in 30 min with a 60 W adapter, M5); no wireless"
+      "value": "USB-C charging as on a standard iPad Pro (confirmed by Xshielder); 50% in 30 min with a 60 W adapter (M5); no wireless"
     },
     {
       "label": "Speakers and microphones",
-      "value": "All 4 microphones and 4 speakers usable"
+      "value": "Yes: all 4 microphones and 4 speakers usable (confirmed by Xshielder)"
+    },
+    {
+      "label": "Headset audio",
+      "value": "Yes: audio in and out works (confirmed by Xshielder); headsets via USB-C or Bluetooth, as the iPad Pro has no 3.5 mm jack"
     },
     {
       "label": "USB-C port",
-      "value": "Charging port accessible; data use not stated"
+      "value": "Yes: accessible for charging and data, as on a standard iPad Pro (confirmed by Xshielder)"
     },
     {
       "label": "SIM card",
@@ -141,7 +153,7 @@
     },
     {
       "label": "Removed or disabled",
-      "value": "Nothing stated as removed or disabled"
+      "value": "Nothing removed or disabled: all iPad Pro features available (confirmed by Xshielder)"
     },
     {
       "label": "Mounting points",
@@ -171,7 +183,7 @@
     },
     {
       "label": "Remote expert / video calls",
-      "value": "Via app (FaceTime, Teams or remote-assist apps; needs camera and audio access through the case)"
+      "value": "Via app (FaceTime, Teams or remote-assist apps; cameras and audio work through the cover)"
     },
     {
       "label": "Windows desktop software",
@@ -190,30 +202,17 @@
     "specs.operatingTemp": "From a single source.",
     "fitting": "Not stated by the maker for this exact model.",
     "removable": "Not stated by the maker for this exact model.",
-    "throughCase.Face ID / Touch ID": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.Apple Pencil / stylus": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.Rear cameras": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.LiDAR": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.Front camera": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.Charging": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.Speakers and microphones": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.USB-C port": "Inferred from related information; not stated by the maker for this exact model.",
-    "throughCase.Removed or disabled": "Inferred from related information; not stated by the maker for this exact model.",
-    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
-    "capabilities.Lone worker": "Not confirmed by the maker for this exact model.",
-    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
-    "capabilities.NFC reading": "Not confirmed by the maker for this exact model.",
-    "capabilities.3D scanning / LiDAR": "Not confirmed by the maker for this exact model.",
-    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
-    "capabilities.Bluetooth gas detectors": "Not confirmed by the maker for this exact model."
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model."
   },
   "features": [
+    "lidar",
     "updates-2030"
   ],
   "strengths": [
     "T6 temperature class, the strictest rating",
     "5G on cellular versions",
     "Security updates for 7–8 years (based on previous iPad Pro support)",
+    "LiDAR scanner usable through the case",
     "A standard iPad Pro 11-inch (M5) inside, with the same apps and Apple device management"
   ],
   "limitations": [

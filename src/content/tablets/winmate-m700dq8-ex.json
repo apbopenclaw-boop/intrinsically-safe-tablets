@@ -13,7 +13,7 @@
   "status": "discontinued",
   "statusNote": "Winmate lists it as discontinued. Its successor, the M700DQ9, has no Ex version.",
   "launchYear": 2022,
-  "summary": "The Winmate M700DQ8-EX is the hazardous-area version of a Winmate rugged 7-inch tablet, certified for Zone 2 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Android 9. It has been discontinued.",
+  "summary": "The Winmate M700DQ8-EX is the hazardous-area version of a Winmate rugged 7-inch tablet, certified for Zone 2 under IECEx. Winmate also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Android 9. It has been discontinued.",
   "image": "../../assets/tablets/winmate-m700dq8-ex.webp",
   "imageAlt": "Winmate M700DQ8-EX, front view",
   "certification": {
@@ -129,7 +129,6 @@
     "nfc"
   ],
   "strengths": [
-    "ATEX and IECEx certified",
     "User-replaceable battery",
     "Among the lightest Zone 2 tablets of its size we list, at 550 g in use"
   ],

@@ -48,6 +48,7 @@ const BEST_BY_ZONE: NavGroup = {
   links: [
     { label: 'Zone 1 tablets', href: '/best/zone-1-tablets/' },
     { label: 'Zone 2 tablets', href: '/best/zone-2-tablets/' },
+    { label: 'Class I Division 1 & 2', href: '/best/division-1-tablets/' },
   ],
 };
 
@@ -55,8 +56,12 @@ export const BEST_BY_INDUSTRY: NavGroup = liveGroup({
   heading: 'By industry',
   links: [
     { label: 'Oil & gas', href: '/best/oil-and-gas/' },
+    { label: 'Offshore', href: '/best/offshore/' },
     { label: 'Chemical processing', href: '/best/chemical-processing/' },
     { label: 'Pharmaceutical', href: '/best/pharmaceutical/' },
+    { label: 'Manufacturing', href: '/best/manufacturing/' },
+    { label: 'Utilities', href: '/best/utilities/' },
+    { label: 'Mining', href: '/best/mining/' },
   ],
 });
 
@@ -66,6 +71,12 @@ const BEST_BY_NEED: NavGroup = {
     { label: 'iPad', href: '/best/ipad/' },
     { label: 'Windows tablets', href: '/best/windows-tablets/' },
     { label: 'Android tablets', href: '/best/android-tablets/' },
+    { label: 'Lightest', href: '/best/lightest/' },
+    { label: 'Best camera', href: '/best/camera/' },
+    { label: 'Large screen', href: '/best/large-screen/' },
+    { label: 'Long shifts', href: '/best/long-shifts/' },
+    { label: 'Barcode scanning', href: '/best/scanning/' },
+    { label: 'Long-term value', href: '/best/long-term-value/' },
   ],
 };
 

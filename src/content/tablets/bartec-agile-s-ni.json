@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic IIC T4 Gc / II 3D Ex ic IIIB T130°C Dc IP64",
       "kind": "type-examination",
-      "number": "EPS 19 ATEX 1",
+      "number": "EPS 19 ATEX 1 179 X",
       "status": "IECEx Current, issue 0 (2020-01-17), checked 2026-10-26. UKEX CML 21UKEX2346X issue 0 (2021-06-24) read; it refers to EPS 19 ATEX 1 179X issue 0, confirming the ATEX number. ATEX certificate PDF is a scan and was not read."
     },
     "iecex": {
@@ -163,6 +163,7 @@
   ],
   "bestFor": [
     "zone-2-tablets",
+    "division-1-tablets",
     "windows-tablets"
   ],
   "alternatives": [

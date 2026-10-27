@@ -16,6 +16,7 @@ import {
   confirmedDivision,
   securityUpdates,
   monthYear,
+  tabletFeatures,
   type Tablet,
 } from '../../lib/tablets';
 
@@ -130,7 +131,51 @@ const COLUMNS: Record<BestColumn, { label: string; value: (p: Tablet) => string 
   loneWorker: { label: 'Lone worker', value: (p) => capability(p, 'Lone worker') ?? NOT_VERIFIED },
   cameraFree: {
     label: 'Camera-free version',
-    value: (p) => (p.data.specs.cameraFree === true ? 'Available' : p.data.specs.cameraFree === false ? 'Not offered' : NOT_VERIFIED),
+    value: (p) =>
+      p.data.specs.cameraFree === true
+        ? flagged(p, 'specs.cameraFree', 'Available')
+        : p.data.specs.cameraFree === false
+          ? 'Not offered'
+          : NOT_VERIFIED,
+  },
+  screen: { label: 'Screen', value: (p) => (p.data.screenIn ? `${p.data.screenIn} inch` : NOT_VERIFIED) },
+  brightness: {
+    label: 'Brightness',
+    value: (p) => (p.data.specs.brightness ? flagged(p, 'specs.brightness', p.data.specs.brightness.replace(/^(\d[\d,]*)(?! ?nits)/, '$1 nits')) : NOT_VERIFIED),
+  },
+  chip: { label: 'Processor', value: (p) => (p.data.specs.chip ? flagged(p, 'specs.chip', p.data.specs.chip) : NOT_VERIFIED) },
+  battery: {
+    label: 'Battery',
+    value: (p) =>
+      p.data.specs.batteryWh
+        ? flagged(p, 'specs.batteryWh', `${p.data.specs.batteryWh.replace(/ ?Wh$/, '')} Wh`)
+        : p.data.specs.battery
+          ? flagged(p, 'specs.battery', p.data.specs.battery)
+          : NOT_VERIFIED,
+  },
+  hotSwap: {
+    label: 'Battery swap',
+    value: (p) => {
+      const s = p.data.specs.hotSwap;
+      if (!s) return NOT_VERIFIED;
+      if (/^no\b/i.test(s)) return 'No';
+      return flagged(p, 'specs.hotSwap', /^yes\b/i.test(s) ? 'Yes' : /optional/i.test(s) ? 'Optional' : s);
+    },
+  },
+  chargeInZone: {
+    label: 'Charging in the zone',
+    value: (p) =>
+      p.data.safety.chargingInZone === true ? 'Allowed' : p.data.safety.chargingInZone === false ? 'Outside the zone only' : NOT_VERIFIED,
+  },
+  pen: {
+    label: 'Pen / stylus',
+    value: (p) => (tabletFeatures(p).includes('pen') ? 'Yes' : p.data.specs.pen ? 'Not confirmed' : NOT_VERIFIED),
+  },
+  video: { label: 'Video', value: (p) => (p.data.specs.video ? flagged(p, 'specs.video', p.data.specs.video) : NOT_VERIFIED) },
+  lidar: { label: 'LiDAR', value: (p) => (tabletFeatures(p).includes('lidar') ? 'Yes' : 'No') },
+  mining: {
+    label: 'Mining version',
+    value: (p) => p.data.variants.find((v) => /Group I\b/.test(v.description))?.marking?.split(' | ')[0].replace(/^ATEX: /, '') ?? 'No',
   },
 };
 const glanceColumns = (page.glanceColumns ?? ['protection', 'gasGroup', 'tempClass', 'certification', 'weight']).map((k) => COLUMNS[k]);

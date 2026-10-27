@@ -23,6 +23,8 @@ export interface BestPick {
  * division: confirmed North American Division · schemes: every scheme incl. Division and national ones (INMETRO…)
  * os, updates, ambient, camera, keys, network, wifi, ptt, barcode, loneWorker: from os / specs / capabilities
  * cameraFree: whether a camera-free version is offered
+ * screen, brightness, chip, battery (Wh), hotSwap, chargeInZone, pen, video, lidar, mining: tablet columns. For an Ex case
+ * or conversion, pen and LiDAR only count when the maker confirms they work through the housing
  */
 export type BestColumn =
   | 'protection'
@@ -45,7 +47,17 @@ export type BestColumn =
   | 'ptt'
   | 'barcode'
   | 'loneWorker'
-  | 'cameraFree';
+  | 'cameraFree'
+  | 'screen'
+  | 'brightness'
+  | 'chip'
+  | 'battery'
+  | 'hotSwap'
+  | 'chargeInZone'
+  | 'pen'
+  | 'video'
+  | 'lidar'
+  | 'mining';
 
 export interface BestPage {
   slug: string;

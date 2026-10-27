@@ -25,7 +25,7 @@
     "atex": {
       "marking": "II 3G Ex ic IIC T5 Gc / II 3D Ex ic IIIC T85°C Dc",
       "kind": "type-examination",
-      "number": "EPS 24 ATEX 1",
+      "number": "EPS 24 ATEX 1 257 X",
       "status": "IECEx Current, issue 0, checked 2026-10-25. ATEX is a voluntary Certificate of Conformity (Bureau Veritas), not a notified-body EU-type examination (not required for category 3)."
     },
     "iecex": {
@@ -34,7 +34,7 @@
       "scope": "Issue 0, 2025-02-06"
     },
     "northAmerica": "SGS certificate SGSNA/25/SUW/00031X (ecom file CERT-B178A, effective 2025-05-24; covers DZ2 and D2): Class I and II, Division 2, Class III, Division 1 & 2, Groups A-D, F and G, T5; Zone 2 Group IIC T5; Zone 22 Group IIIB T100°C; −20 °C ≤ Ta ≤ 50 °C. Under NEC/CEC the limits are Ta +50 °C and dust group IIIB, not +55 °C / IIIC as under ATEX/IECEx. Charging under the SGS certificate only at −5 °C to +45 °C (ATEX/IECEx: −5 °C to +55 °C).",
-    "division": "Class I Division 1",
+    "division": "Class I Division 2",
     "zonesGas": [
       "2"
     ],
@@ -168,7 +168,7 @@
   ],
   "strengths": [
     "ATEX and IECEx certified, with published certificate numbers",
-    "Also certified for Class I Division 1 in North America",
+    "Also certified for Class I Division 2 in North America",
     "Ex-rated barcode scanner available as an accessory",
     "5G connectivity",
     "Security updates until Q1 2032"
@@ -180,6 +180,7 @@
   ],
   "bestFor": [
     "zone-2-tablets",
+    "division-1-tablets",
     "android-tablets"
   ],
   "alternatives": [

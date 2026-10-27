@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic op is IIC T4 Gc IP64 / II 3D Ex ic op is IIIB T135°C Dc IP64",
       "kind": "type-examination",
-      "number": "EPS 16 ATEX 1",
+      "number": "EPS 16 ATEX 1 163 X",
       "status": "IECEx Current, issue 6 (2025-08-05), checked 2026-10-25. ATEX is a voluntary Certificate of Conformity (Bureau Veritas)."
     },
     "iecex": {
@@ -32,7 +32,7 @@
       "scope": "Issue 6, 2025-08-05"
     },
     "northAmerica": "SGS certificate SGSNA/24/SUW/00031X (ecom file CERT-7421A): Class I, Zone 2, AEx ic IIC T4 Gc IP64; Class I, Div 2, Groups A-D T4; Zone 22, AEx ic IIIB T135°C Dc; Class II, Div 2, Class III, Div 1, Groups F, G, T135°C",
-    "division": "Class I Division 1",
+    "division": "Class I Division 2",
     "zonesGas": [
       "2"
     ],
@@ -133,7 +133,7 @@
   ],
   "strengths": [
     "ATEX and IECEx certified, with published certificate numbers",
-    "Also certified for Class I Division 1 in North America",
+    "Also certified for Class I Division 2 in North America",
     "Optional built-in barcode imager",
     "User-replaceable battery",
     "Camera-free version available for sites that restrict cameras"
@@ -146,6 +146,7 @@
   ],
   "bestFor": [
     "zone-2-tablets",
+    "division-1-tablets",
     "windows-tablets"
   ],
   "alternatives": [

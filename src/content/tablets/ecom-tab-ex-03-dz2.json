@@ -23,7 +23,7 @@
     "atex": {
       "marking": "II 3G Ex ic IIC T5 Gc IP64 / II 3D Ex ic IIIC T85°C Dc",
       "kind": "type-examination",
-      "number": "EPS 21 ATEX 1",
+      "number": "EPS 21 ATEX 1 093 X",
       "status": "IECEx Current (issue 1), checked 2026-10-25. Product discontinued."
     },
     "iecex": {
@@ -32,7 +32,7 @@
       "scope": "Issue 1, 2025-08-05"
     },
     "northAmerica": "SGS: Class I, Division 2, Groups A,B,C,D T5; Class II, Division 2, Groups F,G T100°C; Class III, Division 1; Class I, Zone 2, Group IIC, T5; Zone 22, Group IIIB T100°C; Ta −20 °C to +55 °C",
-    "division": "Class I Division 1",
+    "division": "Class I Division 2",
     "zonesGas": [
       "2"
     ],
