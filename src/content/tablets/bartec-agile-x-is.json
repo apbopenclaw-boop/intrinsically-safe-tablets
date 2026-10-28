@@ -1,0 +1,152 @@
+{
+  "productId": "BT-AGILE-X-IS",
+  "name": "BARTEC Agile X IS",
+  "brand": "BARTEC",
+  "brandSlug": "bartec",
+  "manufacturer": {
+    "name": "BARTEC GmbH",
+    "country": "Germany",
+    "website": "https://bartec.com"
+  },
+  "type": "dedicated",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "BARTEC ended sales in April 2023 and support in April 2026. It names no Zone 1 successor.",
+  "launchYear": 2016,
+  "summary": "The BARTEC Agile X IS is an intrinsically safe (Ex ia) 10.1-inch Windows tablet from BARTEC, certified for Zone 1 under ATEX and IECEx. Its operating system version isn't published. It has been discontinued.",
+  "image": "../../assets/tablets/bartec-agile-x-is.webp",
+  "imageAlt": "BARTEC Agile X IS, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 1G Ex ia op is IIC T4 Ga",
+      "kind": "type-examination",
+      "number": "DEMKO 16 ATEX 1803",
+      "status": "IECEx Current (not withdrawn), issue 2, checked 2026-10-25. Product at end of life; BARTEC support ended 2026-04-30."
+    },
+    "iecex": {
+      "marking": "Ex ia op is IIC T4 Ga",
+      "number": "IECEx UL 16.0160",
+      "scope": "Issue 2, 2021-06-30"
+    },
+    "northAmerica": "UL E226123 (Quick Start Guide Rev C): Class I Div 1 Groups A, B, C, D (all types 17-A1B4/B6/BA/BB); Class II Div 1 Groups E, F, G and Class III Div 1 (types 17-A1BA/BB only); USL Class I Zone 0 AEx ia IIC T4 Ga (17-A1B6/BB) / Zone 1 AEx ia IIC T4 Gb (17-A1B4/BA); CNL Ex ia IIC T4 Ga / Gb; −20 °C ≤ Ta ≤ +50 °C",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "0",
+      "1",
+      "2"
+    ],
+    "zonesDust": [],
+    "protection": "Intrinsic safety (Ex ia) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "tempClass": "T4",
+    "epl": "Ga",
+    "ambient": "−20 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "No specific conditions of use on the certificate (IECEx UL 16.0160 has no X suffix). Quick Start Guide Rev C safety rules: do not replace or charge the battery, open the device or dry-wipe or clean it in potentially explosive atmospheres."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Not published",
+    "edition": "Windows 10 IoT Enterprise LTSC 2019, version 1809 (BARTEC image XISLTSC19R01, build 113); earlier units may have had Windows Embedded 8.1",
+    "securityUntil": "2026-04-30",
+    "updates": "Security updates ended in April 2026"
+  },
+  "specs": {
+    "display": "10.1-inch",
+    "resolution": "1920 × 1200",
+    "brightness": "700 nits",
+    "chip": "Intel Pentium N3710 quad-core 1.6 GHz (burst 2.56 GHz)",
+    "cpuArch": "x86",
+    "ram": "8 GB",
+    "camera": "8 MP AF with LED",
+    "frontCamera": "2 MP",
+    "battery": "4200 mAh",
+    "batteryWh": "31.1 Wh",
+    "hotSwap": "Yes (optional hot-swappable external battery)",
+    "wifi": "IEEE 802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 4.1",
+    "nfc": "Optional HF RFID/NFC reader",
+    "storage": "128 GB, microSD up to 32 GB",
+    "replaceableBattery": false,
+    "connectivity": [],
+    "dimensionsMm": "290 × 209 × 33",
+    "ipRating": "IP65",
+    "exIp": "IP65 (raised to IP65 in IECEx UL 16.0160 issue 1)",
+    "operatingTemp": "−20 °C to +50 °C",
+    "partNumbers": "Type 17-A1B*-****/******** (IECEx)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional Zebra SE4500 1D/2D scanner)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF-RFID/NFC reader)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (optional)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10 IoT Enterprise, x86)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: ATEX: II 1 G Ex ia op is IIC T4 Ga (Zone 0 types 17-A1B6, 17-A1BB); II 2 G Ex ia op is IIC T4 Gb (Zone 1 types 17-A1B4, 17-A1BA) | IECEx: Ex ia op is IIC T4 Ga / Gb"
+    }
+  ],
+  "unconfirmed": {
+    "os.securityUntil": "BARTEC's own end of support for this tablet."
+  },
+  "features": [
+    "nfc",
+    "barcode"
+  ],
+  "strengths": [
+    "Certified for Zone 0, the highest-risk gas zone",
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Also certified for Class I Division 1 in North America",
+    "Optional built-in barcode imager",
+    "Hot-swappable battery for long shifts"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "No dust zone rating",
+    "Security updates ended in April 2026",
+    "Battery isn't user-replaceable"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "eaton-gecma-is-tablet-pc",
+    "isafe-is945-1",
+    "ecom-tab-ex-05-dz1"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx online certificate database: IECEx UL 16.0160 issue 2 (2021-06-30), Agile X IS",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/54245/view"
+    },
+    {
+      "label": "BARTEC GmbH: Enterprise Mobility Support Portal: Service note - end of life (Agile X IS)",
+      "url": "https://em-support.bartec.com/en/support/solutions/articles/266434-service-note-end-of-life"
+    },
+    {
+      "label": "Rugged PC Review: BARTEC Agile X IS review (specs, launch 2016-11-22)",
+      "url": "https://www.ruggedpcreview.com/3_slates_bartec_agile_x_is.html"
+    }
+  ]
+}

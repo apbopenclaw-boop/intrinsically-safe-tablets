@@ -1,0 +1,77 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<a href="/" class:list={['logo', className]}>
+  <!-- The device mark: a landscape rugged tablet (chamfered corners, front camera, a grid of app tiles on the screen), so it
+       reads as a tablet at header size (Rory, 2026-10-27) -->
+  <svg class="logo-mark" viewBox="0 0 280 210" aria-hidden="true" focusable="false">
+    <path fill-rule="evenodd" d="M18 0H262L280 18V192L262 210H18L0 192V18Z M30 22H250A6 6 0 0 1 256 28V182A6 6 0 0 1 250 188H30A6 6 0 0 1 24 182V28A6 6 0 0 1 30 22Z M134 11a6 6 0 1 0 12 0a6 6 0 1 0-12 0Z" />
+    <rect x="62" y="62" width="38" height="34" rx="8" />
+    <rect x="120" y="62" width="38" height="34" rx="8" />
+    <rect x="178" y="62" width="38" height="34" rx="8" />
+    <rect x="62" y="112" width="38" height="34" rx="8" />
+    <rect x="120" y="112" width="38" height="34" rx="8" />
+    <rect x="178" y="112" width="38" height="34" rx="8" />
+  </svg>
+  <span class="logo-text">
+    <span class="logo-word"><strong>explosionprooftablets</strong>.com</span>
+    <span class="logo-tagline">ATEX Zone 1 &amp; 2 Tablets Compared</span>
+  </span>
+</a>
+
+<style>
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    min-height: 2.75rem;
+    min-width: 0;
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+
+  .logo-mark {
+    flex: none;
+    width: auto;
+    height: 1.625rem;
+    fill: var(--color-logo);
+  }
+
+  .logo-text {
+    display: grid;
+    gap: 0.125rem;
+    min-width: 0;
+  }
+
+  .logo-word {
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--color-heading);
+    white-space: nowrap;
+  }
+  .logo-word strong { font-weight: 700; }
+
+  .logo-tagline {
+    font-family: var(--font-sans);
+    font-size: 0.65625rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-muted);
+    white-space: nowrap;
+  }
+
+  @media (min-width: 30rem) {
+    /* About the area of the phones site's 2.5rem portrait mark, a little larger, now that the device is landscape */
+    .logo-mark { height: 1.8rem; }
+    .logo-word { font-size: 1.0625rem; }
+    .logo-tagline { font-size: 0.6875rem; }
+  }
+</style>

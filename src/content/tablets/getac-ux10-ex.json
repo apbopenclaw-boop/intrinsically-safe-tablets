@@ -1,0 +1,177 @@
+{
+  "productId": "GT-UX10EX",
+  "name": "Getac UX10-EX G5",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2026,
+  "summary": "The Getac UX10-EX G5 is the hazardous-area version of a Getac rugged 10.1-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
+  "image": "../../assets/tablets/getac-ux10-ex.webp",
+  "imageAlt": "Getac UX10-EX G5, front view",
+  "certification": {
+    "otherSchemes": [
+      "MIL-STD-810H"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 2 (2026-09-03), checked 2026-10-25; ATEX not published; UKEX not found"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T130°C Dc",
+      "number": "IECEx EPS 24.0099X",
+      "scope": "Issue 2, 2026-09-03, model \"UX10-Exc\""
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Protect from excessive UV light. Impact test at reduced height, protect from mechanical impact. Connection interfaces never used in hazardous areas. Battery never changed, charged or removed in hazardous areas. Not next to strong charge-generating processes. Use only battery BP3S2P2100S-01, BP3S3P3450P-03 or BP3S1P4070P-01. Ambient −21 to +55 °C.",
+    "peripherals": "All connection interfaces (USB, Thunderbolt, DC-in, docking connector, LAN, serial) must never be used in hazardous areas (certificate condition). Optional internal modules named in the certificate are covered as part of the certified tablet. Ports on the G5: two Thunderbolt 4, USB-A, DC-in, optional RJ45.",
+    "certifiedAccessories": "Named in the IECEx certificate: hand strap, 2-point shoulder strap, 4-point shoulder harness, capacitive stylus and tether, digitizer pen and tether. Anti-static screen protection film (Getac accessory made for hazardous use). Hard handle: not offered on the G5 datasheet. NOT for hazardous areas (accessory brochure): 65 W and 100 W AC adapters, DS100 docking station, high-capacity battery (replace in non-hazardous areas only), chargers."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Pro",
+    "edition": "Windows 11 Pro",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "10.1-inch TFT LCD, LumiBond optically bonded, anti-static film",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "1000 nits",
+    "outdoor": "Getac sunlight-readable display",
+    "chip": "Intel Core Ultra 5 236V / Core Ultra 7 266V (series 2), Intel AI Boost NPU up to 48 TOPS",
+    "cpuArch": "x86",
+    "ram": "16 LPDDR5X (on package)",
+    "camera": "13 MP autofocus",
+    "frontCamera": "5 MP Windows Hello face-authentication camera",
+    "battery": "Typical 4070 (min 3800), 11.61 V; optional 9240, 10.8 V",
+    "ports": "2 x Thunderbolt 4 Type-C, USB 3.2 Gen2 Type-A, DC-in; optional RJ45; top slot: 1D/2D barcode or HF RFID; micro-SIM (optional); all barred from hazardous areas",
+    "docking": "Getac DS100 USB-C docking station (non-hazardous areas)",
+    "network": "Wi-Fi 7; optional 4G LTE, 5G Sub-6",
+    "wifi": "Intel Wi-Fi 7 BE201 (802.11be)",
+    "bluetooth": "Bluetooth 5.4",
+    "nfc": "Optional HF RFID reader (13.56 MHz)",
+    "gnss": "Optional, with 4G/5G module (GPS, GLONASS, Galileo, BeiDou, QZSS)",
+    "sim": "Micro-SIM (3FF), dual SIM with eSIM",
+    "keys": "Power + 5 programmable buttons",
+    "biometrics": "Windows Hello face camera",
+    "pen": "Dual-mode touch with digitizer pen",
+    "keyboard": "Tablet only",
+    "storage": "256 GB PCIe NVMe (options 512 GB, 1000 GB, 2000 GB)",
+    "replaceableBattery": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "eSIM"
+    ],
+    "weightG": 1150,
+    "dimensionsMm": "279 × 194.5 × 23.9",
+    "ipRating": "IP66",
+    "ruggedness": "MIL-STD-810H; 1.8 m (6 ft) drop in use",
+    "operatingTemp": "−21 °C to +55 °C (standard UX10 G5: −29 to +63)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager, top slot)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF RFID reader, top slot)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (via optional HF RFID reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (13 MP rear, 5 MP front)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 Pro, x86; Copilot+ PC per press release)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.iecex.number": "Getac's certificate names the model with a 'c' suffix and doesn't name the generation. We matched it to this generation by its batteries, dust group and ambient range.",
+    "os.edition": "The maker doesn't state the edition year."
+  },
+  "features": [
+    "nfc",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "User-replaceable battery"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "bartec-et60-65ex2-windows",
+    "winmate-m101ad-ex",
+    "durabook-u11i-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 24.0099X issue 2 (UX10-Exc), 2026-09-03, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS24.0099/002/deliverable/IECEx_EPS_24.0099X_002.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 Home and Pro (25H2 end listed 10/13/2027; 24H2 10/14/2026)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro"
+    },
+    {
+      "label": "Getac: UX10-EX (G5) product specification, generated 2026-09-23",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_UX10G5-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: UX10-EX accessory spec brochure (2026)",
+      "url": "https://www.getac.com/content/dam/getac/product-accessory-data-pdf/en/Getac_UX10-EX_Accessory.pdf"
+    },
+    {
+      "label": "Getac: UX10 G5 (standard, non-Ex) product specification, generated 2026-09-17",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_UX10G5_EN_Product.pdf"
+    },
+    {
+      "label": "Getac via EIN Presswire: Press release 2026-10-01: next-generation UX10-EX",
+      "url": "https://www.einpresswire.com/article/946669191/getac-enhances-its-portfolio-of-atex-and-iecex-certified-fully-rugged-tablets-with-launch-of-next-generation-ux10-ex"
+    }
+  ]
+}

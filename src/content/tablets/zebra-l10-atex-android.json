@@ -1,0 +1,157 @@
+{
+  "productId": "ZB-L10ATEX-AND",
+  "name": "Zebra L10 ATEX (Android)",
+  "brand": "Zebra",
+  "brandSlug": "zebra",
+  "manufacturer": {
+    "name": "Zebra Technologies",
+    "country": "USA",
+    "website": "https://www.zebra.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "No longer in Zebra's range. The IECEx certificate for this version was suspended on 6 March 2026; units made before then are unaffected.",
+  "launchYear": 2018,
+  "summary": "The Zebra L10 ATEX (Android) is the hazardous-area version of a Zebra rugged 10.1-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an increased-safety (Ex ec) design running Android 10. It has been discontinued.",
+  "image": "../../assets/tablets/zebra-l10-atex-android.webp",
+  "imageAlt": "Zebra L10 ATEX (Android), front view",
+  "certification": {
+    "otherSchemes": [
+      "Meets IP54 and a 1 m drop to concrete in Ex mode",
+      "IP65, 1.8 m drop and -20 to +60 °C in non-hazardous locations (spec sheet)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ec IIC T6 Gc / II 3D Ex tc IIIB T85°C Dc",
+      "kind": "type-examination",
+      "number": "TÜV 19 ATEX 8422 X",
+      "status": "IECEx SUSPENDED 2026-03-06 (issue 0). Certificate note: the suspension does not affect products made or installed before that date. ATEX status unknown."
+    },
+    "iecex": {
+      "marking": "Ex ec IIC T6 Gc / Ex tc IIIB T85°C Dc",
+      "number": "IECEx TUR 19.0052X (issue 0, 2020-02-19, type RTL10B1), Suspended 2026-03-06"
+    },
+    "northAmerica": "C1D2 versions of the L10 exist (separate hazardous-location SKU)",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Increased safety (Ex ec)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T6",
+    "maxSurfaceTemp": "85 °C",
+    "epl": "Gc / Dc",
+    "ambient": "+5 °C to +35 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Do not rub plastic parts or the display panel (electrostatic risk). Test level corresponds to low risk of mechanical danger: protect from mechanical danger. All I/O ports and the DC-in connector must not be used in the explosive atmosphere. Use in at least pollution degree 2 (IEC 60664-1). Charge only in the safe area. Hot-swap of the bridge battery only outside the hazardous location.",
+    "peripherals": "All I/O ports (USB, USB-C, RJ-45, HDMI/RS232, audio, micro SD, internal SIM) and DC-in must not be used in the explosive atmosphere.",
+    "certifiedAccessories": "Spec sheet: additional 36 Wh ATEX/IECEx standard battery (PN 450173), AC adapter (PN 450154 NA / 450042 EU), long active digitizer pen (PN 440036), short active pen with tether (PN 440037), screen protector (PN 400022). \"Other L10 accessories not listed here are not compatible with L10 ATEX models\" (no vehicle dock, keyboard or hard handle). The AC adapter is for the safe area only."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 10",
+    "edition": "Android 10"
+  },
+  "specs": {
+    "display": "10.1-inch",
+    "resolution": "1920 × 1200",
+    "brightness": "1000 nits",
+    "chip": "Qualcomm Snapdragon 660 (octa-core 2.2 GHz)",
+    "cpuArch": "Arm",
+    "ram": "4 GB",
+    "camera": "13 MP",
+    "frontCamera": "5 MP (Android)",
+    "batteryWh": "36 Wh",
+    "hotSwap": "Standard bridge battery, 1 minute swap time (outside hazardous locations)",
+    "batteryLife": "Up to 9.8 hours (Android)",
+    "ports": "2 x USB (2.0 on Android), USB-C, RJ-45, audio, dual nano-SIM, microSDXC",
+    "network": "Wi-Fi; cellular radio with GPS",
+    "wifi": "802.11a/b/g/n/ac/d/h/i/r/k/w",
+    "bluetooth": "5.0 Class 2 (BLE)",
+    "touch": "Auto-sensing standard, glove and wet touch",
+    "pen": "Active digitizer pen",
+    "gloveTouch": true,
+    "connectivity": [],
+    "dimensionsMm": "XSLATE 305.1 × 225.6 × 31; XPAD 305.6 × 278.7 × 32",
+    "ipRating": "IP65 (non-hazardous locations); IP54 in Ex mode",
+    "exIp": "IP54 (spec sheet, Ex mode)",
+    "ruggedness": "1 m drop to concrete in Ex mode; 1.8 m outside (spec sheet)",
+    "operatingTemp": "−20 °C to +60 °C (non-hazardous)",
+    "partNumbers": "RTL10B1 (type in IECEx TUR 19.0052X); an RTL10B1-O4AA0X0040A6 reseller listing is described as ATEX/IECEx"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (1D/2D reader on the XPAD only)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "safety.conditions": "From the IECEx certificate for the Android version (suspended in March 2026); the Windows version's certificate isn't published.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.chip": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.partNumbers": "Order codes from a certificate or distributor; confirm them with the maker when ordering.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "barcode"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "T6 temperature class, the strictest rating",
+    "Built-in barcode imager"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "Zone 2 only, so not for Zone 1 areas",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "Ambient rating tops out at +35 °C",
+    "Not certified below 5 °C ambient"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "bartec-et60-65ex2-android",
+    "getac-zx10-ex",
+    "atexxo-zone-2-galaxy-tab-active5-pro"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / TUV Rheinland (TUR): IECEx TUR 19.0052X issue 0 (Zebra RTL10B1), 2020-02-19, SUSPENDED 2026-03-06",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/TUR/IECExTUR19.0052/000/deliverable/IECEx_TUR_19.0052_000.pdf"
+    },
+    {
+      "label": "Zebra: L10 ATEX spec sheet, L10-ATEX-EN 01/20/2021",
+      "url": "https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/l10-atex-tablet-spec-sheet-en-us.pdf"
+    },
+    {
+      "label": "Zebra: L10 Windows support page: last sale and service end dates (IX101L1/L2/L3; no ATEX entry)",
+      "url": "https://Zebra.com/us/en/support-downloads/tablets/l10-windows.html"
+    },
+    {
+      "label": "Zebra: L10 series product page: \"no longer offering this product for sale\" (L10ax), last sale 2025-08-05",
+      "url": "https://www.zebra.com/us/en/products/tablets/l10-series-xslate-xpad.html"
+    }
+  ]
+}

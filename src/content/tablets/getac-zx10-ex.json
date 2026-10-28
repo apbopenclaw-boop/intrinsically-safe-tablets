@@ -1,0 +1,184 @@
+{
+  "productId": "GT-ZX10EX",
+  "name": "Getac ZX10-EX G2",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2025,
+  "summary": "The Getac ZX10-EX G2 is the hazardous-area version of a Getac rugged 10.1-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Android 15.",
+  "image": "../../assets/tablets/getac-zx10-ex.webp",
+  "imageAlt": "Getac ZX10-EX G2, front view",
+  "certification": {
+    "otherSchemes": [
+      "MIL-STD-810H",
+      "Android Enterprise Recommended (standard ZX10 G2 datasheet",
+      "Ex datasheet shows no badge)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 2 (2025-07-10), checked 2026-10-25; ATEX not published; UKEX not found"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T130°C Dc",
+      "number": "IECEx EPS 23.0005X",
+      "scope": "Issue 2, 2025-07-10, models ZX10-Ex and ZX10-Exc"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Ambient −21 to +55 °C. Protect from excessive UV light and mechanical impact (reduced-height impact test). Connection interfaces never used in hazardous areas. Battery never changed, charged or removed in hazardous areas. Not next to strong charge-generating processes. Use only Li-ion battery BP1S1P4990B, BP1S1P4990B-1, BP1S2P4990B or BP1S2P4990B-1.",
+    "peripherals": "All connection interfaces (USB, Thunderbolt, DC-in, docking connector, LAN, serial) must never be used in hazardous areas (certificate condition). Optional internal modules named in the certificate are covered as part of the certified tablet. USB-C, USB 2.0 host, microSD and SIM slot are barred from hazardous areas.",
+    "certifiedAccessories": "Named in the IECEx certificate: hand strap, shoulder strap or shoulder harness strap, capacitive stylus and tether. Anti-static screen film for hazardous use. Hard handle (factory option, not user-swappable) and digitizer pen are on the datasheet but not named in the certificate accessory list. NOT for hazardous areas: AC adapters, chargers, spare and high-capacity batteries (replace in non-hazardous areas only)."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 15",
+    "atLaunch": "Android 13",
+    "edition": "Android 15.0",
+    "upgradeLimit": "Getac commits to at least three Android versions per product generation (device dependent)",
+    "securityUntil": "2029-12-31",
+    "updates": "Security updates until December 2029"
+  },
+  "specs": {
+    "display": "10.1-inch TFT LCD, LumiBond bonded",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "1000 nits",
+    "outdoor": "Getac sunlight-readable",
+    "chip": "Qualcomm QCS6490 octa-core 1.9 GHz (max 2.7 GHz), Adreno 643, Hexagon NPU 13 TOPS",
+    "cpuArch": "Arm",
+    "ram": "8 GB",
+    "camera": "16 MP autofocus",
+    "frontCamera": "8 MP webcam",
+    "battery": "Typical 4990 (min 4870), 3.88 V; optional 9980 (min 9740)",
+    "ports": "USB 3.2 Gen1 Type-C (DP, PD), USB 2.0 host, microSD, audio combo; optional smart card reader, barcode imager, NFC; Kensington lock; all barred from hazardous areas",
+    "network": "Wi-Fi 6E; optional 4G LTE, 5G Sub-6, dual SIM",
+    "wifi": "Wi-Fi 6E 802.11ax",
+    "bluetooth": "Bluetooth 5.2",
+    "nfc": "Optional (13.56 MHz, ISO 15693, 14443 A/B, Mifare, FeliCa)",
+    "gnss": "Optional dedicated L1/L5 GPS (GPS, GLONASS, Galileo, BeiDou)",
+    "sim": "Nano-SIM 4FF; dual SIM with eSIM optional",
+    "keys": "Power + 4 programmable buttons",
+    "touch": "Dual-mode touch (multi-touch and digitizer); glove-enabled capacitive on standard model",
+    "pen": "Digitizer pen (datasheet); capacitive stylus named in certificate",
+    "keyboard": "Tablet only",
+    "apps": "Getac Camera, Driving Safety Utility (trial), Monitoring and Management agents (trial)",
+    "storage": "256 GB, microSD",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6E",
+      "eSIM"
+    ],
+    "weightG": 1050,
+    "dimensionsMm": "275 × 204 × 20.05",
+    "ipRating": "IP66",
+    "ruggedness": "MIL-STD-810H; 1.8 m (6 ft) drop",
+    "operatingTemp": "−21 °C to +55 °C (standard ZX10 G2: −29 to +63)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (optional 13.56 MHz NFC)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (16 MP rear, 8 MP front)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.iecex.number": "Getac's certificate names the model with a 'c' suffix and doesn't name the generation. We matched it to this generation by its batteries, dust group and ambient range.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.atLaunch": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.upgradeLimit": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.securityUntil": "Getac's date for the standard model; Getac lists no separate date for the EX version.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "barcode"
+  ],
+  "strengths": [
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "User-replaceable battery",
+    "Among the lightest Zone 2 tablets of its size we list, at 1050 g in use"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "bartec-et60-65ex2-android",
+    "atexxo-zone-2-galaxy-tab-active5-pro",
+    "isafe-is940-2"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 23.0005X issue 2 (ZX10-Ex, ZX10-Exc), 2025-07-10, Current (issue 0 of 2024-02-21 also read)",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS23.0005/002/deliverable/IECEx_EPS_23.0005X_002.pdf"
+    },
+    {
+      "label": "Getac: ZX10-EX (G2) product specification, generated 2026-09-11",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX10_G2-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: ZX10-EX accessory spec brochure",
+      "url": "https://www.getac.com/content/dam/getac/product-accessory-data-pdf/en/Getac_ZX10-EX_Accessory.pdf"
+    },
+    {
+      "label": "Getac: ZX10 G2 (standard, non-Ex) product specification, generated 2026-09-11",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX10_G2_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: ZX10-EX product page (shows G2 spec; text says Android 13, spec table Android 15)",
+      "url": "https://www.getac.com/en/products/tablets/zx10-ex/"
+    },
+    {
+      "label": "Getac: Getac Device Update Center: security update end dates and policy (5 years from first availability, 90-day cadence)",
+      "url": "https://www.getac.com/en/getac-device-update-center/"
+    }
+  ]
+}

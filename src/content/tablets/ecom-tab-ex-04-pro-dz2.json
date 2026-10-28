@@ -1,0 +1,149 @@
+{
+  "productId": "PF-TE04PRO-DZ2",
+  "name": "ecom Tab-Ex 04 Pro DZ2",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 10.1,
+  "status": "discontinued",
+  "statusNote": "ecom lists it as discontinued and names no 10-inch successor.",
+  "launchYear": 2024,
+  "summary": "The ecom Tab-Ex 04 Pro DZ2 is an intrinsically safe (Ex ic) 10.1-inch Android tablet from ecom (Pepperl+Fuchs), certified for Zone 2/22 under ATEX and IECEx. It runs Android 15. It has been discontinued.",
+  "image": "../../assets/tablets/ecom-tab-ex-04-pro-dz2.webp",
+  "imageAlt": "ecom Tab-Ex 04 Pro DZ2, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T5 Gc / II 3D Ex ic IIIC T135°C Dc",
+      "kind": "type-examination",
+      "number": "EPS 23 ATEX 1 251 X",
+      "status": "IECEx Current (issue 1), checked 2026-10-25. Product moved to the archive; ecom's release plan still lists it."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T5 Gc / Ex ic IIIC T135°C Dc",
+      "number": "IECEx EPS 23.0079X",
+      "scope": "Issue 1, 2025-08-05"
+    },
+    "northAmerica": "SGS: Class I, Division 2, Groups A,B,C,D T5; Class II, Division 2, Groups F, G T135°C; Ta −20 °C to +55 °C",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T5",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "conditions": "Protect from high-energy impacts and static; Ex-protective case correctly fitted; battery pack and SIM/SD only in ordinary areas; USB-C and POGO only in ordinary areas; charge −5 °C to +45 °C; USB-C Um 13.4 V, 3.2 A; Samsung headset EHS64AVFWE allowed (IECEx EPS 23.0079X).",
+    "certifiedAccessories": "Named in the certificate: S Pen, Ex-protective case, belt clip BC T01, chest harness CH TPRO X2, leather case LC TPRO X2, stylus tether, carrying strap, Samsung headset EHS64AVFWE (audio jack)."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 15",
+    "atLaunch": "Android 13",
+    "edition": "Android 15 (latest firmware)",
+    "securityUntil": "2027-09-30",
+    "securityUntilLabel": "Q3 2027",
+    "updates": "Security updates until Q3 2027"
+  },
+  "specs": {
+    "display": "10.1-inch",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "480 nits",
+    "chip": "Qualcomm Snapdragon SM7325-2-AB octa-core (4 x 2.4 + 4 x 1.8 GHz)",
+    "cpuArch": "Arm",
+    "ram": "6 GB",
+    "camera": "13 MP AF",
+    "frontCamera": "8 MP",
+    "video": "UHD 4K at 30 fps",
+    "battery": "7400 mAh",
+    "batteryWh": "28.12 Wh",
+    "batteryLife": "Up to 15 h",
+    "network": "4G/5G optional",
+    "bluetooth": "Bluetooth 5.2",
+    "nfc": "Yes (plus ANT+)",
+    "gnss": "GPS, Glonass, Beidou, Galileo, QZSS",
+    "sim": "1 x nano-SIM (optional)",
+    "touch": "Can be operated while wearing gloves",
+    "storage": "128 GB, microSD up to 1 TB",
+    "gloveTouch": true,
+    "connectivity": [
+      "5G",
+      "NFC"
+    ],
+    "weightG": 930,
+    "dimensionsMm": "170.2 × 243.5 × 15",
+    "ipRating": "IP68 (EN/IEC 60529)",
+    "operatingTemp": "−20 °C to +55 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "5G on cellular versions",
+    "Among the lightest Zone 2 tablets of its size we list, at 930 g in use"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "isafe-is940-2",
+    "touchstar-ts3300",
+    "atexxo-zone-2-galaxy-tab-active5-pro"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX Certificate of Conformity EPS 23 ATEX 1 251 X, Rev 0 (2024-02-26), Tab-Ex 04 Pro DZ2 (ecom CERT-7324)",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/tab-ex-04-pro/ATEX_certificate_Tab-Ex_04_Pro_DZ2_CERT-7324.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 23.0079X issue 1 (2025-08-05), Tab-Ex 04 Pro DZ2",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1956268/view"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 04 Pro DZ2 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-04-pro-dz2/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ecom FAQ: Release Plans of Major Products (OS and security patch plan; last updated 2025-11-18)",
+      "url": "https://support.ecom-ex.com/457976005.html"
+    }
+  ]
+}

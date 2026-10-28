@@ -1,0 +1,88 @@
+name: Deploy to GitHub Pages
+
+# Needs Settings > Pages > Source set to "GitHub Actions".
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: withastro/action@v6
+      # IndexNow (Bing, Yandex and others) hears only about pages that are new, removed or have a new lastmod.
+      # The previous sitemap comes from the last successful deploy's artifact: Cloudflare blocks the runner
+      # from fetching the live one.
+      - name: List pages changed since the last deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          last=$(gh run list --workflow deploy.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          if [ -n "$last" ]; then gh run download "$last" --name sitemap --dir previous || echo "No sitemap saved by run $last"; fi
+          python3 scripts/indexnow_changed.py previous/sitemap.xml dist/sitemap.xml > indexnow-urls.txt
+          echo "$(grep -c . indexnow-urls.txt || true) changed pages"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-urls
+          path: indexnow-urls.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sitemap
+          path: dist/sitemap.xml
+          retention-days: 90
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+  # Runs after the new version is live, so Cloudflare never re-caches the old one.
+  purge-cache:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge Cloudflare cache
+        run: |
+          curl -s -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_CACHE_PURGE_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"purge_everything": true}' \
+            | jq '.success'
+
+  indexnow:
+    needs: purge-cache
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: indexnow-urls
+      - name: Submit changed pages to IndexNow
+        # The key file is public/d795f02264d353ceec8423b9507f3e20.txt (also public/indexnow-key.txt), as on the legacy site
+        run: |
+          if ! grep -q . indexnow-urls.txt; then echo "No changed pages"; exit 0; fi
+          jq -R . indexnow-urls.txt | jq -s '{
+            host: "explosionprooftablets.com",
+            key: "d795f02264d353ceec8423b9507f3e20",
+            keyLocation: "https://explosionprooftablets.com/d795f02264d353ceec8423b9507f3e20.txt",
+            urlList: .
+          }' > indexnow.json
+          curl -s -o /dev/null -w "IndexNow: HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" --data @indexnow.json

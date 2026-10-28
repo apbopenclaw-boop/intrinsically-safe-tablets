@@ -1,0 +1,255 @@
+{
+  "productId": "XC-XCR-PRO11",
+  "name": "Xciel XCRiPad Pro 11-inch",
+  "brand": "Xciel",
+  "brandSlug": "xciel",
+  "manufacturer": {
+    "name": "Xciel Inc",
+    "country": "USA",
+    "website": "https://www.xciel.com"
+  },
+  "type": "ex-case",
+  "screenIn": 11,
+  "hostDevice": "iPad Pro 11-inch (M4)",
+  "otherHosts": [
+    "iPad Pro 11-inch (4th generation, M2)",
+    "iPad Pro 11-inch (3rd generation, M1)",
+    "iPad Pro 11-inch (2nd generation)",
+    "iPad Pro 11-inch (1st generation)"
+  ],
+  "fitting": "self-install",
+  "removable": "Yes (rubber enclosure; Xciel sells an ATEX Zone 2 version the customer installs)",
+  "status": "current",
+  "summary": "The Xciel XCRiPad Pro 11-inch is an Ex ic-rated case for the iPad Pro 11-inch (M4), rated for Zone 2 under ATEX. The tablet inside is a standard iPad Pro 11-inch (M4) running iPadOS 27, so it works with the same apps and device management.",
+  "image": "../../assets/tablets/xciel-xcripad-pro-11.webp",
+  "imageAlt": "Xciel XCRiPad Pro 11-inch, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "Ex ic IIC T4 Gc",
+      "kind": "not-published"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "tempClass": "T4",
+    "epl": "Gc",
+    "ambient": "−20 °C to +50 °C"
+  },
+  "safety": {
+    "batterySwap": "Outside the hazardous area only",
+    "certifiedAccessories": "Nylon case, touch pen (stylus), touch winter gloves, chest harness, Xciel Care service. Ex rating of accessories not stated."
+  },
+  "os": {
+    "name": "iPadOS",
+    "version": "iPadOS 27",
+    "atLaunch": "iPadOS 17.5",
+    "edition": "iPadOS (consumer; no LTSC or enterprise edition)",
+    "upgradeLimit": "Still supported by iPadOS 27 (current)",
+    "securityUntil": "2031-05-15",
+    "supportYears": 7,
+    "updates": "Security updates for 7–8 years (based on previous iPad Pro support)"
+  },
+  "specs": {
+    "display": "11-inch Ultra Retina XDR tandem OLED, ProMotion 10-120 Hz, P3, True Tone, antireflective coating; nano-texture option on 1 and 2 TB",
+    "resolution": "2420 × 1668 (264 ppi)",
+    "brightness": "1000 (SDR max)",
+    "chip": "Apple M4 (up to 10-core CPU)",
+    "cpuArch": "Arm",
+    "ram": "8 (256/512 GB) / 16 (1/2 TB)",
+    "camera": "12 MP Wide, f/1.8, True Tone flash",
+    "frontCamera": "12 MP Ultra Wide / Center Stage, landscape, TrueDepth (Face ID)",
+    "video": "4K video, ProRes",
+    "batteryWh": "31.29",
+    "hotSwap": "No",
+    "batteryLife": "Up to 10 hours web or video on Wi-Fi",
+    "ports": "Thunderbolt / USB 4 (USB-C); Smart Connector; magnetic Apple Pencil connector",
+    "docking": "USB-C hubs and docks; Smart Connector or magnetic keyboard accessories where the iPad has them. Not usable through sealed Ex cases except the USB-C or Lightning charging port where the case exposes it.",
+    "network": "Wi-Fi only or Wi-Fi + Cellular (5G sub-6 GHz)",
+    "wifi": "Wi-Fi 6E (802.11ax), 2x2 MIMO",
+    "bluetooth": "Bluetooth 5.3",
+    "gnss": "GPS/GNSS on Wi-Fi + Cellular models; digital compass and Wi-Fi location on all",
+    "sim": "eSIM only (cellular models)",
+    "keys": "Top button (no Touch ID; Face ID model), volume buttons; no programmable hardware key",
+    "biometrics": "Face ID",
+    "depthSensing": "LiDAR scanner",
+    "pen": "Apple Pencil Pro, Apple Pencil (USB-C); magnetic attach and charge",
+    "keyboard": "Smart Connector (Magic Keyboard for iPad Pro)",
+    "storage": "256 GB, 512 GB, 1024 GB, 2048 GB",
+    "replaceableBattery": false,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6E",
+      "eSIM"
+    ],
+    "dimensionsMm": "190 × 279 × 16 (Xciel's XCRiPad Pro 11 (2022) datasheet; no 2024 figure published)",
+    "ipRating": "IP54",
+    "operatingTemp": "−20 °C to +50 °C",
+    "partNumbers": "XCRIPADPRO112024; with-iPad variants (256 GB to 2 TB, Wi-Fi or Cellular)"
+  },
+  "throughCase": [
+    {
+      "label": "Apple Pencil / stylus",
+      "value": "Touch pen (stylus) offered; Apple Pencil attach/charge not possible through the rubber enclosure (inferred)"
+    },
+    {
+      "label": "Side and volume buttons",
+      "value": "External power, volume and mute buttons"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Camera cover with transparent lens protection (camera usable)"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Touch through the case; 'compatible with stylus and gloves'"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C through a water/dust-proof power plug"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Through the sealed power plug (charging)"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Nothing stated as removed or disabled"
+    },
+    {
+      "label": "Mounting points",
+      "value": "Shoulder strap and handling/clipping features (with nylon case); chest harness option"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (third-party PTT apps over Wi-Fi/cellular; no PTT key; Ex-rated? n/a)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party lone-worker apps)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based scanning; no scan engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (no NFC reader on any iPad)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Built in on the iPad Pro (LiDAR scanner); access through the case: see through_case row"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (FaceTime, Teams or remote-assist apps; needs camera and audio access through the case)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (iPadOS only)"
+    },
+    {
+      "label": "Bluetooth gas detectors",
+      "value": "Via app (Bluetooth 5.3; vendor app; no maker-certified integration listed)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "Marking as stated by Xciel. Xciel doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.epl": "Marking as stated by Xciel. Xciel doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.gasGroup": "Marking as stated by Xciel. Xciel doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.tempClass": "Marking as stated by Xciel. Xciel doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "certification.ambient": "Marking as stated by Xciel. Xciel doesn't publish the certificate or declaration of conformity, so we haven't been able to check it.",
+    "safety.batterySwap": "The iPad's battery isn't user-replaceable.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.weightG": "From a single source; the maker's figures vary.",
+    "specs.dimensionsMm": "From a single source.",
+    "specs.operatingTemp": "From a single source.",
+    "removable": "Not stated by the maker for this exact model.",
+    "throughCase.Apple Pencil / stylus": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Rear cameras": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Touchscreen": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Charging": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.USB-C port": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Removed or disabled": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Mounting points": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Lone worker": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model.",
+    "capabilities.3D scanning / LiDAR": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "capabilities.Bluetooth gas detectors": "Not confirmed by the maker for this exact model."
+  },
+  "features": [
+    "updates-2030"
+  ],
+  "strengths": [
+    "5G on cellular versions",
+    "Security updates for 7–8 years (based on previous iPad Pro support)",
+    "A standard iPad Pro 11-inch (M4) inside, with the same apps and Apple device management"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "Ex marking not yet confirmed against a published certificate",
+    "No dust zone rating",
+    "ATEX only: no IECEx certificate",
+    "In-use weight not published"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "ipad"
+  ],
+  "alternatives": [
+    "armadex-ex-unicase",
+    "atexxo-zone-2-ipad-a16",
+    "xshielder-ipad-pro-11"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "Xciel: XCRiPad 11 inch (A16) datasheet (PDF)",
+      "url": "https://cdn.hibuwebsites.com/5a8aca1a55574b489d306f762b121113/files/uploaded/XCRIPAD+11+SPEC.pdf"
+    },
+    {
+      "label": "Xciel: XCRiPad mini 6 and Air (5th gen) datasheets (PDF, 2022-2023)",
+      "url": "https://cdn.hibuwebsites.com/5a8aca1a55574b489d306f762b121113/files/uploaded/XCRIPAD%20mini%206%20033023.pdf"
+    },
+    {
+      "label": "Xciel: I.S. iPad range page (read 2026-10-25)",
+      "url": "https://www.xciel.com/rugged-ipads"
+    },
+    {
+      "label": "Xciel: Online store: XCRiPad 11 (11th gen), mini 7, Air 11 2024, Pro 11 2024, mini 5, mini 4 pages (read 2026-10-25)",
+      "url": "https://xciel-inc-1.mybigcommerce.com/xcripad-11-11th-generation/"
+    },
+    {
+      "label": "Apple: Identify your iPad model (model numbers, years)",
+      "url": "https://support.apple.com/en-us/108043"
+    },
+    {
+      "label": "Apple: UK PSTI Statements of Compliance, one per model (regulatoryinfo.apple.com/ukpsti): first supply date and minimum 5-year defined support period",
+      "url": "https://regulatoryinfo.apple.com/ukpsti"
+    },
+    {
+      "label": "Apple: iPadOS 27 compatibility list (apple.com/os/ipados)",
+      "url": "https://www.apple.com/os/ipados/"
+    },
+    {
+      "label": "ERS Online: XCRiPad Zone 2 listings (10.2, Pro 11)",
+      "url": "https://ers-online.co.uk/o31502/xcripad1022019-xciel-zone-2-intrinsically-safe-solutions-for-ipad"
+    },
+    {
+      "label": "BGR / EveryMac / 9to5Mac: iPadOS 27 drops iPad mini 5, iPad 8, iPad Air 3, iPad Pro 11-inch 1st gen (release 2026-09-14)",
+      "url": "https://www.bgr.com/2190915/ipad-models-that-wont-get-ipados-27-update/"
+    }
+  ]
+}

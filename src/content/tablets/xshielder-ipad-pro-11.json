@@ -1,0 +1,276 @@
+{
+  "productId": "XS-IPP11",
+  "name": "Xshielder iPad Pro 11-inch",
+  "brand": "Xshielder",
+  "brandSlug": "xshielder",
+  "manufacturer": {
+    "name": "Xshielder AS",
+    "country": "Norway",
+    "website": "https://xshielder.com"
+  },
+  "type": "ex-case",
+  "screenIn": 11,
+  "hostDevice": "iPad Pro 11-inch (M5)",
+  "otherHosts": [
+    "iPad Pro 11-inch (M4)"
+  ],
+  "fitting": "factory-fitted",
+  "removable": "Yes, but only by Xshielder authorised personnel (lid glued on the ATEX version)",
+  "status": "current",
+  "launchYear": 2026,
+  "summary": "The Xshielder iPad Pro 11-inch is a flameproof (Ex d) case for the iPad Pro 11-inch (M5), certified for Zone 1/21 under ATEX. The tablet inside is a standard iPad Pro 11-inch (M5) running iPadOS 27, so it works with the same apps and device management.",
+  "image": "../../assets/tablets/xshielder-ipad-pro-11.webp",
+  "imageAlt": "Xshielder iPad Pro 11-inch, front view",
+  "certification": {
+    "otherSchemes": [
+      "Lanyard hole to NS-9611 (pending testing)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex db IIC T6 Gb / II 2D Ex tb IIIC T80°C Db",
+      "kind": "type-examination",
+      "status": "ATEX certified (confirmed by Xshielder, 2026-10-26). IECEx planned."
+    },
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Flameproof enclosure (Ex db)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T6",
+    "maxSurfaceTemp": "80 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +45 °C"
+  },
+  "safety": {
+    "batterySwap": "Outside the hazardous area only",
+    "certifiedAccessories": "Xshielder Stylus (capacitive, 22 g, aluminium, with lanyard). Ex rating of the stylus not stated. Apple Pencil not mentioned."
+  },
+  "os": {
+    "name": "iPadOS",
+    "version": "iPadOS 27",
+    "atLaunch": "iPadOS 26",
+    "edition": "iPadOS (consumer; no LTSC or enterprise edition)",
+    "upgradeLimit": "Still supported by iPadOS 27 (current)",
+    "securityUntil": "2032-10-22",
+    "supportYears": 7,
+    "updates": "Security updates for 7–8 years (based on previous iPad Pro support)"
+  },
+  "specs": {
+    "display": "11-inch Ultra Retina XDR tandem OLED, ProMotion 10-120 Hz, P3, True Tone, antireflective coating; nano-texture glass option on 1 and 2 TB",
+    "resolution": "2420 × 1668 (264 ppi)",
+    "brightness": "1000 (SDR max)",
+    "chip": "Apple M5 (up to 10-core CPU)",
+    "cpuArch": "Arm",
+    "ram": "12 (256/512 GB) / 16 (1/2 TB)",
+    "camera": "12 MP Wide, f/1.8, True Tone flash",
+    "frontCamera": "12 MP Center Stage, landscape, TrueDepth (Face ID)",
+    "video": "4K video, ProRes",
+    "battery": "8160",
+    "batteryWh": "31.29",
+    "hotSwap": "No",
+    "batteryLife": "Up to 10 hours web or video on Wi-Fi",
+    "ports": "Thunderbolt / USB 4 (USB-C, up to 40 Gb/s); Smart Connector; magnetic Apple Pencil connector",
+    "docking": "USB-C hubs and docks; Smart Connector or magnetic keyboard accessories where the iPad has them. Not usable through sealed Ex cases except the USB-C or Lightning charging port where the case exposes it.",
+    "network": "Wi-Fi only or Wi-Fi + Cellular (5G sub-6 GHz)",
+    "wifi": "Wi-Fi 7 (802.11be), 2x2 MIMO",
+    "bluetooth": "Bluetooth 6",
+    "gnss": "GPS/GNSS on Wi-Fi + Cellular models; digital compass and Wi-Fi location on all",
+    "sim": "eSIM only (cellular models)",
+    "keys": "Top button (no Touch ID; Face ID model), volume buttons; no programmable hardware key",
+    "biometrics": "Face ID",
+    "depthSensing": "LiDAR scanner",
+    "pen": "Apple Pencil Pro, Apple Pencil (USB-C); magnetic attach and charge, hover",
+    "keyboard": "Smart Connector (Magic Keyboard for iPad Pro)",
+    "storage": "256 GB, 512 GB, 1024 GB, 2048 GB",
+    "replaceableBattery": false,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 7",
+      "eSIM"
+    ],
+    "weightG": 1350,
+    "weightNote": "Including the tablet",
+    "dimensionsMm": "289 × 217 × 16",
+    "ipRating": "IP65 (pending testing)",
+    "operatingTemp": "−20 °C to +45 °C",
+    "partNumbers": "XS1-TB-G01-C01-S01; datasheet ref. iPad11P-000033-1"
+  },
+  "throughCase": [
+    {
+      "label": "Face ID / Touch ID",
+      "value": "Yes: Face ID works through the cover (confirmed by Xshielder)"
+    },
+    {
+      "label": "Apple Pencil / stylus",
+      "value": "Yes: stylus input works through the cover (confirmed by Xshielder); Xshielder capacitive stylus (22 g, interchangeable tips, lanyard) offered"
+    },
+    {
+      "label": "Side and volume buttons",
+      "value": "Yes: usable through the cover (Xshielder: all iPad Pro functions available)"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Yes: 12 MP Wide camera with 4K video and ProRes works through the cover (confirmed by Xshielder)"
+    },
+    {
+      "label": "LiDAR",
+      "value": "Yes: LiDAR works through the cover (confirmed by Xshielder)"
+    },
+    {
+      "label": "Front camera",
+      "value": "Yes: landscape 12 MP Center Stage camera with Face ID works through the cover (confirmed by Xshielder)"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Yes: works through the cover (Xshielder: all iPad Pro functions available)"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C charging as on a standard iPad Pro (confirmed by Xshielder); 50% in 30 min with a 60 W adapter (M5); no wireless"
+    },
+    {
+      "label": "Speakers and microphones",
+      "value": "Yes: all 4 microphones and 4 speakers usable (confirmed by Xshielder)"
+    },
+    {
+      "label": "Headset audio",
+      "value": "Yes: audio in and out works (confirmed by Xshielder); headsets via USB-C or Bluetooth, as the iPad Pro has no 3.5 mm jack"
+    },
+    {
+      "label": "USB-C port",
+      "value": "Yes: accessible for charging and data, as on a standard iPad Pro (confirmed by Xshielder)"
+    },
+    {
+      "label": "SIM card",
+      "value": "eSIM only (1 x eSIM, cellular models); no SIM tray"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Nothing removed or disabled: all iPad Pro features available (confirmed by Xshielder)"
+    },
+    {
+      "label": "Mounting points",
+      "value": "1/4-inch tripod mount; lanyard hole to NS-9611 (pending testing)"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (third-party PTT apps over Wi-Fi/cellular; no PTT key; Ex-rated? n/a)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party lone-worker apps)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based scanning; no scan engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (no NFC reader on any iPad)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Built in (iPad Pro LiDAR); Xshielder lists 'Pro camera with LiDAR'"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (FaceTime, Teams or remote-assist apps; cameras and audio work through the cover)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (iPadOS only)"
+    },
+    {
+      "label": "Bluetooth gas detectors",
+      "value": "Via app (Bluetooth 6 (M5) / 5.3 (M4); vendor app; no maker-certified integration listed)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.battery": "Apple states battery capacity in watt-hours only; this figure is from the case maker's documents.",
+    "specs.ipRating": "From a single source; not stated in the Ex certificate.",
+    "specs.operatingTemp": "From a single source.",
+    "fitting": "Not stated by the maker for this exact model.",
+    "removable": "Not stated by the maker for this exact model.",
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model."
+  },
+  "features": [
+    "lidar",
+    "updates-2030"
+  ],
+  "strengths": [
+    "T6 temperature class, the strictest rating",
+    "5G on cellular versions",
+    "Security updates for 7–8 years (based on previous iPad Pro support)",
+    "LiDAR scanner usable through the case",
+    "A standard iPad Pro 11-inch (M5) inside, with the same apps and Apple device management"
+  ],
+  "limitations": [
+    "ATEX only: no IECEx certificate",
+    "Ambient rating tops out at +45 °C",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [
+    "zone-1-tablets",
+    "ipad"
+  ],
+  "alternatives": [
+    "joy-factory-axtion-extreme-ipad-mini",
+    "xciel-xcz1-ipad-mini-6",
+    "atexxo-zone-1-ipad-mini-6"
+  ],
+  "sponsor": true,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx: IECEx online certificate database: holder searches for Getac, Winmate, Zebra, Panasonic, Dell, Durabook, Xplore, Twinhead (2026-10-25)",
+      "url": "https://www.iecex-certs.com/"
+    },
+    {
+      "label": "Xshielder: Datasheet iPad11P-000033-1 (PDF modified 2026-09-04)",
+      "url": "https://xshielder.com/hubfs/Datasheet-Xshielder-iPad11P-000033_1.pdf"
+    },
+    {
+      "label": "Xshielder: Xshielder ATEX iPad Pro 11 product page (read 2026-10-25)",
+      "url": "https://xshielder.com/products/atex-ipad"
+    },
+    {
+      "label": "Xshielder: Downloads page: 30 files, only iPad item is the datasheet (read 2026-10-25)",
+      "url": "https://xshielder.com/downloads"
+    },
+    {
+      "label": "Xshielder: Blog: Intrinsically Safe iPad: The Search Is Finally Over (updated Sept 2026)",
+      "url": "https://xshielder.com/blog/the-intrinsically-safe-ipad-tablet-alternative"
+    },
+    {
+      "label": "Apple: Identify your iPad model (model numbers, years)",
+      "url": "https://support.apple.com/en-us/108043"
+    },
+    {
+      "label": "Apple: UK PSTI Statements of Compliance, one per model (regulatoryinfo.apple.com/ukpsti): first supply date and minimum 5-year defined support period",
+      "url": "https://regulatoryinfo.apple.com/ukpsti"
+    },
+    {
+      "label": "Apple: iPadOS 27 compatibility list (apple.com/os/ipados)",
+      "url": "https://www.apple.com/os/ipados/"
+    },
+    {
+      "label": "mining-report.de: ATEX certified cases enable consumer tablets in underground mining environments (2026-05-05)",
+      "url": "https://mining-report.de/english/blog/atex-certified-cases-enable-consumer-tablets-in-underground-mining-environments/"
+    },
+    {
+      "label": "BGR / EveryMac / 9to5Mac: iPadOS 27 drops iPad mini 5, iPad 8, iPad Air 3, iPad Pro 11-inch 1st gen (release 2026-09-14)",
+      "url": "https://www.bgr.com/2190915/ipad-models-that-wont-get-ipados-27-update/"
+    }
+  ]
+}

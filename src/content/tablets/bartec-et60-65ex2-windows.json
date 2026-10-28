@@ -1,0 +1,205 @@
+{
+  "productId": "BT-ET6XEX2-WIN",
+  "name": "BARTEC ET60/65EX2 Windows",
+  "brand": "BARTEC",
+  "brandSlug": "bartec",
+  "manufacturer": {
+    "name": "BARTEC GmbH",
+    "country": "Germany",
+    "website": "https://bartec.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2026,
+  "summary": "The BARTEC ET60/65EX2 Windows is the hazardous-area version of a BARTEC rugged 10.1-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Windows 11 Professional.",
+  "image": "../../assets/tablets/bartec-et60-65ex2-windows.webp",
+  "imageAlt": "BARTEC ET60/65EX2 Windows, front view",
+  "certification": {
+    "otherSchemes": [
+      "CE, FCC/IC"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T135°C Dc IP64",
+      "kind": "type-examination",
+      "number": "EPS 26 ATEX 1 034 X",
+      "status": "IECEx Current, issue 0 (2026-07-21), checked 2026-10-26. ATEX EPS 26 ATEX 1 034 X confirmed by BARTEC EU DoC B1-T2E0-7C0003 (ET60EX2 Windows, 2026-08-11; Bureau Veritas CPS Germany, NB 2004; Category 3, internal production control)."
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T135°C Dc IP64",
+      "number": "IECEx EPS 26.0013X",
+      "scope": "Issue 0, 2026-07-21"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: battery pack changed or charged only outside hazardous areas; only battery pack type B7-T2Z0-0002 shall be used; connection or disconnection of external ports, opening the enclosure or replacing the battery live only if the atmosphere is shown to be absent; protect from high-energy impacts and high electrostatic charge; follow the manufacturer's safety instructions.",
+    "peripherals": "Ports (USB-A, Thunderbolt/USB-C, dock, keyboard connector) only if the atmosphere is shown to be absent; the supplied screws locking the I/O ports and the battery must be tightened when used in hazardous areas; charging accessories are required but not included.",
+    "certifiedAccessories": "Named in IECEx EPS 26.0013X as 'accessories for use in hazardous areas': battery B7-T2Z0-0002 (7.6 V / 4460 mAh), kickstand with hand strap B7-T2Z0-0003, hand strap B7-T2Z0-0004, shoulder strap B7-T2Z0-0006, stylus holder B7-T2Z0-0009, screen protector B7-T2Z0-0011, leather holster B7-T2Z0-0012, 4-point belt B7-T2Z0-0013, integrated stylus B7-T2Z0-0014, stylus 17-S1Z0-0008. Battery changing and charging only outside hazardous areas."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Professional",
+    "edition": "Windows 11 Professional (64-bit); feature version not stated",
+    "upgradeLimit": "Windows 11 feature updates (no fixed limit)",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "10.1-inch Optically bonded capacitive multi-touch, Corning Gorilla Glass, contrast 1000:1",
+    "resolution": "1920 × 1200 (WUXGA; page prints 1900 × 1200)",
+    "brightness": "1000 nits",
+    "outdoor": "1000-nit display, 'easy to see' in bright sunlight (maker)",
+    "chip": "Intel Core Ultra 5 125U",
+    "cpuArch": "x86",
+    "ram": "16 GB",
+    "camera": "13 MP autofocus with LED flash",
+    "frontCamera": "5 MP RGB with mechanical privacy shade",
+    "battery": "4460 mAh",
+    "batteryWh": "33.9 Wh",
+    "hotSwap": "Yes (true hot swap, minimum 60 seconds)",
+    "ports": "1 x USB 3.1 Type A; 2 x Thunderbolt 4/USB4 Type C; docking connector; keyboard connector; 1 x USB 2.0 (rear); optional SE55 scan engine",
+    "network": "ET60 Wi-Fi 7; ET65 adds 5G NR / LTE",
+    "wifi": "Wi-Fi 7 (802.11be)",
+    "bluetooth": "Bluetooth 5.4 Class 1 + LE",
+    "nfc": "Yes (ISO 14443 A/B, MIFARE, FeliCa, ISO 15693, NFC Forum 1-4)",
+    "gnss": "ET65: GPS, GLONASS, BDS, Galileo, QZSS",
+    "sim": "ET65: eSIM + nano-SIM",
+    "keys": "Power, scan, up/down (programmable), three programmable keys",
+    "touch": "Bare finger, heavy-gloved finger or active/passive stylus (maker); use in heavy rain claimed",
+    "pen": "Passive stylus included (AI-powered touch control)",
+    "keyboard": "Keyboard connector for accessories",
+    "storage": "256 GB",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 7",
+      "NFC",
+      "eSIM"
+    ],
+    "weightG": 1200,
+    "dimensionsMm": "275 × 199 × 18.3",
+    "ipRating": "IP66",
+    "exIp": "IP64 (marking)",
+    "ruggedness": "1.5 m to concrete exceeds MIL-STD-810H; 1.8 m to plywood",
+    "operatingTemp": "−20 °C to +55 °C",
+    "partNumbers": "B7-T2E*-*W********** (type B7-T2E*-*W******K*00)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (programmable keys; PTT app)"
+    },
+    {
+      "label": "Emergency / SOS",
+      "value": "Via app (three programmable keys, no dedicated SOS key)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party application)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional SE55 1D/2D Advanced Range scan engine; changes the Ex marking to 'op is')"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor listed)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (rear and front cameras, privacy shade; third-party app)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 Professional, x86)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: ATEX with scan engine: II 3G Ex ic op is IIC T4 Gc; without: II 3G Ex ic IIC T4 Gc | IECEx the same without 'II 3G' | ATEX with scan engine: II 3D Ex ic op is IIIC T135°C Dc IP64; without: II 3D Ex ic IIIC T135°C Dc IP64 | IECEx the same without 'II 3D'"
+    }
+  ],
+  "unconfirmed": {
+    "specs.wifi": "From a single or secondary source; the maker doesn't state it for this model.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Optional built-in barcode imager",
+    "5G connectivity",
+    "User-replaceable battery",
+    "Hot-swappable battery for long shifts"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "getac-ux10-ex",
+    "winmate-m101ad-ex",
+    "durabook-u11i-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "BARTEC GmbH: ATEX certificate EPS 26 ATEX 1 034 X, ET60/ET65 EX2 Windows",
+      "url": "https://bartec.com/wp-content/uploads/2026/07/EPS-26-ATEX-1-034-X_0_EN.pdf"
+    },
+    {
+      "label": "IECEx online certificate database: IECEx EPS 25.0018X issue 0 (2025-08-26), ET60/ET65 EX2 Android",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1893249/view"
+    },
+    {
+      "label": "IECEx online certificate database: IECEx EPS 26.0013X issue 0 (2026-07-21), ET60/ET65 EX2 Windows",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/2035882/view"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 Home and Pro (25H2 end listed 10/13/2027; 24H2 10/14/2026)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro"
+    },
+    {
+      "label": "BARTEC GmbH: Datasheet ET60/65EX2 Windows (2026-08)",
+      "url": "https://bartec.com/wp-content/uploads/2026/07/BARTEC-ET60-65EX2_Windows-Tablet_Datasheet_EN_2026-08.pdf"
+    },
+    {
+      "label": "BARTEC GmbH: ET60/65EX2 Windows Tablet product page",
+      "url": "https://bartec.com/products-solutions/product-finder/product-detail/bartec-et60-65ex2-windows-tablet/"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "productId": "OB-HARDLINE-IPADAIR5",
+  "name": "OtterBox Hardline iPad Air",
+  "brand": "OtterBox",
+  "brandSlug": "otterbox",
+  "manufacturer": {
+    "name": "Otter Products, LLC",
+    "country": "USA",
+    "website": "https://www.otterbox.com"
+  },
+  "type": "ex-case",
+  "screenIn": 10.9,
+  "hostDevice": "iPad Air (5th generation, M1) 10.9-inch",
+  "otherHosts": [
+    "iPad Air (4th generation) 10.9-inch"
+  ],
+  "fitting": "unit",
+  "removable": "No (certificate: do not open the equipment; no parts intended to be replaced)",
+  "status": "discontinued",
+  "statusNote": "Its IECEx certificate was cancelled in March 2025 and OtterBox no longer promotes it; we found no end-of-sale notice.",
+  "launchYear": 2023,
+  "summary": "The OtterBox Hardline iPad Air is a restricted-breathing (Ex nR) case for the iPad Air (5th generation, M1) 10.9-inch, certified for Zone 2/22 under IECEx. The tablet inside is a standard iPad Air (5th generation, M1) 10.9-inch running iPadOS 27, so it works with the same apps and device management. It has been discontinued.",
+  "certification": {
+    "otherSchemes": [
+      "IP68",
+      "MIL-STD-810H 4-ft drop",
+      "ESD-safe, UV F1, flame HB (press release)"
+    ],
+    "standards": [],
+    "iecex": {
+      "marking": "Ex nR IIC T6 Gc / Ex tc IIIC 65°C Dc",
+      "number": "IECEx UL 23.0003X"
+    },
+    "northAmerica": "UL: Class I Div 2 Groups A-D; Class II Div 2 Groups F, G; Class III (press release; UL certification not re-checked)",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Restricted-breathing enclosure (Ex nR)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T6",
+    "maxSurfaceTemp": "65°C / 58°C by model",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +45 °C"
+  },
+  "safety": {
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Do not open the equipment. No parts, including the gaskets and seals, are intended to be replaced. If service is required, contact the manufacturer.",
+    "certifiedAccessories": "Hardline Charging Station (single or four-bay, Qi, office/warehouse use), hand strap, breakaway shoulder strap, Tech-Touch safety gloves (separate purchase). Ex rating of accessories not stated."
+  },
+  "os": {
+    "name": "iPadOS",
+    "version": "iPadOS 27",
+    "atLaunch": "iPadOS 15.4",
+    "edition": "iPadOS (consumer; no LTSC or enterprise edition)",
+    "upgradeLimit": "Still supported by iPadOS 27 (current)",
+    "securityUntil": "2027-03-18",
+    "updates": "Security updates guaranteed until at least March 2027 (Apple's minimum)"
+  },
+  "specs": {
+    "display": "10.9-inch Liquid Retina IPS LCD, P3, True Tone, antireflective coating",
+    "resolution": "2360 × 1640 (264 ppi)",
+    "brightness": "500 nits",
+    "chip": "Apple M1 (8-core CPU)",
+    "cpuArch": "Arm",
+    "ram": "8 GB",
+    "camera": "12 MP Wide, f/1.8",
+    "frontCamera": "12 MP Ultra Wide, Center Stage",
+    "video": "4K video",
+    "batteryWh": "28.6",
+    "hotSwap": "No",
+    "batteryLife": "Up to 10 hours web or video on Wi-Fi",
+    "ports": "USB-C; Smart Connector; magnetic Apple Pencil connector",
+    "docking": "USB-C hubs and docks; Smart Connector or magnetic keyboard accessories where the iPad has them. Not usable through sealed Ex cases except the USB-C or Lightning charging port where the case exposes it.",
+    "network": "Wi-Fi only or Wi-Fi + Cellular (5G)",
+    "wifi": "Wi-Fi 6 (802.11ax)",
+    "bluetooth": "Bluetooth 5.0",
+    "gnss": "GPS/GNSS on Wi-Fi + Cellular models; digital compass and Wi-Fi location on all",
+    "sim": "eSIM and Nano-SIM (cellular models)",
+    "keys": "Top button with Touch ID sensor, volume buttons; no programmable hardware key",
+    "biometrics": "Touch ID (top button)",
+    "pen": "Apple Pencil (2nd generation), Apple Pencil (USB-C); magnetic attach and charge (2nd gen)",
+    "keyboard": "Smart Connector",
+    "storage": "64 GB, 256 GB",
+    "replaceableBattery": false,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6",
+      "eSIM"
+    ],
+    "ipRating": "IP68",
+    "ruggedness": "MIL-STD-810H drop testing to four feet",
+    "operatingTemp": "−20 °C to +45 °C",
+    "partNumbers": "OBFTC-0135-A and OBFTC-0183-A (IECEx certificate models; which iPad each fits is not stated in sources read)"
+  },
+  "throughCase": [
+    {
+      "label": "Touchscreen",
+      "value": "Screen with a microdot pattern (IECEx issue 5)"
+    },
+    {
+      "label": "Charging",
+      "value": "Qi wireless charging station (single or four-bay, 15 W) sold with the system; no port stated"
+    },
+    {
+      "label": "SIM card",
+      "value": "Wi-Fi + Cellular option added in IECEx issue 1; SIM access not described"
+    },
+    {
+      "label": "Mounting points",
+      "value": "Hand strap and breakaway shoulder strap (accessories)"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (third-party PTT apps over Wi-Fi/cellular; no PTT key; Ex-rated? n/a)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party lone-worker apps)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based scanning; no scan engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (no NFC reader on any iPad)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no LiDAR on this iPad)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (FaceTime, Teams or remote-assist apps; needs camera and audio access through the case)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (iPadOS only)"
+    },
+    {
+      "label": "Bluetooth gas detectors",
+      "value": "Via app (Bluetooth 5.0; vendor app; no maker-certified integration listed)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: Ex nR IIC T6 Gc (−20°C ≤ Tamb ≤ 45°C) | Ex tc IIIC 65°C Dc (model OBFTC-0135-A); Ex tc IIIC 58°C Dc (model OBFTC-0183-A)"
+    }
+  ],
+  "unconfirmed": {
+    "certification.otherSchemes": "Stated by the maker; we haven't seen the certificate.",
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.tempClass": "OtterBox's quick start guide says T5; the IECEx certificate (now cancelled) said T6.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.ipRating": "From a single source; not stated in the Ex certificate.",
+    "specs.ruggedness": "From a single source.",
+    "specs.partNumbers": "Order codes from a certificate or distributor; confirm them with the maker when ordering.",
+    "throughCase.Touchscreen": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Charging": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.SIM card": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Mounting points": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Lone worker": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "capabilities.Bluetooth gas detectors": "Not confirmed by the maker for this exact model."
+  },
+  "features": [],
+  "strengths": [
+    "5G on cellular versions",
+    "A standard iPad Air (5th generation, M1) 10.9-inch inside, with the same apps and Apple device management"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "Zone 2 only, so not for Zone 1 areas",
+    "Ambient rating tops out at +45 °C",
+    "In-use weight not published"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "armadex-ex-unicase",
+    "xciel-xcripad-11",
+    "atexxo-zone-2-ipad-10-9"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx Certificate Database (UL Solutions): IECEx UL 23.0003X issue 6, 2024-11-21, Cancelled 2025-03-27",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/UL/IECExUL23.0003/006/deliverable/IECEx_UL_23.0003X_006.pdf"
+    },
+    {
+      "label": "Xciel: XCRiPad mini 6 and Air (5th gen) datasheets (PDF, 2022-2023)",
+      "url": "https://cdn.hibuwebsites.com/5a8aca1a55574b489d306f762b121113/files/uploaded/XCRIPAD%20mini%206%20033023.pdf"
+    },
+    {
+      "label": "OtterBusiness: Commercial Product Catalog 9.13.24: Hardline for iPhone 14, iPad Air 4th and 5th gen",
+      "url": "https://otterboxbusiness.com/wp-content/uploads/2024/09/OtterBusiness_Commercial_Product_Catalog_9.13.24v2.pdf"
+    },
+    {
+      "label": "OtterBusiness: otterboxbusiness.com/hardline page (empty body; published 2024-03-04, modified 2024-04-15)",
+      "url": "https://otterboxbusiness.com/hardline/"
+    },
+    {
+      "label": "Apple: Identify your iPad model (model numbers, years)",
+      "url": "https://support.apple.com/en-us/108043"
+    },
+    {
+      "label": "Apple: UK PSTI Statements of Compliance, one per model (regulatoryinfo.apple.com/ukpsti): first supply date and minimum 5-year defined support period",
+      "url": "https://regulatoryinfo.apple.com/ukpsti"
+    },
+    {
+      "label": "Apple: iPadOS 27 compatibility list (apple.com/os/ipados)",
+      "url": "https://www.apple.com/os/ipados/"
+    },
+    {
+      "label": "OtterBox: Press release: OtterBox Launches Hardline Series, 2023-06-06",
+      "url": "https://media.otterbox.com/2023-06-06-OtterBox-Launches-Hardline-Series-Game-Changing-Industrial-Solution-for-iPad-OS"
+    },
+    {
+      "label": "BGR / EveryMac / 9to5Mac: iPadOS 27 drops iPad mini 5, iPad 8, iPad Air 3, iPad Pro 11-inch 1st gen (release 2026-09-14)",
+      "url": "https://www.bgr.com/2190915/ipad-models-that-wont-get-ipados-27-update/"
+    }
+  ]
+}

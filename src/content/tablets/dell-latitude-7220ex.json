@@ -1,0 +1,154 @@
+{
+  "productId": "DL-7220EX",
+  "name": "Dell Latitude 7220EX",
+  "brand": "Dell",
+  "brandSlug": "dell",
+  "manufacturer": {
+    "name": "Dell Technologies",
+    "country": "USA",
+    "website": "https://www.dell.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 11.6,
+  "status": "discontinued",
+  "statusNote": "No longer sold, and its IECEx certificate was cancelled in 2023. Dell has no Ex successor.",
+  "launchYear": 2019,
+  "summary": "The Dell Latitude 7220EX is the hazardous-area version of a Dell rugged 11.6-inch tablet, certified for Zone 2/22 under IECEx. Dell also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued.",
+  "image": "../../assets/tablets/dell-latitude-7220ex.webp",
+  "imageAlt": "Dell Latitude 7220EX, front view",
+  "certification": {
+    "otherSchemes": [
+      "ATEX and IECEx Zone 2 and Zone 22 (Dell marketing)",
+      "IP65 (Notebookcheck)"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "Ex ic IIC T4 Gc / Ex ic IIIB T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx CANCELLED 2023-06-22. Certificate note: cancellation does not affect equipment released before that date. ATEX status not found."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T4 Gc / Ex ic IIIB T130°C Dc",
+      "number": "IECEx TPS 19.0038X",
+      "scope": "Issue 3, 2021-11-08"
+    },
+    "northAmerica": "Class I Division 2 expected on the base model (Dell blog Dec 2019, via research); not verified",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +60 °C (IECEx TPS 19.0038X issue 0"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "The equipment does not meet the dielectric strength requirement and must not be connected to or disconnected from external devices or interfaces in explosive atmospheres. All external interfaces closed in operation; I/O accessories not allowed. Use only the listed Dell 45 W, 65 W or 90 W power adapters. The integrated Li-ion battery pack must not be replaced or adjusted by users. Repair only by Dell.",
+    "peripherals": "All external interfaces must remain closed and no I/O accessories may be connected in the explosive atmosphere."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Pro",
+    "atLaunch": "Windows 10 Pro",
+    "edition": "Windows 10 Pro as shipped; Windows 11 Pro 64-bit also supported by Dell",
+    "upgradeLimit": "Dell validates Windows 11 up to 25H2; no last supported version stated. Core i5-8365U is an 8th-generation Core i5, on Microsoft's Windows 11 supported list",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "11.6-inch",
+    "resolution": "1920 × 1080 (FHD)",
+    "brightness": "1000 nits",
+    "chip": "Intel Core i5-8365U vPro (8th gen, 4 cores, 1.6 GHz base, up to 4.1 GHz)",
+    "cpuArch": "x86",
+    "ram": "8 LPDDR3 2133",
+    "batteryWh": "34 Wh",
+    "touch": "Glove-touch support (Dell blog snippet)",
+    "storage": "512 GB M.2 GB PCIe NVMe",
+    "replaceableBattery": false,
+    "gloveTouch": true,
+    "connectivity": [],
+    "weightG": 1650,
+    "dimensionsMm": "323.4 × 214.2 × 28.9",
+    "ipRating": "IP65",
+    "ruggedness": "MIL-STD-810G and MIL-STD-810H tested (Dell); drop height not stated in the guide",
+    "operatingTemp": "−29 °C to +63 °C (Dell, general range"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 10 Pro, x86; out of support)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "From the IECEx certificate (cancelled in 2023); Dell's ATEX certificate isn't published.",
+    "certification.iecex.marking": "From the IECEx certificate (cancelled in 2023); Dell's ATEX certificate isn't published.",
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.ambient": "Stated in the first issue of the IECEx certificate only; later issues don't repeat it.",
+    "safety.charging": "The certificate forbids connecting external devices in the zone, which rules out charging.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.upgradeLimit": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.weightG": "From a single source; the maker's figures vary.",
+    "specs.ipRating": "From a single source; not stated in the Ex certificate.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "updates-2030"
+  ],
+  "strengths": [
+    "Certified for ambient temperatures up to +60 °C"
+  ],
+  "limitations": [
+    "No longer in the maker's current range",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "Battery isn't user-replaceable"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "durabook-u11i-ex",
+    "getac-f110-ex",
+    "bartec-et60-65ex2-windows"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / TUV SUD (TPS): IECEx TPS 19.0038X issue 3 (Dell Latitude 7220EX), 2021-11-08, CANCELLED 2023-06-22",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/TPS/IECExTPS19.0038/003/deliverable/IECEx_TPS_19.0038X_003.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 10 Home and Pro (22H2 end listed 10/15/2025)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro"
+    },
+    {
+      "label": "ATEXshop: Dell Latitude 7220EX Rugged/ATEX product page (EOL notice, specs)",
+      "url": "https://www.atexshop.com/dell-latitude-7220ex-rugged-atex.html"
+    },
+    {
+      "label": "Techaeris: Article 2019-12-21: Dell Latitude 7220EX Rugged Extreme (URL from research file 02, not re-fetched)",
+      "url": "https://techaeris.com/2019/12/21/the-dell-latitude-7220ex-rugged-extreme-is-built-to-be-used-in-explosive-work-conditions/"
+    },
+    {
+      "label": "Notebookcheck: Dell Latitude 7220EX Rugged Extreme review snippet (IP65, Core i5-8365U), seen in a web-search summary only, page not fetched",
+      "url": "https://www.notebookcheck.com/Dell-Latitude-7220EX-Rugged-Extreme-Windows-10-Tablet-mit-Explosionsschutz.450270.0.html"
+    }
+  ]
+}

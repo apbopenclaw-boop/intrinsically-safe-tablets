@@ -1,0 +1,295 @@
+{
+  "productId": "AR-UNICASE",
+  "name": "Armadex Ex UniCase",
+  "brand": "Armadex",
+  "brandSlug": "armadex",
+  "manufacturer": {
+    "name": "Armadex Explosion Protection B.V.",
+    "country": "Netherlands",
+    "website": "https://armadex.com"
+  },
+  "type": "ex-case",
+  "screenIn": 11,
+  "hostDevice": "iPad (A16)",
+  "otherHosts": [
+    "iPad Air 11-inch (M3)",
+    "iPad Air 11-inch (M4)",
+    "iPad Pro 11-inch (M4)",
+    "iPad Pro 11-inch (M5)",
+    "Samsung Galaxy Tab S11",
+    "Samsung Galaxy Tab S10 FE",
+    "Samsung Galaxy Tab A11+",
+    "Microsoft Surface Go 4 for Business"
+  ],
+  "fitting": "unit",
+  "removable": "Yes (swap the inlay; no recertification for new tablets, per Armadex), but the certificate requires opening only outside the hazardous area and a routine nR test for each new device type",
+  "status": "current",
+  "statusNote": "New in 2026. Armadex lists it for pre-order and also says it ships from stock; check lead times when ordering.",
+  "launchYear": 2026,
+  "summary": "The Armadex Ex UniCase is a universal restricted-breathing (Ex nR) case for 10- to 11-inch tablets (Galaxy Tab, Surface Go and iPad), certified for Zone 2/22 under ATEX and IECEx. It takes a standard tablet from the supported list, so it works with the same apps and device management.",
+  "image": "../../assets/tablets/armadex-ex-unicase.webp",
+  "imageAlt": "Armadex Ex UniCase, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex nR IIC T6 Gc / II 3D Ex tc IIIC T85°C Dc",
+      "kind": "type-examination",
+      "number": "OBAC 26 ATEX 0194X",
+      "status": "IECEx Current, issue 0 (2026-05-28), checked 2026-10-25; ATEX issue 0 read from certificate scan"
+    },
+    "iecex": {
+      "marking": "Ex nR IIC T6 Gc / Ex tc IIIC T85°C Dc",
+      "number": "IECEx OBAC 26.0005X"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Restricted-breathing enclosure (Ex nR)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T6",
+    "maxSurfaceTemp": "85 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +50 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "The Ex UniCase may only be opened or closed outside the hazardous area. The USB lid and test port plug must always be mounted in the hazardous area. The device must be protected from high-energy impacts, excessive UV light emission and high electrostatic charge processes. Annex: routine test of IEC 60079-15 cl. 10.3 required for each new type of mobile device installed in an nR housing. Rated data: internal Li-ion 3.7-7.6 V DC; USB for use in non-hazardous areas only; WiFi and Bluetooth; IP64.",
+    "peripherals": "USB lid and test port plug fitted at all times in the Ex area; USB used outside the Ex area only",
+    "certifiedAccessories": "Armadex Ex BT-Key-02 Bluetooth keyboard (IECEx KSCP 24.0011X issue 1, 2026-06-18: Ex ic IIC T6 Gc / Ex ic IIIB T85°C Dc, Ta 0°C to +60°C, so dust group IIIB only and not below 0°C) and OZC-3 digital camera (IECEx OBAC 25.0008X issue 1, 2026-06-12) are separate Armadex products; whether they are approved for use with the UniCase is not stated. Samsung and Microsoft hosts are batch 4's."
+  },
+  "os": {
+    "name": "iPadOS",
+    "version": "iPadOS 27",
+    "atLaunch": "iPadOS 18.4",
+    "edition": "iPadOS (consumer; no LTSC or enterprise edition)",
+    "upgradeLimit": "Still supported by iPadOS 27 (current)",
+    "securityUntil": "2030-03-12",
+    "updates": "Security updates guaranteed until at least March 2030 (Apple's minimum)"
+  },
+  "specs": {
+    "display": "11-inch Liquid Retina IPS LCD, True Tone, fingerprint-resistant oleophobic coating (no antireflective coating or full lamination listed by Apple)",
+    "resolution": "2360 × 1640 (264 ppi)",
+    "brightness": "500 nits",
+    "chip": "Apple A16 (5-core CPU)",
+    "cpuArch": "Arm",
+    "ram": "6 GB",
+    "camera": "12 MP Wide, f/1.8",
+    "frontCamera": "12 MP Center Stage, landscape",
+    "video": "4K video",
+    "battery": "7698",
+    "batteryWh": "28.93",
+    "hotSwap": "No",
+    "batteryLife": "Up to 10 hours web or video on Wi-Fi",
+    "ports": "USB-C; Smart Connector",
+    "docking": "USB-C hubs and docks; Smart Connector or magnetic keyboard accessories where the iPad has them. Not usable through sealed Ex cases except the USB-C or Lightning charging port where the case exposes it.",
+    "network": "Wi-Fi only or Wi-Fi + Cellular (5G)",
+    "wifi": "Wi-Fi 6 (802.11ax), 2x2 MIMO",
+    "bluetooth": "Bluetooth 5.3",
+    "gnss": "GPS/GNSS on Wi-Fi + Cellular models; digital compass and Wi-Fi location on all",
+    "sim": "eSIM only (cellular models)",
+    "keys": "Top button with Touch ID sensor, volume buttons; no programmable hardware key",
+    "biometrics": "Touch ID (top button)",
+    "pen": "Apple Pencil (USB-C), Apple Pencil (1st generation) with adapter",
+    "keyboard": "Smart Connector (Magic Keyboard Folio)",
+    "storage": "128 GB, 256 GB, 512 GB",
+    "replaceableBattery": false,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6",
+      "eSIM"
+    ],
+    "ipRating": "IP64",
+    "exIp": "IP64 (annex 'Degree of protection')",
+    "ruggedness": "Impact-resistant enclosure and screen (no standard stated)",
+    "operatingTemp": "−20 °C to +50 °C",
+    "partNumbers": "UC-CASE (case + first inlay set); sets e.g. UC-SET-IPAD-A16-128-WIFI, UC-SET-IPAD-AIR-M3-128-WIFI, UC-SET-IPAD-AIR-M4-128-WIFI, UC-SET-IPAD-PRO-M4-256-WIFI (55 configurations in the catalogue)"
+  },
+  "throughCase": [
+    {
+      "label": "Smart Connector / keyboard",
+      "value": "Bluetooth keyboard only (Armadex Ex BT-Key-02, IECEx KSCP 24.0011X, sold separately); Smart Connector not accessible (inferred)"
+    },
+    {
+      "label": "Side and volume buttons",
+      "value": "Three stainless steel push buttons via a patented inlay; 'physical buttons fully operable' (device-specific inlay)"
+    },
+    {
+      "label": "Rear cameras",
+      "value": "Front and rear camera 'supported' through the transparent back plate (maker)"
+    },
+    {
+      "label": "LiDAR",
+      "value": "Armadex spec table says 'LiDAR: Yes' for iPad Pro M4/M5 and 'No' for A16/Air; whether the LiDAR works through the back plate is not stated"
+    },
+    {
+      "label": "Front camera",
+      "value": "Supported through the transparent front window (maker)"
+    },
+    {
+      "label": "Touchscreen",
+      "value": "Touchscreen interaction through the transparent front cover (certificate); Gorilla Glass window on the A16/Air datasheets, polycarbonate on the older Pro datasheet"
+    },
+    {
+      "label": "Screen cover",
+      "value": "Integral front window (Gorilla Glass or polycarbonate)"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C socket with sealing cover; charge only in a non-hazardous area (certificate)"
+    },
+    {
+      "label": "Speakers and microphones",
+      "value": "Microphone and speaker 'supported' (maker)"
+    },
+    {
+      "label": "USB-C port",
+      "value": "USB-C port behind a sealing cover; USB socket only for non-hazardous areas"
+    },
+    {
+      "label": "SIM card",
+      "value": "No SIM tray exposed; 5G sets rely on eSIM (these iPads are eSIM only)"
+    },
+    {
+      "label": "Removed or disabled",
+      "value": "Nothing removed; inlays are device-specific"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (third-party PTT apps over Wi-Fi/cellular; no PTT key; Ex-rated? n/a)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party lone-worker apps)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Via app (camera-based scanning; no scan engine)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Not possible (no NFC reader on any iPad)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Depends on the host: iPad Pro M4/M5 have LiDAR (Armadex spec table 'LiDAR: Yes'); through-case function not stated"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (FaceTime, Teams or remote-assist apps; needs camera and audio access through the case)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (iPadOS only)"
+    },
+    {
+      "label": "Bluetooth gas detectors",
+      "value": "Via app (Bluetooth per host; the certificate lists WiFi and Bluetooth as the wireless interfaces; vendor app; no maker-certified integration listed)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "specs.battery": "Apple states battery capacity in watt-hours only; this figure is from the case maker's documents.",
+    "fitting": "Not stated by the maker for this exact model.",
+    "removable": "Not stated by the maker for this exact model.",
+    "throughCase.Smart Connector / keyboard": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Rear cameras": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.LiDAR": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Front camera": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Speakers and microphones": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.SIM card": "Inferred from related information; not stated by the maker for this exact model.",
+    "throughCase.Removed or disabled": "Inferred from related information; not stated by the maker for this exact model.",
+    "capabilities.Push-to-talk": "Not confirmed by the maker for this exact model.",
+    "capabilities.Lone worker": "Not confirmed by the maker for this exact model.",
+    "capabilities.Barcode scanning": "Not confirmed by the maker for this exact model.",
+    "capabilities.NFC reading": "Not confirmed by the maker for this exact model.",
+    "capabilities.3D scanning / LiDAR": "Not confirmed by the maker for this exact model.",
+    "capabilities.Remote expert / video calls": "Not confirmed by the maker for this exact model.",
+    "capabilities.Bluetooth gas detectors": "Not confirmed by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "T6 temperature class, the strictest rating",
+    "5G on cellular versions",
+    "Takes standard 10- to 11-inch tablets (Galaxy Tab, Surface Go or iPad), so you keep your usual apps"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "In-use weight not published"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "ipad"
+  ],
+  "alternatives": [
+    "xciel-xcripad-11",
+    "atexxo-zone-2-ipad-a16",
+    "xshielder-ipad-pro-11"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "OBAC (Gliwice, Poland): Type Examination Certificate OBAC 26 ATEX 0194X, issue 0, 12 May 2026 (read from scan)",
+      "url": "https://armadex.com/wp-content/uploads/2026/10/OBAC-26-ATEX-0194X-Armadex-Ex-UniCase.pdf"
+    },
+    {
+      "label": "OBAC (Gliwice, Poland) / IECEx: IECEx OBAC 26.0005X issue 0, 2026-05-28, Current, with annex (read from Armadex PDF)",
+      "url": "https://armadex.com/wp-content/uploads/2026/10/IECEx_OBAC_26.0005X_000.pdf"
+    },
+    {
+      "label": "IECEx: IECEx online certificate database: holder searches for Getac, Winmate, Zebra, Panasonic, Dell, Durabook, Xplore, Twinhead (2026-10-25)",
+      "url": "https://www.iecex-certs.com/"
+    },
+    {
+      "label": "Armadex: UniCase datasheets: iPad A16 and iPad Air (V2, 6-2026); iPad Pro M4 (v1, Jan 2026, certificate fields 'Revealed soon')",
+      "url": "https://armadex.com/wp-content/uploads/2025/12/IPad-A16-UniCase-Datasheet.pdf"
+    },
+    {
+      "label": "Armadex: Product Catalogue 2026",
+      "url": "https://armadex.com/wp-content/uploads/2026/10/Armadex-Product-Catalogue-2026-1.pdf"
+    },
+    {
+      "label": "Xciel: XCRiPad 11 inch (A16) datasheet (PDF)",
+      "url": "https://cdn.hibuwebsites.com/5a8aca1a55574b489d306f762b121113/files/uploaded/XCRIPAD+11+SPEC.pdf"
+    },
+    {
+      "label": "Armadex: Ex UniCase overview page (read 2026-10-25)",
+      "url": "https://armadex.com/unicase/"
+    },
+    {
+      "label": "Armadex: Ex UniCase iPad model pages: iPad A16, Air M3, Air M4, Pro M4 (prices, SKUs)",
+      "url": "https://armadex.com/product/ex-ipad-a16/"
+    },
+    {
+      "label": "Apple: Identify your iPad model (model numbers, years)",
+      "url": "https://support.apple.com/en-us/108043"
+    },
+    {
+      "label": "Apple: UK PSTI Statements of Compliance, one per model (regulatoryinfo.apple.com/ukpsti): first supply date and minimum 5-year defined support period",
+      "url": "https://regulatoryinfo.apple.com/ukpsti"
+    },
+    {
+      "label": "Apple: iPadOS 27 compatibility list (apple.com/os/ipados)",
+      "url": "https://www.apple.com/os/ipados/"
+    },
+    {
+      "label": "BGR / EveryMac / 9to5Mac: iPadOS 27 drops iPad mini 5, iPad 8, iPad Air 3, iPad Pro 11-inch 1st gen (release 2026-09-14)",
+      "url": "https://www.bgr.com/2190915/ipad-models-that-wont-get-ipados-27-update/"
+    }
+  ]
+}

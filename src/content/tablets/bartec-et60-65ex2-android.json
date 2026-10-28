@@ -1,0 +1,213 @@
+{
+  "productId": "BT-ET6XEX2-AND",
+  "name": "BARTEC ET60/65EX2 Android",
+  "brand": "BARTEC",
+  "brandSlug": "bartec",
+  "manufacturer": {
+    "name": "BARTEC GmbH",
+    "country": "Germany",
+    "website": "https://bartec.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 10.1,
+  "status": "current",
+  "launchYear": 2025,
+  "summary": "The BARTEC ET60/65EX2 Android is the hazardous-area version of a BARTEC rugged 10.1-inch tablet, certified for Zone 2/22 under ATEX and IECEx. It is an intrinsically safe (Ex ic) design running Android 14.",
+  "image": "../../assets/tablets/bartec-et60-65ex2-android.webp",
+  "imageAlt": "BARTEC ET60/65EX2 Android, front view",
+  "certification": {
+    "otherSchemes": [
+      "CE, FCC/IC"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T135°C Dc IP64",
+      "kind": "type-examination",
+      "number": "EPS 25 ATEX 1 087 X",
+      "status": "IECEx Current, issue 0 (2025-08-26), checked 2026-10-26. ATEX EPS 25 ATEX 1 087 X confirmed by BARTEC EU DoC B1-T2E0-7C0001 (2026-01-15; Bureau Veritas CPS Germany, NB 2004; Category 3, internal production control). UL certificates of compliance issued 2026-02-09 (NA types only)."
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T135°C Dc IP64",
+      "number": "IECEx EPS 25.0018X",
+      "scope": "Issue 0, 2025-08-26"
+    },
+    "northAmerica": "UL (report E321557-20260130; certificates UL-US-26103088-0, UL-US-26103089-0, UL-CA-2675759-0, UL-CA-2675760-0, issued 2026-02-09), North America types B7-T2E1 / B7-T2E3 only: Class I Div 2 Groups A, B, C, D; Class II Div 2 Groups F, G; Class III Div 2; T4. Zone 2 AEx ic [op is] IIC T4 Gc; Zone 22 AEx ic [op is] IIIB T135 °C Dc (CEC: Ex ic [op is] IIC T4 Gc X / IIIB T135 °C Dc X). Zone 22 is group IIIB under NEC/CEC, not IIIC.",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: battery pack changed or charged only outside hazardous areas; only battery pack type B7-T2Z0-0001/**** shall be used; connection or disconnection of external ports, opening the enclosure or replacing the battery while live only if the atmosphere is shown to be absent; protect from high-energy impacts and high electrostatic charge; follow the manufacturer's safety instructions strictly. Ambient −20 °C to +55 °C.",
+    "peripherals": "Ports (USB-A, USB-C, dock, keyboard connector) only if the atmosphere is shown to be absent; charging accessories are required but not included.",
+    "certifiedAccessories": "Named in IECEx EPS 25.0018X as 'accessories for use in hazardous areas': battery B7-T2Z0-0001 (3.8 V / 8920 mAh), kickstand with hand strap B7-T2Z0-0003, hand strap B7-T2Z0-0004, shoulder strap B7-T2Z0-0006, screen protector B7-T2Z0-0008, stylus holder B7-T2Z0-0009, leather holster B7-T2Z0-0010, stylus 17-S1Z0-0008. Battery changing and charging only outside hazardous areas; charging accessories are for use outside hazardous areas."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 14",
+    "edition": "Android 14 with Zebra Mobility DNA / LifeGuard",
+    "upgradeLimit": "Android 16 (BARTEC datasheet: 'upgradeable to Android 16')",
+    "securityUntil": "2031-12-31",
+    "updates": "Security updates until December 2031"
+  },
+  "specs": {
+    "display": "10.1-inch Optically bonded, multi-mode capacitive touch, Corning Gorilla Glass",
+    "resolution": "1920 × 1200 (WUXGA; page prints '1900 × 1200')",
+    "brightness": "1000 nits",
+    "outdoor": "Optically bonded 1000 nit display (maker: easy to view in sunlight)",
+    "chip": "Qualcomm 6490 (QCM6490) octa-core 2.7 GHz",
+    "cpuArch": "Arm",
+    "ram": "8 GB",
+    "camera": "16 MP autofocus with LED flash",
+    "frontCamera": "8 MP with mechanical privacy shade",
+    "battery": "8920 mAh",
+    "batteryWh": "36",
+    "hotSwap": "Yes (internal supercapacitor keeps power during battery swaps)",
+    "batteryLife": "Up to 10 h indoor with standard battery (WLAN on, 50 % backlight)",
+    "ports": "2 x USB 3.1 Type A; 1 x USB 3.1 Type C (DisplayPort 1.2); docking connector; keyboard connector; 1 x USB 2.0 (rear); optional SE55 scan engine",
+    "docking": "Docking connector (charge and data); vehicle and desk accessories in BARTEC accessory sheet",
+    "network": "ET60 Wi-Fi 6E; ET65 adds 5G FR1 / 4G / 3G, private 5G/CBRS",
+    "wifi": "Wi-Fi 6E (802.11ax) 2x2 MU-MIMO",
+    "bluetooth": "Bluetooth 5.2 Class 1 + LE",
+    "nfc": "Yes (ISO 14443 A/B, FeliCa, ISO 15693)",
+    "gnss": "ET65: GPS, GLONASS, Galileo, BeiDou, QZSS dual-band L1+L5",
+    "sim": "ET65: eSIM + nano-SIM",
+    "keys": "Power, scan, up/down (volume or brightness), three programmable keys",
+    "touch": "Bare or gloved fingertip or stylus input",
+    "pen": "Stylus supported",
+    "keyboard": "Keyboard connector for accessories (not 2-in-1)",
+    "storage": "128 GB, microSD (up to 2 TB)",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "5G",
+      "Wi-Fi 6E",
+      "NFC",
+      "eSIM"
+    ],
+    "weightG": 1074,
+    "dimensionsMm": "275 × 199 × 18.3",
+    "ipRating": "IP64",
+    "exIp": "IP64 (marking)",
+    "ruggedness": "1.5 m drop to concrete, exceeds MIL-STD-810H",
+    "operatingTemp": "−20 °C to +55 °C",
+    "partNumbers": "B7-T2E*-************ (B7-T2E2 rest of world; B7-T2E1 North America)"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Push-to-talk",
+      "value": "Via app (programmable keys; PTT app)"
+    },
+    {
+      "label": "Emergency / SOS",
+      "value": "Via app (three programmable keys, no dedicated SOS key)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (third-party application)"
+    },
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional SE55 1D/2D Advanced Range scan engine; changes the Ex marking to 'op is')"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "3D scanning / LiDAR",
+      "value": "Not possible (no depth sensor listed)"
+    },
+    {
+      "label": "High-accuracy GNSS",
+      "value": "Built in (ET65 only: dual-band L1 + L5 GNSS)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (rear and front cameras, privacy shade; third-party app)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Marking versions",
+      "description": "The certification covers more than one version: ATEX with scan engine: II 3G Ex ic op is IIC T4 Gc; without: II 3G Ex ic IIC T4 Gc | IECEx the same without 'II 3G' | ATEX with scan engine: II 3D Ex ic op is IIIC T135°C Dc IP64; without: II 3D Ex ic IIIC T135°C Dc IP64 | IECEx the same without 'II 3D'"
+    }
+  ],
+  "unconfirmed": {
+    "os.securityUntil": "Zebra's security-update date for the ET60/ET65 the tablet is built on; BARTEC says it needs a LifeGuard service contract.",
+    "specs.resolution": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.ipRating": "BARTEC's product page gives IP64 and its datasheet IP66; IP64 is the figure in the Ex marking.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers",
+    "Also certified for Class I Division 2 in North America",
+    "Optional built-in barcode imager",
+    "5G connectivity",
+    "Security updates until December 2031"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "division-1-tablets",
+    "android-tablets"
+  ],
+  "alternatives": [
+    "getac-zx10-ex",
+    "atexxo-zone-2-galaxy-tab-active5-pro",
+    "isafe-is940-2"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "BARTEC GmbH: ATEX certificate EPS 25 ATEX 1 087 X, ET60/ET65 EX2 Android",
+      "url": "https://bartec.com/wp-content/uploads/2025/11/Bart_23TH0466_Tablet_ET6x_EX2_EPS_25_ATEX_1_087_X_0_en_signed_scan-1.pdf"
+    },
+    {
+      "label": "IECEx online certificate database: IECEx EPS 25.0018X issue 0 (2025-08-26), ET60/ET65 EX2 Android",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1893249/view"
+    },
+    {
+      "label": "BARTEC GmbH: Datasheet ET60/65EX2 Android (03-0330-1315 REV-A-02-2026)",
+      "url": "https://bartec.com/wp-content/uploads/2026/03/BARTEC-ET60-65EX2_Android-Tablet_Datasheet_EN_2026-02.pdf"
+    },
+    {
+      "label": "BARTEC GmbH: ET60/65EX2 Android Tablet product page",
+      "url": "https://bartec.com/products-solutions/product-finder/product-detail/bartec-et60-65ex2-android-tablet/"
+    },
+    {
+      "label": "Zebra Technologies: Android Enterprise Recommended page and SMR end-date list (ET60 / ET65, Android 14: final SMR December 2031)",
+      "url": "https://www.zebra.com/gb/en/support-downloads/notifications/android-enterprise-recommended.html"
+    }
+  ]
+}

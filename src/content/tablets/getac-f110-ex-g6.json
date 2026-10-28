@@ -1,0 +1,169 @@
+{
+  "productId": "GT-F110EX-G6",
+  "name": "Getac F110-EX G6",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 11.6,
+  "status": "discontinued",
+  "statusNote": "Getac now lists the G7 generation in its place; it published no end-of-sale date.",
+  "successor": "getac-f110-ex",
+  "launchYear": 2021,
+  "summary": "The Getac F110-EX G6 is the hazardous-area version of a Getac rugged 11.6-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Windows 11 Pro. It has been discontinued; the Getac F110-EX G7 replaces it.",
+  "image": "../../assets/tablets/getac-f110-ex-g6.webp",
+  "imageAlt": "Getac F110-EX G6, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T4 Gc / II 3D Ex ic op is IIIC T130°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current (both certificates), checked 2026-10-25; ATEX not published"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T4 Gc / Ex ic op is IIIC T130°C Dc",
+      "number": "IECEx EPS 21.0079X (F110-Exc"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "130 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +60 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Controlled environment with reduced pollution; protect from UV and mechanical impact; connection interfaces never used in hazardous areas; battery never changed, charged or removed in hazardous areas; not next to strong charge-generating processes; use only listed Li-ion batteries (BP3S1P2160-S or BP3S1P2290 A on the 2021 certificate; BP3S1P2680B or BP3S2P2100S-02 on the later one).",
+    "peripherals": "All connection interfaces (USB, Thunderbolt, DC-in, docking connector, LAN, serial) must never be used in hazardous areas (certificate condition). Optional internal modules named in the certificate are covered as part of the certified tablet.",
+    "certifiedAccessories": "Named in the certificate: shoulder strap, hand strap, 4-point shoulder harness, capacitive hard-tip stylus and tether, digitizer pen and tether. Hard handle (factory option) not named. AC adapter, chargers and batteries are not for hazardous areas."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Pro",
+    "edition": "Windows 11 Pro",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "11.6-inch",
+    "resolution": "1920 × 1080",
+    "brightness": "1000 nits",
+    "chip": "Intel Core i5-1135G7 / i5-1145G7 vPro / i7-1165G7 / i7-1185G7 (11th gen)",
+    "cpuArch": "x86",
+    "ram": "8 (options 16, 32), DDR4",
+    "camera": "8 MP autofocus",
+    "frontCamera": "5 MP webcam, optional Windows Hello camera",
+    "battery": "2 x 2680 typical; optional 2 x 4200",
+    "ports": "Thunderbolt 4, USB 3.2 Gen2 Type-A, DC-in, audio; optional barcode/USB/LAN/serial, HF RFID or fingerprint, smart card",
+    "network": "Wi-Fi 6; optional 4G LTE, 5G",
+    "wifi": "Intel Wi-Fi 6 AX201",
+    "bluetooth": "Bluetooth 5.2",
+    "pen": "Dual-mode touch with digitizer pen",
+    "storage": "256 GB NVMe (options up to 2000 GB)",
+    "replaceableBattery": true,
+    "connectivity": [
+      "5G"
+    ],
+    "weightG": 1580,
+    "dimensionsMm": "314 × 224 × 25",
+    "ipRating": "IP66",
+    "ruggedness": "MIL-STD-810H; 1.2 m (4 ft) drop",
+    "operatingTemp": "−21 °C to +60 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF RFID)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (via HF RFID reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 Pro, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.marking": "Units built under Getac's earlier certificate are rated for dust group IIIB; later units are IIIC. Check the label on the device.",
+    "certification.iecex.number": "Getac's certificate names the model with a 'c' suffix and doesn't name the generation. We matched it to this generation by its batteries, dust group and ambient range.",
+    "certification.iecex.marking": "Units built under Getac's earlier certificate are rated for dust group IIIB; later units are IIIC. Check the label on the device.",
+    "certification.dustGroup": "Units built under Getac's earlier certificate are rated for dust group IIIB; later units are IIIC. Check the label on the device.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.edition": "The maker doesn't state the edition year."
+  },
+  "features": [
+    "nfc",
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "Optional built-in barcode imager",
+    "5G on cellular versions",
+    "User-replaceable battery",
+    "Certified for ambient temperatures up to +60 °C"
+  ],
+  "limitations": [
+    "Discontinued; the Getac F110-EX G7 replaces it",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "getac-f110-ex",
+    "durabook-u11i-ex",
+    "bartec-et60-65ex2-windows"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 16.0038X issue 4 (F110-Ex), 2021-11-09, Current, read from IECEx database 2026-10-25",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS16.0038/004/deliverable/IECEx_EPS_16.0038X_004.pdf"
+    },
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 21.0079X issue 2 (F110-Exc), 2025-01-31, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS21.0079/002/deliverable/IECEx_EPS_21.0079X_002.pdf"
+    },
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 Home and Pro (25H2 end listed 10/13/2027; 24H2 10/14/2026)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro"
+    },
+    {
+      "label": "Getac: F110-EX (G6) product specification, generated 2025-02-12",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_F110-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: F110-EX product page (shows G7 spec)",
+      "url": "https://www.getac.com/en/products/tablets/f110-ex/"
+    },
+    {
+      "label": "Getac: Press release 2021-11-10: Getac expands its portfolio of intrinsically safe Windows-based tablets with launch of F110-EX",
+      "url": "https://www.getac.com/en/news/getac-expands-its-portfolio-of-intrinsically-safe-windows-based-tablets-with-launch-of-fully-rugged-f110-ex/"
+    }
+  ]
+}

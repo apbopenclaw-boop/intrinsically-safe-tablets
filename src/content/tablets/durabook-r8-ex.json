@@ -1,0 +1,166 @@
+{
+  "productId": "DB-R8EX",
+  "name": "Durabook R8-EX",
+  "brand": "Durabook",
+  "brandSlug": "durabook",
+  "manufacturer": {
+    "name": "Twinhead International Corp. (Durabook)",
+    "country": "Taiwan",
+    "website": "https://www.durabook.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 8,
+  "status": "current",
+  "launchYear": 2024,
+  "summary": "The Durabook R8-EX is the hazardous-area version of a Durabook rugged 8-inch tablet, certified for Zone 2/22 under ATEX. It is an intrinsically safe (Ex ic) design running Windows 11 Pro.",
+  "image": "../../assets/tablets/durabook-r8-ex.webp",
+  "imageAlt": "Durabook R8-EX, front view",
+  "certification": {
+    "otherSchemes": [
+      "MIL-STD-810H",
+      "IP66"
+    ],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T4 Gc / II 3D Ex ic IIIB T135°C Dc",
+      "kind": "conformity",
+      "number": "TPS 23 ATEX 123637 0002 X",
+      "status": "ATEX certificate of conformity number quoted in the user manual (ATEX file R8 01, R2, 2025-07-31); status not independently checked; no IECEx; UKEX not found"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Must be used with the ATEX case supplied by Twinhead, packed as the manual describes. Must not be connected to any external device. Battery may only be charged in a safe area with the supplied adapter (FSP065-RBBN3, 19 V, 3.42 A, 65 W). Do not replace or charge the battery in explosive environments. Do not use the device without the ATEX case in explosive environments. Use only Japone Technology R8-H (7200 mAh) or R8-M (3600 mAh) batteries.",
+    "peripherals": "Per the manual: the tablet shall not be connected to any external device. All I/O ports are covered by explosion-proof brackets that must be fitted (with screws) before entering the ATEX area. The anti-static leather case is mandatory.",
+    "certifiedAccessories": "Supplied with the Ex tablet and part of the certification: ATEX anti-static leather case, left bracket and screws (explosion-proof brackets), stylus and tether, stylus holder. AC adapter and power cord are for the safe area only. Docking connector, keyboard, dock and scanner: none named as Ex-certified."
+  },
+  "os": {
+    "name": "Windows",
+    "version": "Windows 11 Pro",
+    "edition": "Windows 11 Pro 64-bit",
+    "modernLifecycle": true,
+    "updates": "Windows 11: supported while kept on a current version (Microsoft Modern Lifecycle)"
+  },
+  "specs": {
+    "display": "8-inch LCD, DynaVue sunlight-readable, 10-point capacitive",
+    "resolution": "1280 × 800",
+    "brightness": "800 nits",
+    "outdoor": "DynaVue sunlight-readable",
+    "chip": "Intel Core i7-1250U vPro / i5-1230U vPro (12th gen) or Pentium Gold 8500",
+    "cpuArch": "x86",
+    "ram": "8 (option 16), LPDDR4x onboard",
+    "camera": "Optional 11 MP autofocus with flash",
+    "frontCamera": "2 MP",
+    "battery": "3600 typical (7.6 V); optional 7200",
+    "batteryWh": "27.4",
+    "hotSwap": "Optional swappable battery, 5 minute swap (system stays on within 300 s in standby)",
+    "batteryLife": "8.5 h standard, 17 h long-life (MobileMark 2014)",
+    "ports": "Thunderbolt 4, USB 3.2 Gen2 Type-C, audio combo, microSDXC, 20-pin pogo docking, nano-SIM, DC-in; optional USB-A, 1D/2D barcode; all behind explosion-proof brackets in the Ex version",
+    "docking": "20-pin pogo docking connector (office/vehicle docks for standard R8; not for the Ex area)",
+    "network": "Wi-Fi 6E; optional GPS and 4G LTE",
+    "wifi": "Intel Wi-Fi 6E AX211",
+    "bluetooth": "Bluetooth 5.3",
+    "gnss": "Optional dedicated GPS or GPS with 4G LTE (mutually exclusive)",
+    "sim": "Nano-SIM",
+    "keys": "4 buttons (1 user-defined)",
+    "touch": "User-selectable finger/water, glove, stylus modes",
+    "pen": "Optional digitizer",
+    "keyboard": "Tablet only",
+    "storage": "128 GB NVMe (options 256 GB, 512 GB, 1000 GB), microSDXC",
+    "replaceableBattery": true,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 880,
+    "dimensionsMm": "227 × 150 × 20.5 (tablet, without case)",
+    "ipRating": "IP66",
+    "ruggedness": "MIL-STD-810H; 6 ft (1.8 m), 26 faces (tablet; effect of case not stated)",
+    "operatingTemp": "−20 °C to +60 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D barcode reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app (2 MP front, optional 11 MP rear)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Built in (Windows 11 Pro, x86)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.atex.number": "From Durabook's user manual, which reproduces the certificate of conformity; the certificate itself isn't published.",
+    "safety.certifiedAccessories": "Not checked against the certificate for this exact model.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "specs.batteryWh": "Calculated from the maker's battery capacity and voltage; the maker doesn't state watt-hours.",
+    "specs.weightG": "From a single source; the maker's figures vary."
+  },
+  "features": [
+    "barcode",
+    "updates-2030"
+  ],
+  "strengths": [
+    "Optional built-in barcode imager",
+    "User-replaceable battery"
+  ],
+  "limitations": [
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "ATEX only: no IECEx certificate"
+  ],
+  "bestFor": [
+    "zone-2-tablets",
+    "windows-tablets"
+  ],
+  "alternatives": [
+    "getac-zx80w-ex",
+    "bartec-et60-65ex2-windows",
+    "winmate-m101ad-ex"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "Microsoft: Lifecycle: Windows 11 Home and Pro (25H2 end listed 10/13/2027; 24H2 10/14/2026)",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro"
+    },
+    {
+      "label": "Durabook: R8-EX datasheet, Sep. 2025 V5",
+      "url": "https://media.durabook.com/wp-content/uploads/2025/09/25175034/DURABOOK_R8-EX-DM_20250923.pdf"
+    },
+    {
+      "label": "Durabook (Twinhead): R8-EX user manual V2.0 (file R8-EX_User Manual_20260706), incl. ATEX certificate number and special conditions",
+      "url": "https://durabook-manual.s3.eu-central-1.amazonaws.com/R8-EX_User+Manual_20260706.pdf"
+    },
+    {
+      "label": "Durabook (Twinhead): U11I-EX user manual V2.0 (file U11I-EX_User Manual_20260706), incl. ATEX certificate number and special conditions; ATEX file R1 dated 2024-02-20",
+      "url": "https://durabook-manual.s3.eu-central-1.amazonaws.com/U11I-EX_User+Manual_20260706.pdf"
+    },
+    {
+      "label": "Durabook via PR Newswire UK: Press release 2024-02-27: ATEX-certified R8-EX and U11I-EX (URL from research file 02, not re-fetched in this pass)",
+      "url": "https://prnewswire.co.uk/news-releases/durabook-expands-rugged-tablet-portfolio-with-atex-certified-models-for-explosive-environments-302070775.html"
+    }
+  ]
+}

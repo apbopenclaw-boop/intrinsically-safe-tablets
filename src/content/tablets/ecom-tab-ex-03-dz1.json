@@ -1,0 +1,172 @@
+{
+  "productId": "PF-TE03-DZ1",
+  "name": "ecom Tab-Ex 03 DZ1",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 8,
+  "status": "discontinued",
+  "statusNote": "ecom lists it as discontinued. Security patches ended in Q3 2025; hardware service runs to Q4 2027.",
+  "successor": "ecom-tab-ex-05-dz1",
+  "launchYear": 2022,
+  "summary": "The ecom Tab-Ex 03 DZ1 is a flameproof (Ex d) 8-inch Android tablet from ecom (Pepperl+Fuchs), certified for Zone 1/21 under ATEX, IECEx and UKEX. It runs Android 13. It has been discontinued; the ecom Tab-Ex 05 DZ1 replaces it.",
+  "image": "../../assets/tablets/ecom-tab-ex-03-dz1.webp",
+  "imageAlt": "ecom Tab-Ex 03 DZ1, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 2G Ex db ia IIC T6 Gb IP64 / II 2D Ex tb ia IIIC T80°C Db",
+      "kind": "type-examination",
+      "number": "EPS 22 ATEX 1 055 X",
+      "status": "IECEx Current (issue 1), checked 2026-10-25. Product discontinued (ecom archive)."
+    },
+    "iecex": {
+      "marking": "Ex db ia IIC T6 Gb IP64 / Ex tb ia IIIC T80°C Db",
+      "number": "IECEx EPS 22.0014X",
+      "scope": "Issue 1, 2025-08-05"
+    },
+    "ukex": "EPS 22 UKEX 1 055 X (Rev 0)",
+    "northAmerica": "ETL: Class I, Division 1, Groups A,B,C,D T6; Class II, Division 1, Groups E,F,G T85°C; Class III T85°C; Class I, Zone 1, AEx db ia IIC T6 Gb; Zone 21, Group IIIC T85°C; Ta −20 °C to +50 °C",
+    "division": "Class I Division 1",
+    "zonesGas": [
+      "1",
+      "2"
+    ],
+    "zonesDust": [
+      "21",
+      "22"
+    ],
+    "protection": "Flameproof enclosure (Ex db) with an intrinsically safe circuit (Ex ia)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T6",
+    "maxSurfaceTemp": "80 °C",
+    "epl": "Gb / Db",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "conditions": "Flameproof joints not to be repaired; protect against high-energy impacts and high electrostatic charge; ambient −20 °C to +55 °C; USB-C entity parameters Uo 5.6 V, Io 500 mA (IECEx EPS 22.0014X).",
+    "peripherals": "SIM and microSD are reachable only in non-hazardous areas (flameproof cover). The USB-C port is intrinsically safe and may be used for wired data connections in the hazardous area within its entity parameters (Uo 5.6 V, Io 500 mA, Po 600 mW, Co 1 µF, Lo 1 µH); charging via USB-C only in non-hazardous areas. The S Pen is intrinsically safe and may be used in the hazardous area.",
+    "certifiedAccessories": "Named in the certificate: Samsung S Pen, ecom type ST T03 X2. No other accessory is named in IECEx EPS 22.0014X."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 13",
+    "edition": "Android 13 (latest firmware)",
+    "upgradeLimit": "Android 13 (latest firmware offered)",
+    "securityUntil": "2025-09-30",
+    "securityUntilLabel": "Q3 2025",
+    "updates": "Security updates ended in Q3 2025"
+  },
+  "specs": {
+    "display": "8-inch TFT, capacitive multitouch",
+    "resolution": "1920 × 1200 (WUXGA)",
+    "brightness": "480 nits",
+    "chip": "Samsung Exynos 9810 octa-core (4 x 2.7 GHz + 4 x 1.7 GHz)",
+    "cpuArch": "Arm",
+    "ram": "4 GB",
+    "camera": "13 MP AF (optional)",
+    "frontCamera": "5 MP",
+    "video": "UHD 4K at 30 fps",
+    "battery": "5050 typical (4900 rated)",
+    "batteryWh": "18.87",
+    "batteryLife": "Up to 11 h",
+    "ports": "USB 3.1 Gen 1; microSD; nano-SIM; USB-POGO",
+    "network": "4G LTE (optional) or Wi-Fi only",
+    "bluetooth": "Bluetooth 5.0",
+    "nfc": "Yes (plus ANT+)",
+    "gnss": "GPS, Glonass, Beidou, Galileo",
+    "sim": "1 x nano-SIM (4FF), optional on DZ1",
+    "touch": "Can be operated while wearing gloves",
+    "storage": "64 GB, microSD up to 1024 GB",
+    "replaceableBattery": false,
+    "gloveTouch": true,
+    "connectivity": [
+      "4G",
+      "NFC"
+    ],
+    "weightG": 1100,
+    "dimensionsMm": "161.5 × 262.75 × 25.75",
+    "ipRating": "IP64 (ATEX/IECEx)",
+    "exIp": "IP64",
+    "operatingTemp": "−20 °C to +55 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc"
+  ],
+  "strengths": [
+    "USB-C can be used for data in the zone",
+    "ATEX, IECEx and UKEX certified, with published certificate numbers",
+    "T6 temperature class, the strictest rating"
+  ],
+  "limitations": [
+    "Discontinued; the ecom Tab-Ex 05 DZ1 replaces it",
+    "Security updates ended in Q3 2025",
+    "Battery isn't user-replaceable",
+    "Not certified for Zone 0"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "ecom-tab-ex-05-dz1",
+    "isafe-is930-1",
+    "atexxo-zone-1-galaxy-tab-active5"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX EU-type examination certificate EPS 22 ATEX 1 055 X, Rev 0 (2022-09-07), Tab-Ex 03 DZ1 (ecom CERT-6703)",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/tab-ex-03-series/dz1/ATEX_certificate_Tab-Ex_03_DZ1_CERT-6703.pdf"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: UK type examination certificate EPS 22 UKEX 1 055 X, Rev 0, Tab-Ex 03 DZ1 (ecom CERT-6704)",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/tab-ex-03-series/dz1/UKCA_certificate_Tab-Ex_03_DZ1_CERT-6704.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 22.0014X issue 1 (2025-08-05), Tab-Ex 03 DZ1",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1956266/view"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 21.0033X issue 1 (2025-08-05), Tab-Ex 03 DZ2",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/1956263/view"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 03 DZ1 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-03-dz1/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ecom FAQ: Release Plans of Major Products (OS and security patch plan; last updated 2025-11-18)",
+      "url": "https://support.ecom-ex.com/457976005.html"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 03 DZ2 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-03-dz2/"
+    }
+  ]
+}

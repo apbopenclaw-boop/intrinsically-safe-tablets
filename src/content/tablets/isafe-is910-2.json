@@ -1,0 +1,152 @@
+{
+  "productId": "IS-910.2",
+  "name": "i.safe MOBILE IS910.2",
+  "brand": "i.safe MOBILE",
+  "brandSlug": "isafe",
+  "manufacturer": {
+    "name": "i.safe MOBILE GmbH",
+    "country": "Germany",
+    "website": "https://www.isafe-mobile.com"
+  },
+  "type": "dedicated",
+  "screenIn": 8,
+  "status": "discontinued",
+  "statusNote": "i.safe MOBILE has moved it to the archive of its range.",
+  "successor": "isafe-is930-2",
+  "launchYear": 2017,
+  "summary": "The i.safe MOBILE IS910.2 is an intrinsically safe (Ex ic) 8-inch Android tablet from i.safe MOBILE, certified for Zone 2/22 under IECEx. i.safe MOBILE also states ATEX certification, but the certificate isn't published. It runs Android 8. It has been discontinued; the i.safe MOBILE IS930.2 replaces it.",
+  "image": "../../assets/tablets/isafe-is910-2.webp",
+  "imageAlt": "i.safe MOBILE IS910.2, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T4 Gc IP64 / II 3D Ex ic IIIC T135°C Dc IP64",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 0, checked 2026-10-25. Product discontinued."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T4 Gc IP64 / Ex ic IIIC T135°C Dc IP64",
+      "number": "IECEx EPS 17.0069X",
+      "scope": "Issue 0, 2017-11-23"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIC",
+    "tempClass": "T4",
+    "maxSurfaceTemp": "135 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +60 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "conditions": "IECEx X conditions: battery charged outside Ex areas only; protect from high-energy impacts, UV and static charge; ambient −20 °C to +60 °C."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 8",
+    "atLaunch": "Android 7.1",
+    "edition": "Android 8.0 (7.1 also listed)",
+    "upgradeLimit": "Android 8.0 (as listed)"
+  },
+  "specs": {
+    "display": "8-inch Corning Gorilla Glass V3, usable with gloves",
+    "resolution": "1200 × 1920 pixels (8-inch)",
+    "chip": "Qualcomm Snapdragon MSM8953 (quad core on IS910.1 page; octa core on IS910.2 page)",
+    "cpuArch": "Arm",
+    "ram": "3 GB",
+    "camera": "8 MP AF",
+    "frontCamera": "5 MP FF",
+    "battery": "8400 (IS910.1); 6000 (IS910.2)",
+    "ports": "USB-C; magnetic charger port; microSD; micro-SIM; charging contacts for dock and multi charger",
+    "network": "4G LTE",
+    "wifi": "Wi-Fi 4 (802.11 b/g/n)",
+    "bluetooth": "Bluetooth 4.1 BLE",
+    "nfc": "Yes",
+    "gnss": "GPS, A-GPS, Glonass, Beidou",
+    "sim": "Micro-SIM",
+    "keys": "SOS key",
+    "touch": "Usable with gloves",
+    "storage": "32 GB, microSD to 32 GB",
+    "replaceableBattery": false,
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G",
+      "Wi-Fi 4",
+      "NFC"
+    ],
+    "weightG": 850,
+    "dimensionsMm": "237 × 156 × 22",
+    "ipRating": "IP68",
+    "ruggedness": "MIL-STD-810G",
+    "operatingTemp": "−20 °C to +60 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Emergency / SOS",
+      "value": "Built in (SOS key)"
+    },
+    {
+      "label": "Lone worker",
+      "value": "Via app (LWP ready: third-party application required)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "os.atLaunch": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.battery": "From a single or secondary source; the maker doesn't state it for this model.",
+    "specs.weightG": "From a single source; the maker's figures vary.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc"
+  ],
+  "strengths": [
+    "Certified for ambient temperatures up to +60 °C"
+  ],
+  "limitations": [
+    "Discontinued; the i.safe MOBILE IS930.2 replaces it",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T4 temperature class: fine for most gases, but not those that ignite below 135 °C",
+    "Battery isn't user-replaceable"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "isafe-is930-2",
+    "ecom-tab-ex-05-dz2",
+    "touchstar-ts3300"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany): IECEx EPS 17.0069X issue 0 (2017-11-23), IS910.2",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/16105/view"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany): IECEx EPS 16.0061X issue 0 (2017-05-31), IS910.1",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/16302/view"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS910.2 archive product page",
+      "url": "https://www.isafe-mobile.com/en/products/product-range/archive/is9102"
+    },
+    {
+      "label": "i.safe MOBILE GmbH: IS910.1 archive product page",
+      "url": "https://www.isafe-mobile.com/en/products/product-range/archive/is9101"
+    }
+  ]
+}

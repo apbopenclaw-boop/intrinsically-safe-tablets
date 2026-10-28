@@ -1,0 +1,153 @@
+{
+  "productId": "PF-TE02-DZ2",
+  "name": "ecom Tab-Ex 02 DZ2",
+  "brand": "ecom (Pepperl+Fuchs)",
+  "brandSlug": "ecom",
+  "manufacturer": {
+    "name": "ecom instruments (Pepperl+Fuchs)",
+    "country": "Germany",
+    "website": "https://www.ecom-ex.com"
+  },
+  "type": "dedicated",
+  "screenIn": 8,
+  "status": "discontinued",
+  "statusNote": "ecom lists it as discontinued.",
+  "successor": "ecom-tab-ex-03-dz2",
+  "launchYear": 2018,
+  "summary": "The ecom Tab-Ex 02 DZ2 is an intrinsically safe (Ex ic) 8-inch Android tablet from ecom (Pepperl+Fuchs), certified for Zone 2/22 under ATEX and IECEx. It runs Android 9. It has been discontinued; the ecom Tab-Ex 03 DZ2 replaces it.",
+  "image": "../../assets/tablets/ecom-tab-ex-02-dz2.webp",
+  "imageAlt": "ecom Tab-Ex 02 DZ2, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic IIC T5 Gc / II 3D Ex ic IIIB T100°C Dc",
+      "kind": "type-examination",
+      "number": "EPS 18 ATEX 1 055 X",
+      "status": "IECEx Current (issue 1), checked 2026-10-25. Product discontinued."
+    },
+    "iecex": {
+      "marking": "Ex ic IIC T5 Gc / Ex ic IIIB T100°C Dc",
+      "number": "IECEx EPS 18.0029X",
+      "scope": "Issue 1, 2019-12-13"
+    },
+    "northAmerica": "CSA: Class I, Division 2, Groups A,B,C,D T5; Class I Zone 2 Group IIC T5; Ta −20 °C to +55 °C",
+    "division": "Class I Division 2",
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T5",
+    "maxSurfaceTemp": "100 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−20 °C to +55 °C"
+  },
+  "safety": {
+    "conditions": "Charging and wired data (USB, POGO) and battery/SIM/SD changes only in safe locations; Ex-protective cover conductive coating must be inspected; battery Samsung EB-BT365BB only; protect from impacts, UV, static (IECEx EPS 18.0029X)."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 9",
+    "edition": "Android (version not printed; latest firmware Android 9 per earlier research)"
+  },
+  "specs": {
+    "display": "8-inch TFT",
+    "resolution": "1280 × 800 (WXGA)",
+    "brightness": "480 nits",
+    "chip": "Exynos 7 Octa 1.6 GHz octa-core (Cortex-A53)",
+    "cpuArch": "Arm",
+    "ram": "3 GB",
+    "camera": "8 MP AF (non-camera option)",
+    "frontCamera": "5 MP",
+    "battery": "4450 mAh",
+    "batteryWh": "16.91 Wh",
+    "batteryLife": "Up to 11 h",
+    "network": "LTE Cat. 6 (LTE model)",
+    "wifi": "Wi-Fi 802.11 a/b/g/n/ac",
+    "bluetooth": "Bluetooth 4.2",
+    "nfc": "Yes",
+    "gnss": "GPS",
+    "biometrics": "Face recognition",
+    "touch": "Gloves, wet conditions and snow",
+    "storage": "16 GB, microSD up to 256 GB (cannot be fitted or replaced after delivery)",
+    "gloveTouch": true,
+    "connectivity": [
+      "4G",
+      "Wi-Fi 802",
+      "NFC"
+    ],
+    "weightG": 1250,
+    "dimensionsMm": "162.1 × 256.0 × 33.3",
+    "ipRating": "IP64 (ATEX) / IP65",
+    "operatingTemp": "−20 °C to +55 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "NFC reading",
+      "value": "Built in (NFC)"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "certification.northAmerica": "From the maker's published information; we haven't seen the North American certificate.",
+    "certification.division": "From the maker's published information; we haven't seen the North American certificate.",
+    "os.version": "From a single or secondary source; the maker doesn't state it for this model.",
+    "os.edition": "The maker doesn't state the edition year.",
+    "specs.weightG": "From a single source; the maker's figures vary.",
+    "specs.dimensionsMm": "From a single source.",
+    "removable": "Not stated by the maker for this exact model.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc"
+  ],
+  "strengths": [
+    "ATEX and IECEx certified, with published certificate numbers"
+  ],
+  "limitations": [
+    "Discontinued; the ecom Tab-Ex 03 DZ2 replaces it",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "ecom-tab-ex-03-dz2",
+    "isafe-is930-2",
+    "touchstar-ts3300"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ATEX Certificate of Conformity EPS 18 ATEX 1 055 X, Rev 1 (2019-12-13), Tab-Ex 02 Z2/DZ2",
+      "url": "https://www.ecom-ex.com/fileadmin/user_upload/product-data/pdf/mobile-computing/tab-ex-02-series/dz2/atex_certificate_tab-ex-02-dz2_en.pdf"
+    },
+    {
+      "label": "IECEx online certificate database (certifying body: Bureau Veritas CPS Germany; SIR certificates: Sira): IECEx EPS 18.0029X issue 1 (2019-12-13), Tab-Ex 02 Z2/DZ2",
+      "url": "https://www.iecex-certs.com/#/deliverables/CERT/45753/view"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 02 DZ1 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-02-dz1/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: Tab-Ex 02 DZ2 archive page",
+      "url": "https://www.ecom-ex.com/products/archive/mobile-computing/tab-ex-02-dz2/"
+    },
+    {
+      "label": "ecom instruments GmbH / Pepperl+Fuchs SE: ecom FAQ: Release Plans of Major Products (OS and security patch plan; last updated 2025-11-18)",
+      "url": "https://support.ecom-ex.com/457976005.html"
+    }
+  ]
+}

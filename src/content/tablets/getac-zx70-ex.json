@@ -1,0 +1,164 @@
+{
+  "productId": "GT-ZX70EX",
+  "name": "Getac ZX70-EX",
+  "brand": "Getac",
+  "brandSlug": "getac",
+  "manufacturer": {
+    "name": "Getac Technology Corporation",
+    "country": "Taiwan",
+    "website": "https://www.getac.com"
+  },
+  "type": "rugged-variant",
+  "screenIn": 7,
+  "status": "discontinued",
+  "statusNote": "No longer in Getac's range, which now lists the ZX80-EX; no end-of-sale notice.",
+  "successor": "getac-zx80-ex",
+  "launchYear": 2017,
+  "summary": "The Getac ZX70-EX is the hazardous-area version of a Getac rugged 7-inch tablet, certified for Zone 2/22 under IECEx. Getac also states ATEX certification, but the certificate isn't published. It is an intrinsically safe (Ex ic) design running Android 10. It has been discontinued; the Getac ZX80-EX replaces it.",
+  "image": "../../assets/tablets/getac-zx70-ex.webp",
+  "imageAlt": "Getac ZX70-EX, front view",
+  "certification": {
+    "otherSchemes": [],
+    "standards": [],
+    "atex": {
+      "marking": "II 3G Ex ic op is IIC T5 Gc / II 3D Ex ic op is IIIB T100°C Dc",
+      "kind": "not-published",
+      "status": "IECEx Current, issue 5, checked 2026-10-25; ATEX not published"
+    },
+    "iecex": {
+      "marking": "Ex ic op is IIC T5 Gc / Ex ic op is IIIB T100°C Dc",
+      "number": "IECEx EPS 16.0073X",
+      "scope": "Issue 5, 2021-10-12, ZX70-Ex"
+    },
+    "zonesGas": [
+      "2"
+    ],
+    "zonesDust": [
+      "22"
+    ],
+    "protection": "Intrinsic safety (Ex ic) with inherently safe optical radiation (op is)",
+    "gasGroup": "IIC",
+    "dustGroup": "IIIB",
+    "tempClass": "T5",
+    "maxSurfaceTemp": "100 °C",
+    "epl": "Gc / Dc",
+    "ambient": "−21 °C to +60 °C"
+  },
+  "safety": {
+    "chargingInZone": false,
+    "charging": "Outside the hazardous area only",
+    "batterySwap": "Outside the hazardous area only",
+    "conditions": "Ambient −21 to +60 °C; controlled environment with reduced pollution; protect from UV and impacts with high impact energy; not next to strong charge-generating processes; the ATEX hand strap TF1-STRAP and the anti-static display film must be installed for any use in hazardous locations; follow the manufacturer safety instructions.",
+    "peripherals": "Certificate does not list a connection-interface ban. Rubber I/O cover is a certified accessory and must be fitted; DC-in, USB host and micro-USB client ports are not for use in hazardous areas (assumed, not in the certificate text).",
+    "certifiedAccessories": "Named in the certificate: hand strap (ATEX hand strap TF1-STRAP is mandatory), shoulder strap, rotating hand strap, wrist strap, capacitive stylus and tether, anti-static film (mandatory), rubber I/O cover. AC adapter not for hazardous areas."
+  },
+  "os": {
+    "name": "Android",
+    "version": "Android 10",
+    "edition": "Android 10.0",
+    "securityUntil": "2025-06-30",
+    "updates": "Security updates ended in June 2025"
+  },
+  "specs": {
+    "display": "7-inch",
+    "resolution": "1280 × 720 (HD)",
+    "chip": "Qualcomm Snapdragon 660 octa-core 1.95 GHz, Adreno 512",
+    "cpuArch": "Arm",
+    "ram": "4 GB",
+    "camera": "12 MP autofocus",
+    "frontCamera": "8 MP",
+    "battery": "8480 typical (8220 min), 3.8 V",
+    "ports": "DC-in, USB 2.0 host, micro-USB client, microSD; optional barcode imager, HF RFID/NFC",
+    "network": "Wi-Fi 5; optional 4G LTE",
+    "wifi": "802.11ac",
+    "bluetooth": "Bluetooth 5.0",
+    "gnss": "Dedicated GPS",
+    "keys": "Power + 3 programmable",
+    "touch": "Capacitive multi-touch; glove-enabled per standard model",
+    "pen": "Capacitive stylus (no digitizer)",
+    "storage": "64 GB, microSD",
+    "gloveTouch": true,
+    "pttKey": false,
+    "connectivity": [
+      "4G"
+    ],
+    "weightG": 774,
+    "dimensionsMm": "218 × 142 × 27",
+    "ipRating": "IP67",
+    "ruggedness": "MIL-STD-810H; 1.8 m (6 ft) drop",
+    "operatingTemp": "−21 °C to +60 °C"
+  },
+  "throughCase": [],
+  "capabilities": [
+    {
+      "label": "Barcode scanning",
+      "value": "Built in (optional 1D/2D imager)"
+    },
+    {
+      "label": "RFID",
+      "value": "Built in (optional HF RFID/NFC reader)"
+    },
+    {
+      "label": "NFC reading",
+      "value": "Built in (optional combo reader)"
+    },
+    {
+      "label": "Remote expert / video calls",
+      "value": "Via app"
+    },
+    {
+      "label": "Windows desktop software",
+      "value": "Not possible (Android)"
+    }
+  ],
+  "variants": [],
+  "unconfirmed": {
+    "safety.charging": "Not stated in the certificate. The battery isn't user-removable, and later Getac Ex tablets forbid charging in the zone.",
+    "safety.batterySwap": "Not stated in the certificate. The battery isn't user-removable, and later Getac Ex tablets forbid charging in the zone.",
+    "safety.peripherals": "Not stated in the certificate; based on the rubber I/O cover it lists as an accessory.",
+    "os.securityUntil": "Getac's date for the standard model; Getac lists no separate date for the EX version.",
+    "launchYear": "Approximate: the maker doesn't publish a launch date. Based on the certificate date or the maker's announcement."
+  },
+  "features": [
+    "nfc",
+    "barcode"
+  ],
+  "strengths": [
+    "Optional built-in barcode imager",
+    "Among the lightest Zone 2 tablets of its size we list, at 774 g in use",
+    "Certified for ambient temperatures up to +60 °C"
+  ],
+  "limitations": [
+    "Discontinued; the Getac ZX80-EX replaces it",
+    "Zone 2 only, so not for Zone 1 areas",
+    "T5 temperature class: fine for most gases, but not those that ignite below 100 °C",
+    "Dust group IIIB: combustible flyings and non-conductive dust only, not conductive dust",
+    "Security updates ended in June 2025"
+  ],
+  "bestFor": [],
+  "alternatives": [
+    "getac-zx80-ex",
+    "bartec-et60-65ex2-android",
+    "touchstar-ts3300"
+  ],
+  "sponsor": false,
+  "lastVerified": "2026-10-25",
+  "sources": [
+    {
+      "label": "IECEx / Bureau Veritas CPS Germany (EPS): IECEx EPS 16.0073X issue 5 (ZX70-Ex), 2021-10-12, Current",
+      "url": "https://assets.iec.ch/OCS/IECEX/02/EPS/IECExEPS16.0073/005/deliverable/IECEx_EPS_16.0073X_005.pdf"
+    },
+    {
+      "label": "Getac: ZX80-EX (G1) product specification, generated 2026-08-06",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX80-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: ZX70-EX (G2) product specification, generated 2024-07-04",
+      "url": "https://www.getac.com/content/dam/getac/product-spec-data-pdf/en/Getac_ZX70-EX_EN_Product.pdf"
+    },
+    {
+      "label": "Getac: Getac Device Update Center: security update end dates and policy (5 years from first availability, 90-day cadence)",
+      "url": "https://www.getac.com/en/getac-device-update-center/"
+    }
+  ]
+}
