@@ -319,6 +319,12 @@ const schema = [
     border-radius: 6px;
     background: #fff;
   }
+  /* Own chevron, set in from the edge like the Find tablets sort menu */
+  select {
+    padding-right: 2.5rem;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f2723' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 0.85rem center / 0.9rem;
+    appearance: none;
+  }
   textarea { resize: vertical; }
   input:focus-visible,
   textarea:focus-visible,

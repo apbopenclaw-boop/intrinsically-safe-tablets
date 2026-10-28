@@ -70,12 +70,14 @@ const Outer = variant === 'band' ? 'section' : 'aside';
   .req-field label { font-size: var(--text-sm); font-weight: 600; }
   .req-field select {
     min-height: 44px;
-    padding: 0 0.75rem;
+    /* Own chevron, set in from the edge like the Find tablets sort menu */
+    padding: 0 2.5rem 0 0.75rem;
     border: 1px solid var(--color-border-strong);
     border-radius: 6px;
-    background: var(--color-bg);
+    background: var(--color-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f2723' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 0.85rem center / 0.9rem;
     font: inherit;
     color: inherit;
+    appearance: none;
   }
   .req-fields .btn { min-height: 44px; justify-content: center; }
 
