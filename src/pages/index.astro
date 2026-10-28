@@ -33,10 +33,11 @@ if (title.length > 60 || description.length > 160) throw new Error('Home page ti
 /* ---------- Start your search: Find tablets with a filter already set ---------- */
 const brandsOf = (types: string[]) => [...new Set(current.filter((t) => types.includes(t.data.type)).map((t) => plain(t.data.brand)))].sort();
 const searches: { icon: IconName; title: string; text: string; href: string; count: number }[] = [
-  { icon: 'flame', title: 'Zone 1 tablets', text: 'Gas likely in normal operation', href: '/tablets/?zone=1', count: count(inZone('1')) },
-  { icon: 'shield', title: 'Zone 2 tablets', text: 'Gas unlikely, and only briefly', href: '/tablets/?zone=2', count: count(inZone('2')) },
-  { icon: 'monitor', title: 'Windows tablets', text: 'Desktop software in the field', href: '/tablets/?os=Windows', count: count((t) => t.data.os.name === 'Windows') },
-  { icon: 'tablet', title: 'Android tablets', text: 'Dedicated and rugged Android tablets', href: '/tablets/?os=Android', count: count((t) => t.data.os.name === 'Android') },
+  { icon: 'flame', title: 'Zone 1 tablets', text: 'For use in Zone 1 and Zone 2 areas', href: '/tablets/?zone=1', count: count(inZone('1')) },
+  // "Only in Zone 2", so the link and count leave out Zone 1 tablets (Find tablets' "Show Zone 2 tablets only")
+  { icon: 'shield', title: 'Zone 2 tablets', text: 'For use only in Zone 2 areas', href: '/tablets/?zone=2&exact=zone', count: count((t) => t.data.certification.zonesGas.join() === '2') },
+  { icon: 'monitor', title: 'Windows tablets', text: 'Tablets that run Windows software', href: '/tablets/?os=Windows', count: count((t) => t.data.os.name === 'Windows') },
+  { icon: 'tablet', title: 'Android tablets', text: 'Tablets that run Android software', href: '/tablets/?os=Android', count: count((t) => t.data.os.name === 'Android') },
   { icon: 'tablet', title: 'iPad cases and conversions', text: 'Standard iPads in certified housings', href: '/tablets/?os=iPadOS', count: count((t) => t.data.os.name === 'iPadOS') },
   {
     icon: 'settings',
@@ -47,16 +48,32 @@ const searches: { icon: IconName; title: string; text: string; href: string; cou
   },
 ];
 
-/* ---------- Brands: every maker's logo in its own colours (black where there's no colour file), alphabetical ---------- */
+/* ---------- Brands: every maker's logo in its own colours (black where there's no colour file) ----------
+   Six rows of three in a random order, with Xshielder in the middle of the second row; the first and last rows are
+   cut in half and fade out (Rory, 2026-10-28). Zebra is left out of the wall. */
 const TILE_OPTICAL: Record<string, number> = { isafe: 1.15, bartec: 0.85 };
 // Xshielder's yellow logo is made for a dark surface, so it sits on its own badge, as in the hero strip
 const BADGE: Record<string, string> = { xshielder: '#171B25' };
+const WALL_LEAVE_OUT = new Set(['zebra']);
+const WALL_COLS = 3;
+const WALL_ROWS = 6;
+const SPONSOR = 'xshielder';
+const SPONSOR_SLOT = WALL_COLS + 1; // second row, middle column
 const brands = [...new Map(tablets.map((t) => [t.data.brandSlug, t.data.brand])).entries()]
+  .filter(([slug]) => !WALL_LEAVE_OUT.has(slug))
   .map(([slug, name]) => {
     const img = logo('brands', slug, 'colour');
     return { slug, name, img, badge: BADGE[slug], scale: img ? logoScale(slug, img) * (TILE_OPTICAL[slug] ?? 1) : 1 };
   })
   .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+if (brands.length !== WALL_COLS * WALL_ROWS || !brands.some((b) => b.slug === SPONSOR)) {
+  throw new Error(`The home brand wall is ${WALL_ROWS} rows of ${WALL_COLS} with Xshielder; it now has ${brands.length} brands, so re-check it`);
+}
+// A fixed shuffle for the built page (and visitors without JavaScript); the script after the wall reshuffles on each visit
+let seed = 7;
+const rand = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const others = brands.filter((b) => b.slug !== SPONSOR).map((b) => ({ b, r: rand() })).sort((x, y) => x.r - y.r).map((x) => x.b);
+const wall = [...others.slice(0, SPONSOR_SLOT), brands.find((b) => b.slug === SPONSOR)!, ...others.slice(SPONSOR_SLOT)];
 const brandList = brands.map((b) => plain(b.name));
 
 /* ---------- Head-to-head: the first comparison without a sponsor product, once comparisons exist ---------- */
@@ -256,21 +273,39 @@ const schema = [
         </p>
         <a class="arrow-link" href={FIND_TABLETS.href}>See all tablets <Icon name="arrow-right" /></a>
       </div>
-      <ul class="logo-grid" aria-label={`Brands we compare: ${brandList.join(', ')}`}>
-        {brands.map((b) => (
-          <li class="logo-tile">
-            {b.img && b.badge ? (
-              <span class="logo-badge" style={`--badge: ${b.badge}`}>
+      <div class="logo-wall">
+        <ul class="logo-grid" data-slot={SPONSOR_SLOT} aria-label={`Brands we compare: ${brandList.join(', ')}`}>
+          {wall.map((b) => (
+            <li class="logo-tile" data-sponsor={b.slug === SPONSOR ? '' : undefined}>
+              {b.img && b.badge ? (
+                <span class="logo-badge" style={`--badge: ${b.badge}`}>
+                  <img src={b.img.src} width={b.img.width} height={b.img.height} alt={b.name} loading="lazy" style={`--scale: ${b.scale.toFixed(2)}`} />
+                </span>
+              ) : b.img ? (
                 <img src={b.img.src} width={b.img.width} height={b.img.height} alt={b.name} loading="lazy" style={`--scale: ${b.scale.toFixed(2)}`} />
-              </span>
-            ) : b.img ? (
-              <img src={b.img.src} width={b.img.width} height={b.img.height} alt={b.name} loading="lazy" style={`--scale: ${b.scale.toFixed(2)}`} />
-            ) : (
-              <span class="logo-text">{plain(b.name)}</span>
-            )}
-          </li>
-        ))}
-      </ul>
+              ) : (
+                <span class="logo-text">{plain(b.name)}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+        <script is:inline>
+          // A new order on every visit, so no brand always sits in a faded row; Xshielder keeps its slot.
+          // Runs as soon as the wall is parsed, before it is painted.
+          (() => {
+            const grid = document.currentScript.previousElementSibling;
+            const tiles = [...grid.children];
+            const fixed = tiles.find((li) => li.hasAttribute('data-sponsor'));
+            const rest = tiles.filter((li) => li !== fixed);
+            for (let i = rest.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [rest[i], rest[j]] = [rest[j], rest[i]];
+            }
+            if (fixed) rest.splice(Number(grid.dataset.slot), 0, fixed);
+            grid.append(...rest);
+          })();
+        </script>
+      </div>
     </div>
   </section>
 
@@ -565,23 +600,43 @@ const schema = [
   }
   .duo-actions .arrow-link { margin-top: 0; }
 
-  /* Brand logos */
+  /* Brand logos: six rows of three at every width. The wall crops the first and last rows through the middle and
+     fades them out, so it shows four full rows and two half rows. */
+  .logo-wall {
+    --tile-h: 4.5rem;
+    --wall-gap: 0.5rem;
+    /* Fully shown from the second row in; the half logos at the edges stay faintly visible */
+    --fade: calc(var(--tile-h) / 2 + var(--wall-gap));
+    --faint: calc(var(--tile-h) / 5);
+    --wall-mask: linear-gradient(
+      transparent,
+      rgb(0 0 0 / 0.6) var(--faint),
+      #000 var(--fade),
+      #000 calc(100% - var(--fade)),
+      rgb(0 0 0 / 0.6) calc(100% - var(--faint)),
+      transparent
+    );
+    overflow: hidden;
+    -webkit-mask-image: var(--wall-mask);
+    mask-image: var(--wall-mask);
+  }
   .logo-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--wall-gap);
+    margin-block: calc(var(--tile-h) / -2);
   }
   .logo-tile {
     display: grid;
     place-items: center;
-    height: 6.5rem;
-    padding: 1rem;
+    height: var(--tile-h);
+    padding: 0.5rem;
     background: var(--color-card);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
   }
   .logo-tile img {
-    --logo-h: 1.75rem;
+    --logo-h: 1.3rem;
     width: auto;
     max-width: 80%;
     height: calc(var(--logo-h) * var(--scale, 1));
@@ -590,11 +645,12 @@ const schema = [
   .logo-badge {
     display: grid;
     place-items: center;
-    padding: 0.6rem 1rem;
-    border-radius: 8px;
+    max-width: 100%;
+    padding: 0.45rem 0.6rem;
+    border-radius: 6px;
     background: var(--badge);
   }
-  .logo-badge img { --logo-h: 1.5rem; max-width: 100%; }
+  .logo-badge img { --logo-h: 1.05rem; max-width: 100%; }
   .logo-text { font-family: var(--font-display); font-weight: 600; color: var(--color-ink); }
 
   /* Head-to-head visual: two phones unboxed and close together, a glow behind each, "vs" between */
@@ -756,7 +812,11 @@ const schema = [
   /* ---------- Tablet and up ---------- */
   @media (min-width: 48rem) {
     .insight-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
-    .logo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .logo-wall { --tile-h: 5.5rem; --wall-gap: 0.75rem; }
+    .logo-tile { padding: 0.75rem 1rem; }
+    .logo-tile img { --logo-h: 1.6rem; }
+    .logo-badge { padding: 0.55rem 0.9rem; border-radius: 8px; }
+    .logo-badge img { --logo-h: 1.35rem; }
     .pick-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2.5rem; }
     .pick-list li:nth-child(2) { border-top: 1px solid var(--color-border); }
   }
@@ -894,11 +954,10 @@ const schema = [
     .pick-icon :global(svg) { width: 1.6rem; height: 1.6rem; }
 
     .duo-text { max-width: 30rem; }
-    .logo-grid { gap: 1rem; }
-    .logo-tile { height: 8.25rem; }
-    .logo-tile img { --logo-h: 2.15rem; }
-    .logo-badge { padding: 0.75rem 1.25rem; }
-    .logo-badge img { --logo-h: 1.85rem; }
+    .logo-wall { --tile-h: 5.75rem; --wall-gap: 0.875rem; }
+    .logo-tile img { --logo-h: 1.85rem; }
+    .logo-badge { padding: 0.65rem 1.1rem; }
+    .logo-badge img { --logo-h: 1.6rem; }
 
     .matchup-photo { width: min(100%, 18.5rem); }
     .matchup-vs { font-size: 2rem; }

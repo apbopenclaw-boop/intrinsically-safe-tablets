@@ -7,17 +7,9 @@ const { class: className } = Astro.props;
 ---
 
 <a href="/" class:list={['logo', className]}>
-  <!-- The device mark: a landscape rugged tablet (chamfered corners, front camera, a grid of app tiles on the screen), so it
-       reads as a tablet at header size (Rory, 2026-10-27) -->
-  <svg class="logo-mark" viewBox="0 0 280 210" aria-hidden="true" focusable="false">
-    <path fill-rule="evenodd" d="M18 0H262L280 18V192L262 210H18L0 192V18Z M30 22H250A6 6 0 0 1 256 28V182A6 6 0 0 1 250 188H30A6 6 0 0 1 24 182V28A6 6 0 0 1 30 22Z M134 11a6 6 0 1 0 12 0a6 6 0 1 0-12 0Z" />
-    <rect x="62" y="62" width="38" height="34" rx="8" />
-    <rect x="120" y="62" width="38" height="34" rx="8" />
-    <rect x="178" y="62" width="38" height="34" rx="8" />
-    <rect x="62" y="112" width="38" height="34" rx="8" />
-    <rect x="120" y="112" width="38" height="34" rx="8" />
-    <rect x="178" y="112" width="38" height="34" rx="8" />
-  </svg>
+  <!-- The device mark: Rory's logo (2026-10-28), a landscape rugged tablet with chamfered corners, as a transparent
+       webp at 3x header size. The favicons in public/ are the same mark. -->
+  <img class="logo-mark" src="/logo.webp" width="137" height="96" alt="" />
   <span class="logo-text">
     <span class="logo-word"><strong>explosionprooftablets</strong>.com</span>
     <span class="logo-tagline">ATEX Zone 1 &amp; 2 Tablets Compared</span>
@@ -39,7 +31,6 @@ const { class: className } = Astro.props;
     flex: none;
     width: auto;
     height: 1.625rem;
-    fill: var(--color-logo);
   }
 
   .logo-text {

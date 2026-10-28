@@ -59,9 +59,10 @@ const markings = [
 const fill = <T,>(items: T[], min: number) => Array.from({ length: Math.ceil(min / items.length) }, () => items).flat();
 const rows = { brands: fill(brands, 12), marks: fill(marks, 10), markings: fill(markings, 8) };
 
-// The brand strip starts part-way along, so the sponsor's logo slides in about this long after the page loads
+// The brand strip starts part-way along, so the sponsor's logo starts to slide in from the right-hand edge this
+// long after the page loads (Rory, 2026-10-28: 0.5 s)
 const SPONSOR = 'xshielder';
-const SPONSOR_DELAY_S = 1;
+const SPONSOR_DELAY_S = 0.5;
 ---
 
 <div class:list={['marquees', `tone-${tone}`]}>
@@ -139,7 +140,7 @@ const SPONSOR_DELAY_S = 1;
     if (!logo || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const duration = parseFloat(getComputedStyle(track).animationDuration);
     const speed = track.scrollWidth / 2 / duration; // px per second
-    const enterAt = row.clientWidth * 0.92; // just inside the right-hand fade
+    const enterAt = row.clientWidth; // the right-hand edge, where it starts to show through the fade
     const x = logo.getBoundingClientRect().left - row.getBoundingClientRect().left;
     const lead = (x - enterAt) / speed - delay;
     if (lead > 0) track.style.animationDelay = `-${lead.toFixed(2)}s`;

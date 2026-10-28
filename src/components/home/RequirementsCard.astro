@@ -4,13 +4,22 @@
  * A plain GET form, so it works without JavaScript: the two choices travel to /contact/, which pre-fills its
  * requirements fields and sends them with the enquiry (field names as on the legacy form: required_zone,
  * operating_system, cta_source).
+ * variant 'band': a full-width strip with the fields in a row (home page). 'panel': the card alone with the fields
+ * stacked, for a page hero (Find tablets, Rory 2026-10-28). `source` becomes cta_source on the enquiry.
  */
 import Icon from '../Icon.astro';
+
+interface Props {
+  variant?: 'band' | 'panel';
+  source?: string;
+}
+const { variant = 'band', source = 'homepage-requirements' } = Astro.props;
+const Outer = variant === 'band' ? 'section' : 'aside';
 ---
 
-<section class="band band-warm req-band" aria-labelledby="requirements-title">
-  <div class="container">
-    <form class="req-card" method="get" action="/contact/">
+<Outer class:list={variant === 'band' ? 'band band-warm req-band' : 'req-panel'} aria-labelledby="requirements-title">
+  <div class:list={{ container: variant === 'band' }}>
+    <form class:list={['req-card', `is-${variant}`]} method="get" action="/contact/">
       <div class="req-copy">
         <h2 id="requirements-title">Help me choose a tablet</h2>
         <p>Tell us what you need for your site, and we’ll help you find a tablet that fits.</p>
@@ -33,12 +42,12 @@ import Icon from '../Icon.astro';
             <option value="Windows">Windows</option>
           </select>
         </div>
-        <input type="hidden" name="source" value="homepage-requirements" />
+        <input type="hidden" name="source" value={source} />
         <button type="submit" class="btn btn-primary">Continue to requirements <Icon name="arrow-right" /></button>
       </div>
     </form>
   </div>
-</section>
+</Outer>
 
 <style>
   .req-band { padding-block: 2.5rem; }
@@ -70,11 +79,22 @@ import Icon from '../Icon.astro';
   }
   .req-fields .btn { min-height: 44px; justify-content: center; }
 
+  /* Panel: a raised card, the two choices side by side and the button full width under them */
+  .is-panel {
+    gap: 1.5rem;
+    box-shadow: 0 24px 48px -28px rgb(15 79 85 / 0.35);
+  }
+  .is-panel .req-fields .btn { grid-column: 1 / -1; }
+
+  @media (min-width: 30rem) {
+    .is-panel .req-fields { grid-template-columns: 1fr 1fr; }
+  }
   @media (min-width: 40rem) {
-    .req-fields { grid-template-columns: 1fr 1fr auto; }
+    .is-band .req-fields { grid-template-columns: 1fr 1fr auto; }
+    .is-panel { padding: 2rem; }
   }
   @media (min-width: 64rem) {
-    .req-card {
+    .is-band {
       grid-template-columns: minmax(16rem, 1fr) 2fr;
       align-items: center;
       padding: 1.75rem 2rem;

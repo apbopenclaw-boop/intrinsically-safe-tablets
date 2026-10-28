@@ -10,8 +10,8 @@ import { SITE } from '../config/site';
  * page), the "_honey" spam trap, and the same messages. Price links arrive as ?tablet=<slug> (new pages) or
  * ?inquire=<product> (legacy pages) and pre-fill the message. The tablet requirements fields come from the legacy
  * "Help me choose a tablet" quiz (PR #9): required_zone, operating_system, use, country, quantity, plus language and
- * cta_source ("homepage-requirements" when the home page card sent the visitor, else "contact"). The card passes
- * ?zone=, ?os= and ?source=.
+ * cta_source ("homepage-requirements" or "find-tablets-requirements" when the home page or Find tablets card sent the
+ * visitor, else "contact"). The cards pass ?zone=, ?os= and ?source=.
  */
 const tablets = await getCollection('tablets');
 const tabletNames = Object.fromEntries(tablets.map((p) => [p.id, p.data.name]));
@@ -170,7 +170,7 @@ const schema = [
     const msg = form.querySelector<HTMLTextAreaElement>('textarea[name=message]');
     if (product && msg && !msg.value) msg.value = T.inquire + product.slice(0, 80) + '\n\n';
 
-    // From the home page's "Help me choose a tablet" card: ?zone=, ?os= and ?source= pre-fill the requirements
+    // From a "Help me choose a tablet" card (home page, Find tablets): ?zone=, ?os= and ?source= pre-fill the requirements
     const pick = (id: string, value: string | null) => {
       const sel = form.querySelector<HTMLSelectElement>(`#${id}`);
       if (sel && value && [...sel.options].some((o) => o.value === value)) sel.value = value;
@@ -180,7 +180,7 @@ const schema = [
     const source = params.get('source');
     const sourceField = form.querySelector<HTMLInputElement>('[data-cta-source]');
     if (sourceField && source && /^[a-z0-9-]{1,40}$/.test(source)) sourceField.value = source;
-    if (source === 'homepage-requirements') {
+    if (source === 'homepage-requirements' || source === 'find-tablets-requirements') {
       document.getElementById('tablet-requirements')?.scrollIntoView({ block: 'start' });
       document.getElementById('requirements-focus')?.focus({ preventScroll: true });
     }

@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Dark hexagon background -->
-  <path d="M16 1L30 8.5V23.5L16 31L2 23.5V8.5L16 1Z" fill="#1a1a1a"/>
-  <!-- Tablet silhouette -->
-  <rect x="8" y="9" width="16" height="14" rx="2" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
-  <!-- Home button / bar -->
-  <line x1="14" y1="20" x2="18" y2="20" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="106.5 -75 1235 1235">
+  <!-- The explosionprooftablets.com mark (Rory's logo, 2026-10-28) on its own paper colour, so it shows on dark tabs too -->
+  <rect x="106.5" y="-75" width="1235" height="1235" rx="232" fill="#fefdf9"/>
+  <path fill="#0d482f" fill-rule="evenodd" d="M239.5 162.5H1208.5L1267.5 221.5V863.5L1208.5 922.5H239.5L180.5 863.5V221.5Z M299 245.5H1149A20 20 0 0 1 1169 265.5V814.5A20 20 0 0 1 1149 834.5H299A20 20 0 0 1 279 814.5V265.5A20 20 0 0 1 299 245.5Z"/>
+  <path fill="#fefdf9" d="M715 150h18v97h-18zM715 833h18v100h-18z"/>
+  <circle cx="221" cy="537.5" r="10" fill="#fefdf9"/>
+  <rect x="605" y="803.5" width="239" height="11" rx="5.5" fill="#0d482f"/>
 </svg>

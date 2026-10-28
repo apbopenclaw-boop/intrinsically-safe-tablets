@@ -40,17 +40,20 @@ logged on its Fact check sheet). Agreed publishing rules: `../research/spec/veri
     rugged tablets.
 - **Tracking and forms (done 2026-10-27, Rory):** the live site's tags are kept (`SITE.analytics`: GA4 G-4SSH7VDHZJ,
   G-6K4NWQ45M4, G-53EXCZ857W, Ads AW-16941652225, GTM-MFSPF6PH with its noscript iframe). The legacy "Help me choose a tablet"
-  quiz is ported: `src/components/home/RequirementsCard.astro` on the home page (GET to /contact/ with ?zone, ?os,
-  ?source) and a requirements fieldset on /contact/ sending required_zone, operating_system, use, country, quantity,
+  quiz is ported: `src/components/home/RequirementsCard.astro` on the home page as a band and, since 2026-10-28, in the
+  Find tablets hero beside the H1 as a panel (`variant="panel"`, source `find-tablets-requirements`) (GET to /contact/
+  with ?zone, ?os, ?source) and a requirements fieldset on /contact/ sending required_zone, operating_system, use, country, quantity,
   language and cta_source, subject and sender "explosionprooftablets.com", plus the legacy `generate_lead` event. Same
   Web3Forms key as the live forms. The de/es/nl/pt-br legacy pages keep their own quiz forms in `public/`.
 - **Live since 2026-10-28:** PR #10 merged astro-revamp into main (b5da8b6); Pages source is GitHub Actions, and
   `deploy.yml` builds, deploys, purges Cloudflare and sends changed pages to IndexNow (tablet key d795f02264d353ceec8423b9507f3e20).
   Pushes to main deploy. Kept from the legacy site: tags, forms, Search Console meta and file, IndexNow key, CNAME, robots,
   llms.txt/llms-full.txt, ai-manifest, hreflang to the language pages. Retired: reasoning.json, purge-cache.yml.
-- Logo mark: a landscape rugged tablet (chamfered corners, camera dot, 2 × 3 app tiles on the screen), sized by area to
-  match the phones site's mark (1.8rem tall on desktop, about 38 × 29 px) (Rory, 2026-10-27). Variants tried: plain frame,
-  rounded iPad body, stylus. `scripts/og-image.html` is still the
+- Logo mark: Rory's logo (2026-10-28), a dark green (#0d482f) landscape rugged tablet frame with chamfered corners,
+  split top and bottom, camera dot and home bar. `public/logo.webp` (137 × 96, transparent, 1.8rem tall on desktop).
+  The favicons are the same mark on its paper colour #fefdf9: favicon.svg (redrawn as vectors, since the legacy pages
+  in `public/` link it too), favicon-32.png, favicon.ico (16/32/48) and apple-touch-icon.png (180). It replaced the
+  teal app-tiles mark of 2026-10-27. `scripts/og-image.html` is still the
   phones template and unused; `public/og-image.png` is the legacy tablet image.
 - Photo areas (Find tablets dark cards, tablet page hero) are deep teal. Tablets with no photo show the brand logo, white,
   centred in the photo area (or the brand name if there's no logo). RINO Solutions has a typeset wordmark (no published logo).
@@ -233,7 +236,9 @@ tags; competitors (list mirrors `scripts/hag_link_policy.py` and `public/assets/
   section band except the CTA is at least 620px tall (a MacBook view with the dock), content centred, and the
   type tokens, buttons, tiles and images inside are a step larger so the bands don't look sparse. Then brands
   (copy left, logos right in their own colours, black where there's no colour file, Xshielder's yellow logo on its
-  dark badge as in the hero; alphabetical), one head-to-head visual (two unboxed, unnamed phone photos in portrait frames with
+  dark badge as in the hero. Tablet site, Rory 2026-10-28: Zebra is left out; six rows of three at every width, in a
+  new random order on each visit with Xshielder fixed in the middle of row 2; the first and last rows are cut through
+  the middle and fade out, and the build fails if the brand count stops being 18), one head-to-head visual (two unboxed, unnamed phone photos in portrait frames with
   a plain green "vs" between, linking to ecom Smart-Ex 03 DZ1 vs i.safe MOBILE IS540.1; the build fails if it holds a
   sponsor product; the button "Compare phones" goes to `/compare/`), "Facts first" (three principles, no funding copy), guides (three real guides, each with its own photo), FAQ (FAQPage JSON-LD; eleven standalone questions, reworked 2026-10-21, the funding question removed by Rory; the build fails if the counts, brand groups, Zone 1 Android update dates or the "only Xshielder is T6 in Zone 1" claim stop matching the data. The cost answer repeats the cost guide's reseller price ranges, so it falls under the same pending sign-off from Andreas), CTA. Counts come from
   the data; the build fails on a missing Best for or compare slug or an over-long title/description. The photos are
@@ -249,8 +254,8 @@ tags; competitors (list mirrors `scripts/hag_link_policy.py` and `public/assets/
   default, used on the home page) prefers full-colour files in `colour/` subfolders: yellow Ex hexagon, the IECEx
   logo (supplied by Rory, shown in the colour version only; IECEx marks are normally licensed to certified
   products), colour Atexxo, P+F and i.safe logos, and outline marking pills (black text and border). The brand
-  order stays alphabetical, but a small inline script starts the strip part-way along so the sponsor's logo (Xshielder) slides in about
-  1 s after load (`SPONSOR`, `SPONSOR_DELAY_S`). In the colour version its yellow logo sits on a `#171B25`
+  order stays alphabetical, but a small inline script starts the strip part-way along so the sponsor's logo (Xshielder) starts
+  to slide in from the right-hand edge 0.5 s after load (`SPONSOR`, `SPONSOR_DELAY_S`; Rory, 2026-10-28). In the colour version its yellow logo sits on a `#171B25`
   badge (`BADGE`); the logo is the brand kit SVG with `#FFED00` set as its fill (the kit file had lost its colour).
   `tone="mono"` is the all-black version. UL/CSA marks stay out, so Class/Division is text. On desktop the
   strips span the slogan + lead (the copy's lines share grid rows with them; the eyebrow H1 sits in the row above): brands top-aligned with the slogan, pills
