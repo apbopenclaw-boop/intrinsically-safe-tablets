@@ -75,13 +75,13 @@ jobs:
         with:
           name: indexnow-urls
       - name: Submit changed pages to IndexNow
-        # The key file is public/fcab8b499a524ce3c127919e32d19cf5.txt
+        # The key file is public/d795f02264d353ceec8423b9507f3e20.txt (also public/indexnow-key.txt), as on the legacy site
         run: |
           if ! grep -q . indexnow-urls.txt; then echo "No changed pages"; exit 0; fi
           jq -R . indexnow-urls.txt | jq -s '{
-            host: "intrinsicallysafephones.com",
-            key: "fcab8b499a524ce3c127919e32d19cf5",
-            keyLocation: "https://intrinsicallysafephones.com/fcab8b499a524ce3c127919e32d19cf5.txt",
+            host: "explosionprooftablets.com",
+            key: "d795f02264d353ceec8423b9507f3e20",
+            keyLocation: "https://explosionprooftablets.com/d795f02264d353ceec8423b9507f3e20.txt",
             urlList: .
           }' > indexnow.json
           curl -s -o /dev/null -w "IndexNow: HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \

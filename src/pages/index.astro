@@ -174,7 +174,20 @@ const schema = [
 ];
 ---
 
-<BaseLayout title={title} description={description} schema={schema}>
+<BaseLayout
+  title={title}
+  description={description}
+  schema={schema}
+  alternates={[
+    // The legacy translated home pages in public/ link back here, as on the live site
+    { hreflang: 'en', href: '/' },
+    { hreflang: 'de', href: '/de/' },
+    { hreflang: 'nl', href: '/nl/' },
+    { hreflang: 'es', href: '/es/' },
+    { hreflang: 'pt-br', href: '/pt-br/' },
+    { hreflang: 'x-default', href: '/' },
+  ]}
+>
   <!-- Legacy links pointed at the old home page form (/#contact, /?inquire=…); forward them to the contact page -->
   <script is:inline>
     if (location.hash === '#contact' || new URLSearchParams(location.search).has('inquire')) {

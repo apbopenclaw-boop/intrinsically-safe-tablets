@@ -95,7 +95,12 @@ const graph = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageUrl} />
 
+    <!-- Kept from the legacy site at launch: Search Console verification (the HTML file method is in public/ too),
+         the extended LLM summary and the AI discovery manifest -->
+    <meta name="google-site-verification" content="sy9tkJg8M2MDZ5rVI2VwnJAv-PpjPbNjNxtJeJ-XDmo" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-optimized content summary" />
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Extended LLM content" />
+    <link rel="alternate" type="application/json" href="/.well-known/ai-manifest.json" title="AI Discovery Manifest" />
 
     <Font cssVariable="--font-franklin" preload={[{ weight: '400 700', style: 'normal' }]} />
     <Font cssVariable="--font-inter" preload={[{ weight: '400 700', style: 'normal' }]} />
