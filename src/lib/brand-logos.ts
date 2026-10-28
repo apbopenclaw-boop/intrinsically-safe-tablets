@@ -14,8 +14,9 @@ const find = (dir: string, id: string) =>
 export const logo = (dir: 'brands' | 'marks', id: string, tone: 'colour' | 'mono' = 'mono') =>
   (tone === 'colour' && find(`${dir}/colour`, id)) || find(dir, id);
 
-// Heavy logos (Xciel's solid stencil type) look bigger than their size, so they're set a little smaller
-const OPTICAL: Record<string, number> = { xciel: 0.8 };
+// Heavy logos (Xciel's solid stencil type) look bigger than their size, so they're set a little smaller; Dell's thin
+// circle and The Joy Factory's light type read small, so they're set a little larger
+const OPTICAL: Record<string, number> = { xciel: 0.8, dell: 1.45, 'joy-factory': 1.25 };
 
 /** Height multiplier that gives every brand logo the same visual weight: wide wordmarks shorter, compact ones taller */
 export function logoScale(slug: string, img: ImageMetadata): number {

@@ -7,6 +7,7 @@
 import { getCollection } from 'astro:content';
 import { Image, getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import RequirementsCard from '../components/home/RequirementsCard.astro';
 import Icon, { type IconName } from '../components/Icon.astro';
 import HeroMarquee from '../components/home/HeroMarquee.astro';
 import { SITE, FIND_TABLETS, CONTACT } from '../config/site';
@@ -202,6 +203,9 @@ const schema = [
       </div>
     </div>
   </section>
+
+  <!-- Help me choose a tablet: the legacy requirements quiz, which opens the contact form pre-filled -->
+  <RequirementsCard />
 
   <!-- Start your search: Find tablets with a filter already set -->
   <section id="start" class="band band-white" aria-labelledby="start-title">

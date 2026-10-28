@@ -11,6 +11,7 @@ import CompareTable from '../../components/tablet/CompareTable.astro';
 import { safetyRows as safetyRowsFor, specGroups as specGroupsFor, caseWord as caseWordFor } from '../../lib/spec-groups';
 import { SITE, MAIN_NAV, CONTACT } from '../../config/site';
 import { externalLink, pageSlug } from '../../lib/links';
+import { logo as brandLogoFor, logoScale } from '../../lib/brand-logos';
 import {
   TYPE_LABEL,
   TYPE_EXPLAINER,
@@ -223,6 +224,9 @@ const sources = d.sources.map((src) => ({ ...src, ...externalLink(src.url, utmCo
 
 /* ---------- Structured data ---------- */
 const img = d.image ? await getImage({ src: d.image, width: 800, format: 'webp' }) : undefined;
+// No photo yet: the brand logo (white on the dark photo area) stands in the middle, or the brand name if there's no logo
+const placeholderLogo = d.image ? undefined : brandLogoFor('brands', d.brandSlug);
+const placeholderScale = placeholderLogo ? logoScale(d.brandSlug, placeholderLogo) : 1;
 const props = [
   ['Ex marking (ATEX)', c.atex?.marking],
   ['Ex marking (IECEx)', c.iecex?.marking],
@@ -301,7 +305,13 @@ const bandFor = (id: string) => (sections.findIndex((sec) => sec.id === id) % 2 
               fetchpriority="high"
             />
           ) : (
-            <div class="media-placeholder" aria-hidden="true">No image yet</div>
+            <div class="media-placeholder" aria-hidden="true">
+              {placeholderLogo ? (
+                <img class="placeholder-logo" src={placeholderLogo.src} width={placeholderLogo.width} height={placeholderLogo.height} alt="" style={`--scale: ${placeholderScale.toFixed(2)}`} />
+              ) : (
+                <span class="placeholder-name">{d.brand}</span>
+              )}
+            </div>
           )}
         </div>
 
@@ -664,10 +674,10 @@ const bandFor = (id: string) => (sections.findIndex((sec) => sec.id === id) % 2 
   .hero-media {
     position: relative;
     aspect-ratio: 4 / 3;
-    /* Same deep forest green with a brighter pool of light as the dark Find tablets cards */
+    /* Same deep teal with a brighter pool of light as the dark Find tablets cards */
     background:
-      radial-gradient(ellipse 52% 58% at 50% 55%, #7fa08e 0%, #5a7e6b 22%, #34584a 48%, #1d382d 75%, #132620 100%);
-    border: 1px solid #132620;
+      radial-gradient(ellipse 52% 58% at 50% 55%, #7fa9ab 0%, #578a8e 22%, #2d6469 48%, #134a50 75%, #0b3c41 100%);
+    border: 1px solid #0b3c41;
     border-radius: var(--radius);
     overflow: hidden;
   }
@@ -683,9 +693,19 @@ const bandFor = (id: string) => (sections.findIndex((sec) => sec.id === id) % 2 
   .media-placeholder {
     display: grid;
     place-items: center;
-    color: rgb(255 255 255 / 0.7);
-    font-size: var(--text-sm);
+    color: rgb(255 255 255 / 0.85);
   }
+  /* Beats the .hero-media img rule above (absolute fill and drop shadow), which is meant for the photo */
+  .hero-media .placeholder-logo {
+    position: static;
+    width: auto;
+    height: calc(3rem * var(--scale));
+    max-width: 60%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+  }
+  .placeholder-name { font-size: var(--text-xl); font-weight: 600; }
 
   .hero-copy .eyebrow a { color: inherit; }
   .hero-copy h1 {

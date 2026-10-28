@@ -100,9 +100,10 @@
       "note": "Front-on landscape render with Windows 11 wallpaper, 2048x1399 PNG, plain light background. Deliberately the 2048 rendition: the unsuffixed original is 10000x6833 px (32 MB). Confidence: high."
     },
     "dell-latitude-7220ex": {
-      "url": "https://www.atexshop.com/media/catalog/product/cache/9acef7d1ef9b6ecea35dddea8ea8fdff/f/r/frontside.png",
       "sourcePage": "https://www.atexshop.com/dell-latitude-7220ex-rugged-atex.html",
-      "note": "Discontinued. Slightly angled (about 20 degrees) front view of the Latitude 7220EX Rugged Extreme with yellow edge trim, 1250x1000 PNG, white box background. Reseller (atexshop.com) copy of Dell's packshot; dell.com no longer carries the product. The cache path contains a hash that could change if the shop reprocesses images. Confidence: medium-high."
+      "note": "Discontinued. Slightly angled (about 20 degrees) front view of the Latitude 7220EX Rugged Extreme with yellow edge trim, 1250x1000 PNG, white box background. Reseller (atexshop.com) copy of Dell's packshot; dell.com no longer carries the product. The cache path contains a hash that could change if the shop reprocesses images. Confidence: medium-high. The shop's PNG has the white box inside a transparent canvas, so the edge fill missed it: scripts/image-sources/dell-latitude-7220ex.png is the same photo with the white box cleared (2026-10-27), used instead of the URL.",
+      "file": "scripts/image-sources/dell-latitude-7220ex.png",
+      "sourceUrl": "https://www.atexshop.com/media/catalog/product/cache/9acef7d1ef9b6ecea35dddea8ea8fdff/f/r/frontside.png"
     },
     "durabook-r8-ex": {
       "url": "https://media.durabook.com/wp-content/uploads/2024/02/21003828/R8-EX-fully-rugged-tablet.png",

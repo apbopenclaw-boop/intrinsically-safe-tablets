@@ -12,7 +12,7 @@ and search engines to the closest new page. Swap these for real 301s in Cloudfla
 |---|---|---|
 | /are-tablets-intrinsically-safe.html | /guides/is-ipad-intrinsically-safe/ | Final (Phase E, 2026-10-27)
 | /atex-tablet-buying-decision-guide.html | /guides/intrinsically-safe-tablet-buyers-guide/ | Final (Phase E, 2026-10-27)
-| /atex-tablet-pricing.html | /tablets/ | prices are on request
+| /atex-tablet-pricing.html | /guides/intrinsically-safe-tablet-cost/ | Final (Phase E, 2026-10-27); no prices published
 | /best-atex-tablets-2026.html | /best/zone-1-tablets/ | Final (Phase E, 2026-10-26)
 | /buyers-guide-2026.html | /guides/intrinsically-safe-tablet-buyers-guide/ | Final (Phase E, 2026-10-27)
 | /ecom-tab-ex-03-vs-isafe-is930.html | /compare/ecom-tab-ex-05-dz1-vs-isafe-is930-1/ | Final (Phase E, 2026-10-27) 

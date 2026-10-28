@@ -34,7 +34,7 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const ogImageUrl = new URL(ogImage, SITE.url).href;
 
 // gtag must stay global, so this is inlined as-is rather than via define:vars (which wraps it in a function)
-const analytics = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${SITE.analytics.ga4}');
+const analytics = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${SITE.analytics.gtag.map((id) => `gtag('config','${id}');`).join('')}
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${SITE.analytics.gtm}');`;
 
 const graph = {
@@ -102,12 +102,13 @@ const graph = {
 
     <!-- Network consent banner must load before any Google tag (Consent Mode defaults first) -->
     <script is:inline src="https://hazardousareaguide.com/consent-banner.js"></script>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.analytics.ga4}`}></script>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.analytics.gtag[0]}`}></script>
     <script is:inline set:html={analytics} />
 
     <script type="application/ld+json" set:html={JSON.stringify(graph)} />
   </head>
   <body>
+    <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${SITE.analytics.gtm}`} height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
     <a class="skip-link" href="#main">Skip to content</a>
     <Header />
     <main id="main">

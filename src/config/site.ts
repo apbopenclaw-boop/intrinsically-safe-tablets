@@ -7,10 +7,10 @@ export const SITE = {
     'Independent guidance on intrinsically safe and explosion-proof tablets for hazardous workplaces.',
   locale: 'en_GB',
   ogImage: '/og-image.png',
-  // ON HOLD (Rory, 2026-10-26): these are the phones site's GA4 ID and Web3Forms key, copied with the engine. The GTM
-  // container is the one the legacy tablet site also loads. Don't launch with them; Rory confirms the tablet IDs and
-  // the form set-up first (launch checklist in CLAUDE.md).
-  analytics: { ga4: 'G-H5CXD10JVJ', gtm: 'GTM-MFSPF6PH' },
+  // The live tablet site's tags, kept at launch (Rory, 2026-10-27): three GA4 properties, the Google Ads tag and the
+  // GTM container. The first gtag ID loads gtag.js; every ID gets its own config call. The Web3Forms key is the one
+  // the live site's forms use, so enquiries reach the same inbox.
+  analytics: { gtag: ['G-4SSH7VDHZJ', 'G-6K4NWQ45M4', 'G-53EXCZ857W', 'AW-16941652225'], gtm: 'GTM-MFSPF6PH' },
   web3formsKey: '930572e9-b94e-4d18-9c2b-25999a09ef0f',
 } as const;
 

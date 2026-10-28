@@ -8,7 +8,10 @@ import { SITE } from '../config/site';
  * The contact form replaces the one on the legacy home page (/#contact) and must keep working the same way:
  * Web3Forms JSON API, the same access key, subject, sender name and field names (name, email, company, message,
  * page), the "_honey" spam trap, and the same messages. Price links arrive as ?tablet=<slug> (new pages) or
- * ?inquire=<product> (legacy pages) and pre-fill the message.
+ * ?inquire=<product> (legacy pages) and pre-fill the message. The tablet requirements fields come from the legacy
+ * "Help me choose a tablet" quiz (PR #9): required_zone, operating_system, use, country, quantity, plus language and
+ * cta_source ("homepage-requirements" when the home page card sent the visitor, else "contact"). The card passes
+ * ?zone=, ?os= and ?source=.
  */
 const tablets = await getCollection('tablets');
 const tabletNames = Object.fromEntries(tablets.map((p) => [p.id, p.data.name]));
@@ -57,10 +60,50 @@ const schema = [
           class="contact-form"
           data-contact-form
           data-key={SITE.web3formsKey}
-          data-subject="intrinsicallysafephones.com enquiry"
+          data-subject="explosionprooftablets.com enquiry"
           data-tablets={JSON.stringify(tabletNames)}
           novalidate
         >
+          <fieldset class="req-fields" id="tablet-requirements">
+            <legend tabindex="-1" id="requirements-focus">Your tablet requirements <span class="optional">(optional)</span></legend>
+            <p class="req-note">Requirements help us answer your enquiry. Suitability must be checked against the exact certificate and site conditions.</p>
+            <div class="row">
+              <div class="field-wrap">
+                <label for="req-zone">Required zone</label>
+                <select id="req-zone" name="required_zone">
+                  <option value="Not sure">Not sure</option>
+                  <option value="Zone 1">Zone 1</option>
+                  <option value="Zone 2">Zone 2</option>
+                </select>
+              </div>
+              <div class="field-wrap">
+                <label for="req-os">Operating system</label>
+                <select id="req-os" name="operating_system">
+                  <option value="No preference">No preference</option>
+                  <option value="iPadOS">iPadOS</option>
+                  <option value="Android">Android</option>
+                  <option value="Windows">Windows</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-wrap">
+              <label for="req-use">Intended use</label>
+              <input id="req-use" type="text" name="use" maxlength="300" />
+            </div>
+            <div class="row">
+              <div class="field-wrap">
+                <label for="req-country">Country of use</label>
+                <input id="req-country" type="text" name="country" maxlength="300" autocomplete="country-name" />
+              </div>
+              <div class="field-wrap">
+                <label for="req-quantity">Quantity</label>
+                <input id="req-quantity" type="number" name="quantity" min="1" max="100000" step="1" inputmode="numeric" />
+              </div>
+            </div>
+          </fieldset>
+          <input type="hidden" name="language" value="en" />
+          <input type="hidden" name="cta_source" value="contact" data-cta-source />
+
           <div class="row">
             <div class="field-wrap">
               <label for="cf-name">Name</label>
@@ -104,15 +147,19 @@ const schema = [
     fail: 'Could not send. Check your connection and try again.',
     ok: 'Thanks. We will reply by email.',
     inquire: 'Price and availability request: ',
+    quantity: 'Enter a whole quantity between 1 and 100000.',
   };
 
   const form = document.querySelector<HTMLFormElement>('[data-contact-form]');
   const status = document.querySelector<HTMLElement>('[data-form-status]');
 
   if (form) {
-    const fields = [...form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input, textarea')].filter(
-      (f) => f.name && f.type !== 'hidden' && !f.classList.contains('hp-input'),
+    type Field = HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+    // Every named field is sent; only visible ones are validated
+    const sent = [...form.querySelectorAll<Field>('input, textarea, select')].filter(
+      (f) => f.name && !f.classList.contains('hp-input'),
     );
+    const fields = sent.filter((f) => f.type !== 'hidden');
     const btn = form.querySelector<HTMLButtonElement>('[type=submit]');
     const label = btn?.innerHTML ?? '';
 
@@ -123,13 +170,29 @@ const schema = [
     const msg = form.querySelector<HTMLTextAreaElement>('textarea[name=message]');
     if (product && msg && !msg.value) msg.value = T.inquire + product.slice(0, 80) + '\n\n';
 
-    const errorFor = (f: HTMLInputElement | HTMLTextAreaElement) => {
+    // From the home page's "Help me choose a tablet" card: ?zone=, ?os= and ?source= pre-fill the requirements
+    const pick = (id: string, value: string | null) => {
+      const sel = form.querySelector<HTMLSelectElement>(`#${id}`);
+      if (sel && value && [...sel.options].some((o) => o.value === value)) sel.value = value;
+    };
+    pick('req-zone', params.get('zone'));
+    pick('req-os', params.get('os'));
+    const source = params.get('source');
+    const sourceField = form.querySelector<HTMLInputElement>('[data-cta-source]');
+    if (sourceField && source && /^[a-z0-9-]{1,40}$/.test(source)) sourceField.value = source;
+    if (source === 'homepage-requirements') {
+      document.getElementById('tablet-requirements')?.scrollIntoView({ block: 'start' });
+      document.getElementById('requirements-focus')?.focus({ preventScroll: true });
+    }
+
+    const errorFor = (f: Field) => {
       const v = f.value.trim();
       if (f.required && !v) return T.required;
       if (v && f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return T.email;
+      if (v && f.name === 'quantity' && !(/^\d+$/.test(v) && +v >= 1 && +v <= 100000)) return T.quantity;
       return '';
     };
-    const showError = (f: HTMLInputElement | HTMLTextAreaElement, message: string) => {
+    const showError = (f: Field, message: string) => {
       const id = `${f.id}-err`;
       let el = document.getElementById(id);
       if (!message) {
@@ -168,11 +231,11 @@ const schema = [
 
       const data: Record<string, string> = {
         access_key: form.dataset.key ?? '',
-        subject: form.dataset.subject ?? 'intrinsicallysafephones.com enquiry',
-        from_name: 'intrinsicallysafephones.com',
+        subject: form.dataset.subject ?? 'explosionprooftablets.com enquiry',
+        from_name: 'explosionprooftablets.com',
         page: location.href,
       };
-      for (const f of fields) data[f.name] = f.value;
+      for (const f of sent) data[f.name] = f.value;
 
       if (btn) {
         btn.disabled = true;
@@ -191,6 +254,9 @@ const schema = [
         const j = await r.json();
         if (!j || String(j.success) !== 'true') throw new Error(j?.message || 'send failed');
         form.hidden = true;
+        // Same conversion event as the legacy site's form
+        const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+        w.gtag?.('event', 'generate_lead', { event_category: 'contact', event_label: data.subject, cta_source: data.cta_source });
         if (status) {
           status.className = 'form-status form-status--ok';
           status.setAttribute('role', 'status');
@@ -243,7 +309,8 @@ const schema = [
   label { font-weight: 600; font-size: var(--text-sm); }
   .optional { font-weight: 400; color: var(--color-text-muted, #5b5b5b); }
   input,
-  textarea {
+  textarea,
+  select {
     width: 100%;
     min-height: 44px;
     padding: 0.65rem 0.85rem;
@@ -254,13 +321,26 @@ const schema = [
   }
   textarea { resize: vertical; }
   input:focus-visible,
-  textarea:focus-visible { outline: 2px solid var(--color-forest); outline-offset: 1px; }
+  textarea:focus-visible,
+  select:focus-visible { outline: 2px solid var(--color-forest); outline-offset: 1px; }
   input[aria-invalid='true'],
   textarea[aria-invalid='true'] { border-color: #b42318; }
   .contact-form :global(.field-error) { color: #b42318; font-size: var(--text-sm); }
   .contact-form .btn { justify-self: start; }
   .small { font-size: 0.8rem; }
   .small a { color: var(--color-forest); }
+  .req-fields {
+    display: grid;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 1.25rem;
+    border: 1px solid var(--color-panel-border);
+    border-radius: var(--radius);
+    background: var(--color-bg);
+  }
+  .req-fields legend { padding: 0 0.375rem; font-weight: 600; }
+  .req-fields legend:focus { outline: none; }
+  .req-note { font-size: var(--text-sm); color: var(--color-muted); }
   .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
   .form-status { padding: 1rem 1.25rem; border-radius: 6px; max-width: 42rem; }

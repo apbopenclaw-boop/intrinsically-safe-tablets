@@ -1,0 +1,83 @@
+---
+/*
+ * "Help me choose a tablet": the requirements quiz from the legacy home page (PR #9), kept at launch (Rory, 2026-10-27).
+ * A plain GET form, so it works without JavaScript: the two choices travel to /contact/, which pre-fills its
+ * requirements fields and sends them with the enquiry (field names as on the legacy form: required_zone,
+ * operating_system, cta_source).
+ */
+import Icon from '../Icon.astro';
+---
+
+<section class="band band-warm req-band" aria-labelledby="requirements-title">
+  <div class="container">
+    <form class="req-card" method="get" action="/contact/">
+      <div class="req-copy">
+        <h2 id="requirements-title">Help me choose a tablet</h2>
+        <p>Tell us what you need for your site, and we’ll help you find a tablet that fits.</p>
+      </div>
+      <div class="req-fields">
+        <div class="req-field">
+          <label for="req-zone">Required zone</label>
+          <select id="req-zone" name="zone">
+            <option value="Not sure">Not sure</option>
+            <option value="Zone 1">Zone 1</option>
+            <option value="Zone 2">Zone 2</option>
+          </select>
+        </div>
+        <div class="req-field">
+          <label for="req-os">Operating system</label>
+          <select id="req-os" name="os">
+            <option value="No preference">No preference</option>
+            <option value="iPadOS">iPadOS</option>
+            <option value="Android">Android</option>
+            <option value="Windows">Windows</option>
+          </select>
+        </div>
+        <input type="hidden" name="source" value="homepage-requirements" />
+        <button type="submit" class="btn btn-primary">Continue to requirements <Icon name="arrow-right" /></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<style>
+  .req-band { padding-block: 2.5rem; }
+  .req-card {
+    display: grid;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: var(--color-panel);
+    border: 1px solid var(--color-panel-border);
+    border-radius: var(--radius);
+  }
+  .req-copy h2 { font-size: var(--text-h3); }
+  .req-copy p { margin-top: 0.375rem; color: var(--color-muted); }
+  .req-fields {
+    display: grid;
+    gap: 1rem;
+    align-items: end;
+  }
+  .req-field { display: grid; gap: 0.375rem; }
+  .req-field label { font-size: var(--text-sm); font-weight: 600; }
+  .req-field select {
+    min-height: 44px;
+    padding: 0 0.75rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: 6px;
+    background: var(--color-bg);
+    font: inherit;
+    color: inherit;
+  }
+  .req-fields .btn { min-height: 44px; justify-content: center; }
+
+  @media (min-width: 40rem) {
+    .req-fields { grid-template-columns: 1fr 1fr auto; }
+  }
+  @media (min-width: 64rem) {
+    .req-card {
+      grid-template-columns: minmax(16rem, 1fr) 2fr;
+      align-items: center;
+      padding: 1.75rem 2rem;
+    }
+  }
+</style>

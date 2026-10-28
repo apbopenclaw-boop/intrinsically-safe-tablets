@@ -53,7 +53,7 @@ const darkLogoH = darkLogo ? logoScale(d.brandSlug, darkLogo) * (CARD_OPTICAL[d.
         style={`--scale: ${darkLogoH.toFixed(2)}`}
       />
     )}
-    {f.status === 'discontinued' && <span class="card-status" style={`--scale: ${logoH.toFixed(2)}`}>Discontinued</span>}
+    {f.status === 'discontinued' && <span class="card-status" style={`--scale: ${Math.min(logoH, 1.1).toFixed(2)}`}>Discontinued</span>}
 
     <div class="card-body">
       <p class="card-brand">{d.brand}</p>
@@ -155,11 +155,11 @@ const darkLogoH = darkLogo ? logoScale(d.brandSlug, darkLogo) * (CARD_OPTICAL[d.
   }
   .logo-dark { display: none; }
 
-  /* Dark photo area: deep forest green with a brighter pool of light so black tablets still stand out */
+  /* Dark photo area: deep teal (the brand colour) with a brighter pool of light so black tablets still stand out */
   :global([data-card-theme='dark']) .card-media {
     background:
-      radial-gradient(ellipse 52% 58% at 50% 55%, #7fa08e 0%, #5a7e6b 22%, #34584a 48%, #1d382d 75%, #132620 100%);
-    border-bottom-color: #132620;
+      radial-gradient(ellipse 52% 58% at 50% 55%, #7fa9ab 0%, #578a8e 22%, #2d6469 48%, #134a50 75%, #0b3c41 100%);
+    border-bottom-color: #0b3c41;
   }
   :global([data-card-theme='dark']) .card-media img {
     filter: drop-shadow(0 8px 10px rgb(0 0 0 / 0.35));
