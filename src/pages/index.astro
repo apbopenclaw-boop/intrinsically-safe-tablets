@@ -32,19 +32,18 @@ if (title.length > 60 || description.length > 160) throw new Error('Home page ti
 
 /* ---------- Start your search: Find tablets with a filter already set ---------- */
 const brandsOf = (types: string[]) => [...new Set(current.filter((t) => types.includes(t.data.type)).map((t) => plain(t.data.brand)))].sort();
-const searches: { icon: IconName; title: string; text: string; href: string; count: number }[] = [
-  { icon: 'flame', title: 'Zone 1 tablets', text: 'For use in Zone 1 and Zone 2 areas', href: '/tablets/?zone=1', count: count(inZone('1')) },
-  // "Only in Zone 2", so the link and count leave out Zone 1 tablets (Find tablets' "Show Zone 2 tablets only")
-  { icon: 'shield', title: 'Zone 2 tablets', text: 'For use only in Zone 2 areas', href: '/tablets/?zone=2&exact=zone', count: count((t) => t.data.certification.zonesGas.join() === '2') },
-  { icon: 'monitor', title: 'Windows tablets', text: 'Tablets that run Windows software', href: '/tablets/?os=Windows', count: count((t) => t.data.os.name === 'Windows') },
-  { icon: 'tablet', title: 'Android tablets', text: 'Tablets that run Android software', href: '/tablets/?os=Android', count: count((t) => t.data.os.name === 'Android') },
-  { icon: 'tablet', title: 'iPad cases and conversions', text: 'Standard iPads in certified housings', href: '/tablets/?os=iPadOS', count: count((t) => t.data.os.name === 'iPadOS') },
+const searches: { icon: IconName; title: string; text: string; href: string }[] = [
+  { icon: 'flame', title: 'Zone 1 tablets', text: 'For use in Zone 1 and Zone 2 areas', href: '/tablets/?zone=1' },
+  // "Only in Zone 2", so the link leaves out Zone 1 tablets (Find tablets' "Show Zone 2 tablets only")
+  { icon: 'shield', title: 'Zone 2 tablets', text: 'For use only in Zone 2 areas', href: '/tablets/?zone=2&exact=zone' },
+  { icon: 'monitor', title: 'Windows tablets', text: 'Tablets that run Windows software', href: '/tablets/?os=Windows' },
+  { icon: 'tablet', title: 'Android tablets', text: 'Tablets that run Android software', href: '/tablets/?os=Android' },
+  { icon: 'tablet', title: 'iPad cases and conversions', text: 'Standard iPads in certified housings', href: '/tablets/?os=iPadOS' },
   {
     icon: 'settings',
     title: 'Rugged tablets, Ex versions',
     text: `${list(brandsOf(['rugged-variant']).slice(0, 3))} and more`,
     href: '/tablets/?type=rugged-variant',
-    count: count((t) => t.data.type === 'rugged-variant'),
   },
 ];
 
@@ -253,7 +252,6 @@ const schema = [
                 <span class="pick-title">{s.title}</span>
                 <span class="pick-text">{s.text}</span>
               </span>
-              <span class="pick-count">{s.count} {s.count === 1 ? 'tablet' : 'tablets'}</span>
               <Icon name="arrow-right" class="pick-arrow" />
             </a>
           </li>
@@ -570,7 +568,6 @@ const schema = [
     letter-spacing: var(--tracking-heading);
   }
   .pick-text { font-size: var(--text-xs); color: var(--color-muted); }
-  .pick-count { font-size: var(--text-xs); color: var(--color-muted); white-space: nowrap; }
   .pick :global(.pick-arrow) {
     width: 1rem;
     height: 1rem;
@@ -975,6 +972,6 @@ const schema = [
   }
 
   /* Tablet site: the "Start your search" tiles sit in a grid instead of beside a tab picture */
-  .search-grid .pick.has-icon { grid-template-columns: auto 1fr auto auto; }
+  .search-grid .pick.has-icon { grid-template-columns: auto 1fr auto; }
   .search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 0 2rem; margin-top: 2rem; }
 </style>
