@@ -44,8 +44,10 @@ logged on its Fact check sheet). Agreed publishing rules: `../research/spec/veri
   ?source) and a requirements fieldset on /contact/ sending required_zone, operating_system, use, country, quantity,
   language and cta_source, subject and sender "explosionprooftablets.com", plus the legacy `generate_lead` event. Same
   Web3Forms key as the live forms. The de/es/nl/pt-br legacy pages keep their own quiz forms in `public/`.
-- **Launch blocker (repo admin):** GitHub Pages still publishes `main` as a branch (build_type legacy). Settings → Pages →
-  Source must be "GitHub Actions" before astro-revamp is merged, or the raw source would be served. Rory has push, not admin.
+- **Live since 2026-10-28:** PR #10 merged astro-revamp into main (b5da8b6); Pages source is GitHub Actions, and
+  `deploy.yml` builds, deploys, purges Cloudflare and sends changed pages to IndexNow (tablet key d795f02264d353ceec8423b9507f3e20).
+  Pushes to main deploy. Kept from the legacy site: tags, forms, Search Console meta and file, IndexNow key, CNAME, robots,
+  llms.txt/llms-full.txt, ai-manifest, hreflang to the language pages. Retired: reasoning.json, purge-cache.yml.
 - Logo mark: a landscape rugged tablet (chamfered corners, camera dot, 2 × 3 app tiles on the screen), sized by area to
   match the phones site's mark (1.8rem tall on desktop, about 38 × 29 px) (Rory, 2026-10-27). Variants tried: plain frame,
   rounded iPad body, stylus. `scripts/og-image.html` is still the
