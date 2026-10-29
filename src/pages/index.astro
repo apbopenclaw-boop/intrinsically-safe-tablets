@@ -94,8 +94,14 @@ const principles: { icon: IconName; title: string; text: string }[] = [
   { icon: 'flag', title: 'Unknowns flagged', text: 'Anything we could not confirm is marked as not verified, never guessed.' },
 ];
 
-/* ---------- Guides, once they exist ---------- */
-const insights = GUIDE_PAGES.slice(0, 3)
+/* ---------- Guides: three starting points, picked by hand (the guides share a publish date, so date order would be
+   alphabetical) ---------- */
+const HOME_GUIDES = ['intrinsically-safe-tablet-buyers-guide', 'is-ipad-intrinsically-safe', 'zone-1-vs-zone-2-tablets'];
+const insights = HOME_GUIDES.map((slug) => {
+  const g = GUIDE_PAGES.find((p) => p.slug === slug);
+  if (!g) throw new Error(`Home guides: no guide at /guides/${slug}/`);
+  return g;
+})
   .map((g) => ({ g, photo: guideImage(g.slug) }))
   .filter((x) => x.photo)
   .map(({ g, photo }) => ({ ...photo!, title: g.navLabel, href: `/guides/${g.slug}/` }));
